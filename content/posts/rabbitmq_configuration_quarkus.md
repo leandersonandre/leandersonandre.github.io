@@ -13,7 +13,7 @@ In this post, I'll show how to configure RabbitMQ in a Quarkus project using the
 
 ## Quarkus RabbitMQ Dependency
 
-To get started, add the following dependency to your pom.xml:
+To get started, add the following dependency to your **pom.xml**:
 
 ```xml
 <dependency>
@@ -73,3 +73,7 @@ mp.messaging.incoming.{your-queue-to-process}.exchange.name={your-queue}
 ``
 
 Again, replace **{your-queue-to-process}** and **{your-queue}** with the appropriate names for your application.
+
+## Full Example
+
+You can check a full project [here](https://github.com/leandersonandre/quarkus-rabbitmq-voting-system).
