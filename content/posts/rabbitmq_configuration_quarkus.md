@@ -70,7 +70,7 @@ mp.messaging.incoming.{your-queue-to-process}.username=guest
 mp.messaging.incoming.{your-queue-to-process}.password=guest
 mp.messaging.incoming.{your-queue-to-process}.queue.name={your-queue}
 mp.messaging.incoming.{your-queue-to-process}.exchange.name={your-queue}
-``
+```
 
 Again, replace **{your-queue-to-process}** and **{your-queue}** with the appropriate names for your application.
 
