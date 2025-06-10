@@ -16,3 +16,4 @@ For comments or questions, send me an email at leanderson.andre@gmail.com
 - Hosted on Github Pages
 
 <a href="oideus://auth/reset_password">teste</a>
+[resetar senha](oideus://auth/reset_password)
