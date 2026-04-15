@@ -34,11 +34,11 @@ def fibonacci(n):
 # exemplo de uso
 for i in range(10):
     print(fibonacci(i))
-
+```
 {{< /tab >}}
 
 {{< tab name="Java" >}}
-
+```java
 public class Fibonacci {
 
     public static int fibonacci(int n) {
@@ -63,7 +63,7 @@ public class Fibonacci {
         }
     }
 }
-
+```
 {{< /tab >}}
 
 {{< /tabs >}}
