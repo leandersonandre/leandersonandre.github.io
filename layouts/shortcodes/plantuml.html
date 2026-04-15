@@ -1,5 +1,2 @@
-{{ if .Inner }}
-  {{ $puml := trim .Inner "\n " }}
-  {{ $encoded := $puml | urlquery }}
-  <img src="https://www.plantuml.com/plantuml/svg/~h{{ $encoded }}" />
-{{ end }}
+{{ $puml := trim .Inner "\n " }}
+<img src="https://www.plantuml.com/plantuml/svg/{{ $puml | safeURL }}">
