@@ -1,8 +1,0 @@
-services:
-  server:
-      image: klakegg/hugo:latest-ext
-      command: server -D --poll 700ms
-      volumes:
-        - ".:/src"
-      ports:
-        - "1313:1313"
