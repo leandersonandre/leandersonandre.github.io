@@ -1,0 +1,3 @@
+{{ $puml := .Inner | trim }}
+{{ $encoded := $puml | base64Encode }}
+<img src="https://www.plantuml.com/plantuml/svg/{{ $encoded }}" alt="PlantUML diagram">
