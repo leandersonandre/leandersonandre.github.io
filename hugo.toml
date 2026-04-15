@@ -1,3 +1,59 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://leandersonandre.com/'
+languageCode = "pt-br"
+defaultContentLanguage = "pt-br"
+title = 'Leanderson André'
+theme = "hextra"
+
+[menu]
+
+  [[menu.main]]
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 1
+
+  [[menu.main]]
+  name = "Reuniões"
+  pageRef = "/reunioes"
+  weight = 2
+
+  [[menu.main]]
+  name = "Sobre"
+  pageRef = "/sobre"
+  weight = 3
+
+  [[menu.main]]
+  name = "Procurar"
+  weight = 4
+    [menu.main.params]
+    type = "search"
+
+  [[menu.main]]
+  name = "GitHub"
+  weight = 5
+  url = "https://github.com/univille-cp/"
+      [menu.main.params]
+      icon = "github"
+
+  [params.footer]
+  displayPoweredBy = false
+
+  [services.googleAnalytics]
+  ID = "G-B5BR0QT7C4"
+
+  [params.search]
+  type = "flexsearch"
+  enable = true
+
+  [params.navbar.logo]
+  path = "images/logo.svg"
+
+  [outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+  [params]
+  displayUpdatedDate = true
+  dateFormat = "2 de January de 2006"
+  displayUpdatedAuthor = true
+
+
+  enableGitInfo = true
