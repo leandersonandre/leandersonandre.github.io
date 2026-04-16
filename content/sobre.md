@@ -12,8 +12,5 @@ For comments or questions, send me an email at leanderson.andre@gmail.com
 
 **About the Site**
 
-- Built on Hugo and Listed theme
+- Built on Hugo and Hextra theme
 - Hosted on Github Pages
-
-<a href="oideus://auth/reset_password">teste</a>
-[resetar senha](oideus://auth/reset_password)
