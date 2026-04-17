@@ -96,8 +96,6 @@ Identifique o símbolo da UML que representa a visibilidade protegida.
 Resposta correta: C
 <br>
 posso colocar um texto maior.....
-{{< questao >}}
-Analise o diagrama e identifique a alternativa correta.
 {{< plantuml >}}
 class Rect {
   -id: Long
