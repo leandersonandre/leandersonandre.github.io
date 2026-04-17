@@ -16,15 +16,20 @@
     {{ index $alts 0 | $.Page.RenderString }}
   </div>
 
+  {{ if gt (len $alts) 1 }}
   <ol class="alternativas" type="A">
     {{ range $i, $alt := after 1 $alts }}
-      <li>{{ $alt | $.Page.RenderString }}</li>
+      <li>
+        {{ $alt | $.Page.RenderString }}
+      </li>
     {{ end }}
   </ol>
+  {{ end }}
 
   {{ if $solucao }}
   <div class="solucao">
-    <button onclick="this.nextElementSibling.classList.toggle('hidden')">
+    <button type="button"
+      onclick="this.nextElementSibling.classList.toggle('hidden')">
       Mostrar solução
     </button>
 
