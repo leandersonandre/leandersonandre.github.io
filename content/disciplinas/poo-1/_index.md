@@ -78,84 +78,48 @@ public class Fibonacci {
 
 ### Exercício
 
-<div class="lista-questoes">
-
 {{< questao >}}
 
-Identifique o símbolo da UML que representa a visibilidade protegida.
+## Identifique o símbolo da UML
 
-::alt::
+{{< plantuml >}}
+class Rect {
+  -id: Long
+}
+{{< /plantuml >}}
+
+<ol type="A">
+
+{{< alternativa >}}
 +
-::alt::
+{{< /alternativa >}}
+
+{{< alternativa >}}
 -
-::alt::
+{{< /alternativa >}}
+
+{{< alternativa >}}
 #
-::alt::
+{{< /alternativa >}}
+
+{{< alternativa >}}
 ~
-::alt::
+{{< /alternativa >}}
+
+{{< alternativa >}}
 Nenhuma das anteriores
+{{< /alternativa >}}
 
-::solucao::
-Resposta correta: <bold>C</bold>
+</ol>
 
-Na UML, `#` representa visibilidade protegida.
-
-{{< /questao >}}
-
-
-{{< questao >}}
-
- Analise o diagrama e identifique a alternativa correta.
-
-{{< plantuml >}}
-class Rect {
-  -id: Long
-}
-{{< /plantuml >}}
-
-::alt::
-ClasseA representa o objeto "todo" na agregação.
-
-::alt::
-ClasseA representa o objeto "todo" na composição.
-
-::alt::
-ClasseB depende da ClasseA
-
-::alt::
-ClasseB estende a ClasseA
-
-::alt::
-{{< plantuml >}}
-class Rect {
-  -id: Long
-}
-{{< /plantuml >}}
-
-::solucao::
-Explicação detalhada aqui.
-
-{{< /questao >}}
-
-{{< questao >}}
-
-Verifique o código
+{{< solucao >}}
+Resposta correta: C
 
 ```java
-public String toString(){
+public String toString() {
   return null;
 }
-```
 
-
-::alt::
-Código x.
-```java
-public String toString(){
-  return null;
-}
-```
+{{< /solucao >}}
 
 {{< /questao >}}
-
-</div>
