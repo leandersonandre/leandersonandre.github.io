@@ -11,8 +11,18 @@ title: "POO I"
 
 {{< plantuml >}}
 @startuml
-Alice -> Bob: Hello
-Bob -> Alice: Hi!
+class User {
+  -id: Long
+  -name: String
+  -email: String
+  --
+  +User(name: String, email: String)
+  +getId(): Long
+  +getName(): String
+  +getEmail(): String
+  +setName(name: String): void
+  +setEmail(email: String): void
+}
 @enduml
 {{< /plantuml >}}
 
