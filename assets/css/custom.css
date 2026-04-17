@@ -1,10 +1,20 @@
-.alternativas {
-  margin-left: 1.5rem;
+.lista-questoes {
+  counter-reset: questao;
 }
 
-.solucao button {
-  margin-top: 0.5rem;
-  cursor: pointer;
+.questao {
+  counter-increment: questao;
+  margin-bottom: 1.5rem;
+}
+
+.enunciado::before {
+  content: "Questão " counter(questao) ". ";
+  font-weight: bold;
+}
+
+.alternativas {
+  list-style-type: upper-alpha;
+  margin-left: 1.5rem;
 }
 
 .hidden {
@@ -16,18 +26,4 @@
   padding: 0.75rem;
   background: #f5f5f5;
   border-left: 4px solid #888;
-}
-
-.lista-questoes {
-  counter-reset: questao;
-}
-
-.questao {
-  counter-increment: questao;
-  margin-bottom: 1rem;
-}
-
-.questao-titulo::before {
-  content: "Questão " counter(questao) ". ";
-  font-weight: bold;
 }
