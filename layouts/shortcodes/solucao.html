@@ -1,10 +1,19 @@
 <div class="solucao">
-  <button type="button"
-    onclick="this.nextElementSibling.classList.toggle('hidden')">
-    Mostrar solução
-  </button>
+    <button
+        type="button"
+        onclick="this.nextElementSibling.classList.toggle('hidden')"
+    >
+        Mostrar solução
+    </button>
 
-  <div class="hidden resposta">
-    {{ .Inner }}
-  </div>
+    <div class="hidden">
+        <div class="resposta">
+            <div class="resposta-header">
+                <span class="resposta-label">Resposta correta:</span>
+                <span class="resposta-letra">{{ .Params.letra }}</span>
+            </div>
+
+            <div class="resposta-body">{{ .Inner }}</div>
+        </div>
+    </div>
 </div>

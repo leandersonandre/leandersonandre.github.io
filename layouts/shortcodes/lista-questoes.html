@@ -1,4 +1,3 @@
-<!-- layouts/shortcodes/lista-questoes.html -->
-<div class="lista-questoes">
-  {{ .Inner }}
-</div>
+{{ .Page.Scratch.Set "questao_num" 0 }}
+
+<div class="lista-questoes">{{ .Inner }}</div>

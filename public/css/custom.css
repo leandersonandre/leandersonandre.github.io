@@ -1,0 +1,159 @@
+/* =========================
+   LISTA DE QUESTÕES
+========================= */
+
+.lista-questoes {
+    counter-reset: questao;
+}
+
+/* cada questão incrementa contador */
+.questao {
+    counter-increment: questao;
+    margin: 2rem 0;
+    padding: 1rem 1.2rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* título automático "Questão X" */
+.questao h2::before,
+.questao .enunciado::before {
+    content: "Questão " counter(questao) ". ";
+    font-weight: 700;
+    color: #333;
+}
+
+/* =========================
+   ALTERNATIVAS (A, B, C...)
+========================= */
+
+.alternativa {
+    list-style: none; /* remove bullets/números automáticos */
+    padding-left: 0; /* nada antes da letra */
+    margin: 0.25rem 0; /* só espaçamento vertical entre alternativas */
+}
+
+.alternativa-letra {
+    font-weight: 600;
+    margin-right: 0.4rem; /* espaço entre letra e texto */
+}
+
+/* =========================
+   SOLUÇÃO
+========================= */
+
+.solucao {
+    margin-top: 1rem;
+}
+
+/* botão */
+.solucao > button {
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f8f8f8;
+    font-size: 0.9rem;
+}
+
+.solucao > button:hover {
+    background: #eee;
+}
+
+/* caixa geral */
+.resposta {
+    margin-top: 0.8rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: none;
+    overflow: hidden;
+}
+
+/* HEADER (sem padding exagerado) */
+.resposta-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: #f3f4f6;
+    border-bottom: 1px solid #d1d5db;
+
+    padding: 0.25rem 0.6rem; /* <<< menor padding */
+    font-weight: 600;
+}
+
+/* texto "Resposta correta:" */
+.resposta-label {
+    color: #374151;
+}
+
+/* letra ao lado */
+.resposta-letra {
+    font-weight: 700;
+    color: #111827;
+}
+
+/* corpo da resposta */
+.resposta-body {
+    padding: 0.8rem; /* conteúdo normal */
+}
+
+/* hidden */
+.hidden {
+    display: none;
+}
+
+/* =========================
+   CÓDIGO (Hugo já ajuda, mas reforço visual)
+========================= */
+
+pre {
+    border-radius: 8px;
+    padding: 0.8rem;
+    overflow-x: auto;
+}
+
+/* =========================
+   PLANTUML / DIAGRAMAS
+========================= */
+
+.questao img {
+    max-width: 100%;
+    display: block;
+    margin: 0.8rem 0;
+}
+.questao-container {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.questao-header {
+    background-color: #f3f4f6; /* cinza estilo ChatGPT */
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.questao-body {
+    padding: 14px;
+}
+
+/* Apenas códigos dentro da questao */
+.questao-code pre,
+.questao-code code {
+    background: none !important; /* remove fundo */
+    border: none !important; /* remove bordas */
+    box-shadow: none !important; /* remove sombra */
+    padding: 0 !important; /* remove padding */
+    margin: 0 !important; /* remove margens */
+    display: block;
+    font-family: monospace;
+    line-height: 1.4;
+    white-space: pre; /* mantém espaços e quebras */
+    color: inherit; /* mantém cor do texto */
+}

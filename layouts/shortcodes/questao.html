@@ -1,3 +1,7 @@
-<div class="questao">
-  {{ .Inner }}
+{{- $num := add (.Page.Scratch.Get "questao_num" | default 0) 1 -}} {{-
+.Page.Scratch.Set "questao_num" $num -}} {{ .Page.Scratch.Set "alt_count" 0 }}
+<div class="questao-container">
+    <div class="questao-header">Questão {{ $num }}</div>
+
+    <div class="questao-body">{{ .Inner }}</div>
 </div>

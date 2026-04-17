@@ -10,7 +10,7 @@ toc: false
 {{< /cards >}}
 
 {{< cards cols="2" >}}
-  {{< card link="/disciplinas/esd-1" title="Estruturas de Dados I" >}}
+  {{< card link="/disciplinas/estd-1" title="Estruturas de Dados I" >}}
   {{< card link="/disciplinas/apc-1" title="Algoritmos e Programação de Computadores I" >}}
 {{< /cards >}}
 

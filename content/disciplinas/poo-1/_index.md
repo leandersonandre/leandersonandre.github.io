@@ -80,7 +80,13 @@ public class Fibonacci {
 {{< lista-questoes >}}
 {{< questao >}}
 
-Identifique o símbolo da UML
+Identifique o símbolo da UML.
+
+{{< code java >}}
+public String toString() {
+    return null;
+}
+{{< /code >}}
 
 {{< plantuml >}}
 class Rect {
@@ -88,10 +94,14 @@ class Rect {
 }
 {{< /plantuml >}}
 
-<ol type="A">
+
 
 {{< alternativa >}}
-+
+{{< plantuml >}}
+class Rect {
+  -id: Long
+}
+{{< /plantuml >}}
 {{< /alternativa >}}
 
 {{< alternativa >}}
@@ -110,16 +120,22 @@ class Rect {
 Nenhuma das anteriores
 {{< /alternativa >}}
 
-</ol>
 
-{{< solucao >}}
-Resposta correta: C
 
-```java
+{{< solucao letra="C">}}
+C
+
+{{< code java >}}
 public String toString() {
-  return null;
+    return null;
 }
-```
+{{< /code >}}
+
+{{< plantuml >}}
+class Rect {
+  -id: Long
+}
+{{< /plantuml >}}
 
 {{< /solucao >}}
 

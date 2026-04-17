@@ -1,3 +1,9 @@
+{{/* pega contador de alternativas da questão atual */}} {{- $count :=
+.Page.Scratch.Get "alt_count" | default 0 -}} {{- $count = add $count 1 -}} {{-
+.Page.Scratch.Set "alt_count" $count -}} {{/* transforma 1 → A, 2 → B, 3 → C ...
+*/}} {{- $letter := printf "%c" (add 64 $count) -}}
+
 <li class="alternativa">
-  {{ .Inner }}
+    <span class="alternativa-letra">{{ $letter }}.</span>
+    {{ .Inner }}
 </li>
