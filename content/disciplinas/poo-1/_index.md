@@ -10,7 +10,6 @@ title: "POO I"
 {{< /cards >}}
 
 {{< plantuml >}}
-@startuml
 class User {
   -id: Long
   -name: String
@@ -23,7 +22,6 @@ class User {
   +setName(name: String): void
   +setEmail(email: String): void
 }
-@enduml
 {{< /plantuml >}}
 
 {{< tabs >}}
