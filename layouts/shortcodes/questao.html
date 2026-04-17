@@ -1,5 +1,37 @@
 <div class="questao">
-  <p class="questao-titulo">
-    {{ .Inner }}
-  </p>
+
+  <div class="enunciado">
+    {{ .Get "enunciado" | markdownify }}
+  </div>
+
+  {{ with .Get "imagem" }}
+    <div class="imagem">
+      <img src="{{ . }}" />
+    </div>
+  {{ end }}
+
+  {{ with .Get "plantuml" }}
+    <div class="diagram">
+      {{< plantuml >}}
+{{ . }}
+      {{< /plantuml >}}
+    </div>
+  {{ end }}
+
+  <ol class="alternativas" type="A">
+    {{ range $i, $alt := .Get "alts" | split "|" }}
+      <li>{{ $alt }}</li>
+    {{ end }}
+  </ol>
+
+  <div class="solucao">
+    <button onclick="this.nextElementSibling.classList.toggle('hidden')">
+      Mostrar solução
+    </button>
+
+    <div class="hidden resposta">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+
 </div>
