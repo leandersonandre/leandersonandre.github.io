@@ -81,37 +81,56 @@ public class Fibonacci {
 <div class="lista-questoes">
 
 {{< questao >}}
-Identifique o símbolo da UML que representa a visibilidade protegida.
+
+## Identifique o símbolo da UML que representa a visibilidade protegida.
+
+::alt::
++
+::alt::
+-
+::alt::
+#
+::alt::
+~
+::alt::
+Nenhuma das anteriores
+
+::solucao::
+Resposta correta: **C**
+
+Na UML, `#` representa visibilidade protegida.
+
 {{< /questao >}}
 
-{{< alternativas >}}
-{{< item >}} + {{< /item >}}
-{{< item >}} - {{< /item >}}
-{{< item >}} # {{< /item >}}
-{{< item >}} ~ {{< /item >}}
-{{< item >}} Nenhuma das anteriores {{< /item >}}
-{{< /alternativas >}}
 
-{{< solucao >}}
-Resposta correta: C
-<br>
-posso colocar um texto maior.....
+{{< questao >}}
+
+## Analise o diagrama e identifique a alternativa correta.
+
 {{< plantuml >}}
 class Rect {
   -id: Long
 }
 {{< /plantuml >}}
-{{< /solucao >}}
 
-{{< questao >}}
-Analise o diagrama e identifique a alternativa correta.
-{{< plantuml >}}
-class User {
-  -id: Long
-}
-{{< /plantuml >}}
+::alt::
+ClasseA representa o objeto "todo" na agregação.
+
+::alt::
+ClasseA representa o objeto "todo" na composição.
+
+::alt::
+ClasseB depende da ClasseA
+
+::alt::
+ClasseB estende a ClasseA
+
+::alt::
+Nenhuma das anteriores
+
+::solucao::
+Explicação detalhada aqui.
+
 {{< /questao >}}
-
-...
 
 </div>
