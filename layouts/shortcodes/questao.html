@@ -13,12 +13,12 @@
 <div class="questao">
 
   <div class="enunciado">
-    {{ index $alts 0 | markdownify }}
+    {{ index $alts 0 | safeHTML }}
   </div>
 
   <ol class="alternativas" type="A">
     {{ range $i, $alt := after 1 $alts }}
-      <li>{{ $alt | markdownify }}</li>
+      <li>{{ $alt | safeHTML }}</li>
     {{ end }}
   </ol>
 
@@ -29,7 +29,7 @@
     </button>
 
     <div class="hidden resposta">
-      {{ $solucao | markdownify }}
+      {{ $solucao | safeHTML }}
     </div>
   </div>
   {{ end }}
