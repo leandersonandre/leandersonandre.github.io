@@ -78,13 +78,28 @@ public class Fibonacci {
 
 ### Exercício
 
-Resolva Fibonacci.
+<div class="lista-questoes">
 
-{{< solution >}}
-```python
-def fib(n):
-    a, b = 0, 1
-    for _ in range(n):
-        a, b = b, a + b
-    return a
-{{< /solution >}}
+{{< questao >}}
+Identifique o símbolo da UML que representa a visibilidade protegida.
+{{< /questao >}}
+
+{{< alternativas >}}
+{{< item >}} + {{< /item >}}
+{{< item >}} - {{< /item >}}
+{{< item >}} # {{< /item >}}
+{{< item >}} ~ {{< /item >}}
+{{< item >}} Nenhuma das anteriores {{< /item >}}
+{{< /alternativas >}}
+
+{{< solucao >}}
+Resposta correta: C
+{{< /solucao >}}
+
+{{< questao >}}
+Analise o diagrama e identifique a alternativa correta.
+{{< /questao >}}
+
+...
+
+</div>
