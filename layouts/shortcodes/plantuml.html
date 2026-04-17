@@ -1,6 +1,19 @@
-{{- $diagram := .Inner | safeJS -}}
+{{- $user := .Inner | trim -}}
 {{- $format := .Get "format" | default "svg" -}}
 {{- $id := printf "plantuml-%d" now.UnixNano -}}
+
+{{- $diagram := printf `
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam defaultFontName Arial
+hide stereotype
+hide circle
+
+%s
+
+@enduml
+` $user | safeJS -}}
 
 <div id="{{ $id }}"></div>
 
