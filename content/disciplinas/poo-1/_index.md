@@ -94,6 +94,8 @@ Identifique o símbolo da UML que representa a visibilidade protegida.
 
 {{< solucao >}}
 Resposta correta: C
+
+posso colocar um texto maior.....
 {{< /solucao >}}
 
 {{< questao >}}
