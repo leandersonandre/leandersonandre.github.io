@@ -77,10 +77,10 @@ public class Fibonacci {
 {{< /tabs >}}
 
 ### Exercício
-<div class="lista-questoes">
+
 {{< questao >}}
 
-## Identifique o símbolo da UML
+Identifique o símbolo da UML
 
 {{< plantuml >}}
 class Rect {
@@ -124,5 +124,3 @@ public String toString() {
 {{< /solucao >}}
 
 {{< /questao >}}
-
-</div>
