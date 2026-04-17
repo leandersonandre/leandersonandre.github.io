@@ -1,4 +1,4 @@
-{{- $user := .Inner | trim -}}
+{{- $user := .Inner | strings.TrimSpace -}}
 {{- $format := .Get "format" | default "svg" -}}
 {{- $id := printf "plantuml-%d" now.UnixNano -}}
 
@@ -6,7 +6,7 @@
 @startuml
 skinparam shadowing false
 skinparam monochrome true
-skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
 hide stereotype
 hide circle
 
