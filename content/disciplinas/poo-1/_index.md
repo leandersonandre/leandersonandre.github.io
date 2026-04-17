@@ -77,7 +77,7 @@ public class Fibonacci {
 {{< /tabs >}}
 
 ### Exercício
-
+{{< lista-questoes >}}
 {{< questao >}}
 
 Identifique o símbolo da UML
@@ -124,3 +124,5 @@ public String toString() {
 {{< /solucao >}}
 
 {{< /questao >}}
+
+{{< /lista-questoes >}}
