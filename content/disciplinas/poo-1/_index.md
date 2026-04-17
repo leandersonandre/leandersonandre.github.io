@@ -82,7 +82,7 @@ public class Fibonacci {
 
 {{< questao >}}
 
-## Identifique o símbolo da UML que representa a visibilidade protegida.
+Identifique o símbolo da UML que representa a visibilidade protegida.
 
 ::alt::
 +
@@ -96,7 +96,7 @@ public class Fibonacci {
 Nenhuma das anteriores
 
 ::solucao::
-Resposta correta: **C**
+Resposta correta: <bold>C</bold>
 
 Na UML, `#` representa visibilidade protegida.
 
@@ -105,7 +105,7 @@ Na UML, `#` representa visibilidade protegida.
 
 {{< questao >}}
 
-## Analise o diagrama e identifique a alternativa correta.
+ Analise o diagrama e identifique a alternativa correta.
 
 {{< plantuml >}}
 class Rect {
@@ -134,6 +134,27 @@ class Rect {
 
 ::solucao::
 Explicação detalhada aqui.
+
+{{< /questao >}}
+
+{{< questao >}}
+
+Verifique o código
+
+```java
+public String toString(){
+  return null;
+}
+```
+
+
+::alt::
+Código x.
+```java
+public String toString(){
+  return null;
+}
+```
 
 {{< /questao >}}
 
