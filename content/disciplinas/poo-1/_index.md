@@ -126,7 +126,11 @@ ClasseB depende da ClasseA
 ClasseB estende a ClasseA
 
 ::alt::
-Nenhuma das anteriores
+{{< plantuml >}}
+class Rect {
+  -id: Long
+}
+{{< /plantuml >}}
 
 ::solucao::
 Explicação detalhada aqui.
