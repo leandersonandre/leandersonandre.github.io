@@ -100,6 +100,11 @@ posso colocar um texto maior.....
 
 {{< questao >}}
 Analise o diagrama e identifique a alternativa correta.
+{{< plantuml >}}
+class User {
+  -id: Long
+}
+{{< /plantuml >}}
 {{< /questao >}}
 
 ...
