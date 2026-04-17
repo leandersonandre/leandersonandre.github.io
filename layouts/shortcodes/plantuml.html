@@ -1,7 +1,4 @@
-{{ $puml := trim .Inner "\n " }}
-{{ $encoded := $puml | urlquery }}
+{{- $diagram := .Inner | safeURL -}}
+{{- $encoded := $diagram | base64Encode -}}
 
-<img
-  src="https://www.plantuml.com/plantuml/png/{{ $encoded }}"
-  alt="PlantUML diagram"
-/>
+<img src="https://kroki.io/plantuml/svg/{{ $encoded }}" alt="PlantUML diagram">
