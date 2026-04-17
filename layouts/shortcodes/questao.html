@@ -1,37 +1,37 @@
+{{ $raw := .Inner }}
+
+{{ $parts := split $raw "::solucao::" }}
+
+{{ $main := index $parts 0 }}
+{{ $solucao := "" }}
+{{ if gt (len $parts) 1 }}
+  {{ $solucao = index $parts 1 }}
+{{ end }}
+
+{{ $alts := split $main "::alt::" }}
+
 <div class="questao">
 
   <div class="enunciado">
-    {{ .Get "enunciado" | markdownify }}
+    {{ index $alts 0 | markdownify }}
   </div>
 
-  {{ with .Get "imagem" }}
-    <div class="imagem">
-      <img src="{{ . }}" />
-    </div>
-  {{ end }}
-
-  {{ with .Get "plantuml" }}
-    <div class="diagram">
-      {{< plantuml >}}
-{{ . }}
-      {{< /plantuml >}}
-    </div>
-  {{ end }}
-
   <ol class="alternativas" type="A">
-    {{ range $i, $alt := .Get "alts" | split "|" }}
-      <li>{{ $alt }}</li>
+    {{ range $i, $alt := after 1 $alts }}
+      <li>{{ $alt | markdownify }}</li>
     {{ end }}
   </ol>
 
+  {{ if $solucao }}
   <div class="solucao">
     <button onclick="this.nextElementSibling.classList.toggle('hidden')">
       Mostrar solução
     </button>
 
     <div class="hidden resposta">
-      {{ .Inner | markdownify }}
+      {{ $solucao | markdownify }}
     </div>
   </div>
+  {{ end }}
 
 </div>
