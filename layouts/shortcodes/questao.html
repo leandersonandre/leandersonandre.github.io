@@ -13,12 +13,12 @@
 <div class="questao">
 
   <div class="enunciado">
-    {{ index $alts 0 | safeHTML }}
+    {{ index $alts 0 | $.Page.RenderString }}
   </div>
 
   <ol class="alternativas" type="A">
     {{ range $i, $alt := after 1 $alts }}
-      <li>{{ $alt | safeHTML }}</li>
+      <li>{{ $alt | $.Page.RenderString }}</li>
     {{ end }}
   </ol>
 
@@ -29,7 +29,7 @@
     </button>
 
     <div class="hidden resposta">
-      {{ $solucao | safeHTML }}
+      {{ $solucao | $.Page.RenderString }}
     </div>
   </div>
   {{ end }}
