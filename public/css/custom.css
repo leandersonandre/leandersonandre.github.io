@@ -38,72 +38,66 @@
     font-weight: 600;
     margin-right: 0.4rem; /* espaço entre letra e texto */
 }
-
 /* =========================
-   SOLUÇÃO
+RESPOSTA
 ========================= */
 
-.solucao {
-    margin-top: 1rem;
-}
-
-/* botão */
-.solucao > button {
-    cursor: pointer;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background: #f8f8f8;
-    font-size: 0.9rem;
-}
-
-.solucao > button:hover {
-    background: #eee;
-}
-
-/* caixa geral */
+/* caixa */
 .resposta {
     margin-top: 0.8rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
     border: 1px solid #d1d5db;
-    border-radius: 6px;
-    background: none;
     overflow: hidden;
 }
 
-/* HEADER (sem padding exagerado) */
+/* HEADER = barra com botão */
 .resposta-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
     background: #f3f4f6;
     border-bottom: 1px solid #d1d5db;
 
-    padding: 0.25rem 0.6rem; /* <<< menor padding */
-    font-weight: 600;
+    padding: 0.35rem 0.5rem;
+
+    display: flex;
+    justify-content: flex-start;
 }
 
-/* texto "Resposta correta:" */
-.resposta-label {
-    color: #374151;
+/* botão menor */
+.resposta-header button {
+    cursor: pointer;
+
+    padding: 0.5rem 0.5rem; /* menor padding */
+    font-size: 0.75rem; /* texto menor */
+
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+
+    background: transparent;
+
+    line-height: 1;
 }
 
-/* letra ao lado */
-.resposta-letra {
-    font-weight: 700;
-    color: #111827;
+/* hover leve */
+.resposta-header button:hover {
+    background: #ffffff;
 }
 
-/* corpo da resposta */
+/* corpo */
 .resposta-body {
-    padding: 0.8rem; /* conteúdo normal */
+    padding: 0.8rem;
+}
+
+/* título dentro da resposta */
+.resposta-titulo {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 /* hidden */
 .hidden {
     display: none;
 }
-
 /* =========================
    CÓDIGO (Hugo já ajuda, mas reforço visual)
 ========================= */

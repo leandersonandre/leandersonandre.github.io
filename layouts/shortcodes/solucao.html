@@ -1,19 +1,28 @@
 <div class="solucao">
-    <button
-        type="button"
-        onclick="this.nextElementSibling.classList.toggle('hidden')"
-    >
-        Mostrar solução
-    </button>
+    <div class="resposta">
+        <!-- HEADER (só botão) -->
+        <div class="resposta-header">
+            <button
+                type="button"
+                onclick="
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle('hidden');
+                    this.textContent = body.classList.contains('hidden')
+                        ? 'Mostrar solução'
+                        : 'Ocultar solução';
+                "
+            >
+                Mostrar solução
+            </button>
+        </div>
 
-    <div class="hidden">
-        <div class="resposta">
-            <div class="resposta-header">
-                <span class="resposta-label">Resposta correta:</span>
-                <span class="resposta-letra">{{ .Params.letra }}</span>
+        <!-- BODY (resposta oculta) -->
+        <div class="resposta-body hidden">
+            <div class="resposta-titulo">
+                Resposta correta: <strong>{{ .Params.letra }}</strong>
             </div>
 
-            <div class="resposta-body">{{ .Inner }}</div>
+            {{ .Inner }}
         </div>
     </div>
 </div>

@@ -39,7 +39,7 @@
   <meta itemprop="description" content="How to create a class diagram with PlantUML">
   <meta itemprop="datePublished" content="2025-05-07T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-05-07T00:00:00+00:00">
-  <meta itemprop="wordCount" content="109">
+  <meta itemprop="wordCount" content="95">
   <meta itemprop="keywords" content="Uml,Plantuml">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Class Diagram with PlantUML">
@@ -390,28 +390,34 @@
         <div class="content">
           <p>Here&rsquo;s a minimalistic way to create class diagrams using PlantUML with a plain, distraction-free style.</p>
 <p>We use the !theme plain directive and tweak the appearance with skinparam and hide commands to keep it clean and focused on the structure. This is especially useful for documentation, teaching, or quickly prototyping designs.</p>
-<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+   
 
-<div><pre><code>!theme plain
+<div id="plantuml-1776512919176323000"></div>
+<script>
+    (async function () {
+        const diagram = `@startuml
+!theme plain
+skinparam shadowing false
+skinparam monochrome true
 skinparam classAttributeIconSize 0
+hide stereotype
 hide circle
-class User{
-  -name:String
-  -username:String
-  -active:boolean
-  &#43;isActive():boolean
-}</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-  <button
-    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-    title="Copy code"
-    aria-label="Copy code"
-    data-copied-label="Copied!"
-  >
-    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
-<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
-  </button>
-</div>
-</div>
+
+!theme plain\nskinparam classAttributeIconSize 0\nhide circle\nclass User\u007b\n  -name:String\n  -username:String\n  -active:boolean\n  \u002bisActive():boolean\n\u007d
+
+@enduml`;
+
+        const res = await fetch("https://kroki.io/plantuml/svg", {
+            method: "POST",
+            headers: { "Content-Type": "text/plain" },
+            body: diagram,
+        });
+
+        const output = await res.text();
+        document.getElementById("plantuml-1776512919176323000").innerHTML = output;
+    })();
+</script>
+
 <figure class="ma0 w-75"><img src="/imgs/1.png">
 </figure>
 
