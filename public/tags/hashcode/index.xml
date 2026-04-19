@@ -1,0 +1,959 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Hashcode</title>
+    <link>http://localhost:1313/tags/hashcode/</link>
+    <description>Recent content in Hashcode on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/hashcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Questões sobre Igualdade entre objetos</title>
+      <link>http://localhost:1313/disciplinas/poo-1/igualdade-entre-objetos-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/igualdade-entre-objetos-questoes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o objetivo do método toString?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Método  para comparar igualdade entre objetos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Método  que transforma o objeto em uma representação de texto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Método  que transforma o objeto em um único número. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Método especial para auxiliar a inicialização do objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O método toString é utilizado para retornar uma representação textual do objeto. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o objetivo do método hashCode?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Método  para comparar igualdade entre objetos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Método  que transforma o objeto em uma representação de texto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Método  que transforma o objeto em um único número. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Método especial para auxiliar a inicialização do objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O método hashCode retorna um número inteiro que representa o objeto, usado em estruturas como HashMap. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o objetivo do método equals?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Método  para comparar igualdade entre objetos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Método  que transforma o objeto em uma representação de texto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Método  que transforma o objeto em um único número. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Método especial para auxiliar a inicialização do objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O método equals é utilizado para comparar se dois objetos são considerados iguais. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Arquivo Retangulo.java
+public class Retangulo{ }
+// Arquivo Main.java
+public class Main{
+  public static void main(String args[]){
+    Retangulo r = new Retangulo();
+    System.out.println(r);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     r 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     12334 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Retangulo 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Retangulo@F123A 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Sem sobrescrever toString, o Java imprime o nome da classe seguido de um código hexadecimal. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Arquivo Retangulo.java
+public class Retangulo{  
+ public String toString(){
+   return &#34;Retangulo&#34;;
+ }
+}
+// Arquivo Main.java
+public class Main{
+  public static void main(String args[]){
+    Retangulo r = new Retangulo();
+    System.out.println(r);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     r 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     12334 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Retangulo 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Retangulo@F123A 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O método toString foi sobrescrito para retornar &#34;Retangulo&#34;. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Arquivo Retangulo.java
+public class Retangulo{  
+ public String toString(){
+   return &#34;Retangulo&#34;;
+ }
+}
+// Arquivo Main.java
+public class Main{
+  public static void main(String args[]){
+    Retangulo r = new Retangulo();
+    System.out.println(r.hashCode());
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     r 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     12334 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Retangulo 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Retangulo@F123A 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O método hashCode retorna um número inteiro, portanto será exibido um valor numérico. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Arquivo Retangulo.java
+public class Retangulo{  
+ public int hashCode(){
+   return 0;
+ }
+}
+// Arquivo Main.java
+public class Main{
+  public static void main(String args[]){
+    Retangulo r = new Retangulo();
+    System.out.println(r);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     0 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     12334 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Retangulo 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Retangulo@F123A 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O método toString não foi sobrescrito, então a saída será o padrão (classe + hash em hexadecimal). 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma classe chamada Retangulo. Nesta classe não foi implementado os métodos equals e hashCode. Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Main{
+  public static void main(String args[]){
+    Retangulo r1 = new Retangulo();
+    r1.setLargura(10);
+    r1.setAltura(10);
+    Retangulo r2 = new Retangulo();
+    r2.setLargura(10);
+    r2.setAltura(10);
+    System.out.println(r1 == r2);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     false, porque os objetos possuem valores diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     false, porque os objetos possuem endereços de memória diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     true, porque os objetos possuem o mesmo endereço de memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     true, porque os objetos possuem os mesmos valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O operador == compara referências, não conteúdo. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma classe chamada Retangulo. Nesta classe não foi implementado os métodos equals e hashCode. Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Main{
+  public static void main(String args[]){
+    Retangulo r1 = new Retangulo();
+    r1.setLargura(10);
+    r1.setAltura(10);
+    Retangulo r2 = new Retangulo();
+    r2.setLargura(10);
+    r2.setAltura(10);
+    System.out.println(r1.equals(r2));
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     false, porque os objetos possuem valores diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     false, porque os objetos possuem endereços de memória diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     true, porque os objetos possuem o mesmo endereço de memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     true, porque os objetos possuem os mesmos valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Sem sobrescrita, equals se comporta como ==. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma classe chamada Retangulo. Nesta classe foi implementado corretamente os métodos equals e hashCode. Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Main{
+  public static void main(String args[]){
+    Retangulo r1 = new Retangulo();
+    r1.setLargura(10);
+    r1.setAltura(10);
+    Retangulo r2 = new Retangulo();
+    r2.setLargura(10);
+    r2.setAltura(10);
+    System.out.println(r1 == r2);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     false, porque os objetos possuem valores diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     false, porque os objetos possuem endereços de memória diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     true, porque os objetos possuem o mesmo endereço de memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     true, porque os objetos possuem os mesmos valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Mesmo com equals/hashCode implementados, == compara referência. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma classe chamada Retangulo. Nesta classe  foi implementado corretamente os métodos equals e hashCode. Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Main{
+  public static void main(String args[]){
+    Retangulo r1 = new Retangulo();
+    r1.setLargura(10);
+    r1.setAltura(10);
+    Retangulo r2 = new Retangulo();
+    r2.setLargura(10);
+    r2.setAltura(10);
+    System.out.println(r1.equals(r2));
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     false, porque os objetos possuem valores diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     false, porque os objetos possuem endereços de memória diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     true, porque os objetos possuem o mesmo endereço de memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     true, porque os objetos possuem os mesmos valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Com equals implementado corretamente, objetos com mesmos valores são iguais. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma classe chamada Retangulo. Nesta classe  foi implementado corretamente os métodos equals e hashCode. Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     false, porque os objetos possuem valores diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     false, porque os objetos possuem endereços de memória diferentes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     true, porque os objetos possuem o mesmo endereço de memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     true, porque os objetos possuem os mesmos valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Como os valores são diferentes, equals retorna false. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

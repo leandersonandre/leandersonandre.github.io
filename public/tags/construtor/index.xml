@@ -1,0 +1,1777 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Construtor</title>
+    <link>http://localhost:1313/tags/construtor/</link>
+    <description>Recent content in Construtor on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/construtor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Questões sobre Construtor e Encapsulamento</title>
+      <link>http://localhost:1313/disciplinas/poo-1/classes-objetos-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/classes-objetos-questoes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é a definição do construtor?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Método especial para comparar objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Método especial para reservar um espaço na memória para armazenar o objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Método especial para liberar o  espaço ocupado pelo objeto na memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Método especial para auxiliar a inicialização do objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O construtor é responsável por inicializar o objeto no momento de sua criação, preparando seus atributos para uso. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é a definição do construtor padrão na linguagem Java?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Construtor obrigatório criado pelo programador. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Construtor obrigatório com vários parâmetros. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Construtor sem parâmetros e vazio gerado automaticamente. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Construtor sem parâmetros e vazio criado pelo programador. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O compilador Java gera automaticamente um construtor padrão vazio quando nenhum construtor é definido na classe. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Quais é a definição de encapsulamento no contexto de programação orientada à objetos?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Processo de ocultar os detalhes do objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Processo de isolar apenas as informações necessárias dos objetos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Processo de criar objetos com métodos pequenos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Processo de criar classes para representar os objetos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Encapsulamento consiste em esconder os detalhes internos da implementação e expor apenas o necessário. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o modificador de acesso que permite o acesso livre?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     público. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     protegido. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     padrão. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     privado. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O modificador público permite acesso irrestrito a partir de qualquer classe. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o modificador de acesso que permite apenas pela própria classe acessar?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     público. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     protegido. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     padrão. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     privado. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O modificador privado restringe o acesso apenas à própria classe. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o propósito do operador new?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Apenas reservar um espaço na memória para o novo objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Apenas criar um novo objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Auxiliar na inicialização dos atributos de um objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Criar e reservar um espaço na memória para o novo objeto. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O operador new cria o objeto e aloca memória para ele. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique a forma correta de criar um objeto da classe B. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class B{
+  int a; 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B b= new B(10); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B b= new B(a = 10); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B b= new B(); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B b =  B(); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Como não há construtor definido, o Java cria automaticamente um construtor padrão sem parâmetros. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique a forma correta de criar um objeto da classe B. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class B{
+  int a; 
+  public B(){ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B b= new B(10); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B b= new B(); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B b= new B(a = 10); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B b =  B(); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Existe um construtor sem parâmetros, então a criação correta é com new B(). 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique a forma correta de criar um objeto da classe B. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class B{
+  int a; 
+  public B(int a){ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B b= new B(10); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B b= new B(); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B b= new B(a = 10); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B b =  B(); 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Como existe apenas construtor com parâmetro, é obrigatório passar um valor. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o estado do objeto x. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class B{
+  int a; 
+  public B(int a){ this.a = a; }
+}
+public class Main{
+  public static void main(String args[]){
+    B x = new B(10);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B{a = 0 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B{a = 10 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B{a = null }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B{a = false }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O valor recebido é atribuído ao atributo usando this.a = a. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o estado do objeto x. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class B{
+  int a; 
+  public B(int a){  a = a;}
+}
+public class Main{
+  public static void main(String args[]){
+    B x = new B(10);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B{a = 0 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B{a = 10 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B{a = null }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B{a = false }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             A atribuição a = a não altera o atributo da classe, pois usa apenas o parâmetro local. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o estado do objeto x. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class B{
+  int a; 
+  public void setA(int a){ this.a = a * 2;}
+}
+public class Main{
+  public static void main(String args[]){
+    B x = new B();
+    x.setA(5);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B{a = 0 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B{a = 10 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B{a = 5 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B{a = 20 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O valor passado (5) é multiplicado por 2 antes de ser atribuído, resultando em 10. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+De acordo com o padrão Getter/Setter, como deve ser definido um método para obter o valor de um atributo do tipo String nomeado de codigo?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public String get(){ return codigo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public getCodigo(){ return codigo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public String getCodigo(){ return codigo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public String codigo(){ return codigo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+             O padrão correto é get + nome do atributo com tipo de retorno adequado. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+De acordo com o padrão Getter/Setter, como deve ser definido um método para obter o valor de um atributo do tipo booleano nomeado de ativo?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public boolean get(){ return ativo;} 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public boolean isAtivo(){ return ativo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public boolean getAtivo(){ return ativo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public boolean ativo(){ return ativo; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Para booleanos, usa-se o prefixo is. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+De acordo com o padrão Getter/Setter, como deve ser definido um método para modificar o valor de um atributo do tipo double nomeado de preco?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public void setPreco(double preco){ this.preco = preco; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public void setPreco(){ this.preco = preco; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public void setPreco(double preco){ preco = preco; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public double setPreco(){ return preco; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+             Setter correto recebe parâmetro e usa this para atribuir ao atributo. 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 16&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o estado do objeto x. 
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// arquivo B.java
+public class B{
+  int a; 
+  public void setA(int a){ this.a = a;}
+  public int getA(){ return a;}
+}
+// arquivo Main.java
+public class Main{
+  public static void main(String args[]){
+    B x = new B();
+    x.setA(5);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     B{a = 0 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     B{a = 10 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     B{a = 5 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     B{a = 20 }; 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado, que atribui diretamente o valor 5 ao atributo usando this.a = a. Portanto, o estado final do objeto é a = 5.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 17&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
+
+&lt;div id=&#34;plantuml-1776627031704672000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\u007b\n\u002bb:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704672000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     público. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     protegido. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     padrão. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     privado. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, o atributo c é privado.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 18&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
+
+&lt;div id=&#34;plantuml-1776627031704724000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass H\u007b\n\u002ba:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704724000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     público. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     protegido. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     padrão. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     privado. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atributo a é público.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 19&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
+
+&lt;div id=&#34;plantuml-1776627031704762000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass H\u007b\n\u002ba:int\n\u002bb:int\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704762000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public class H { int a; int b; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public class H { private int a; int b; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public class H { int a; private int b; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public class H { public int a; public int b; } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, públicos. Portanto, ambos devem ser declarados como public.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 20&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
+
+&lt;div id=&#34;plantuml-1776627031704802000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun():double\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704802000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public class J { public fun(){ } } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public class J { private fun(){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public class J { public double fun(){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public class J { public double fun(){ return 0;  }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama indica método público com retorno double. Em Java, métodos com retorno devem obrigatoriamente retornar um valor, portanto a alternativa correta inclui &#34;return 0&#34;.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 21&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
+
+&lt;div id=&#34;plantuml-1776627031704842000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun(a:int)\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704842000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public class J { public fun(a : int){ } } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public class J { private void fun(){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public class J { public int fun(){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public class J { public int fun(int a){ return 0; }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;E&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java, isso corresponde a &#34;public void fun(int a)&#34; com retorno válido.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 22&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
+
+&lt;div id=&#34;plantuml-1776627031704881000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n-fun(a:int)\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704881000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public class J { public fun(a : int){ } } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public class J { private void fun(){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public class J { private void fun(int a){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public class J { public int fun(int a){ return 0; }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), portanto corresponde a &#34;private void fun(int a)&#34;.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 23&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
+
+&lt;div id=&#34;plantuml-1776627031704922000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun(b:String, a:int) : int\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776627031704922000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     public class J { public fun(b: String, a : int){ } } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     public class J { private String fun( int a){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     public class J { private void fun(int a){ }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     public class J { public int fun(String b, int a){ return 0; }  } 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama indica método público com dois parâmetros (String e int) e retorno inteiro. A alternativa correta respeita assinatura e retorno.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

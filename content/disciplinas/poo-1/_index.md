@@ -1,144 +1,21 @@
 ---
-title: "POO I"
+title: "Programação Orientada à Objetos I"
 ---
 
-## Aulas
+### Referências
 
-{{< cards >}}
-{{< card link="./aula-01" title="Aula 01" >}}
-{{< card link="./aula-02" title="Aula 02" >}}
-{{< /cards >}}
+- MANZANO, José Augusto N. G. *Java Didático: Programação Orientada a Objetos*. 9ª ed. São Paulo: Érica, 2014.
 
-{{< plantuml >}}
-class User {
-  -id: Long
-  -name: String
-  -email: String
-  --
-  +User(name: String, email: String)
-  +getId(): Long
-  +getName(): String
-  +getEmail(): String
-  +setName(name: String): void
-  +setEmail(email: String): void
-}
-{{< /plantuml >}}
+- BLOCH, Joshua. *Java Efetivo*. 3ª ed. São Paulo: Alta Books, 2019.
 
-{{< tabs >}}
+- SIERRA, Kathy; BATES, Bert. *OCA/OCP Java SE 21 Developer Certification Study Guide*. Sybex, 2023.
 
-{{< tab name="Python" >}}
-```python
-def fibonacci(n):
-    if n <= 1:
-        return n
+- DEITEL, Paul; DEITEL, Harvey. *Java: Como Programar*. 10ª ed. São Paulo: Pearson, 2017.
 
-    a, b = 0, 1
-    for _ in range(2, n + 1):
-        a, b = b, a + b
+- SIERRA, Kathy; BATES, Bert. *Use a Cabeça! Java*. 2ª ed. Rio de Janeiro: Alta Books, 2010.
 
-    return b
+- MARTIN, Robert C. *Código Limpo: Habilidades Práticas do Agile Software*. Rio de Janeiro: Alta Books, 2009.
 
+- GAMMA, Erich et al. *Padrões de Projeto: Soluções Reutilizáveis de Software Orientado a Objetos*. Porto Alegre: Bookman, 2000.
 
-# exemplo de uso
-for i in range(10):
-    print(fibonacci(i))
-```
-{{< /tab >}}
-
-{{< tab name="Java" >}}
-```java
-public class Fibonacci {
-
-    public static int fibonacci(int n) {
-        if (n <= 1) {
-            return n;
-        }
-
-        int a = 0, b = 1;
-
-        for (int i = 2; i <= n; i++) {
-            int temp = a + b;
-            a = b;
-            b = temp;
-        }
-
-        return b;
-    }
-
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(fibonacci(i));
-        }
-    }
-}
-```
-{{< /tab >}}
-
-{{< /tabs >}}
-
-### Exercício
-{{< lista-questoes >}}
-{{< questao >}}
-
-Identifique o símbolo da UML.
-
-{{< code java >}}
-public String toString() {
-    return null;
-}
-{{< /code >}}
-
-{{< plantuml >}}
-class Rect {
-  -id: Long
-}
-{{< /plantuml >}}
-
-
-
-{{< alternativa >}}
-{{< plantuml >}}
-class Rect {
-  -id: Long
-}
-{{< /plantuml >}}
-{{< /alternativa >}}
-
-{{< alternativa >}}
--
-{{< /alternativa >}}
-
-{{< alternativa >}}
-#
-{{< /alternativa >}}
-
-{{< alternativa >}}
-~
-{{< /alternativa >}}
-
-{{< alternativa >}}
-Nenhuma das anteriores
-{{< /alternativa >}}
-
-
-
-{{< solucao letra="C">}}
-C
-
-{{< code java >}}
-public String toString() {
-    return null;
-}
-{{< /code >}}
-
-{{< plantuml >}}
-class Rect {
-  -id: Long
-}
-{{< /plantuml >}}
-
-{{< /solucao >}}
-
-{{< /questao >}}
-
-{{< /lista-questoes >}}
+- Oracle. *Documentação Oficial Java*. Disponível em: https://docs.oracle.com/javase/

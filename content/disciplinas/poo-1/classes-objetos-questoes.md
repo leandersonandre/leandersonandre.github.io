@@ -3,7 +3,8 @@ title: "Questões sobre Classes e Objetos"
 slug: classes-objetos-questoes
 description: "Lista de questões sobre classes e objetos"
 tags:
-- herança
+- classes
+- objetos
 - questões
 ---
 
@@ -125,6 +126,329 @@ public class Livro{
 {{< solucao letra="D" >}} String. {{< /solucao >}}
 {{< /questao >}}
 
+
+{{< lista-questoes >}}
+
+{{< questao >}}
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+{{< plantuml >}}
+class Aluno {
+  -nome: String
+  -idade: int
+  +getNome(): String
+}
+{{< /plantuml >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Aluno {
+  private String nome;
+  private int idade;
+  public String getNome(){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Aluno {
+  public String nome;
+  public int idade;
+  private String getNome(){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Aluno {
+  private String nome;
+  private int idade;
+  public void getNome(){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Aluno {
+  private String nome;
+  private int idade;
+  public String getNome(String nome){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< solucao letra="A">}}
+O diagrama indica atributos privados e método público sem parâmetros com retorno String.
+{{< /solucao >}}
+{{< /questao >}}
+
+{{< questao >}}
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+{{< plantuml >}}
+class Produto {
+  +nome: String
+  +preco: double
+}
+{{< /plantuml >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Produto {
+  private String nome;
+  private double preco;
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Produto {
+  public String nome;
+  public double preco;
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Produto {
+  public String nome();
+  public double preco();
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Produto {
+  private String nome;
+  public double preco;
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< solucao letra="B">}}
+O diagrama mostra atributos públicos sem métodos.
+{{< /solucao >}}
+{{< /questao >}}
+
+{{< questao >}}
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+{{< plantuml >}}
+class Conta {
+  -saldo: double
+  +depositar(valor: double): void
+}
+{{< /plantuml >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Conta {
+  private double saldo;
+  public void depositar(double valor){ saldo = valor; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Conta {
+  private double saldo;
+  public void depositar(double valor){ saldo += valor; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Conta {
+  public double saldo;
+  private void depositar(double valor){ saldo += valor; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Conta {
+  private double saldo;
+  public double depositar(double valor){ return saldo; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< solucao letra="B">}}
+O método é público, recebe parâmetro e não retorna valor, atualizando o saldo.
+{{< /solucao >}}
+{{< /questao >}}
+
+{{< questao >}}
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+{{< plantuml >}}
+class Retangulo {
+  -largura: double
+  -altura: double
+  +Retangulo(l: double, a: double)
+}
+{{< /plantuml >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Retangulo {
+  private double largura;
+  private double altura;
+  public Retangulo(){ }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Retangulo {
+  private double largura;
+  private double altura;
+  public Retangulo(double l, double a){
+    largura = l;
+    altura = a;
+  }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Retangulo {
+  public double largura;
+  public double altura;
+  private Retangulo(double l, double a){ }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Retangulo {
+  private double largura;
+  private double altura;
+  public void Retangulo(double l, double a){ }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< solucao letra="B">}}
+Construtor com parâmetros e atributos privados.
+{{< /solucao >}}
+{{< /questao >}}
+
+{{< questao >}}
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+{{< plantuml >}}
+class Cliente {
+  -nome: String
+  +setNome(nome: String): void
+  +getNome(): String
+}
+{{< /plantuml >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Cliente {
+  private String nome;
+  public void setNome(String nome){ this.nome = nome; }
+  public String getNome(){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Cliente {
+  public String nome;
+  private void setNome(String nome){ this.nome = nome; }
+  private String getNome(){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Cliente {
+  private String nome;
+  public String setNome(String nome){ return nome; }
+  public String getNome(){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Cliente {
+  private String nome;
+  public void setNome(){ this.nome = nome; }
+  public void getNome(String nome){ return nome; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< solucao letra="A">}}
+Getter e setter com atributo privado.
+{{< /solucao >}}
+{{< /questao >}}
+
+{{< questao >}}
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+{{< plantuml >}}
+class Calculadora {
+  +somar(a: int, b: int): int
+}
+{{< /plantuml >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Calculadora {
+  public void somar(int a, int b){ }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Calculadora {
+  private int somar(int a, int b){ return a + b; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Calculadora {
+  public int somar(int a, int b){ return a + b; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< alternativa >}} 
+{{< code >}}
+public class Calculadora {
+  public int somar(){ return 0; }
+}
+{{< /code >}}
+{{< /alternativa >}}
+
+{{< solucao letra="C">}}
+Método público com parâmetros e retorno int.
+{{< /solucao >}}
+{{< /questao >}}
+
+{{< /lista-questoes >}}
 
 {{< questao >}}
 Analise o código abaixo e identifique o estado atual do objeto x. 
