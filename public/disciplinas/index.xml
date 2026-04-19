@@ -235,7 +235,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      + 
 &lt;/li&gt;
-
+ 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
      - 
@@ -297,7 +297,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1776612420458422000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776612840935040000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -310,7 +310,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776612420458422000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776612840935040000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -383,7 +383,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1776612420458609000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776612840935136000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -396,7 +396,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776612420458609000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776612840935136000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -863,7 +863,7 @@ public class Main{
                 Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
             &lt;/div&gt;
 
-             Atributo private não é acessível via referência na classe Main. 
+             O código apresenta erro de compilação porque a variável de referência é do tipo Main, e essa classe não possui o atributo i. Além disso, mesmo que o atributo estivesse acessível na hierarquia, ele está declarado como private na classe A, o que impede acesso direto fora da própria classe. 
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

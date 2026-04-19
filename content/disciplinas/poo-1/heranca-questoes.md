@@ -47,7 +47,7 @@ Identifique o símbolo da UML que representa a visibilidade protegida.
 {{< questao >}} 
 Identifique o símbolo da UML que representa a visibilidade de pacote (package).
 
-{{< alternativa >}} + {{< /alternativa >}}
+{{< alternativa >}} + {{< /alternativa >}} 
 {{< alternativa >}} - {{< /alternativa >}}
 {{< alternativa >}} # {{< /alternativa >}}
 {{< alternativa >}} ~ {{< /alternativa >}}
@@ -226,7 +226,7 @@ public class Main{
 {{< alternativa >}} Erro de compilação. {{< /alternativa >}}
 {{< alternativa >}} Erro de execução. {{< /alternativa >}}
 {{< alternativa >}} Nenhuma das anteriores {{< /alternativa >}}
-{{< solucao letra="C">}} Atributo private não é acessível via referência na classe Main. {{< /solucao >}}
+{{< solucao letra="C">}} O código apresenta erro de compilação porque a variável de referência é do tipo Main, e essa classe não possui o atributo i. Além disso, mesmo que o atributo estivesse acessível na hierarquia, ele está declarado como private na classe A, o que impede acesso direto fora da própria classe. {{< /solucao >}}
 {{< /questao >}}
 
 {{< questao >}} 
