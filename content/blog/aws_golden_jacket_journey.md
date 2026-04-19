@@ -9,4 +9,7 @@ tags:
 - golden jacket
 ---
 
-
+| code    | name                             | score | max score | date       | expiration date |
+|---------|----------------------------------|-------|------------|------------|-----------------|
+| CLF-C02 | AWS Certified Cloud Practitioner | 821   | 1000       | 13/12/2024 | 13/12/2027      |
+| AIF-C01 | AWS Certified AI Practitioner    |       | 1000       |            |                 |

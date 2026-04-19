@@ -1,0 +1,115 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Hugo</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 19 Apr 2026 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>My shortcode for Code</title>
+      <link>http://localhost:1313/blog/shortcode-code/</link>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/shortcode-code/</guid>
+      <description>
+        
+        
+        &lt;p&gt;My Hugo shortcode to show code.&lt;/p&gt;
+&lt;h3&gt;Code&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;{{&amp;lt; code java &amp;gt;}}
+public String toString() {
+    return null;
+}
+{{&amp;lt;  /code &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Result&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;result&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#result&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
+public String toString() {
+    return null;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>My shortcode for PlantUML</title>
+      <link>http://localhost:1313/blog/shortcode-plantuml/</link>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/shortcode-plantuml/</guid>
+      <description>
+        
+        
+        &lt;p&gt;My shortcode to create diagrams with PlantUML.
+This shortcode uses Kroki to render PlantUML diagrams.&lt;/p&gt;
+&lt;h3&gt;Code&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;{{&amp;lt; plantuml &amp;gt;}}
+class Person {
+  -id: long
+  &amp;#43;getId():long
+  &amp;#43;setId(id: long)
+}
+{{&amp;lt; /plantuml &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Result&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;result&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#result&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div id=&#34;plantuml-1776608158709084000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Person \u007b\n  -id: long\n  \u002bgetId():long\n  \u002bsetId(id: long)\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776608158709084000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
