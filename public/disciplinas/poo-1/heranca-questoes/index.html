@@ -29,7 +29,7 @@
 
   <meta itemprop="name" content="Questões sobre Herança">
   <meta itemprop="description" content="Lista de questões sobre Herança">
-  <meta itemprop="wordCount" content="2157">
+  <meta itemprop="wordCount" content="2337">
   <meta itemprop="keywords" content="Herança,Questões">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Questões sobre Herança">
@@ -682,7 +682,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     <div class="questao-body"> 
 Analise o diagrama e identifique a alternativa correta.
 
-<div id="plantuml-1776612840935040000"></div>
+<div id="plantuml-1776614405957900000"></div>
 
 <script>
 (async function() {
@@ -695,7 +695,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1776612840935040000").innerHTML = output;
+  document.getElementById("plantuml-1776614405957900000").innerHTML = output;
 })();
 </script>
  
@@ -768,7 +768,7 @@ A linha com triângulo aberto (`--|>`) no diagrama UML representa uma relação 
     <div class="questao-body"> 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-<div id="plantuml-1776612840935136000"></div>
+<div id="plantuml-1776614405958106000"></div>
 
 <script>
 (async function() {
@@ -781,7 +781,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1776612840935136000").innerHTML = output;
+  document.getElementById("plantuml-1776614405958106000").innerHTML = output;
 })();
 </script>
 
@@ -845,8 +845,483 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
 
 
 
+
 <div class="questao-container">
     <div class="questao-header">Questão 7</div>
+
+    <div class="questao-body">
+Analise o código e identifique o diagrama UML que representa corretamente a relação entre as classes.
+
+<div class="questao-code">
+    <pre><code class="language-">
+class Animal { }
+
+class Cachorro extends Animal { }
+</code></pre>
+</div>
+
+
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">A.</span>
+    
+<div id="plantuml-1776614405958348000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nAnimal --|\u003e Cachorro\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958348000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">B.</span>
+    
+<div id="plantuml-1776614405958399000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCachorro --|\u003e Animal\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958399000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">C.</span>
+    
+<div id="plantuml-1776614405958449000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nAnimal o-- Cachorro\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958449000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">D.</span>
+    
+<div id="plantuml-1776614405958499000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCachorro *-- Animal\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958499000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">E.</span>
+    
+Nenhuma das anteriores
+
+</li>
+
+
+<div class="solucao">
+    <div class="resposta">
+        
+        <div class="resposta-header">
+            <button
+                type="button"
+                onclick="
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle('hidden');
+                    this.textContent = body.classList.contains('hidden')
+                        ? 'Mostrar solução'
+                        : 'Ocultar solução';
+                "
+            >
+                Mostrar solução
+            </button>
+        </div>
+
+        
+        <div class="resposta-body hidden">
+            <div class="resposta-titulo">
+                Resposta correta: <strong>B</strong>
+            </div>
+
+            
+A classe <code>Cachorro</code> herda de <code>Animal</code>. Em UML/PlantUML, a seta de herança aponta da subclasse para a superclasse: <code>Cachorro --|> Animal</code>.
+
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="questao-container">
+    <div class="questao-header">Questão 8</div>
+
+    <div class="questao-body">
+Analise o código e identifique o diagrama UML correto da hierarquia.
+
+<div class="questao-code">
+    <pre><code class="language-">
+class A { }
+
+class B extends A { }
+
+class C extends B { }
+</code></pre>
+</div>
+
+
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">A.</span>
+    
+<div id="plantuml-1776614405958637000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nC \u003c|-- B \nB \u003c|-- A\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958637000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">B.</span>
+    
+<div id="plantuml-1776614405958687000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nB \u003c|-- A\nC \u003c|-- B\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958687000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">C.</span>
+    
+<div id="plantuml-1776614405958744000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nA \u003c|-- B \nB \u003c|-- C\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405958744000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">D.</span>
+    
+<div id="plantuml-1776614405959000000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nA o-- B\nB o-- C\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405959000000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">E.</span>
+    
+Nenhuma das anteriores
+
+</li>
+
+
+<div class="solucao">
+    <div class="resposta">
+        
+        <div class="resposta-header">
+            <button
+                type="button"
+                onclick="
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle('hidden');
+                    this.textContent = body.classList.contains('hidden')
+                        ? 'Mostrar solução'
+                        : 'Ocultar solução';
+                "
+            >
+                Mostrar solução
+            </button>
+        </div>
+
+        
+        <div class="resposta-body hidden">
+            <div class="resposta-titulo">
+                Resposta correta: <strong>C</strong>
+            </div>
+
+             <code>B</code> herda de <code>A</code> e <code>C</code> herda de <code>B</code>. Em PlantUML, isso é representado por <code><|--</code> em duas relações separadas.
+
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="questao-container">
+    <div class="questao-header">Questão 9</div>
+
+    <div class="questao-body">
+Analise o código e identifique o diagrama UML correto.
+
+<div class="questao-code">
+    <pre><code class="language-">
+class Veiculo { }
+
+class Carro extends Veiculo { }
+
+class Moto extends Veiculo { }
+</code></pre>
+</div>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">A.</span>
+    
+<div id="plantuml-1776614405959134000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro \u003c|-- Moto\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405959134000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">B.</span>
+    
+<div id="plantuml-1776614405959187000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro \u003c|-- Veiculo\nMoto \u003c|-- Veiculo\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405959187000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">C.</span>
+    
+<div id="plantuml-1776614405959240000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405959240000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">D.</span>
+    
+<div id="plantuml-1776614405959338000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro o-- Veiculo\nMoto o-- Veiculo\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1776614405959338000").innerHTML = output;
+})();
+</script>
+
+
+</li>
+
+
+<li class="alternativa">
+    <span class="alternativa-letra">E.</span>
+    
+Nenhuma das anteriores
+
+</li>
+
+
+<div class="solucao">
+    <div class="resposta">
+        
+        <div class="resposta-header">
+            <button
+                type="button"
+                onclick="
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle('hidden');
+                    this.textContent = body.classList.contains('hidden')
+                        ? 'Mostrar solução'
+                        : 'Ocultar solução';
+                "
+            >
+                Mostrar solução
+            </button>
+        </div>
+
+        
+        <div class="resposta-body hidden">
+            <div class="resposta-titulo">
+                Resposta correta: <strong>C</strong>
+            </div>
+
+             <code>Carro</code> e <code>Moto</code> são subclasses de <code>Veiculo</code>. Em PlantUML, ambas apontam para a superclasse usando <code><|--</code>.
+
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="questao-container">
+    <div class="questao-header">Questão 10</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
@@ -929,7 +1404,7 @@ public class Main{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 8</div>
+    <div class="questao-header">Questão 11</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
@@ -1012,7 +1487,7 @@ public class Main extends A{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 9</div>
+    <div class="questao-header">Questão 12</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
@@ -1095,7 +1570,7 @@ public class Main extends A{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 10</div>
+    <div class="questao-header">Questão 13</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
@@ -1178,7 +1653,7 @@ public class Main{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 11</div>
+    <div class="questao-header">Questão 14</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem irá imprimir no terminal.
@@ -1259,7 +1734,7 @@ public class Main{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 12</div>
+    <div class="questao-header">Questão 15</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
@@ -1340,7 +1815,7 @@ public class Main{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 13</div>
+    <div class="questao-header">Questão 16</div>
 
     <div class="questao-body"> 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
@@ -1421,7 +1896,7 @@ public class Main{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 14</div>
+    <div class="questao-header">Questão 17</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o problema que existe no código.
@@ -1499,7 +1974,7 @@ public class Main extends A{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 15</div>
+    <div class="questao-header">Questão 18</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o problema que existe no código.
@@ -1577,7 +2052,7 @@ public class Main extends A{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 16</div>
+    <div class="questao-header">Questão 19</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o problema que existe no código.
@@ -1655,7 +2130,7 @@ public class Main extends A{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 17</div>
+    <div class="questao-header">Questão 20</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o problema que existe no código.
@@ -1733,7 +2208,7 @@ public class Main extends A{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 18</div>
+    <div class="questao-header">Questão 21</div>
 
     <div class="questao-body"> 
 Analise e identifique o problema que existe no código.
@@ -1811,7 +2286,7 @@ public class Main{
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 19</div>
+    <div class="questao-header">Questão 22</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o resultado da execução.
@@ -1899,7 +2374,7 @@ public class B extends A {
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 20</div>
+    <div class="questao-header">Questão 23</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o problema existente.
@@ -1987,7 +2462,7 @@ public class B extends A {
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 21</div>
+    <div class="questao-header">Questão 24</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o que será impresso no terminal.
@@ -2088,7 +2563,7 @@ public class C extends B {
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 22</div>
+    <div class="questao-header">Questão 25</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o que será impresso no terminal.
@@ -2191,7 +2666,7 @@ public class Main {
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 23</div>
+    <div class="questao-header">Questão 26</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o resultado da execução.
@@ -2280,7 +2755,7 @@ public class Main {
 
 
 <div class="questao-container">
-    <div class="questao-header">Questão 24</div>
+    <div class="questao-header">Questão 27</div>
 
     <div class="questao-body"> 
 Analise o código e identifique o resultado da execução.

@@ -101,6 +101,149 @@ ClasseH *-- ClasseK
 {{< solucao letra="B">}} O relacionamento de herança em UML é representado pela seta com triângulo aberto (<|--). No diagrama, isso ocorre entre ClasseF e ClasseB, indicando que ClasseB herda de ClasseF. {{< /solucao >}}
 {{< /questao >}}
 
+
+{{< questao >}}
+Analise o código e identifique o diagrama UML que representa corretamente a relação entre as classes.
+
+{{< code >}}
+class Animal { }
+
+class Cachorro extends Animal { }
+{{< /code >}}
+
+
+
+{{< alternativa >}}
+{{< plantuml >}}
+Animal --|> Cachorro
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Cachorro --|> Animal
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Animal o-- Cachorro
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Cachorro *-- Animal
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+Nenhuma das anteriores
+{{< /alternativa >}}
+
+{{< solucao letra="B">}}
+A classe <code>Cachorro</code> herda de <code>Animal</code>. Em UML/PlantUML, a seta de herança aponta da subclasse para a superclasse: <code>Cachorro --|> Animal</code>.
+{{< /solucao >}}
+{{< /questao >}}
+
+
+{{< questao >}}
+Analise o código e identifique o diagrama UML correto da hierarquia.
+
+{{< code >}}
+class A { }
+
+class B extends A { }
+
+class C extends B { }
+{{< /code >}}
+
+
+
+{{< alternativa >}}
+{{< plantuml >}}
+C <|-- B 
+B <|-- A
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+B <|-- A
+C <|-- B
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+A <|-- B 
+B <|-- C
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+A o-- B
+B o-- C
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+Nenhuma das anteriores
+{{< /alternativa >}}
+
+{{< solucao letra="C">}} <code>B</code> herda de <code>A</code> e <code>C</code> herda de <code>B</code>. Em PlantUML, isso é representado por <code><|--</code> em duas relações separadas.
+{{< /solucao >}}
+{{< /questao >}}
+
+
+{{< questao >}}
+Analise o código e identifique o diagrama UML correto.
+
+{{< code >}}
+class Veiculo { }
+
+class Carro extends Veiculo { }
+
+class Moto extends Veiculo { }
+{{< /code >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Carro <|-- Moto
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Carro <|-- Veiculo
+Moto <|-- Veiculo
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Veiculo <|-- Carro
+Veiculo <|-- Moto
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+{{< plantuml >}}
+Carro o-- Veiculo
+Moto o-- Veiculo
+{{< /plantuml >}}
+{{< /alternativa >}}
+
+{{< alternativa >}}
+Nenhuma das anteriores
+{{< /alternativa >}}
+
+{{< solucao letra="C">}} <code>Carro</code> e <code>Moto</code> são subclasses de <code>Veiculo</code>. Em PlantUML, ambas apontam para a superclasse usando <code><|--</code>.
+{{< /solucao >}}
+{{< /questao >}}
+
+
 {{< questao >}} 
 Analise o código e identifique a mensagem que irá imprimir no terminal.
 {{< code >}}
