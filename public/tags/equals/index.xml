@@ -890,6 +890,22 @@ public class Main{
     &lt;div class=&#34;questao-body&#34;&gt;
 Considere uma classe chamada Retangulo. Nesta classe  foi implementado corretamente os métodos equals e hashCode. Analise o código abaixo e identifique qual informação é mais provável ser impressa no terminal. 
 
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Main{
+  public static void main(String args[]){
+    Retangulo r1 = new Retangulo();
+    r1.setLargura(10);
+    r1.setAltura(10);
+    Retangulo r2 = new Retangulo();
+    r2.setLargura(20);
+    r2.setAltura(10);
+    System.out.println(r1.equals(r2));
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;

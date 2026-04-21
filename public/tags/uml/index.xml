@@ -48,8 +48,22 @@ class User{
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;img src=&#34;http://localhost:1313/imgs/1.png&#34;&gt;
-&lt;/figure&gt;
+&lt;div id=&#34;plantuml-1776738758783734000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass User\u007b\n  -name:String\n  -username:String\n  -active:boolean\n  \u002bisActive():boolean\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758783734000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
 
 &lt;h2&gt;Explanation:&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;!theme plain:&lt;/strong&gt; Removes colors and styles to emphasize the content.&lt;/p&gt;

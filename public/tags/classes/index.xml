@@ -634,8 +634,770 @@ public class Livro{
 
 
 
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
 &lt;div class=&#34;questao-container&#34;&gt;
     &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+&lt;div id=&#34;plantuml-1776738758807129000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -idade: int\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758807129000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Aluno {
+  private String nome;
+  private int idade;
+  public String getNome(){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Aluno {
+  public String nome;
+  public int idade;
+  private String getNome(){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Aluno {
+  private String nome;
+  private int idade;
+  public void getNome(){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Aluno {
+  private String nome;
+  private int idade;
+  public String getNome(String nome){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama indica atributos privados e método público sem parâmetros com retorno String.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+&lt;div id=&#34;plantuml-1776738758807194000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Produto \u007b\n  \u002bnome: String\n  \u002bpreco: double\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758807194000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Produto {
+  private String nome;
+  private double preco;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Produto {
+  public String nome;
+  public double preco;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Produto {
+  public String nome();
+  public double preco();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Produto {
+  private String nome;
+  public double preco;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama mostra atributos públicos sem métodos.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+&lt;div id=&#34;plantuml-1776738758807358000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Conta \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758807358000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Conta {
+  private double saldo;
+  public void depositar(double valor){ saldo = valor; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Conta {
+  private double saldo;
+  public void depositar(double valor){ saldo += valor; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Conta {
+  public double saldo;
+  private void depositar(double valor){ saldo += valor; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Conta {
+  private double saldo;
+  public double depositar(double valor){ return saldo; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O método é público, recebe parâmetro e não retorna valor, atualizando o saldo.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+&lt;div id=&#34;plantuml-1776738758807415000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Retangulo \u007b\n  -largura: double\n  -altura: double\n  \u002bRetangulo(l: double, a: double)\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758807415000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Retangulo {
+  private double largura;
+  private double altura;
+  public Retangulo(){ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Retangulo {
+  private double largura;
+  private double altura;
+  public Retangulo(double l, double a){
+    largura = l;
+    altura = a;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Retangulo {
+  public double largura;
+  public double altura;
+  private Retangulo(double l, double a){ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Retangulo {
+  private double largura;
+  private double altura;
+  public void Retangulo(double l, double a){ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Construtor com parâmetros e atributos privados.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+&lt;div id=&#34;plantuml-1776738758807472000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Cliente \u007b\n  -nome: String\n  \u002bsetNome(nome: String): void\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758807472000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Cliente {
+  private String nome;
+  public void setNome(String nome){ this.nome = nome; }
+  public String getNome(){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Cliente {
+  public String nome;
+  private void setNome(String nome){ this.nome = nome; }
+  private String getNome(){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Cliente {
+  private String nome;
+  public String setNome(String nome){ return nome; }
+  public String getNome(){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Cliente {
+  private String nome;
+  public void setNome(){ this.nome = nome; }
+  public void getNome(String nome){ return nome; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Getter e setter com atributo privado.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o diagrama UML abaixo e identifique o código Java correspondente.
+
+&lt;div id=&#34;plantuml-1776738758807526000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Calculadora \u007b\n  \u002bsomar(a: int, b: int): int\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1776738758807526000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Calculadora {
+  public void somar(int a, int b){ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Calculadora {
+  private int somar(int a, int b){ return a + b; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Calculadora {
+  public int somar(int a, int b){ return a + b; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Calculadora {
+  public int somar(){ return 0; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Método público com parâmetros e retorno int.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o estado atual do objeto x. 
@@ -719,7 +1481,7 @@ public Main{
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor impresso.
@@ -802,7 +1564,7 @@ O método retorna 5 + 5 = 10.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor impresso.
@@ -885,7 +1647,7 @@ Aqui é acessado o atributo diretamente, não o método.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o estado atual do objeto x. 
@@ -971,7 +1733,7 @@ public Main{
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o estado atual do objeto ponto. 
@@ -1054,7 +1816,7 @@ public Main{
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o estado atual do objeto ponto. 
@@ -1139,7 +1901,7 @@ public Main{
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 16&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o estado atual do objeto ponto. 
@@ -1224,7 +1986,7 @@ public Main{
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 17&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o estado atual do objeto ponto. 
@@ -1310,7 +2072,7 @@ Os atributos &lt;code&gt;x&lt;/code&gt; e &lt;code&gt;y&lt;/code&gt; foram inici
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 18&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor que será impresso no terminal. 
@@ -1400,7 +2162,7 @@ O método &lt;code&gt;area()&lt;/code&gt; retorna o produto de &lt;code&gt;largu
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 19&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor que será impresso no terminal. 
@@ -1490,7 +2252,7 @@ O cálculo realizado é 10 * 10 = 100. Como esse valor não aparece nas alternat
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 20&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor que será impresso no terminal. 
@@ -1580,7 +2342,7 @@ O método retorna a soma &lt;code&gt;largura + altura&lt;/code&gt;, ou seja, 5 +
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 21&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor que será impresso no terminal. 
@@ -1671,7 +2433,7 @@ O código imprime o atributo &lt;code&gt;area&lt;/code&gt; diretamente (não o m
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 22&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor que será impresso no terminal. 
@@ -1761,7 +2523,7 @@ O código acessa o atributo &lt;code&gt;b&lt;/code&gt; diretamente (sem parênte
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 23&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código abaixo e identifique o valor que será impresso no terminal. 
@@ -1850,12 +2612,12 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 24&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1776627031703571000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808183000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1868,7 +2630,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703571000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808183000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1937,12 +2699,12 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 25&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 16&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703613000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808234000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1955,7 +2717,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703613000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808234000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2024,12 +2786,12 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 26&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 17&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703670000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808301000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2042,7 +2804,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703670000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808301000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2111,12 +2873,12 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 27&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 18&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703712000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808348000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2129,7 +2891,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703712000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808348000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2198,12 +2960,12 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 28&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 19&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703753000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808410000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2216,7 +2978,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703753000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808410000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2285,12 +3047,12 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 29&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 20&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703796000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808457000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2303,7 +3065,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703796000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808457000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2372,12 +3134,12 @@ Nenhuma das alternativas anteriores está correta.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 30&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 21&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703837000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808501000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2390,7 +3152,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703837000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808501000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2459,12 +3221,12 @@ Nenhuma das alternativas anteriores está correta.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 31&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 22&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703877000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808547000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2477,7 +3239,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703877000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808547000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2546,12 +3308,12 @@ A classe F não possui métodos.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 32&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 23&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703931000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808591000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2564,7 +3326,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703931000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808591000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2633,12 +3395,12 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 33&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 24&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1776627031703970000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1776738758808636000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2651,7 +3413,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1776627031703970000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1776738758808636000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

@@ -24,11 +24,14 @@ class User{
 }
 ```
 
-{{< figure
-  src="/imgs/1.png"
-  class="ma0 w-75"
->}}
-
+{{< plantuml >}}
+class User{
+  -name:String
+  -username:String
+  -active:boolean
+  +isActive():boolean
+}
+{{< /plantuml >}}
 ## Explanation:
 **!theme plain:** Removes colors and styles to emphasize the content.
 
