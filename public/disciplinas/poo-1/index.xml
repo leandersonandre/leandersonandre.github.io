@@ -571,6 +571,7 @@ public class Livro{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -644,7 +645,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777212585623320000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037134000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -657,7 +658,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585623320000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037134000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -673,6 +674,7 @@ public class Aluno {
   public String getNome(){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -690,6 +692,7 @@ public class Aluno {
   private String getNome(){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -707,6 +710,7 @@ public class Aluno {
   public void getNome(){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -724,6 +728,7 @@ public class Aluno {
   public String getNome(String nome){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -772,7 +777,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777212585623370000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037182000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -785,7 +790,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585623370000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037182000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -800,6 +805,7 @@ public class Produto {
   private double preco;
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -816,6 +822,7 @@ public class Produto {
   public double preco;
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -832,6 +839,7 @@ public class Produto {
   public double preco();
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -848,6 +856,7 @@ public class Produto {
   public double preco;
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -896,7 +905,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777212585623417000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037232000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -909,7 +918,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585623417000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037232000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -924,6 +933,7 @@ public class Conta {
   public void depositar(double valor){ saldo = valor; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -940,6 +950,7 @@ public class Conta {
   public void depositar(double valor){ saldo += valor; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -956,6 +967,7 @@ public class Conta {
   private void depositar(double valor){ saldo += valor; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -972,6 +984,7 @@ public class Conta {
   public double depositar(double valor){ return saldo; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1020,7 +1033,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777212585623464000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037277000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1033,7 +1046,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585623464000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037277000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1049,6 +1062,7 @@ public class Retangulo {
   public Retangulo(){ }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1069,6 +1083,7 @@ public class Retangulo {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1086,6 +1101,7 @@ public class Retangulo {
   private Retangulo(double l, double a){ }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1103,6 +1119,7 @@ public class Retangulo {
   public void Retangulo(double l, double a){ }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1151,7 +1168,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777212585623525000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037323000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1164,7 +1181,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585623525000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037323000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1180,6 +1197,7 @@ public class Cliente {
   public String getNome(){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1197,6 +1215,7 @@ public class Cliente {
   private String getNome(){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1214,6 +1233,7 @@ public class Cliente {
   public String getNome(){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1231,6 +1251,7 @@ public class Cliente {
   public void getNome(String nome){ return nome; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1279,7 +1300,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777212585623572000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037379000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1292,7 +1313,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585623572000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037379000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1306,6 +1327,7 @@ public class Calculadora {
   public void somar(int a, int b){ }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1321,6 +1343,7 @@ public class Calculadora {
   private int somar(int a, int b){ return a + b; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1336,6 +1359,7 @@ public class Calculadora {
   public int somar(int a, int b){ return a + b; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1351,6 +1375,7 @@ public class Calculadora {
   public int somar(){ return 0; }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1418,6 +1443,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1500,6 +1526,7 @@ System.out.println(t.valor());
 }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -1583,6 +1610,7 @@ System.out.println(t.valor);
 }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -1669,6 +1697,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1752,6 +1781,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1837,6 +1867,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -1923,6 +1954,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2005,6 +2037,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2095,6 +2128,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2185,6 +2219,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2275,6 +2310,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2366,6 +2402,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2456,6 +2493,7 @@ public Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2546,6 +2584,7 @@ public class Main{
  }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -2617,7 +2656,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1777212585624338000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661037969000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2630,7 +2669,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624338000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661037969000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2704,7 +2743,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624383000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038008000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2717,7 +2756,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624383000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038008000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2791,7 +2830,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624424000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038047000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2804,7 +2843,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624424000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038047000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2878,7 +2917,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624463000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038087000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2891,7 +2930,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624463000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038087000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2965,7 +3004,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624513000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038127000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2978,7 +3017,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624513000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038127000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3052,7 +3091,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624561000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038165000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3065,7 +3104,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624561000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038165000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3139,7 +3178,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624606000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038203000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3152,7 +3191,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624606000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038203000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3226,7 +3265,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624650000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038243000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3239,7 +3278,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624650000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038243000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3313,7 +3352,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624691000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038280000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3326,7 +3365,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624691000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038280000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3400,7 +3439,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777212585624738000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038317000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3413,7 +3452,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585624738000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038317000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3904,6 +3943,7 @@ public class B{
   int a; 
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -3979,6 +4019,7 @@ public class B{
   public B(){ }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -4054,6 +4095,7 @@ public class B{
   public B(int a){ }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -4134,6 +4176,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -4214,6 +4257,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -4295,6 +4339,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -4574,6 +4619,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -4645,7 +4691,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1777212585625427000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661038982000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4658,7 +4704,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625427000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661038982000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4731,7 +4777,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1777212585625472000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661039022000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4744,7 +4790,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625472000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661039022000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4817,7 +4863,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777212585625510000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661039064000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4830,7 +4876,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625510000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661039064000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4903,7 +4949,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777212585625552000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661039102000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4916,7 +4962,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625552000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661039102000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4989,7 +5035,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777212585625593000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661039140000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5002,7 +5048,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625593000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661039140000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5075,7 +5121,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777212585625630000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661039177000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5088,7 +5134,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625630000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661039177000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5161,7 +5207,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777212585625672000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661039217000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5174,7 +5220,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625672000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661039217000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5529,7 +5575,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1777212585625876000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040347000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5542,7 +5588,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625876000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040347000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -5615,7 +5661,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1777212585625915000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040388000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5628,7 +5674,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625915000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040388000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5705,6 +5751,7 @@ class Animal { }
 
 class Cachorro extends Animal { }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -5713,7 +5760,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585625961000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040430000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5726,7 +5773,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625961000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040430000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5737,7 +5784,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585625972000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040442000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5750,7 +5797,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625972000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040442000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5761,7 +5808,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585625985000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040453000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5774,7 +5821,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625985000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040453000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5785,7 +5832,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585625995000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040463000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5798,7 +5845,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585625995000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040463000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5865,6 +5912,7 @@ class B extends A { }
 
 class C extends B { }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -5873,7 +5921,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626024000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040491000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5886,7 +5934,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626024000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040491000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5897,7 +5945,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626035000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040505000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5910,7 +5958,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626035000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040505000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5921,7 +5969,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626050000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040518000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5934,7 +5982,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626050000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040518000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5945,7 +5993,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626061000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040529000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5958,7 +6006,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626061000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040529000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6024,13 +6072,14 @@ class Carro extends Veiculo { }
 
 class Moto extends Veiculo { }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626101000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040557000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6043,7 +6092,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626101000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040557000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6054,7 +6103,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626113000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040572000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6067,7 +6116,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626113000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040572000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6078,7 +6127,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626124000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040587000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6091,7 +6140,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626124000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040587000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6102,7 +6151,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777212585626135000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661040600000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6115,7 +6164,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585626135000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661040600000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6189,6 +6238,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6272,6 +6322,7 @@ public class Main extends A{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6355,6 +6406,7 @@ public class Main extends A{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6438,6 +6490,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6519,6 +6572,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6600,6 +6654,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6681,6 +6736,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6759,6 +6815,7 @@ public class Main extends A{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6837,6 +6894,7 @@ public class Main extends A{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6915,6 +6973,7 @@ public class Main extends A{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -6993,6 +7052,7 @@ public class Main extends A{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -7071,6 +7131,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -7157,6 +7218,7 @@ public class B extends A {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -7245,6 +7307,7 @@ public class B extends A {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -7346,6 +7409,7 @@ public class C extends B {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -7449,6 +7513,7 @@ public class Main {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -7538,6 +7603,7 @@ public class Main {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -7627,6 +7693,7 @@ public class Main {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -7923,6 +7990,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8007,6 +8075,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8091,6 +8160,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8175,6 +8245,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8257,6 +8328,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8339,6 +8411,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8421,6 +8494,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8503,6 +8577,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8585,6 +8660,7 @@ public class Main{
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
@@ -8696,7 +8772,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627322000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661041973000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8709,7 +8785,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627322000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661041973000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8755,7 +8831,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627340000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661041992000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8768,7 +8844,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627340000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661041992000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8814,7 +8890,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627356000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042011000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8827,7 +8903,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627356000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042011000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8873,7 +8949,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627373000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042028000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8886,7 +8962,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627373000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042028000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8932,7 +9008,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627390000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042046000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8945,7 +9021,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627390000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042046000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8991,7 +9067,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627416000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042061000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9004,7 +9080,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627416000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042061000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9050,7 +9126,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627432000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042081000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9063,7 +9139,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627432000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042081000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9109,7 +9185,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627451000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042100000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9122,7 +9198,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627451000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042100000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9168,7 +9244,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627512000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042115000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9181,7 +9257,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627512000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042115000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9227,7 +9303,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627528000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042151000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9240,7 +9316,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627528000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042151000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9287,7 +9363,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627546000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042171000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9300,7 +9376,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627546000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042171000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9346,7 +9422,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627562000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042189000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9359,7 +9435,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627562000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042189000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9405,7 +9481,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627581000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042212000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9418,7 +9494,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627581000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042212000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9464,7 +9540,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627598000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042231000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9477,7 +9553,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627598000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042231000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9525,7 +9601,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627614000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042253000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9538,7 +9614,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627614000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042253000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9584,7 +9660,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777212585627636000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661042280000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9597,7 +9673,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627636000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661042280000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9759,7 +9835,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777212585627743000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661043672000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9772,7 +9848,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627743000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661043672000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9835,7 +9911,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777212585627789000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661043710000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9848,7 +9924,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627789000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661043710000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -10029,7 +10105,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777212585627882000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661043799000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10042,7 +10118,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627882000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661043799000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -10105,7 +10181,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777212585627925000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661043832000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10118,7 +10194,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585627925000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661043832000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -10366,6 +10442,7 @@ class A {
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 Qual relacionamento existe?
@@ -10434,6 +10511,7 @@ class A {
     B b;
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 Qual relacionamento existe?
@@ -10502,6 +10580,7 @@ class Casa {
     private final Porta porta = new Porta();
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 Qual relacionamento existe?
@@ -10564,7 +10643,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777212585628170000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661044544000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10577,7 +10656,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585628170000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661044544000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -10641,7 +10720,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777212585628216000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777226661044696000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10654,7 +10733,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777212585628216000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777226661044696000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11434,6 +11513,7 @@ class A {
     void metodo(B b) { }
 }
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;

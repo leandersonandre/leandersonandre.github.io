@@ -54,13 +54,16 @@ theme = "hextra"
   [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-  [params]
+[params]
   displayUpdatedDate = true
   dateFormat = "2 de January de 2006"
   displayUpdatedAuthor = true
-
-
   enableGitInfo = true
+  [params.math]
+  engine = "katex"
+  [params.math.katex]
+  base = "https://cdn.jsdelivr.net/npm/katex@0.16.22/dist"
+
 
 [markup]
   [markup.highlight]
