@@ -1,0 +1,192 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Complexidade</title>
+    <link>http://localhost:1313/tags/complexidade/</link>
+    <description>Recent content in Complexidade on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/complexidade/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Notação Big-O: como analisar a complexidade de algoritmos</title>
+      <link>http://localhost:1313/disciplinas/estd-1/big-o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/estd-1/big-o/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;O que é a notação Big-O&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-que-é-a-notação-big-o&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-que-%c3%a9-a-nota%c3%a7%c3%a3o-big-o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A notação Big-O descreve como o custo de um algoritmo cresce conforme o tamanho da entrada aumenta. Esse custo pode representar tanto tempo de execução quanto uso de memória, dependendo do tipo de análise.&lt;/p&gt;
+&lt;p&gt;Em vez de medir tempo real, que varia de máquina para máquina, a análise foca no comportamento assintótico, ou seja, no crescimento da função quando n se torna grande.&lt;/p&gt;
+&lt;p&gt;O objetivo não é saber exatamente quanto tempo um algoritmo leva, mas entender como ele escala.&lt;/p&gt;
+&lt;h2&gt;Por que não é utilizado o tempo real&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;por-que-não-é-utilizado-o-tempo-real&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#por-que-n%c3%a3o-%c3%a9-utilizado-o-tempo-real&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Medidas de tempo real dependem de fatores externos como hardware, sistema operacional, linguagem e otimizações do compilador. Isso torna comparações injustas ou inconsistentes.&lt;/p&gt;
+&lt;p&gt;A análise assintótica resolve esse problema ignorando detalhes de implementação e focando apenas no crescimento da função.&lt;/p&gt;
+&lt;h2&gt;Como a função de custo é construída&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;como-a-função-de-custo-é-construída&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#como-a-fun%c3%a7%c3%a3o-de-custo-%c3%a9-constru%c3%adda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Cada instrução de um algoritmo pode ser associada a um custo. Ao contar quantas vezes cada instrução é executada em função de n, obtemos uma função matemática de custo.&lt;/p&gt;
+&lt;p&gt;Por exemplo:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;soma&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;0&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;0&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;n&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#0550ae&#34;&gt;++&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;soma&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;soma&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Esse algoritmo pode ser representado por uma função como:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f(n) = 3n + 4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Por que é utilizado apenas o termo dominante&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;por-que-é-utilizado-apenas-o-termo-dominante&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#por-que-%c3%a9-utilizado-apenas-o-termo-dominante&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Quando analisamos crescimento assintótico, estamos interessados no comportamento para valores muito grandes de n. Nesse cenário, os termos menores se tornam irrelevantes.&lt;/p&gt;
+&lt;p&gt;Considere:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f(n) = 3n² + 10n + 7&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Para n pequeno, todos os termos influenciam o resultado. Porém, para n grande, o termo n² cresce muito mais rápido do que n ou constantes. Isso faz com que ele domine completamente o comportamento da função.&lt;/p&gt;
+&lt;p&gt;Por isso, simplificamos para:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;O(n²)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Essa simplificação não é perda de informação, mas uma forma de focar no fator que realmente impacta o crescimento.&lt;/p&gt;
+&lt;h2&gt;Classes de complexidade ordenadas por crescimento&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;classes-de-complexidade-ordenadas-por-crescimento&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#classes-de-complexidade-ordenadas-por-crescimento&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A tabela abaixo apresenta as principais classes de complexidade organizadas do melhor para o pior crescimento.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Classe&lt;/th&gt;
+          &lt;th&gt;Nome&lt;/th&gt;
+          &lt;th&gt;Comportamento&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;O(1)&lt;/td&gt;
+          &lt;td&gt;Constante&lt;/td&gt;
+          &lt;td&gt;não cresce com n&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;O(log n)&lt;/td&gt;
+          &lt;td&gt;Logarítmica&lt;/td&gt;
+          &lt;td&gt;cresce muito lentamente&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;O(n)&lt;/td&gt;
+          &lt;td&gt;Linear&lt;/td&gt;
+          &lt;td&gt;cresce proporcionalmente&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;O(n log n)&lt;/td&gt;
+          &lt;td&gt;Linearítmica&lt;/td&gt;
+          &lt;td&gt;crescimento moderado&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;O(n²)&lt;/td&gt;
+          &lt;td&gt;Quadrática&lt;/td&gt;
+          &lt;td&gt;crescimento rápido&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;O(2ⁿ)&lt;/td&gt;
+          &lt;td&gt;Exponencial&lt;/td&gt;
+          &lt;td&gt;crescimento explosivo&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Quanto mais abaixo na tabela, mais caro o algoritmo se torna para entradas grandes.&lt;/p&gt;
+&lt;h2&gt;Comparação visual de crescimento&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparação-visual-de-crescimento&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#compara%c3%a7%c3%a3o-visual-de-crescimento&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div role=&#34;img&#34; aria-label=&#34;Diagrama&#34;&gt;
+  &lt;pre class=&#34;mermaid hx:mt-6&#34;&gt;
+    graph LR
+A[&amp;#34;O(1)&amp;#34;] --&amp;gt; B[&amp;#34;O(log n)&amp;#34;]
+B --&amp;gt; C[&amp;#34;O(n)&amp;#34;]
+C --&amp;gt; D[&amp;#34;O(n log n)&amp;#34;]
+D --&amp;gt; E[&amp;#34;O(n²)&amp;#34;]
+E --&amp;gt; F[&amp;#34;O(2ⁿ)&amp;#34;]
+  &lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;Esse gráfico mostra que pequenas diferenças na fórmula podem gerar impactos enormes no desempenho quando n cresce.&lt;/p&gt;
+&lt;h2&gt;Crescimento aproximado das funções&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;crescimento-aproximado-das-funções&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#crescimento-aproximado-das-fun%c3%a7%c3%b5es&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div role=&#34;img&#34; aria-label=&#34;Diagrama&#34;&gt;
+  &lt;pre class=&#34;mermaid hx:mt-6&#34;&gt;
+    xychart-beta
+    title &amp;#34;Crescimento assintótico (comparação conceitual)&amp;#34;
+    x-axis [0,1,2,3,4,5,6,7,8,9]
+    y-axis &amp;#34;custo&amp;#34; 0 --&amp;gt; 100
+
+    line &amp;#34;O(1)&amp;#34;     [1,1,1,1,1,1,1,1,1,1]
+    line &amp;#34;O(log n)&amp;#34; [0,1,2,2,3,3,3,3,4,4]
+    line &amp;#34;O(n)&amp;#34;     [0,1,2,3,4,5,6,7,8,9]
+    line &amp;#34;O(n²)&amp;#34;    [0,1,4,9,16,25,36,49,64,81]
+  &lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;O gráfico é apenas ilustrativo, mas ajuda a visualizar como cada classe cresce em relação às outras.&lt;/p&gt;
+&lt;h2&gt;Tempo e espaço na análise de complexidade&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tempo-e-espaço-na-análise-de-complexidade&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tempo-e-espa%c3%a7o-na-an%c3%a1lise-de-complexidade&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A notação Big-O pode ser usada para analisar dois aspectos diferentes de um algoritmo.&lt;/p&gt;
+&lt;p&gt;O primeiro é o &lt;strong&gt;tempo de execução&lt;/strong&gt;, que mede quantas operações são realizadas em função de n. Por exemplo, um algoritmo O(n²) executa muito mais operações do que um O(n) quando a entrada cresce.&lt;/p&gt;
+&lt;p&gt;O segundo é o &lt;strong&gt;espaço em memória&lt;/strong&gt;, que mede quanto armazenamento adicional o algoritmo precisa. Um algoritmo pode ser rápido, mas consumir muita memória, ou consumir pouca memória, mas ser lento.&lt;/p&gt;
+&lt;p&gt;Por exemplo, um algoritmo de ordenação pode ser O(n log n) em tempo e O(1) em espaço, enquanto outro pode ser O(n log n) em tempo e O(n) em espaço.&lt;/p&gt;
+&lt;p&gt;Essa distinção é importante porque em sistemas reais muitas vezes há um trade-off entre tempo e memória.&lt;/p&gt;
+&lt;h2&gt;Busca linear e busca binária&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;busca-linear-e-busca-binária&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#busca-linear-e-busca-bin%c3%a1ria&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A busca linear percorre todos os elementos até encontrar o valor desejado, resultando em O(n). Já a busca binária divide o problema ao meio a cada passo, resultando em O(log n), mas exige que o conjunto esteja ordenado.&lt;/p&gt;
+&lt;p&gt;Essa diferença mostra como a estrutura de dados influencia diretamente a complexidade.&lt;/p&gt;
+&lt;h2&gt;Conclusão&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;conclusão&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclus%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A notação Big-O é uma ferramenta fundamental para análise de algoritmos porque permite abstrair detalhes de implementação e focar apenas no crescimento.&lt;/p&gt;
+&lt;p&gt;O uso do termo dominante não é uma simplificação arbitrária, mas uma consequência direta do comportamento das funções para grandes valores de entrada. Em escala, apenas o crescimento mais significativo importa, enquanto os demais termos perdem relevância.&lt;/p&gt;
+&lt;p&gt;Com isso, é possível comparar algoritmos de forma objetiva e tomar decisões mais eficientes sobre tempo e espaço.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
