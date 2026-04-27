@@ -16,6 +16,19 @@ toc: false
   {{< card link="/disciplinas/estd-1/lista-encadeada-circular" title="Lista Encadeada Circular" >}}
   {{< card link="/disciplinas/estd-1/comparacao-entre-listas-encadeadas" title="Comparação entre Lista Encadeadas" >}}
 {{< /cards >}}
+<br><br>
+
+{{< cards  cols="1" >}}
+  {{< card link="/disciplinas/estd-1/arranjos-questoes" title="Questões sobre Arranjos" >}}
+  {{< card link="/disciplinas/estd-1/arranjo-ordenado-questoes" title="Questões sobre Arranjos Ordenados" >}}
+  {{< card link="/disciplinas/estd-1/complexidade-de-algoritmos-questoes" title="Questões sobre Complexidade de Algoritmos" >}}
+  {{< card link="/disciplinas/estd-1/big-o-questoes" title="Questões sobre Big-O" >}}
+  {{< card link="/disciplinas/estd-1/lista-baseada-em-arranjos-questoes" title="Questões sobre Lista baseada em Arranjos" >}}
+  {{< card link="/disciplinas/estd-1/lista-simplesmente-encadeada-questoes" title="Questões sobre Lista Simplesmente Encadeada" >}}
+  {{< card link="/disciplinas/estd-1/lista-duplamente-encadeada-questoes" title="Questões sobre Lista Duplamente Encadeada" >}}
+  {{< card link="/disciplinas/estd-1/lista-encadeada-circular-questoes" title="Questões sobre Lista Encadeada Circular" >}}
+  {{< card link="/disciplinas/estd-1/comparacao-entre-listas-encadeadas-questoes" title="Questões sobre a diferença entre Lista Encadeadas" >}}
+{{< /cards >}}
 
 <br>
 
