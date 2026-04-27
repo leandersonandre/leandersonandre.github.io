@@ -1,0 +1,564 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Variáveis</title>
+    <link>http://localhost:1313/tags/vari%C3%A1veis/</link>
+    <description>Recent content in Variáveis on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/vari%C3%A1veis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Questões sobre Teste de Mesa</title>
+      <link>http://localhost:1313/disciplinas/apc-1/teste-mesa-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/teste-mesa-questoes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule o código abaixo e informe o valor final de x.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 2
+
+while x &lt; 6:
+    x += 2
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;Condição&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;x = 2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;x &amp;lt; 6 → true&lt;/td&gt;
+    &lt;td&gt;true&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;x += 2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;x &amp;lt; 6 → true&lt;/td&gt;
+    &lt;td&gt;true&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;x += 2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;x &amp;lt; 6 → false&lt;/td&gt;
+    &lt;td&gt;false&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+**Resposta final:** x = 6
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule a execução e informe a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+y = 1
+
+for i in range(3):
+    y = y * 2
+    print(y)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;i&lt;/th&gt;
+    &lt;th&gt;y&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;y = 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;i = 0&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;y = y * 2&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;print(y)&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;i = 1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;y = y * 2&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;print(y)&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;i = 2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;y = y * 2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;print(y)&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+**Resposta final:**  
+2  
+4  
+8
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule o código abaixo e informe o valor final de soma.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+soma = 0
+
+for i in range(1, 5):
+    if i % 2 == 0:
+        soma += i
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;Condição&lt;/th&gt;
+    &lt;th&gt;i&lt;/th&gt;
+    &lt;th&gt;soma&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;soma = 0&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;i = 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;i % 2 == 0 → false&lt;/td&gt;
+    &lt;td&gt;false&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;i = 2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;i % 2 == 0 → true&lt;/td&gt;
+    &lt;td&gt;true&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;soma += i&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;i = 3&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;false&lt;/td&gt;
+    &lt;td&gt;false&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;i = 4&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;true&lt;/td&gt;
+    &lt;td&gt;true&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;soma += i&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+**Resposta final:** soma = 6
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule o código abaixo e informe a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 1
+
+for i in range(3):
+    x = x + i
+    print(x)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;i&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;x = 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;i = 0&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;x = x + i&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;print(x)&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;i = 1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;x = x + i&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;print(x)&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;i = 2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;x = x + i&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;print(x)&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+**Resposta final:**  
+1  
+2  
+4
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

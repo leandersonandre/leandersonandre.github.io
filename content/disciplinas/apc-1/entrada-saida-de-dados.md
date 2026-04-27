@@ -84,6 +84,88 @@ print("Caminho: C:\\pasta\\arquivo")
 print("Ele disse: \"Olá\"")
 ```
 
+## Cores no terminal com ANSI
+
+As sequências ANSI permitem formatar a saída no terminal, incluindo cores de texto.
+
+A estrutura básica é:
+
+* `\033[` → início da sequência
+* `código` → define a cor/estilo
+* `m` → finaliza a configuração
+
+Para resetar a formatação:
+
+* `\033[0m`
+
+
+### Códigos de cores
+
+<table border="1">
+  <tr>
+    <th>Código</th>
+    <th>Cor</th>
+    <th>Exemplo</th>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Preto</td>
+    <td><span style="color:black">Texto preto</span></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Vermelho</td>
+    <td><span style="color:red">Texto vermelho</span></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Verde</td>
+    <td><span style="color:green">Texto verde</span></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Amarelo</td>
+    <td><span style="color:gold">Texto amarelo</span></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Azul</td>
+    <td><span style="color:blue">Texto azul</span></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Magenta</td>
+    <td><span style="color:magenta">Texto magenta</span></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Ciano</td>
+    <td><span style="color:cyan">Texto ciano</span></td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Branco</td>
+    <td><span style="color:gray">Texto branco</span></td>
+  </tr>
+</table>
+
+---
+
+### Exemplo em Python
+
+```python
+print("\033[31mVermelho\033[0m")
+print("\033[32mVerde\033[0m")
+print("\033[34mAzul\033[0m")
+```
+
+---
+
+### Observação
+
+O efeito das cores aparece apenas no terminal (não no código em si). Sempre use `\033[0m` para evitar que o restante do texto fique colorido
+
+
 
 ## Entrada de dados
 

@@ -15,6 +15,124 @@
     
     
     <item>
+      <title>Algoritmos</title>
+      <link>http://localhost:1313/disciplinas/apc-1/algoritmos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/algoritmos/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;O que são algoritmos?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-que-são-algoritmos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-que-s%c3%a3o-algoritmos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Algoritmos são sequências finitas e bem definidas de passos utilizados para resolver um problema ou executar uma tarefa. Eles funcionam como uma “receita”, onde cada instrução deve ser seguida em ordem para chegar ao resultado esperado.&lt;/p&gt;
+&lt;p&gt;Na computação, algoritmos são a base de todos os programas, desde operações simples até sistemas complexos.&lt;/p&gt;
+&lt;h2&gt;Características de um algoritmo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;características-de-um-algoritmo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#caracter%c3%adsticas-de-um-algoritmo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Um algoritmo eficiente deve possuir:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Finitude&lt;/strong&gt;: deve terminar após um número finito de passos&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Precisão&lt;/strong&gt;: cada instrução deve ser clara e sem ambiguidades&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Entrada (input)&lt;/strong&gt;: pode receber dados iniciais&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Saída (output)&lt;/strong&gt;: deve produzir um resultado&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eficiência&lt;/strong&gt;: deve resolver o problema de forma adequada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Formas de representar algoritmos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;formas-de-representar-algoritmos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#formas-de-representar-algoritmos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Linguagem natural&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;linguagem-natural&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#linguagem-natural&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Descrição passo a passo usando texto simples.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pegue dois números&lt;/li&gt;
+&lt;li&gt;Some os dois&lt;/li&gt;
+&lt;li&gt;Mostre o resultado&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Pseudocódigo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pseudocódigo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pseudoc%c3%b3digo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma forma intermediária entre linguagem natural e código de programação.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;início
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  leia A
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  leia B
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  soma ← A + B
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  escreva soma
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Fluxograma&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fluxograma&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fluxograma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Representação gráfica do algoritmo usando símbolos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oval → início/fim&lt;/li&gt;
+&lt;li&gt;Retângulo → processo&lt;/li&gt;
+&lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
+&lt;li&gt;Losango → decisão&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;plantuml-1777248895649418000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nstart\n\n:Leia o número N;\n\nif (N mod 2 == 0?) then (sim)\n  :Exibir \u0022Par\u0022;\nelse (não)\n  :Exibir \u0022Ímpar\u0022;\nendif\n\nstop\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1777248895649418000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+&lt;h2&gt;Tipos de algoritmos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tipos-de-algoritmos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tipos-de-algoritmos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sequenciais&lt;/strong&gt;: executam passos em ordem fixa&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Condicionais&lt;/strong&gt;: tomam decisões (if/else)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repetitivos&lt;/strong&gt;: usam laços (for, while)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recursivos&lt;/strong&gt;: chamam a si mesmos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Exemplo de algoritmo: número par ou ímpar&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-de-algoritmo-número-par-ou-ímpar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exemplo-de-algoritmo-n%c3%bamero-par-ou-%c3%admpar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;início
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  leia N
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  se N mod 2 = 0 então
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     escreva &amp;#34;Par&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  senão
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     escreva &amp;#34;Ímpar&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Importância dos algoritmos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;importância-dos-algoritmos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#import%c3%a2ncia-dos-algoritmos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Os algoritmos são essenciais porque:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Permitem resolver problemas de forma lógica&lt;/li&gt;
+&lt;li&gt;São a base da programação&lt;/li&gt;
+&lt;li&gt;Ajudam a otimizar processos&lt;/li&gt;
+&lt;li&gt;Podem ser aplicados em diversas áreas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusão&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;conclusão&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclus%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Aprender algoritmos é o primeiro passo para desenvolver lógica de programação. Um bom algoritmo torna qualquer solução mais eficiente e organizada.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Decisões</title>
       <link>http://localhost:1313/disciplinas/apc-1/decisoes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -346,6 +464,87 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;h2&gt;Cores no terminal com ANSI&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cores-no-terminal-com-ansi&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cores-no-terminal-com-ansi&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;As sequências ANSI permitem formatar a saída no terminal, incluindo cores de texto.&lt;/p&gt;
+&lt;p&gt;A estrutura básica é:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\033[&lt;/code&gt; → início da sequência&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;código&lt;/code&gt; → define a cor/estilo&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;m&lt;/code&gt; → finaliza a configuração&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para resetar a formatação:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\033[0m&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Códigos de cores&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;códigos-de-cores&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%b3digos-de-cores&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Código&lt;/th&gt;
+    &lt;th&gt;Cor&lt;/th&gt;
+    &lt;th&gt;Exemplo&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;Preto&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:black&#34;&gt;Texto preto&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;31&lt;/td&gt;
+    &lt;td&gt;Vermelho&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:red&#34;&gt;Texto vermelho&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;32&lt;/td&gt;
+    &lt;td&gt;Verde&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:green&#34;&gt;Texto verde&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;33&lt;/td&gt;
+    &lt;td&gt;Amarelo&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:gold&#34;&gt;Texto amarelo&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;34&lt;/td&gt;
+    &lt;td&gt;Azul&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:blue&#34;&gt;Texto azul&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;35&lt;/td&gt;
+    &lt;td&gt;Magenta&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:magenta&#34;&gt;Texto magenta&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;36&lt;/td&gt;
+    &lt;td&gt;Ciano&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:cyan&#34;&gt;Texto ciano&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;37&lt;/td&gt;
+    &lt;td&gt;Branco&lt;/td&gt;
+    &lt;td&gt;&lt;span style=&#34;color:gray&#34;&gt;Texto branco&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;Exemplo em Python&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-em-python&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exemplo-em-python&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;\033&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;[31mVermelho&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;\033&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;[0m&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;\033&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;[32mVerde&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;\033&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;[0m&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;\033&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;[34mAzul&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;\033&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;[0m&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#observa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O efeito das cores aparece apenas no terminal (não no código em si). Sempre use &lt;code&gt;\033[0m&lt;/code&gt; para evitar que o restante do texto fique colorido&lt;/p&gt;
 &lt;h2&gt;Entrada de dados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;entrada-de-dados&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#entrada-de-dados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A função &lt;code&gt;input()&lt;/code&gt; permite ler dados digitados pelo usuário.&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -396,8 +595,8 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h2&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#observa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A entrada e saída de dados são fundamentais para tornar programas interativos, permitindo comunicação entre o usuário e o sistema.&lt;/p&gt;
+&lt;h2&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#observa%c3%a7%c3%a3o-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A entrada e saída de dados são fundamentais para tornar programas interativos, permitindo comunicação entre o usuário e o sistema.&lt;/p&gt;
 
       </description>
     </item>
@@ -2425,6 +2624,1151 @@ print(nulos)
 
 
 
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios sobre Teste de Mesa</title>
+      <link>http://localhost:1313/disciplinas/apc-1/teste-de-mesa-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/teste-de-mesa-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Dado o código abaixo, faça o teste de mesa e informe os valores finais de x, y e z.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 5
+y = 3
+z = x + y
+x = z - 2
+y = x + z
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+    &lt;th&gt;y&lt;/th&gt;
+    &lt;th&gt;z&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;x = 5&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;y = 3&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;z = x + y&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;x = z - 2&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;y = x + z&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final:  
+x = 6, y = 14, z = 8
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule a execução do código e informe o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+a = 10
+b = 2
+c = a * b
+c = c - a
+print(c)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;a&lt;/th&gt;
+    &lt;th&gt;b&lt;/th&gt;
+    &lt;th&gt;c&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;a = 10&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;b = 2&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;c = a * b&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;c = c - a&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;print(c)&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: 10
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Dado o código abaixo, qual será a saída?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 4
+y = 6
+
+if x &gt; y:
+    print(x)
+else:
+    print(y)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+    &lt;th&gt;y&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;x = 4&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;y = 6&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;x &amp;gt; y → false&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;else → print(y)&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: 6
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Faça o teste de mesa do código abaixo e informe a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 7
+
+if x % 2 == 0:
+    print(&#34;Par&#34;)
+else:
+    print(&#34;Ímpar&#34;)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;x = 7&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;x % 2 == 0 → false&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;else → print(&#34;Ímpar&#34;)&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;Ímpar&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: Ímpar
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule a execução do código e informe o valor final de soma.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+soma = 0
+
+for i in range(1, 4):
+    soma += i
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;i&lt;/th&gt;
+    &lt;th&gt;soma&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;soma = 0&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;i = 1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;soma += i&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;i = 2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;soma += i&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;i = 3&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;soma += i&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;fim do for&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: soma = 6
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Dado o código abaixo, informe a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+for i in range(3):
+    print(i)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+    &lt;th&gt;i&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Início do for&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;i = 0&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;print(i)&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;i = 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;print(i)&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;i = 2&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;print(i)&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;fim do for&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: 
+&lt;br&gt;
+0  
+&lt;br&gt;
+1  
+&lt;br&gt;
+2
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Faça o teste de mesa e informe o valor final de x.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 1
+
+for i in range(4):
+    x = x * 2
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;i&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Inicialização&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;for i = 0&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;x = x * 2&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;for i = 1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;x = x * 2&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;for i = 2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;x = x * 2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;for i = 3&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;x = x * 2&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;16&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;fim do for&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;16&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: x = 16
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule o código abaixo e informe a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 0
+
+while x &lt; 3:
+    print(x)
+    x += 1
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;x = 0&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;while (0 &amp;lt; 3) → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;print(x)&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;x += 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;while (1 &amp;lt; 3) → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;print(x)&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;x += 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;while (2 &amp;lt; 3) → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;print(x)&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;x += 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;while (3 &amp;lt; 3) → false&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final:  
+&lt;br&gt;
+0  
+&lt;br&gt;
+1  
+&lt;br&gt;
+2
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Dado o código abaixo, qual será o valor final de y?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 2
+y = 5
+
+while x &lt; 5:
+    y += x
+    x += 1
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+    &lt;th&gt;x&lt;/th&gt;
+    &lt;th&gt;y&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Inicialização&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;while (2 &amp;lt; 5) → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;y += x&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;x += 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;while (3 &amp;lt; 5) → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;y += x&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;x += 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;while (4 &amp;lt; 5) → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;y += x&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;x += 1&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;while (5 &amp;lt; 5) → false&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: y = 14
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule a execução e informe a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+a = 3
+b = 4
+
+if a &gt; 2 and b &lt; 5:
+    print(&#34;A&#34;)
+else:
+    print(&#34;B&#34;)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Passo&lt;/th&gt;
+    &lt;th&gt;Instrução&lt;/th&gt;
+    &lt;th&gt;Saída&lt;/th&gt;
+    &lt;th&gt;a&lt;/th&gt;
+    &lt;th&gt;b&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Inicialização&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;a &amp;gt; 2 → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;b &amp;lt; 5 → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;true and true → true&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;print(&#34;A&#34;)&lt;/td&gt;
+    &lt;td&gt;A&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta final: A
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
 
 
 &lt;/div&gt;
@@ -4466,7 +5810,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777226661037134000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502922828000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4479,7 +5823,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037134000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502922828000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4598,7 +5942,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777226661037182000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502922878000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4611,7 +5955,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037182000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502922878000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4726,7 +6070,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777226661037232000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502922923000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4739,7 +6083,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037232000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502922923000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4854,7 +6198,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777226661037277000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502922970000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4867,7 +6211,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037277000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502922970000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4989,7 +6333,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777226661037323000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923018000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5002,7 +6346,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037323000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923018000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5121,7 +6465,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777226661037379000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923075000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5134,7 +6478,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037379000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923075000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6477,7 +7821,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1777226661037969000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923660000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6490,7 +7834,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661037969000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923660000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6564,7 +7908,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038008000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923702000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6577,7 +7921,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038008000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923702000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6651,7 +7995,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038047000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923739000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6664,7 +8008,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038047000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923739000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6738,7 +8082,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038087000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923776000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6751,7 +8095,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038087000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923776000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6825,7 +8169,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038127000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923824000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6838,7 +8182,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038127000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923824000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6912,7 +8256,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038165000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923861000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6925,7 +8269,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038165000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923861000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6999,7 +8343,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038203000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923901000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7012,7 +8356,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038203000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923901000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7086,7 +8430,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038243000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923952000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7099,7 +8443,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038243000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923952000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7173,7 +8517,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038280000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502923989000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7186,7 +8530,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038280000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502923989000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7260,7 +8604,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777226661038317000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502924028000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7273,7 +8617,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038317000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502924028000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8512,7 +9856,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1777226661038982000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502924776000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8525,7 +9869,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661038982000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502924776000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8598,7 +9942,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1777226661039022000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502924854000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8611,7 +9955,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661039022000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502924854000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8684,7 +10028,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777226661039064000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502925236000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8697,7 +10041,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661039064000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502925236000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8770,7 +10114,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777226661039102000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502925314000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8783,7 +10127,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661039102000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502925314000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8856,7 +10200,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777226661039140000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502925384000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8869,7 +10213,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661039140000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502925384000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8942,7 +10286,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777226661039177000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502925602000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8955,7 +10299,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661039177000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502925602000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9028,7 +10372,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777226661039217000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502926111000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9041,7 +10385,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661039217000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502926111000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11320,7 +12664,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1777226661040347000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927449000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11333,7 +12677,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040347000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927449000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -11406,7 +12750,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1777226661040388000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927489000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11419,7 +12763,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040388000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927489000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11505,7 +12849,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040430000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927531000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11518,7 +12862,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040430000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927531000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11529,7 +12873,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040442000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927543000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11542,7 +12886,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040442000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927543000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11553,7 +12897,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040453000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927555000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11566,7 +12910,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040453000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927555000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11577,7 +12921,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040463000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927568000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11590,7 +12934,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040463000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927568000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11666,7 +13010,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040491000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927601000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11679,7 +13023,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040491000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927601000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11690,7 +13034,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040505000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927612000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11703,7 +13047,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040505000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927612000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11714,7 +13058,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040518000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927624000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11727,7 +13071,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040518000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927624000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11738,7 +13082,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040529000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927635000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11751,7 +13095,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040529000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927635000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11824,7 +13168,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040557000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927664000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11837,7 +13181,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040557000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927664000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11848,7 +13192,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040572000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927675000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11861,7 +13205,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040572000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927675000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11872,7 +13216,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040587000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927686000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11885,7 +13229,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040587000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927686000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -11896,7 +13240,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777226661040600000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502927700000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -11909,7 +13253,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661040600000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502927700000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14517,7 +15861,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661041973000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928851000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14530,7 +15874,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661041973000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928851000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14576,7 +15920,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661041992000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928867000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14589,7 +15933,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661041992000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928867000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14635,7 +15979,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042011000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928883000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14648,7 +15992,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042011000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928883000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14694,7 +16038,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042028000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928898000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14707,7 +16051,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042028000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928898000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14753,7 +16097,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042046000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928916000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14766,7 +16110,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042046000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928916000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14812,7 +16156,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042061000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928930000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14825,7 +16169,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042061000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928930000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14871,7 +16215,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042081000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928948000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14884,7 +16228,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042081000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928948000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14930,7 +16274,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042100000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928963000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14943,7 +16287,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042100000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928963000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14989,7 +16333,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042115000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928977000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15002,7 +16346,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042115000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928977000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15048,7 +16392,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042151000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502928993000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15061,7 +16405,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042151000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502928993000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15108,7 +16452,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042171000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502929009000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15121,7 +16465,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042171000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502929009000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15167,7 +16511,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042189000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502929024000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15180,7 +16524,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042189000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502929024000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15226,7 +16570,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042212000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502929041000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15239,7 +16583,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042212000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502929041000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15285,7 +16629,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042231000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502929060000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15298,7 +16642,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042231000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502929060000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15346,7 +16690,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042253000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502929076000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15359,7 +16703,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042253000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502929076000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15405,7 +16749,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777226661042280000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502929093000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15418,7 +16762,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661042280000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502929093000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -18047,7 +19391,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777226661043672000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502930442000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -18060,7 +19404,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661043672000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502930442000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -18123,7 +19467,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777226661043710000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502930476000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -18136,7 +19480,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661043710000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502930476000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -18317,7 +19661,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777226661043799000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502930562000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -18330,7 +19674,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661043799000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502930562000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -18393,7 +19737,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777226661043832000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502930595000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -18406,7 +19750,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661043832000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502930595000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -18855,7 +20199,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777226661044544000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502930801000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -18868,7 +20212,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661044544000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502930801000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -18932,7 +20276,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777226661044696000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777228502930834000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -18945,7 +20289,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777226661044696000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777228502930834000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -21642,6 +22986,527 @@ O incremento deveria estar dentro do while, senão gera loop infinito.
     </item>
     
     <item>
+      <title>Questões sobre Teste de Mesa</title>
+      <link>http://localhost:1313/disciplinas/apc-1/teste-de-mesa-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/teste-de-mesa-questoes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor final de x.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 1
+
+for i in range(3):
+    x = x + i
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     4 
+&lt;/li&gt;
+ 
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     5 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     6 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;&lt;th&gt;Passo&lt;/th&gt;&lt;th&gt;Instrução&lt;/th&gt;&lt;th&gt;i&lt;/th&gt;&lt;th&gt;x&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;x = 1&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;i = 0 → x = x + i&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;i = 1 → x = x + i&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;i = 2 → x = x + i&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta: x = 4
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule o código abaixo e identifique a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+for i in range(1, 4):
+    print(i * 2)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     1 2 3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     2 4 6 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     2 3 4 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     0 2 4 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;&lt;th&gt;Passo&lt;/th&gt;&lt;th&gt;i&lt;/th&gt;&lt;th&gt;Saída&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Saída final: 2 4 6
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor final de soma.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+soma = 0
+
+for i in range(2, 5):
+    soma += i
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     6 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     7 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     9 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     12 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;&lt;th&gt;Passo&lt;/th&gt;&lt;th&gt;i&lt;/th&gt;&lt;th&gt;soma&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta: soma = 9
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Simule o código abaixo e identifique a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+i = 0
+
+while i &lt; 3:
+    print(i)
+    i += 1
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     1 2 3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     0 1 2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     0 1 2 3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Loop infinito 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;&lt;th&gt;Passo&lt;/th&gt;&lt;th&gt;Condição&lt;/th&gt;&lt;th&gt;i&lt;/th&gt;&lt;th&gt;Saída&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0 &amp;lt; 3 (true)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1 &amp;lt; 3 (true)&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;2 &amp;lt; 3 (true)&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;3 &amp;lt; 3 (false)&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor final de x.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+x = 0
+
+for i in range(3):
+    x += 2
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     4 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     6 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     8 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;&lt;th&gt;Passo&lt;/th&gt;&lt;th&gt;i&lt;/th&gt;&lt;th&gt;x&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Resposta: x = 6
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique a saída.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+for i in range(3):
+    if i == 1:
+        continue
+    print(i)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     0 1 2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     1 2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     0 2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     2 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;&lt;th&gt;Passo&lt;/th&gt;&lt;th&gt;i&lt;/th&gt;&lt;th&gt;Ação&lt;/th&gt;&lt;th&gt;Saída&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;print&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;continue&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;print&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Saída final: 0 2
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Questões sobre Variáveis e tipos de dados</title>
       <link>http://localhost:1313/disciplinas/apc-1/variaveis-tipos-de-dados-questoes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23181,6 +25046,378 @@ float(3) converte para 3.0.
 &lt;a href=&#34;https://deepnote.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://deepnote.com/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Teste de Mesa</title>
+      <link>http://localhost:1313/disciplinas/apc-1/teste-de-mesa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/teste-de-mesa/</guid>
+      <description>
+        
+        
+        &lt;p&gt;O &lt;strong&gt;teste de mesa&lt;/strong&gt; é uma técnica utilizada para simular a execução de um algoritmo manualmente. Ele permite acompanhar, passo a passo, os valores das variáveis e entender como o algoritmo se comporta.&lt;/p&gt;
+&lt;p&gt;Essa técnica é muito útil para:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Identificar erros lógicos&lt;/li&gt;
+&lt;li&gt;Entender o fluxo de execução&lt;/li&gt;
+&lt;li&gt;Validar algoritmos antes de executar no computador&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tabela de acompanhamento&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tabela-de-acompanhamento&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tabela-de-acompanhamento&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Para realizar o teste de mesa, normalmente utilizamos uma tabela para registrar cada passo da execução.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Passo&lt;/th&gt;
+          &lt;th&gt;Instrução&lt;/th&gt;
+          &lt;th&gt;Saída&lt;/th&gt;
+          &lt;th&gt;Variáveis&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&amp;hellip;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Essa tabela ajuda a visualizar como os valores das variáveis mudam ao longo do tempo.&lt;/p&gt;
+&lt;h2&gt;Exemplo 1&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exemplo-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;z &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; z &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt; x
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;z &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; y &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; x &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;y&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;z&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Teste de mesa&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;teste-de-mesa&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#teste-de-mesa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Passo&lt;/th&gt;
+          &lt;th&gt;Instrução&lt;/th&gt;
+          &lt;th&gt;Saída&lt;/th&gt;
+          &lt;th&gt;x&lt;/th&gt;
+          &lt;th&gt;y&lt;/th&gt;
+          &lt;th&gt;z&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;x = 10&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;y = 8&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;z = 5*2 + y&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;x = x - 1&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;y = z - x&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;z = y + x - 4&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;print(x)&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;print(y)&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;print(z)&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Ao final da execução, os valores impressos serão:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;x = 9&lt;/li&gt;
+&lt;li&gt;y = 9&lt;/li&gt;
+&lt;li&gt;z = 14&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Exemplo com decisão&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-com-decisão&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exemplo-com-decis%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;idade &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite a sua idade&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; idade &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;18&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Você não pode dirigir um carro&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; idade &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;17&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Você pode dirigir um carro&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Teste de mesa (idade = 18)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;teste-de-mesa-idade--18&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#teste-de-mesa-idade--18&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Passo&lt;/th&gt;
+          &lt;th&gt;Instrução&lt;/th&gt;
+          &lt;th&gt;Saída&lt;/th&gt;
+          &lt;th&gt;idade&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;input&lt;/td&gt;
+          &lt;td&gt;Digite a sua idade&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;idade &amp;lt; 18&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;idade &amp;gt; 17&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;print&lt;/td&gt;
+          &lt;td&gt;Você pode dirigir um carro&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Teste de mesa (idade = 14)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;teste-de-mesa-idade--14&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#teste-de-mesa-idade--14&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Passo&lt;/th&gt;
+          &lt;th&gt;Instrução&lt;/th&gt;
+          &lt;th&gt;Saída&lt;/th&gt;
+          &lt;th&gt;idade&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;input&lt;/td&gt;
+          &lt;td&gt;Digite a sua idade&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;idade &amp;lt; 18&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;print&lt;/td&gt;
+          &lt;td&gt;Você não pode dirigir um carro&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;idade &amp;gt; 17&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note que os dois &lt;code&gt;if&lt;/code&gt; são independentes, ou seja, ambos podem ser avaliados.&lt;/p&gt;
+&lt;h2&gt;Exemplo 3&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exemplo-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Programa que determina o maior valor entre três números:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;A &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite o primeiro número&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;B &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite o segundo número&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite o terceiro número&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;maior &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;A &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; B &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;abs&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;A &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt; B&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;maior &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;maior &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; C &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;abs&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;maior &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt; C&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;maior &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;maior&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;maior&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;eh o maior&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Teste de mesa (A = 3, B = 1, C = 2)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;teste-de-mesa-a--3-b--1-c--2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#teste-de-mesa-a--3-b--1-c--2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Passo&lt;/th&gt;
+          &lt;th&gt;Instrução&lt;/th&gt;
+          &lt;th&gt;Saída&lt;/th&gt;
+          &lt;th&gt;A&lt;/th&gt;
+          &lt;th&gt;B&lt;/th&gt;
+          &lt;th&gt;C&lt;/th&gt;
+          &lt;th&gt;maior&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;input&lt;/td&gt;
+          &lt;td&gt;Digite A&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;input&lt;/td&gt;
+          &lt;td&gt;Digite B&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;input&lt;/td&gt;
+          &lt;td&gt;Digite C&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;cálculo&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;3.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;cálculo&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;3.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;int&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;print&lt;/td&gt;
+          &lt;td&gt;3 eh o maior&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#observa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O teste de mesa deve ser feito com atenção à ordem de execução das instruções.&lt;/p&gt;
+&lt;p&gt;Cada linha do algoritmo deve ser analisada sequencialmente, atualizando os valores das variáveis conforme necessário.&lt;/p&gt;
+&lt;p&gt;Essa prática é essencial para desenvolver uma boa lógica de programação.&lt;/p&gt;
 
       </description>
     </item>

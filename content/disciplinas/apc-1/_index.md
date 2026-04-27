@@ -5,7 +5,7 @@ toc: false
 ---
 
 {{< cards cols="1" >}}
-  {{< card link="/disciplinas/apc-1/softwares-recomendados" title="Softwares Recomendados" >}}
+  {{< card link="/disciplinas/apc-1/algoritmos" title="Algoritmos" >}}
   {{< card link="/disciplinas/apc-1/variaveis-tipos-de-dados" title="Variáveis e Tipos de Dados" >}}
   {{< card link="/disciplinas/apc-1/variaveis-tipos-de-dados-questoes" title="Questões sobre Variáveis e Tipos de Dados" >}}
   {{< card link="/disciplinas/apc-1/entrada-saida-de-dados" title="Entrada e Saída de Dados" >}}
@@ -18,6 +18,8 @@ toc: false
   {{< card link="/disciplinas/apc-1/operadores-relacionais-logicos-questoes" title="Questões sobre Operadores Relacionais e Lógicos" >}}
 {{< /cards >}}
 
+<br>
+
 {{< cards  cols="1">}}
 
   {{< card link="/disciplinas/apc-1/decisoes" title="Decisões" >}}
@@ -27,6 +29,8 @@ toc: false
   {{< card link="/disciplinas/apc-1/decisoes-questoes" title="Questões" >}}
 {{< /cards >}}
 
+<br>
+
 {{< cards  cols="1">}}
   {{< card link="/disciplinas/apc-1/repeticoes" title="Repetições" >}}
 {{< /cards >}}
@@ -35,28 +39,19 @@ toc: false
   {{< card link="/disciplinas/apc-1/repeticoes-questoes" title="Questões" >}}
 {{< /cards >}}
 
-{{< cards  cols="1" >}}
-  {{< card link="/disciplinas/apc-1/referencias" title="Referências Bibliográficas" >}}
+<br>
+
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-1/teste-de-mesa" title="Teste de Mesa" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="/disciplinas/apc-1/teste-de-mesa-exercicios" title="Exercícios" >}}
+  {{< card link="/disciplinas/apc-1/teste-de-mesa-questoes" title="Questões" >}}
 {{< /cards >}}
 
-# bla 
-## bla
+<br>
 
-{{% steps %}}
-
-### Softwares Recomendados
-Conteúdo → [link](/disciplinas/apc-1/softwares-recomendados)  
-Exercícios → [link](/disciplinas/apc-1/softwares-recomendados-exercicios)  
-Questões → [link](/disciplinas/apc-1/softwares-recomendados-questoes)
-
-### Variáveis e Tipos de Dados
-Conteúdo → [link](/disciplinas/apc-1/variaveis-tipos-de-dados)  
-Exercícios → [link](/disciplinas/apc-1/variaveis-tipos-de-dados-exercicios)  
-Questões → [link](/disciplinas/apc-1/variaveis-tipos-de-dados-questoes)
-
-### Entrada e Saída de Dados
-Conteúdo → [link](/disciplinas/apc-1/entrada-saida-de-dados)  
-Exercícios → [link](/disciplinas/apc-1/entrada-saida-de-dados-exercicios)  
-Questões → [link](/disciplinas/apc-1/entrada-saida-de-dados-questoes)
-
-{{% /steps %}}
+{{< cards  cols="1" >}}
+  {{< card link="/disciplinas/apc-1/softwares-recomendados" title="Softwares Recomendados" >}}
+  {{< card link="/disciplinas/apc-1/referencias" title="Referências Bibliográficas" >}}
+{{< /cards >}}
