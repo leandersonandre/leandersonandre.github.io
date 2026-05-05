@@ -73,7 +73,7 @@
 &lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
 &lt;li&gt;Losango → decisão&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;plantuml-1777298576729353000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981838544918000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -86,7 +86,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576729353000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981838544918000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -161,7 +161,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298576982483000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439815313000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -174,7 +174,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576982483000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439815313000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1585,6 +1585,156 @@
 &lt;/div&gt;
 &lt;h2&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação-1&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#observa%c3%a7%c3%a3o-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A entrada e saída de dados são fundamentais para tornar programas interativos, permitindo comunicação entre o usuário e o sistema.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios</title>
+      <link>http://localhost:1313/disciplinas/apc-1/exercicios-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/exercicios-01/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Faça um programa que exibe no terminal um Triângulo de Pascal. O programa deve pedir a quantidades de linhas que o triângulo deverá ter.
+
+&lt;table style=&#34;text-align:left; border-collapse: collapse;&#34;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Modifique o programa do Triângulo de pascal utilizando as demais  estruturas de repetição ( ENQUANTO-FAÇA, REPITA-ATÉ, PARA=ATÉ-FAÇA).
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Modifique o programa do Triângulo de Pascal para que imprima o triângulo alinhado a direita.
+
+&lt;table style=&#34;text-align:right; border-collapse: collapse;&#34;&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&#34;5&#34;&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&#34;4&#34;&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&#34;3&#34;&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&#34;2&#34;&gt;1&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Escreva um programa que permita a entrada de um número N inteiro e então exiba a decomposição desse número em seus fatores primos, exemplo:
+&lt;br&gt;&lt;br&gt;
+6 = 2 (1) 3(1)
+&lt;br&gt;
+9 = 3(2)
+&lt;br&gt;
+24 = 2(3) 3(1)
+&lt;br&gt;&lt;br&gt;
+Onde, o número entre parênteses indica a potência do fator.
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;b&gt;Problema A - Atenção a Reunião (Maratona Fase Regional 2025)&lt;/b&gt;
+&lt;br&gt;
+
+ &lt;a href=&#34;https://github.com/univille-cp/cadernos-de-problemas/blob/main/maratona-de-programacao/regional/2024.pdf&#34;&gt;Descrição da questão &lt;/a&gt;
+
+&lt;br&gt;
+&lt;a href=&#34;https://codeforces.com/gym/105327/problem/A&#34;&gt;
+    Submeta a sua solução no CodeForces&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -5023,7 +5173,7 @@ Resposta final: A
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298576989923000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439827860000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5036,7 +5186,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576989923000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439827860000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5518,7 +5668,7 @@ Resposta final: A
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298577001941000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439834165000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5531,7 +5681,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298577001941000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439834165000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6023,7 +6173,7 @@ Resposta final: A
 &lt;/div&gt;
 &lt;h2&gt;Representação estrutural&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-estrutural&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#representa%c3%a7%c3%a3o-estrutural&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A lista circular forma um ciclo contínuo entre os nós.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1777298577003905000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439838121000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6036,7 +6186,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298577003905000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439838121000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6551,7 +6701,7 @@ Resposta final: A
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298577007829000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439842665000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6564,7 +6714,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298577007829000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439842665000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12481,7 +12631,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777298576772215000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439592747000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12494,7 +12644,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576772215000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439592747000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12613,7 +12763,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777298576772286000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439592794000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12626,7 +12776,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576772286000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439592794000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12741,7 +12891,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777298576772332000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439592840000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12754,7 +12904,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576772332000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439592840000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12869,7 +13019,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777298576772377000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439592897000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12882,7 +13032,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576772377000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439592897000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13004,7 +13154,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777298576772424000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439592960000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13017,7 +13167,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576772424000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439592960000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13136,7 +13286,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777298576772487000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593007000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13149,7 +13299,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576772487000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593007000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14492,7 +14642,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1777298576773049000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593585000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14505,7 +14655,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773049000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593585000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14579,7 +14729,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773088000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593624000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14592,7 +14742,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773088000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593624000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14666,7 +14816,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773126000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593663000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14679,7 +14829,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773126000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593663000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14753,7 +14903,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773164000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593703000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14766,7 +14916,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773164000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593703000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14840,7 +14990,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773218000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593745000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14853,7 +15003,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773218000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593745000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14927,7 +15077,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773256000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593783000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14940,7 +15090,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773256000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593783000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15014,7 +15164,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773295000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593821000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15027,7 +15177,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773295000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593821000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15101,7 +15251,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773341000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593864000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15114,7 +15264,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773341000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593864000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15188,7 +15338,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773380000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593901000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15201,7 +15351,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773380000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593901000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15275,7 +15425,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777298576773418000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439593953000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15288,7 +15438,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576773418000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439593953000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15555,6 +15705,22 @@ A função de custo é obtida somando quantas vezes cada instrução é executad
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Qual é a função de custo simplificada da busca linear apresentada?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public int buscaLinear(int[] vetor, int alvo) {
+    for (int i = 0; i &lt; vetor.length; i++) {
+        if (vetor[i] == alvo) {
+            return i;
+        }
+    }
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      f(n) = log n + 1 
@@ -15795,6 +15961,22 @@ O pior caso ocorre quando o elemento está no final ou não existe.
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Qual tipo de crescimento a busca linear apresenta?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public int buscaLinear(int[] vetor, int alvo) {
+    for (int i = 0; i &lt; vetor.length; i++) {
+        if (vetor[i] == alvo) {
+            return i;
+        }
+    }
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      Constante O(1) 
@@ -17200,7 +17382,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1777298576774468000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439594929000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17213,7 +17395,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774468000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439594929000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17286,7 +17468,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1777298576774543000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439594980000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17299,7 +17481,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774543000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439594980000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17372,7 +17554,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777298576774580000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439595020000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17385,7 +17567,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774580000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439595020000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17458,7 +17640,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777298576774619000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439595058000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17471,7 +17653,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774619000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439595058000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17544,7 +17726,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777298576774657000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439595096000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17557,7 +17739,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774657000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439595096000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17630,7 +17812,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777298576774697000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439595135000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17643,7 +17825,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774697000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439595135000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17716,7 +17898,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777298576774737000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439595175000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17729,7 +17911,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576774737000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439595175000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20008,7 +20190,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1777298576775837000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596231000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20021,7 +20203,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775837000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596231000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -20094,7 +20276,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1777298576775875000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596270000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20107,7 +20289,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775875000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596270000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20193,7 +20375,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576775915000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596312000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20206,7 +20388,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775915000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596312000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20217,7 +20399,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576775926000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596324000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20230,7 +20412,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775926000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596324000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20241,7 +20423,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576775937000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596335000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20254,7 +20436,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775937000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596335000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20265,7 +20447,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576775949000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596346000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20278,7 +20460,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775949000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596346000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20354,7 +20536,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576775981000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596374000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20367,7 +20549,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775981000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596374000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20378,7 +20560,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576775992000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596385000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20391,7 +20573,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576775992000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596385000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20402,7 +20584,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576776008000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596396000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20415,7 +20597,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576776008000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596396000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20426,7 +20608,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576776020000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596407000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20439,7 +20621,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576776020000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596407000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20512,7 +20694,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576776049000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596433000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20525,7 +20707,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576776049000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596433000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20536,7 +20718,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576776060000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596445000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20549,7 +20731,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576776060000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596445000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20560,7 +20742,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576776072000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596457000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20573,7 +20755,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576776072000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596457000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20584,7 +20766,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777298576776083000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439596468000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20597,7 +20779,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576776083000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439596468000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26380,7 +26562,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778756000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599248000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26393,7 +26575,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778756000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599248000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26439,7 +26621,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778773000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599266000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26452,7 +26634,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778773000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599266000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26498,7 +26680,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778788000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599282000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26511,7 +26693,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778788000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599282000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26557,7 +26739,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778814000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599297000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26570,7 +26752,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778814000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599297000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26616,7 +26798,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778829000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599313000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26629,7 +26811,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778829000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599313000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26675,7 +26857,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778843000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599328000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26688,7 +26870,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778843000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599328000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26734,7 +26916,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778872000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599354000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26747,7 +26929,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778872000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599354000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26793,7 +26975,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778887000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599369000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26806,7 +26988,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778887000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599369000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26852,7 +27034,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778901000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599384000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26865,7 +27047,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778901000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599384000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26911,7 +27093,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778916000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599400000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26924,7 +27106,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778916000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599400000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26971,7 +27153,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778931000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599414000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26984,7 +27166,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778931000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599414000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27030,7 +27212,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778946000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599429000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -27043,7 +27225,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778946000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599429000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27089,7 +27271,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778962000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599445000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -27102,7 +27284,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778962000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599445000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27148,7 +27330,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778977000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599460000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -27161,7 +27343,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778977000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599460000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27209,7 +27391,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576778992000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599476000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -27222,7 +27404,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576778992000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599476000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27268,7 +27450,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777298576779009000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439599493000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -27281,7 +27463,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576779009000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439599493000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27296,6 +27478,619 @@ A herança é usada porque Ônibus e Trem são tipos específicos de Veículo, c
 &lt;/div&gt;
 
 
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Questões sobre Notação Big-O: como analisar a complexidade de algoritmos</title>
+      <link>http://localhost:1313/disciplinas/estd-1/big-o-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/estd-1/big-o-questoes/</guid>
+      <description>
+        
+        
+        
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o principal objetivo da notação Big-O?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Medir o tempo exato de execução em segundos 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Descrever o crescimento do custo de um algoritmo conforme o tamanho da entrada aumenta 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Contar o número de linhas do código 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Melhorar a sintaxe do código 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A notação Big-O descreve como o custo de um algoritmo cresce conforme o tamanho da entrada aumenta, focando no comportamento assintótico.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Por que não usamos tempo real na análise de algoritmos?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Porque Big-O só funciona em Java 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Porque o tempo real depende de hardware, sistema operacional e linguagem 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Porque tempo real não existe 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Porque todos os algoritmos executam no mesmo tempo 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O tempo real varia conforme o ambiente de execução, tornando a comparação inconsistente.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+O que significa o termo “assintótico” na análise de complexidade?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Análise do código em tempo de compilação 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Comportamento quando n é muito pequeno 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Comportamento do algoritmo quando n tende a valores grandes 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Número de variáveis do algoritmo 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Análise assintótica foca no comportamento do algoritmo quando n cresce muito.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é a forma correta simplificada de f(n) = 3n² + 10n + 7 em Big-O?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(n²) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(3n² + 10n + 7) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(log n) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Em Big-O, consideramos apenas o termo dominante, que é n².
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Por que ignoramos constantes na notação Big-O?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Porque constantes não existem na matemática 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Porque elas não influenciam o crescimento para grandes valores de n 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Porque deixam o código mais lento 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Porque são sempre zero 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Constantes não afetam o comportamento assintótico quando n é grande.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual classe cresce mais rapidamente?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(n log n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(n²) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(2ⁿ) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O(2ⁿ) é exponencial e cresce muito mais rápido que as demais classes.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual das alternativas representa crescimento constante?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(log n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(1) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(n²) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O(1) indica que o custo não depende do tamanho da entrada.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual algoritmo geralmente tem complexidade O(log n)?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Busca linear 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Busca binária 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Dois loops aninhados 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Percorrer array inteiro 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A busca binária reduz o problema pela metade a cada passo, resultando em O(log n).
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+O que significa dizer que O(n²) é pior que O(n)?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Significa que usa menos memória 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Significa que cresce mais lentamente 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Significa que o custo cresce mais rapidamente com o aumento de n 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Significa que sempre executa mais rápido 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O(n²) cresce mais rapidamente que O(n), tornando-se mais custoso para entradas grandes.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é a ordem correta de crescimento (do melhor para o pior)?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n²), O(n), O(1), O(log n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(1), O(log n), O(n), O(n²) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(log n), O(1), O(n²), O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(n), O(1), O(n²), O(log n) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A ordem correta é: O(1) &lt; O(log n) &lt; O(n) &lt; O(n²).
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 
 
@@ -29910,7 +30705,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777298576780280000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439601060000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29923,7 +30718,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576780280000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439601060000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29986,7 +30781,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777298576780313000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439601095000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29999,7 +30794,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576780313000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439601095000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30180,7 +30975,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777298576780403000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439601182000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -30193,7 +30988,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576780403000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439601182000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30256,7 +31051,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777298576780435000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439601215000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -30269,7 +31064,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576780435000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439601215000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30718,7 +31513,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777298576780650000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439601436000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -30731,7 +31526,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576780650000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439601436000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30795,7 +31590,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777298576780695000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439601470000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -30808,7 +31603,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576780695000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439601470000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

@@ -413,6 +413,22 @@ A função de custo é obtida somando quantas vezes cada instrução é executad
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Qual é a função de custo simplificada da busca linear apresentada?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public int buscaLinear(int[] vetor, int alvo) {
+    for (int i = 0; i &lt; vetor.length; i++) {
+        if (vetor[i] == alvo) {
+            return i;
+        }
+    }
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      f(n) = log n + 1 
@@ -653,6 +669,22 @@ O pior caso ocorre quando o elemento está no final ou não existe.
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Qual tipo de crescimento a busca linear apresenta?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public int buscaLinear(int[] vetor, int alvo) {
+    for (int i = 0; i &lt; vetor.length; i++) {
+        if (vetor[i] == alvo) {
+            return i;
+        }
+    }
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      Constante O(1) 

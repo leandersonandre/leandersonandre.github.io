@@ -43,7 +43,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298576982483000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439815313000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -56,7 +56,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576982483000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439815313000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1030,7 +1030,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298576989923000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439827860000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1043,7 +1043,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298576989923000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439827860000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1523,7 +1523,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777298577007829000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1777981439842665000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1536,7 +1536,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777298577007829000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1777981439842665000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4591,6 +4591,22 @@ A função de custo é obtida somando quantas vezes cada instrução é executad
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Qual é a função de custo simplificada da busca linear apresentada?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public int buscaLinear(int[] vetor, int alvo) {
+    for (int i = 0; i &lt; vetor.length; i++) {
+        if (vetor[i] == alvo) {
+            return i;
+        }
+    }
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      f(n) = log n + 1 
@@ -4831,6 +4847,22 @@ O pior caso ocorre quando o elemento está no final ou não existe.
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Qual tipo de crescimento a busca linear apresenta?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public int buscaLinear(int[] vetor, int alvo) {
+    for (int i = 0; i &lt; vetor.length; i++) {
+        if (vetor[i] == alvo) {
+            return i;
+        }
+    }
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
      Constante O(1) 
@@ -6845,6 +6877,619 @@ Qual operação tem custo O(n) em uma lista simplesmente encadeada?
 
             
 Remover o fim exige percorrer a lista até o penúltimo nó, resultando em O(n).
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Questões sobre Notação Big-O: como analisar a complexidade de algoritmos</title>
+      <link>http://localhost:1313/disciplinas/estd-1/big-o-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/estd-1/big-o-questoes/</guid>
+      <description>
+        
+        
+        
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é o principal objetivo da notação Big-O?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Medir o tempo exato de execução em segundos 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Descrever o crescimento do custo de um algoritmo conforme o tamanho da entrada aumenta 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Contar o número de linhas do código 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Melhorar a sintaxe do código 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A notação Big-O descreve como o custo de um algoritmo cresce conforme o tamanho da entrada aumenta, focando no comportamento assintótico.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Por que não usamos tempo real na análise de algoritmos?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Porque Big-O só funciona em Java 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Porque o tempo real depende de hardware, sistema operacional e linguagem 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Porque tempo real não existe 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Porque todos os algoritmos executam no mesmo tempo 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O tempo real varia conforme o ambiente de execução, tornando a comparação inconsistente.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+O que significa o termo “assintótico” na análise de complexidade?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Análise do código em tempo de compilação 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Comportamento quando n é muito pequeno 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Comportamento do algoritmo quando n tende a valores grandes 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Número de variáveis do algoritmo 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Análise assintótica foca no comportamento do algoritmo quando n cresce muito.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é a forma correta simplificada de f(n) = 3n² + 10n + 7 em Big-O?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(n²) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(3n² + 10n + 7) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(log n) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Em Big-O, consideramos apenas o termo dominante, que é n².
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Por que ignoramos constantes na notação Big-O?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Porque constantes não existem na matemática 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Porque elas não influenciam o crescimento para grandes valores de n 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Porque deixam o código mais lento 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Porque são sempre zero 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Constantes não afetam o comportamento assintótico quando n é grande.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual classe cresce mais rapidamente?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(n log n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(n²) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(2ⁿ) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O(2ⁿ) é exponencial e cresce muito mais rápido que as demais classes.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual das alternativas representa crescimento constante?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(log n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(1) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(n²) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O(1) indica que o custo não depende do tamanho da entrada.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual algoritmo geralmente tem complexidade O(log n)?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Busca linear 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Busca binária 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Dois loops aninhados 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Percorrer array inteiro 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A busca binária reduz o problema pela metade a cada passo, resultando em O(log n).
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+O que significa dizer que O(n²) é pior que O(n)?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Significa que usa menos memória 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Significa que cresce mais lentamente 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Significa que o custo cresce mais rapidamente com o aumento de n 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Significa que sempre executa mais rápido 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O(n²) cresce mais rapidamente que O(n), tornando-se mais custoso para entradas grandes.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual é a ordem correta de crescimento (do melhor para o pior)?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O(n²), O(n), O(1), O(log n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O(1), O(log n), O(n), O(n²) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O(log n), O(1), O(n²), O(n) 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O(n), O(1), O(n²), O(log n) 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A ordem correta é: O(1) &lt; O(log n) &lt; O(n) &lt; O(n²).
 
         &lt;/div&gt;
     &lt;/div&gt;

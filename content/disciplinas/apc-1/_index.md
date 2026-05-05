@@ -51,6 +51,13 @@ toc: false
 
 <br>
 
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-1/exercicios-01" title="Exercícios 5 de Maio" >}}
+{{< /cards >}}
+
+<br>
+
+
 {{< cards  cols="1" >}}
   {{< card link="/disciplinas/apc-1/softwares-recomendados" title="Softwares Recomendados" >}}
   {{< card link="/disciplinas/apc-1/referencias" title="Referências Bibliográficas" >}}
