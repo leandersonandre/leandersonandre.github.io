@@ -69,11 +69,11 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439834165000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470631584000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ListaDuplamenteEncadeada \u007b\n\n* inicio: No\n* fim: No\n* tamanho: int\n\n- adicionarInicio(valor: int)\n- adicionarFim(valor: int)\n- removerInicio(): int\n- removerFim(): int\n- obterInicio(): int\n- obterFim(): int\n- obter(indice: int): int\n- inserir(indice: int, valor: int)\n- remover(indice: int): int\n- percorrer()\n  \u007d\n\nclass No \u007b\n\n* valor: int\n* proximo: No\n* anterior: No\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaDuplamenteEncadeada \u007b\n\n* inicio: No\n* fim: No\n* tamanho: int\n\n- adicionarInicio(valor: int)\n- adicionarFim(valor: int)\n- removerInicio(): int\n- removerFim(): int\n- obterInicio(): int\n- obterFim(): int\n- obter(indice: int): int\n- inserir(indice: int, valor: int)\n- remover(indice: int): int\n- percorrer()\n  \u007d\n\nclass No \u007b\n\n* valor: int\n* proximo: No\n* anterior: No\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -82,7 +82,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439834165000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470631584000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

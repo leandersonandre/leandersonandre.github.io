@@ -297,11 +297,11 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1777981439596231000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386412000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nClassB -L-|\u003e ClassA\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nClassB -L-|\u003e ClassA\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -310,7 +310,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596231000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386412000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -383,11 +383,11 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1777981439596270000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386451000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ClasseV\nclass ClasseL\nclass ClasseF\nclass ClasseB\nclass ClasseG\nclass ClasseA\nclass ClasseH\nclass ClasseK\n\nClasseV o-- ClasseL\nClasseF \u003c|-- ClasseB\nClasseG --\u003e ClasseA\nClasseH *-- ClasseK\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ClasseV\nclass ClasseL\nclass ClasseF\nclass ClasseB\nclass ClasseG\nclass ClasseA\nclass ClasseH\nclass ClasseK\n\nClasseV o-- ClasseL\nClasseF \u003c|-- ClasseB\nClasseG --\u003e ClasseA\nClasseH *-- ClasseK\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -396,7 +396,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596270000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386451000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -482,11 +482,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596312000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386493000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nAnimal --|\u003e Cachorro\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nAnimal --|\u003e Cachorro\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -495,7 +495,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596312000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386493000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -506,11 +506,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596324000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386505000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCachorro --|\u003e Animal\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCachorro --|\u003e Animal\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -519,7 +519,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596324000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386505000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -530,11 +530,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596335000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386516000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nAnimal o-- Cachorro\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nAnimal o-- Cachorro\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -543,7 +543,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596335000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386516000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -554,11 +554,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596346000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386528000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCachorro *-- Animal\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCachorro *-- Animal\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -567,7 +567,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596346000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386528000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -643,11 +643,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596374000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386556000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nC \u003c|-- B \nB \u003c|-- A\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nC \u003c|-- B \nB \u003c|-- A\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -656,7 +656,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596374000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386556000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -667,11 +667,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596385000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386568000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nB \u003c|-- A\nC \u003c|-- B\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nB \u003c|-- A\nC \u003c|-- B\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -680,7 +680,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596385000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386568000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -691,11 +691,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596396000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386579000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nA \u003c|-- B \nB \u003c|-- C\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nA \u003c|-- B \nB \u003c|-- C\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -704,7 +704,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596396000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386579000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -715,11 +715,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596407000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386590000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nA o-- B\nB o-- C\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nA o-- B\nB o-- C\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -728,7 +728,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596407000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386590000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -801,11 +801,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596433000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386618000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro \u003c|-- Moto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCarro \u003c|-- Moto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -814,7 +814,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596433000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386618000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -825,11 +825,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596445000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386629000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro \u003c|-- Veiculo\nMoto \u003c|-- Veiculo\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCarro \u003c|-- Veiculo\nMoto \u003c|-- Veiculo\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -838,7 +838,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596445000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386629000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -849,11 +849,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596457000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386641000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -862,7 +862,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596457000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386641000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -873,11 +873,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596468000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386651000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro o-- Veiculo\nMoto o-- Veiculo\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCarro o-- Veiculo\nMoto o-- Veiculo\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -886,7 +886,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596468000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386651000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

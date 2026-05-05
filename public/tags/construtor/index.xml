@@ -1181,11 +1181,11 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1777981439594929000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470384957000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\u007b\n\u002bb:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A\u007b\n\u002bb:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1194,7 +1194,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439594929000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470384957000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1267,11 +1267,11 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1777981439594980000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470384999000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass H\u007b\n\u002ba:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass H\u007b\n\u002ba:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1280,7 +1280,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439594980000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470384999000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1353,11 +1353,11 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595020000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385040000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass H\u007b\n\u002ba:int\n\u002bb:int\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass H\u007b\n\u002ba:int\n\u002bb:int\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1366,7 +1366,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595020000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385040000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1439,11 +1439,11 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595058000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385086000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun():double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n\u002bfun():double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1452,7 +1452,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595058000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385086000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1525,11 +1525,11 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595096000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385127000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun(a:int)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n\u002bfun(a:int)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1538,7 +1538,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595096000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385127000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1611,11 +1611,11 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595135000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385178000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n-fun(a:int)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n-fun(a:int)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1624,7 +1624,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595135000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385178000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1697,11 +1697,11 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595175000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385218000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun(b:String, a:int) : int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n\u002bfun(b:String, a:int) : int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1710,7 +1710,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595175000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385218000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

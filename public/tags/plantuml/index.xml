@@ -50,11 +50,11 @@ class Person {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;&lt;/p&gt;
-&lt;div id=&#34;plantuml-1777981439811357000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470609310000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Person \u007b\n  -id: long\n  \u002bgetId():long\n  \u002bsetId(id: long)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Person \u007b\n  -id: long\n  \u002bgetId():long\n  \u002bsetId(id: long)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -63,7 +63,7 @@ class Person {
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439811357000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470609310000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -104,11 +104,11 @@ class User{
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439534991000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470321768000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass User\u007b\n  -name:String\n  -username:String\n  -active:boolean\n  \u002bisActive():boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass User\u007b\n  -name:String\n  -username:String\n  -active:boolean\n  \u002bisActive():boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -117,7 +117,7 @@ class User{
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439534991000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470321768000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

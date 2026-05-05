@@ -73,11 +73,11 @@
 &lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
 &lt;li&gt;Losango → decisão&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;plantuml-1777981838544918000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470336488000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nstart\n\n:Leia o número N;\n\nif (N mod 2 == 0?) then (sim)\n  :Exibir \u0022Par\u0022;\nelse (não)\n  :Exibir \u0022Ímpar\u0022;\nendif\n\nstop\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nstart\n\n:Leia o número N;\n\nif (N mod 2 == 0?) then (sim)\n  :Exibir \u0022Par\u0022;\nelse (não)\n  :Exibir \u0022Ímpar\u0022;\nendif\n\nstop\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -86,7 +86,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981838544918000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470336488000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -161,11 +161,11 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439815313000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470616836000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ArranjoOrdenado \u007b\n  - arranjo: int[] \n  - capacidade: int \n  - tamanho: int \n\n  \u002b ArranjoOrdenado(capacidade: int )\n  \u002b inserir(valor: int )\n  \u002b deletar(valor: int )\n  \u002b buscar(valor: int ): int\n  \u002b  percorrer()\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ArranjoOrdenado \u007b\n  - arranjo: int[] \n  - capacidade: int \n  - tamanho: int \n\n  \u002b ArranjoOrdenado(capacidade: int )\n  \u002b inserir(valor: int )\n  \u002b deletar(valor: int )\n  \u002b buscar(valor: int ): int\n  \u002b  percorrer()\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -174,7 +174,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439815313000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470616836000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5146,6 +5146,374 @@ Resposta final: A
     </item>
     
     <item>
+      <title>Interfaces</title>
+      <link>http://localhost:1313/disciplinas/poo-1/interfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/interfaces/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Um contrato que define um conjunto de métodos que uma classe deve implementar, sem fornecer a implementação desses métodos.&lt;/p&gt;
+&lt;p&gt;Diferente da herança, interfaces definem contratos que podem ser implementados por diferentes classes, permitindo maior flexibilidade e desacoplamento.&lt;/p&gt;
+&lt;h3&gt;Objetivos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;objetivos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#objetivos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A interface permite:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstração de código&lt;/li&gt;
+&lt;li&gt;Ativar o mecanismo de polimorfismo&lt;/li&gt;
+&lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1778014470356298000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778014470356298000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+&lt;h4&gt;Código Java&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;código-java&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%b3digo-java&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Por padrão, os métodos em uma interface são públicos e abstratos, ou seja, não possuem um corpo(implementação).
+No entanto, a partir do Java 8, interfaces também podem possuir métodos default e static com implementação.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Printable&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A interface pode possuir atributos, porém são sempre públicos, estáticos (escopo de classe) e finais (constantes).&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Constants&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;double&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;PI&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;3&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;1415&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Implementação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;implementação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#implementa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Os métodos devem ser implementados/realizados em uma classe concreta.&lt;/p&gt;
+&lt;h4&gt;Passo 1&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;passo-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#passo-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Indicar na classe a implementação/realização de interface. Após o nome da classe utilize a palavra-chave &lt;strong&gt;implements&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;implements&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Printable&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// getters e setters ocultos&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;Passo 2&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;passo-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#passo-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;A classe obrigatoriamente deve implementar todos os métodos da interface. Recomenda-se sempre utilizar a anotação &lt;strong&gt;@Override&lt;/strong&gt; nos métodos implementados.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;implements&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Printable&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Override&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Name: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Instanciação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;instanciação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#instancia%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Um objeto não pode ser criado a partir de uma interface. Deve ser sempre instanciado um objeto que implementa a interface.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// ERRADO&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Printable&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;c&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Printable&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// CERTO&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Person&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Polimorfismo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;polimorfismo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#polimorfismo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Um objeto que implementa uma interface pode ser referenciado por uma variável do tipo da interface. O polimorfismo é um dos objetivos de se utilizar interfaces.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Printable&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;c&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Retornar ao objeto original,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// deve ser utilizado o operador de casting&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Person&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;c&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O casting só é seguro quando o objeto realmente é do tipo convertido.
+A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Múltiplas realizações de interface&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-realizações-de-interface&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%baltiplas-realiza%c3%a7%c3%b5es-de-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe pode realizar a implementação de múltiplas interfaces.&lt;/p&gt;
+&lt;div id=&#34;plantuml-1778014470356311000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\ninterface Cloneable  \u003c\u003cinterface\u003e\u003e \u007b\n  \n\u007d\n\nclass Person\u007b\n\u007d\n\nPrintable \u003c|.. Person\nCloneable \u003c|.. Person\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778014470356311000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+&lt;p&gt;Os nomes das interfaces implementadas são separadas pela vírgula.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;implements&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Printable&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Cloneable&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Override&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Interfaces podem definir métodos com a mesma assinatura.
+Quando esses métodos possuem implementação (default), podem ocorrer conflitos que devem ser resolvidos pela classe. Esse problema é conhecido como &amp;ldquo;diamond problem&amp;rdquo; (problema do diamante).&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;A&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;B&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;B&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;implements&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;A&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;B&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Override&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;A&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// resolve conflito&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Herança de interfaces&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herança-de-interfaces&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#heran%c3%a7a-de-interfaces&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As interfaces podem realizar uma ou múltiplas heranças de outras interfaces.&lt;/p&gt;
+&lt;div id=&#34;plantuml-1778014470356321000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\ninterface Cloneable  \u003c\u003cinterface\u003e\u003e \u007b\n  \n\u007d\nCloneable \u003c|-- Printable\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778014470356321000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+&lt;p&gt;Na implementação, se utiliza a palavra-chave &lt;strong&gt;extends&lt;/strong&gt; para indicar herança de interfaces.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Cloneable&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Printable&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;extends&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Cloneable&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Interface na linguagem Java&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;interface-na-linguagem-java&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#interface-na-linguagem-java&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A linguagem Java fornece recursos extras na criação de interfaces.&lt;/p&gt;
+&lt;h4&gt;Método default&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;método-default&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%a9todo-default&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;O método default permite adicionar uma implementação padrão em um método da interface. Caso a classe que implementa a interface não sobrescreva o método, será utilizado o método default da interface.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Printable&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;     &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Hello print&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;implements&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Printable&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Não é obrigatório implementar o método print&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;Método static&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;método-static&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%a9todo-static&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Interfaces também podem possuir métodos estáticos. Esses métodos pertencem à própria interface e não às classes que a implementam.
+Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong&gt;static&lt;/strong&gt; não são herdados pelas classes que implementam a interface.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Printable&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;static&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;printMessage&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Printing...&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Utilização:&lt;/strong&gt;  O método estático deve ser acessado diretamente pela interface:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Printable&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;printMessage&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Não é possível acessar o método estático a partir de uma instância da classe:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Printable&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// ERRADO&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;printMessage&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; Métodos estáticos em interfaces são geralmente utilizados para:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;métodos utilitários relacionados à interface&lt;/li&gt;
+&lt;li&gt;métodos auxiliares&lt;/li&gt;
+&lt;li&gt;criação de objetos (factory methods, em alguns casos)&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Lista Baseada em Arranjo</title>
       <link>http://localhost:1313/disciplinas/estd-1/lista-baseada-em-arranjos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5173,11 +5541,11 @@ Resposta final: A
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439827860000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470620611000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -5186,7 +5554,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439827860000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470620611000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5668,11 +6036,11 @@ Resposta final: A
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439834165000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470631584000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ListaDuplamenteEncadeada \u007b\n\n* inicio: No\n* fim: No\n* tamanho: int\n\n- adicionarInicio(valor: int)\n- adicionarFim(valor: int)\n- removerInicio(): int\n- removerFim(): int\n- obterInicio(): int\n- obterFim(): int\n- obter(indice: int): int\n- inserir(indice: int, valor: int)\n- remover(indice: int): int\n- percorrer()\n  \u007d\n\nclass No \u007b\n\n* valor: int\n* proximo: No\n* anterior: No\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaDuplamenteEncadeada \u007b\n\n* inicio: No\n* fim: No\n* tamanho: int\n\n- adicionarInicio(valor: int)\n- adicionarFim(valor: int)\n- removerInicio(): int\n- removerFim(): int\n- obterInicio(): int\n- obterFim(): int\n- obter(indice: int): int\n- inserir(indice: int, valor: int)\n- remover(indice: int): int\n- percorrer()\n  \u007d\n\nclass No \u007b\n\n* valor: int\n* proximo: No\n* anterior: No\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -5681,7 +6049,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439834165000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470631584000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6173,11 +6541,11 @@ Resposta final: A
 &lt;/div&gt;
 &lt;h2&gt;Representação estrutural&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-estrutural&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#representa%c3%a7%c3%a3o-estrutural&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A lista circular forma um ciclo contínuo entre os nós.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1777981439838121000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470634865000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ListaCircular \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n\u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaCircular \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n\u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -6186,7 +6554,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439838121000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470634865000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6701,11 +7069,11 @@ Resposta final: A
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439842665000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470636985000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -6714,7 +7082,7 @@ Resposta final: A
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439842665000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470636985000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12631,11 +12999,11 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592747000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382733000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -idade: int\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -idade: int\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -12644,7 +13012,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592747000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382733000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12763,11 +13131,11 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592794000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382784000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Produto \u007b\n  \u002bnome: String\n  \u002bpreco: double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Produto \u007b\n  \u002bnome: String\n  \u002bpreco: double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -12776,7 +13144,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592794000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382784000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12891,11 +13259,11 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592840000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382835000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Conta \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Conta \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -12904,7 +13272,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592840000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382835000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13019,11 +13387,11 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592897000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382886000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Retangulo \u007b\n  -largura: double\n  -altura: double\n  \u002bRetangulo(l: double, a: double)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Retangulo \u007b\n  -largura: double\n  -altura: double\n  \u002bRetangulo(l: double, a: double)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -13032,7 +13400,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592897000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382886000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13154,11 +13522,11 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592960000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382938000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Cliente \u007b\n  -nome: String\n  \u002bsetNome(nome: String): void\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Cliente \u007b\n  -nome: String\n  \u002bsetNome(nome: String): void\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -13167,7 +13535,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592960000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382938000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13286,11 +13654,11 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439593007000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382989000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Calculadora \u007b\n  \u002bsomar(a: int, b: int): int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Calculadora \u007b\n  \u002bsomar(a: int, b: int): int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -13299,7 +13667,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593007000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382989000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14642,11 +15010,11 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1777981439593585000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383541000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Retangulo \u007b\n  largura : int\n  altura : int\n  obterArea() : int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Retangulo \u007b\n  largura : int\n  altura : int\n  obterArea() : int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -14655,7 +15023,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593585000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383541000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14729,11 +15097,11 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593624000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383579000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A \u007b\n  nome : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A \u007b\n  nome : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -14742,7 +15110,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593624000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383579000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14816,11 +15184,11 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593663000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383620000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A \u007b\n  \u002bb:int\n  \u002bc:double\n  metodo() : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A \u007b\n  \u002bb:int\n  \u002bc:double\n  metodo() : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -14829,7 +15197,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593663000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383620000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14903,11 +15271,11 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593703000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383663000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass C \u007b\n  metodo() : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass C \u007b\n  metodo() : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -14916,7 +15284,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593703000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383663000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14990,11 +15358,11 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593745000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383708000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int) : int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int) : int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -15003,7 +15371,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593745000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383708000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15077,11 +15445,11 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593783000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383751000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -15090,7 +15458,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593783000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383751000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15164,11 +15532,11 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593821000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383793000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass D \u007b\n  b : int\n  executar(a:int) : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass D \u007b\n  b : int\n  executar(a:int) : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -15177,7 +15545,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593821000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383793000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15251,11 +15619,11 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593864000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383835000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -15264,7 +15632,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593864000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383835000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15338,11 +15706,11 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593901000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383878000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -15351,7 +15719,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593901000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383878000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15425,11 +15793,11 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593953000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383919000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass G \u007b\n  executar() : void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass G \u007b\n  executar() : void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -15438,7 +15806,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593953000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383919000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17382,11 +17750,11 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1777981439594929000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470384957000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\u007b\n\u002bb:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A\u007b\n\u002bb:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17395,7 +17763,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439594929000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470384957000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17468,11 +17836,11 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1777981439594980000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470384999000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass H\u007b\n\u002ba:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass H\u007b\n\u002ba:int\n-c:double\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17481,7 +17849,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439594980000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470384999000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17554,11 +17922,11 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595020000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385040000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass H\u007b\n\u002ba:int\n\u002bb:int\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass H\u007b\n\u002ba:int\n\u002bb:int\n\u002bmetodo():String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17567,7 +17935,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595020000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385040000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17640,11 +18008,11 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595058000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385086000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun():double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n\u002bfun():double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17653,7 +18021,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595058000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385086000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17726,11 +18094,11 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595096000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385127000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun(a:int)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n\u002bfun(a:int)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17739,7 +18107,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595096000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385127000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17812,11 +18180,11 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595135000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385178000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n-fun(a:int)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n-fun(a:int)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17825,7 +18193,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595135000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385178000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17898,11 +18266,11 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1777981439595175000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470385218000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass J\u007b\n\u002bfun(b:String, a:int) : int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass J\u007b\n\u002bfun(b:String, a:int) : int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -17911,7 +18279,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439595175000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470385218000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20190,11 +20558,11 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1777981439596231000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386412000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nClassB -L-|\u003e ClassA\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nClassB -L-|\u003e ClassA\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20203,7 +20571,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596231000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386412000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -20276,11 +20644,11 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1777981439596270000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386451000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ClasseV\nclass ClasseL\nclass ClasseF\nclass ClasseB\nclass ClasseG\nclass ClasseA\nclass ClasseH\nclass ClasseK\n\nClasseV o-- ClasseL\nClasseF \u003c|-- ClasseB\nClasseG --\u003e ClasseA\nClasseH *-- ClasseK\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ClasseV\nclass ClasseL\nclass ClasseF\nclass ClasseB\nclass ClasseG\nclass ClasseA\nclass ClasseH\nclass ClasseK\n\nClasseV o-- ClasseL\nClasseF \u003c|-- ClasseB\nClasseG --\u003e ClasseA\nClasseH *-- ClasseK\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20289,7 +20657,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596270000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386451000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20375,11 +20743,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596312000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386493000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nAnimal --|\u003e Cachorro\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nAnimal --|\u003e Cachorro\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20388,7 +20756,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596312000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386493000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20399,11 +20767,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596324000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386505000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCachorro --|\u003e Animal\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCachorro --|\u003e Animal\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20412,7 +20780,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596324000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386505000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20423,11 +20791,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596335000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386516000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nAnimal o-- Cachorro\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nAnimal o-- Cachorro\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20436,7 +20804,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596335000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386516000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20447,11 +20815,11 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596346000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386528000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCachorro *-- Animal\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCachorro *-- Animal\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20460,7 +20828,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596346000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386528000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20536,11 +20904,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596374000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386556000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nC \u003c|-- B \nB \u003c|-- A\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nC \u003c|-- B \nB \u003c|-- A\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20549,7 +20917,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596374000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386556000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20560,11 +20928,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596385000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386568000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nB \u003c|-- A\nC \u003c|-- B\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nB \u003c|-- A\nC \u003c|-- B\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20573,7 +20941,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596385000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386568000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20584,11 +20952,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596396000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386579000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nA \u003c|-- B \nB \u003c|-- C\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nA \u003c|-- B \nB \u003c|-- C\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20597,7 +20965,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596396000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386579000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20608,11 +20976,11 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596407000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386590000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nA o-- B\nB o-- C\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nA o-- B\nB o-- C\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20621,7 +20989,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596407000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386590000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20694,11 +21062,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596433000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386618000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro \u003c|-- Moto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCarro \u003c|-- Moto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20707,7 +21075,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596433000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386618000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20718,11 +21086,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596445000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386629000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro \u003c|-- Veiculo\nMoto \u003c|-- Veiculo\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCarro \u003c|-- Veiculo\nMoto \u003c|-- Veiculo\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20731,7 +21099,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596445000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386629000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20742,11 +21110,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596457000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386641000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20755,7 +21123,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596457000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386641000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20766,11 +21134,11 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1777981439596468000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470386651000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nCarro o-- Veiculo\nMoto o-- Veiculo\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nCarro o-- Veiculo\nMoto o-- Veiculo\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -20779,7 +21147,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439596468000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470386651000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26562,11 +26930,11 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599248000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389483000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -matricula: String\n  -idade: int\n  \u002bgetNome(): String\n  \u002bsetNome(nome: String): void\n  \u002bgetMatricula(): String\n  \u002bsetMatricula(matricula: String): void\n  \u002bgetIdade(): int\n  \u002bsetIdade(idade: int): void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -matricula: String\n  -idade: int\n  \u002bgetNome(): String\n  \u002bsetNome(nome: String): void\n  \u002bgetMatricula(): String\n  \u002bsetMatricula(matricula: String): void\n  \u002bgetIdade(): int\n  \u002bsetIdade(idade: int): void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26575,7 +26943,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599248000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389483000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26621,11 +26989,11 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599266000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389502000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Professor \u007b\n  -nome: String\n\u007d\n\nclass Disciplina \u007b\n  -nome: String\n\u007d\n\nProfessor \u00221\u0022 -- \u00220..*\u0022 Disciplina\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Professor \u007b\n  -nome: String\n\u007d\n\nclass Disciplina \u007b\n  -nome: String\n\u007d\n\nProfessor \u00221\u0022 -- \u00220..*\u0022 Disciplina\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26634,7 +27002,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599266000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389502000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26680,11 +27048,11 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599282000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389519000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Carrinho \u007b\n  -id: int\n\u007d\n\nclass Produto \u007b\n  -nome: String\n  -preco: double\n\u007d\n\nCarrinho \u00221\u0022 o-- \u00220..*\u0022 Produto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Carrinho \u007b\n  -id: int\n\u007d\n\nclass Produto \u007b\n  -nome: String\n  -preco: double\n\u007d\n\nCarrinho \u00221\u0022 o-- \u00220..*\u0022 Produto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26693,7 +27061,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599282000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389519000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26739,11 +27107,11 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599297000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389536000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ContaBancaria \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n  \u002bsacar(valor: double): void\n  \u002bgetSaldo(): double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ContaBancaria \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n  \u002bsacar(valor: double): void\n  \u002bgetSaldo(): double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26752,7 +27120,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599297000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389536000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26798,11 +27166,11 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599313000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389553000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Casa \u007b\n  -endereco: String\n\u007d\n\nclass Comodo \u007b\n  -nome: String\n\u007d\n\nCasa *-- \u00221..*\u0022 Comodo\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Casa \u007b\n  -endereco: String\n\u007d\n\nclass Comodo \u007b\n  -nome: String\n\u007d\n\nCasa *-- \u00221..*\u0022 Comodo\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26811,7 +27179,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599313000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389553000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26857,11 +27225,11 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599328000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389569000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Veiculo \u007b\n  -marca: String\n  -modelo: String\n  -ano: int\n\u007d\n\nclass Carro\nclass Moto\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Veiculo \u007b\n  -marca: String\n  -modelo: String\n  -ano: int\n\u007d\n\nclass Carro\nclass Moto\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26870,7 +27238,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599328000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389569000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26916,11 +27284,11 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599354000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389584000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Livro \u007b\n  -titulo: String\n\u007d\n\nclass Autor \u007b\n  -nome: String\n\u007d\n\nLivro \u00220..*\u0022 -- \u00220..*\u0022 Autor\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Livro \u007b\n  -titulo: String\n\u007d\n\nclass Autor \u007b\n  -nome: String\n\u007d\n\nLivro \u00220..*\u0022 -- \u00220..*\u0022 Autor\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26929,7 +27297,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599354000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389584000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26975,11 +27343,11 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599369000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389601000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Pedido \u007b\n  \u002bfinalizar(): void\n\u007d\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nPedido ..\u003e Pagamento\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pedido \u007b\n  \u002bfinalizar(): void\n\u007d\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nPedido ..\u003e Pagamento\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -26988,7 +27356,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599369000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389601000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27034,11 +27402,11 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599384000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389616000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Funcionario\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Funcionario\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27047,7 +27415,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599384000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389616000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27093,11 +27461,11 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599400000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389631000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Escola \u007b\n  -nome: String\n\u007d\n\nclass Turma \u007b\n  -codigo: String\n\u007d\n\nclass Aluno \u007b\n  -nome: String\n\u007d\n\nEscola \u00221\u0022 -- \u00220..*\u0022 Turma\nTurma \u00221\u0022 o-- \u00220..*\u0022 Aluno\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Escola \u007b\n  -nome: String\n\u007d\n\nclass Turma \u007b\n  -codigo: String\n\u007d\n\nclass Aluno \u007b\n  -nome: String\n\u007d\n\nEscola \u00221\u0022 -- \u00220..*\u0022 Turma\nTurma \u00221\u0022 o-- \u00220..*\u0022 Aluno\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27106,7 +27474,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599400000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389631000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27153,11 +27521,11 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599414000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389660000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n  -ano: int\n\u007d\n\nclass Carro \u007b\n  -quantidadePortas: int\n\u007d\n\nclass Moto \u007b\n  -cilindradas: int\n\u007d\n\nclass Caminhao \u007b\n  -capacidadeCarga: double\n\u007d\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\nVeiculo \u003c|-- Caminhao\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n  -ano: int\n\u007d\n\nclass Carro \u007b\n  -quantidadePortas: int\n\u007d\n\nclass Moto \u007b\n  -cilindradas: int\n\u007d\n\nclass Caminhao \u007b\n  -capacidadeCarga: double\n\u007d\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\nVeiculo \u003c|-- Caminhao\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27166,7 +27534,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599414000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389660000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27212,11 +27580,11 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599429000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389675000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n  -salario: double\n\u007d\n\nclass FuncionarioEfetivo \u007b\n  -bonus: double\n\u007d\n\nclass Estagiario \u007b\n  -bolsaAuxilio: double\n\u007d\n\nFuncionario \u003c|-- FuncionarioEfetivo\nFuncionario \u003c|-- Estagiario\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n  -salario: double\n\u007d\n\nclass FuncionarioEfetivo \u007b\n  -bonus: double\n\u007d\n\nclass Estagiario \u007b\n  -bolsaAuxilio: double\n\u007d\n\nFuncionario \u003c|-- FuncionarioEfetivo\nFuncionario \u003c|-- Estagiario\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27225,7 +27593,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599429000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389675000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27271,11 +27639,11 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599445000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389690000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nclass CartaoCredito \u007b\n  -numero: String\n\u007d\n\nclass Boleto \u007b\n  -codigoBarras: String\n\u007d\n\nclass Pix \u007b\n  -chave: String\n\u007d\n\nPagamento \u003c|-- CartaoCredito\nPagamento \u003c|-- Boleto\nPagamento \u003c|-- Pix\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nclass CartaoCredito \u007b\n  -numero: String\n\u007d\n\nclass Boleto \u007b\n  -codigoBarras: String\n\u007d\n\nclass Pix \u007b\n  -chave: String\n\u007d\n\nPagamento \u003c|-- CartaoCredito\nPagamento \u003c|-- Boleto\nPagamento \u003c|-- Pix\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27284,7 +27652,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599445000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389690000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27330,11 +27698,11 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599460000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389705000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Pessoa \u007b\n  -nome: String\n  -cpf: String\n\u007d\n\nclass Professor \u007b\n  -titulacao: String\n\u007d\n\nclass Aluno \u007b\n  -matricula: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nPessoa \u003c|-- Professor\nPessoa \u003c|-- Aluno\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Professor\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pessoa \u007b\n  -nome: String\n  -cpf: String\n\u007d\n\nclass Professor \u007b\n  -titulacao: String\n\u007d\n\nclass Aluno \u007b\n  -matricula: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nPessoa \u003c|-- Professor\nPessoa \u003c|-- Aluno\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Professor\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27343,7 +27711,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599460000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389705000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27391,11 +27759,11 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599476000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389720000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Usuario \u007b\n  -id: int\n  -nome: String\n\u007d\n\nclass Cliente \u007b\n  -endereco: String\n\u007d\n\nclass Administrador \u007b\n  -nivelAcesso: int\n\u007d\n\nclass Pedido \u007b\n  -numero: int\n  -data: Date\n\u007d\n\nclass ItemPedido \u007b\n  -produto: String\n  -quantidade: int\n\u007d\n\nUsuario \u003c|-- Cliente\nUsuario \u003c|-- Administrador\n\nCliente \u00221\u0022 --\u003e \u00220..*\u0022 Pedido : registra\nPedido *-- \u00221..*\u0022 ItemPedido\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Usuario \u007b\n  -id: int\n  -nome: String\n\u007d\n\nclass Cliente \u007b\n  -endereco: String\n\u007d\n\nclass Administrador \u007b\n  -nivelAcesso: int\n\u007d\n\nclass Pedido \u007b\n  -numero: int\n  -data: Date\n\u007d\n\nclass ItemPedido \u007b\n  -produto: String\n  -quantidade: int\n\u007d\n\nUsuario \u003c|-- Cliente\nUsuario \u003c|-- Administrador\n\nCliente \u00221\u0022 --\u003e \u00220..*\u0022 Pedido : registra\nPedido *-- \u00221..*\u0022 ItemPedido\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27404,7 +27772,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599476000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389720000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -27450,11 +27818,11 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599493000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389737000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n\u007d\n\nclass Onibus \u007b\n  -linha: String\n\u007d\n\nclass Trem \u007b\n  -numeroVagoes: int\n\u007d\n\nclass Motorista \u007b\n  -nome: String\n  -cnh: String\n\u007d\n\nVeiculo \u003c|-- Onibus\nVeiculo \u003c|-- Trem\n\nVeiculo --\u003e Motorista\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n\u007d\n\nclass Onibus \u007b\n  -linha: String\n\u007d\n\nclass Trem \u007b\n  -numeroVagoes: int\n\u007d\n\nclass Motorista \u007b\n  -nome: String\n  -cnh: String\n\u007d\n\nVeiculo \u003c|-- Onibus\nVeiculo \u003c|-- Trem\n\nVeiculo --\u003e Motorista\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -27463,7 +27831,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599493000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389737000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30705,11 +31073,11 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777981439601060000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470391396000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\nclass B\nA .L.\u003e B\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A\nclass B\nA .L.\u003e B\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -30718,7 +31086,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439601060000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470391396000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30781,11 +31149,11 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1777981439601095000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470391434000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\nclass B\nA -L- B\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A\nclass B\nA -L- B\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -30794,7 +31162,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439601095000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470391434000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -30975,11 +31343,11 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777981439601182000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470391532000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\nclass B\nA o-R- B\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A\nclass B\nA o-R- B\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -30988,7 +31356,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439601182000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470391532000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -31051,11 +31419,11 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1777981439601215000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470391582000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A\nclass B\nA *-R- B\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A\nclass B\nA *-R- B\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -31064,7 +31432,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439601215000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470391582000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -31513,11 +31881,11 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777981439601436000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470391800000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Escola\nclass Aluno\nEscola \u00221\u0022 o-- \u0022*\u0022 Aluno\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Escola\nclass Aluno\nEscola \u00221\u0022 o-- \u0022*\u0022 Aluno\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -31526,7 +31894,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439601436000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470391800000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -31590,11 +31958,11 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1777981439601470000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470391837000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Carro\nclass Motor\nCarro *-- Motor\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Carro\nclass Motor\nCarro *-- Motor\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -31603,7 +31971,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439601470000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470391837000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -36806,207 +37174,6 @@ float(3) converte para 3.0.
 &lt;p&gt;Essa separação entre interface e implementação permite maior flexibilidade no desenvolvimento de sistemas, pois a implementação pode ser alterada sem impactar o uso da estrutura, desde que as operações definidas sejam mantidas.&lt;/p&gt;
 &lt;p&gt;Os Tipos Abstratos de Dados são fundamentais na computação, pois servem como base para a construção de algoritmos eficientes e reutilizáveis. Eles também contribuem para a organização do código, tornando-o mais modular, compreensível e fácil de manter.&lt;/p&gt;
 &lt;p&gt;Em resumo, um Tipo Abstrato de Dados descreve quais operações são possíveis sobre um conjunto de dados e qual o comportamento esperado, ocultando os detalhes internos de implementação.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Variáveis e tipos de dados</title>
-      <link>http://localhost:1313/disciplinas/apc-1/variaveis-tipos-de-dados/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/disciplinas/apc-1/variaveis-tipos-de-dados/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Em Python, uma variável é utilizada para armazenar valores na memória. Esses valores podem ser utilizados, modificados e reutilizados ao longo do programa.&lt;/p&gt;
-&lt;h2&gt;Variáveis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;variáveis&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#vari%c3%a1veis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Para criar uma variável, basta atribuir um valor utilizando o operador &lt;code&gt;=&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nome &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Ana&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso, &lt;code&gt;x&lt;/code&gt; armazena um número e &lt;code&gt;nome&lt;/code&gt; armazena um texto.&lt;/p&gt;
-&lt;p&gt;O nome da variável deve seguir algumas regras:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Não pode começar com número&lt;/li&gt;
-&lt;li&gt;Não pode conter espaços&lt;/li&gt;
-&lt;li&gt;Deve evitar palavras reservadas da linguagem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tipagem dinâmica&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tipagem-dinâmica&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tipagem-din%c3%a2mica&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Python é uma linguagem de tipagem dinâmica. Isso significa que não é necessário declarar o tipo da variável, pois ele é definido automaticamente.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;       &lt;span style=&#34;color:#57606a&#34;&gt;# inteiro&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;texto&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#57606a&#34;&gt;# agora é uma string&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;A variável pode mudar de tipo ao longo do programa.&lt;/p&gt;
-&lt;h2&gt;Tipos básicos de dados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tipos-básicos-de-dados&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tipos-b%c3%a1sicos-de-dados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Inteiros (int)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;inteiros-int&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#inteiros-int&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Representam números inteiros.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;idade &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;25&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Números reais (float)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;números-reais-float&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#n%c3%bameros-reais-float&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Representam números com casas decimais.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;altura &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1.75&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Texto (str)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;texto-str&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#texto-str&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Representa sequências de caracteres.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nome &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;João&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mensagem &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#39;Olá mundo&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Booleano (bool)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;booleano-bool&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#booleano-bool&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Representa valores lógicos: verdadeiro ou falso.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ativo &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cf222e&#34;&gt;True&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;aprovado &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cf222e&#34;&gt;False&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2&gt;Verificando o tipo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;verificando-o-tipo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#verificando-o-tipo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A função &lt;code&gt;type()&lt;/code&gt; permite verificar o tipo de uma variável.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2&gt;Conversão de tipos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;conversão-de-tipos&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#convers%c3%a3o-de-tipos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;É possível converter valores entre diferentes tipos de dados.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;10&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;z &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3.5&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;w &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;z&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Outras conversões comuns:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;int()&lt;/code&gt; → inteiro&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;float()&lt;/code&gt; → número real&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;str()&lt;/code&gt; → texto&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bool()&lt;/code&gt; → booleano&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Entrada de dados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;entrada-de-dados&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#entrada-de-dados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A função &lt;code&gt;input()&lt;/code&gt; permite ler dados do usuário. O valor lido é sempre do tipo string.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nome &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite seu nome: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Para trabalhar com números, é necessário converter o valor:&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;idade &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite sua idade: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#observa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Variáveis são fundamentais para armazenar e manipular informações. O tipo de dado define quais operações podem ser realizadas com cada valor.&lt;/p&gt;
 
       </description>
     </item>

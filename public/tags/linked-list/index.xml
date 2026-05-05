@@ -186,11 +186,11 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1777981439842665000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470636985000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -199,7 +199,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439842665000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470636985000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

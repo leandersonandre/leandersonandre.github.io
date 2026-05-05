@@ -58,11 +58,11 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599248000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389483000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -matricula: String\n  -idade: int\n  \u002bgetNome(): String\n  \u002bsetNome(nome: String): void\n  \u002bgetMatricula(): String\n  \u002bsetMatricula(matricula: String): void\n  \u002bgetIdade(): int\n  \u002bsetIdade(idade: int): void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -matricula: String\n  -idade: int\n  \u002bgetNome(): String\n  \u002bsetNome(nome: String): void\n  \u002bgetMatricula(): String\n  \u002bsetMatricula(matricula: String): void\n  \u002bgetIdade(): int\n  \u002bsetIdade(idade: int): void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -71,7 +71,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599248000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389483000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -117,11 +117,11 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599266000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389502000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Professor \u007b\n  -nome: String\n\u007d\n\nclass Disciplina \u007b\n  -nome: String\n\u007d\n\nProfessor \u00221\u0022 -- \u00220..*\u0022 Disciplina\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Professor \u007b\n  -nome: String\n\u007d\n\nclass Disciplina \u007b\n  -nome: String\n\u007d\n\nProfessor \u00221\u0022 -- \u00220..*\u0022 Disciplina\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -130,7 +130,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599266000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389502000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -176,11 +176,11 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599282000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389519000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Carrinho \u007b\n  -id: int\n\u007d\n\nclass Produto \u007b\n  -nome: String\n  -preco: double\n\u007d\n\nCarrinho \u00221\u0022 o-- \u00220..*\u0022 Produto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Carrinho \u007b\n  -id: int\n\u007d\n\nclass Produto \u007b\n  -nome: String\n  -preco: double\n\u007d\n\nCarrinho \u00221\u0022 o-- \u00220..*\u0022 Produto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -189,7 +189,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599282000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389519000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -235,11 +235,11 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599297000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389536000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass ContaBancaria \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n  \u002bsacar(valor: double): void\n  \u002bgetSaldo(): double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ContaBancaria \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n  \u002bsacar(valor: double): void\n  \u002bgetSaldo(): double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -248,7 +248,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599297000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389536000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -294,11 +294,11 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599313000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389553000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Casa \u007b\n  -endereco: String\n\u007d\n\nclass Comodo \u007b\n  -nome: String\n\u007d\n\nCasa *-- \u00221..*\u0022 Comodo\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Casa \u007b\n  -endereco: String\n\u007d\n\nclass Comodo \u007b\n  -nome: String\n\u007d\n\nCasa *-- \u00221..*\u0022 Comodo\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -307,7 +307,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599313000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389553000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -353,11 +353,11 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599328000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389569000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Veiculo \u007b\n  -marca: String\n  -modelo: String\n  -ano: int\n\u007d\n\nclass Carro\nclass Moto\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Veiculo \u007b\n  -marca: String\n  -modelo: String\n  -ano: int\n\u007d\n\nclass Carro\nclass Moto\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -366,7 +366,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599328000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389569000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -412,11 +412,11 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599354000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389584000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Livro \u007b\n  -titulo: String\n\u007d\n\nclass Autor \u007b\n  -nome: String\n\u007d\n\nLivro \u00220..*\u0022 -- \u00220..*\u0022 Autor\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Livro \u007b\n  -titulo: String\n\u007d\n\nclass Autor \u007b\n  -nome: String\n\u007d\n\nLivro \u00220..*\u0022 -- \u00220..*\u0022 Autor\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -425,7 +425,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599354000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389584000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -471,11 +471,11 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599369000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389601000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Pedido \u007b\n  \u002bfinalizar(): void\n\u007d\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nPedido ..\u003e Pagamento\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pedido \u007b\n  \u002bfinalizar(): void\n\u007d\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nPedido ..\u003e Pagamento\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -484,7 +484,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599369000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389601000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -530,11 +530,11 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599384000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389616000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Funcionario\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Funcionario\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -543,7 +543,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599384000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389616000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -589,11 +589,11 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599400000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389631000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Escola \u007b\n  -nome: String\n\u007d\n\nclass Turma \u007b\n  -codigo: String\n\u007d\n\nclass Aluno \u007b\n  -nome: String\n\u007d\n\nEscola \u00221\u0022 -- \u00220..*\u0022 Turma\nTurma \u00221\u0022 o-- \u00220..*\u0022 Aluno\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Escola \u007b\n  -nome: String\n\u007d\n\nclass Turma \u007b\n  -codigo: String\n\u007d\n\nclass Aluno \u007b\n  -nome: String\n\u007d\n\nEscola \u00221\u0022 -- \u00220..*\u0022 Turma\nTurma \u00221\u0022 o-- \u00220..*\u0022 Aluno\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -602,7 +602,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599400000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389631000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -649,11 +649,11 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599414000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389660000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n  -ano: int\n\u007d\n\nclass Carro \u007b\n  -quantidadePortas: int\n\u007d\n\nclass Moto \u007b\n  -cilindradas: int\n\u007d\n\nclass Caminhao \u007b\n  -capacidadeCarga: double\n\u007d\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\nVeiculo \u003c|-- Caminhao\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n  -ano: int\n\u007d\n\nclass Carro \u007b\n  -quantidadePortas: int\n\u007d\n\nclass Moto \u007b\n  -cilindradas: int\n\u007d\n\nclass Caminhao \u007b\n  -capacidadeCarga: double\n\u007d\n\nVeiculo \u003c|-- Carro\nVeiculo \u003c|-- Moto\nVeiculo \u003c|-- Caminhao\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -662,7 +662,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599414000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389660000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -708,11 +708,11 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599429000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389675000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n  -salario: double\n\u007d\n\nclass FuncionarioEfetivo \u007b\n  -bonus: double\n\u007d\n\nclass Estagiario \u007b\n  -bolsaAuxilio: double\n\u007d\n\nFuncionario \u003c|-- FuncionarioEfetivo\nFuncionario \u003c|-- Estagiario\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Funcionario \u007b\n  -nome: String\n  -salario: double\n\u007d\n\nclass FuncionarioEfetivo \u007b\n  -bonus: double\n\u007d\n\nclass Estagiario \u007b\n  -bolsaAuxilio: double\n\u007d\n\nFuncionario \u003c|-- FuncionarioEfetivo\nFuncionario \u003c|-- Estagiario\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -721,7 +721,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599429000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389675000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -767,11 +767,11 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599445000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389690000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nclass CartaoCredito \u007b\n  -numero: String\n\u007d\n\nclass Boleto \u007b\n  -codigoBarras: String\n\u007d\n\nclass Pix \u007b\n  -chave: String\n\u007d\n\nPagamento \u003c|-- CartaoCredito\nPagamento \u003c|-- Boleto\nPagamento \u003c|-- Pix\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pagamento \u007b\n  \u002bprocessar(): void\n\u007d\n\nclass CartaoCredito \u007b\n  -numero: String\n\u007d\n\nclass Boleto \u007b\n  -codigoBarras: String\n\u007d\n\nclass Pix \u007b\n  -chave: String\n\u007d\n\nPagamento \u003c|-- CartaoCredito\nPagamento \u003c|-- Boleto\nPagamento \u003c|-- Pix\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -780,7 +780,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599445000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389690000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -826,11 +826,11 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599460000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389705000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Pessoa \u007b\n  -nome: String\n  -cpf: String\n\u007d\n\nclass Professor \u007b\n  -titulacao: String\n\u007d\n\nclass Aluno \u007b\n  -matricula: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nPessoa \u003c|-- Professor\nPessoa \u003c|-- Aluno\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Professor\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pessoa \u007b\n  -nome: String\n  -cpf: String\n\u007d\n\nclass Professor \u007b\n  -titulacao: String\n\u007d\n\nclass Aluno \u007b\n  -matricula: String\n\u007d\n\nclass Departamento \u007b\n  -nome: String\n\u007d\n\nPessoa \u003c|-- Professor\nPessoa \u003c|-- Aluno\n\nDepartamento \u00221\u0022 o-- \u00220..*\u0022 Professor\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -839,7 +839,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599460000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389705000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -887,11 +887,11 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599476000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389720000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Usuario \u007b\n  -id: int\n  -nome: String\n\u007d\n\nclass Cliente \u007b\n  -endereco: String\n\u007d\n\nclass Administrador \u007b\n  -nivelAcesso: int\n\u007d\n\nclass Pedido \u007b\n  -numero: int\n  -data: Date\n\u007d\n\nclass ItemPedido \u007b\n  -produto: String\n  -quantidade: int\n\u007d\n\nUsuario \u003c|-- Cliente\nUsuario \u003c|-- Administrador\n\nCliente \u00221\u0022 --\u003e \u00220..*\u0022 Pedido : registra\nPedido *-- \u00221..*\u0022 ItemPedido\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Usuario \u007b\n  -id: int\n  -nome: String\n\u007d\n\nclass Cliente \u007b\n  -endereco: String\n\u007d\n\nclass Administrador \u007b\n  -nivelAcesso: int\n\u007d\n\nclass Pedido \u007b\n  -numero: int\n  -data: Date\n\u007d\n\nclass ItemPedido \u007b\n  -produto: String\n  -quantidade: int\n\u007d\n\nUsuario \u003c|-- Cliente\nUsuario \u003c|-- Administrador\n\nCliente \u00221\u0022 --\u003e \u00220..*\u0022 Pedido : registra\nPedido *-- \u00221..*\u0022 ItemPedido\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -900,7 +900,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599476000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389720000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -946,11 +946,11 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1777981439599493000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470389737000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n\u007d\n\nclass Onibus \u007b\n  -linha: String\n\u007d\n\nclass Trem \u007b\n  -numeroVagoes: int\n\u007d\n\nclass Motorista \u007b\n  -nome: String\n  -cnh: String\n\u007d\n\nVeiculo \u003c|-- Onibus\nVeiculo \u003c|-- Trem\n\nVeiculo --\u003e Motorista\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Veiculo \u007b\n  -placa: String\n\u007d\n\nclass Onibus \u007b\n  -linha: String\n\u007d\n\nclass Trem \u007b\n  -numeroVagoes: int\n\u007d\n\nclass Motorista \u007b\n  -nome: String\n  -cnh: String\n\u007d\n\nVeiculo \u003c|-- Onibus\nVeiculo \u003c|-- Trem\n\nVeiculo --\u003e Motorista\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -959,7 +959,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439599493000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470389737000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

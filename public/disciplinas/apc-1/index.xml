@@ -73,11 +73,11 @@
 &lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
 &lt;li&gt;Losango → decisão&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;plantuml-1777981838544918000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470336488000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nstart\n\n:Leia o número N;\n\nif (N mod 2 == 0?) then (sim)\n  :Exibir \u0022Par\u0022;\nelse (não)\n  :Exibir \u0022Ímpar\u0022;\nendif\n\nstop\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nstart\n\n:Leia o número N;\n\nif (N mod 2 == 0?) then (sim)\n  :Exibir \u0022Par\u0022;\nelse (não)\n  :Exibir \u0022Ímpar\u0022;\nendif\n\nstop\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -86,7 +86,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981838544918000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470336488000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

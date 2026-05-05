@@ -645,11 +645,11 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592747000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382733000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -idade: int\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Aluno \u007b\n  -nome: String\n  -idade: int\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -658,7 +658,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592747000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382733000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -777,11 +777,11 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592794000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382784000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Produto \u007b\n  \u002bnome: String\n  \u002bpreco: double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Produto \u007b\n  \u002bnome: String\n  \u002bpreco: double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -790,7 +790,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592794000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382784000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -905,11 +905,11 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592840000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382835000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Conta \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Conta \u007b\n  -saldo: double\n  \u002bdepositar(valor: double): void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -918,7 +918,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592840000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382835000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1033,11 +1033,11 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592897000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382886000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Retangulo \u007b\n  -largura: double\n  -altura: double\n  \u002bRetangulo(l: double, a: double)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Retangulo \u007b\n  -largura: double\n  -altura: double\n  \u002bRetangulo(l: double, a: double)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1046,7 +1046,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592897000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382886000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1168,11 +1168,11 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439592960000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382938000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Cliente \u007b\n  -nome: String\n  \u002bsetNome(nome: String): void\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Cliente \u007b\n  -nome: String\n  \u002bsetNome(nome: String): void\n  \u002bgetNome(): String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1181,7 +1181,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439592960000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382938000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1300,11 +1300,11 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1777981439593007000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470382989000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Calculadora \u007b\n  \u002bsomar(a: int, b: int): int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Calculadora \u007b\n  \u002bsomar(a: int, b: int): int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1313,7 +1313,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593007000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470382989000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2656,11 +2656,11 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1777981439593585000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383541000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass Retangulo \u007b\n  largura : int\n  altura : int\n  obterArea() : int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Retangulo \u007b\n  largura : int\n  altura : int\n  obterArea() : int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2669,7 +2669,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593585000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383541000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2743,11 +2743,11 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593624000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383579000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A \u007b\n  nome : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A \u007b\n  nome : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2756,7 +2756,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593624000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383579000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2830,11 +2830,11 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593663000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383620000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass A \u007b\n  \u002bb:int\n  \u002bc:double\n  metodo() : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass A \u007b\n  \u002bb:int\n  \u002bc:double\n  metodo() : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2843,7 +2843,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593663000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383620000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2917,11 +2917,11 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593703000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383663000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass C \u007b\n  metodo() : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass C \u007b\n  metodo() : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2930,7 +2930,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593703000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383663000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3004,11 +3004,11 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593745000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383708000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int) : int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int) : int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -3017,7 +3017,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593745000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383708000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3091,11 +3091,11 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593783000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383751000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int)\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass D \u007b\n  \u002b b : int\n  executar(a:int)\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -3104,7 +3104,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593783000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383751000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3178,11 +3178,11 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593821000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383793000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass D \u007b\n  b : int\n  executar(a:int) : String\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass D \u007b\n  b : int\n  executar(a:int) : String\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -3191,7 +3191,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593821000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383793000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3265,11 +3265,11 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593864000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383835000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -3278,7 +3278,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593864000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383835000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3352,11 +3352,11 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593901000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383878000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass F \u007b\n  b : boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -3365,7 +3365,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593901000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383878000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3439,11 +3439,11 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1777981439593953000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778014470383919000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide stereotype\nhide circle\n\nclass G \u007b\n  executar() : void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass G \u007b\n  executar() : void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -3452,7 +3452,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1777981439593953000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778014470383919000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
