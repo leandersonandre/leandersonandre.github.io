@@ -321,6 +321,135 @@
     </item>
     
     <item>
+      <title>Exercícios sobre Interfaces</title>
+      <link>http://localhost:1313/disciplinas/poo-1/interfaces-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/interfaces-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando as assinaturas dos métodos definidas.
+Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
+Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
+
+&lt;div id=&#34;plantuml-1778526629362125000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Shape \u003c\u003cinterface\u003e\u003e\u007b\n  \u002bgetArea(): double\n  \u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Triangle\nShape \u003c|.. Circle\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778526629362125000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma nova classe responsável por operações com objetos do tipo Shape.
+Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
+O resultado deve ser retornado como um valor do tipo double.
+
+&lt;div id=&#34;plantuml-1778526629362145000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ShapeUtils \u007b\n  -ShapeUtils()\n  \u007bstatic\u007d \u002bgetTotalArea(shapes: List\u003cShape\u003e): double\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778526629362145000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+Após implementar:
+Crie uma lista contendo objetos Rect, Triangle e Circle
+Utilize o método da nova classe para calcular a área total
+Exiba o resultado no terminal. 
+
+&lt;b&gt;Observação:&lt;/b&gt; O método getTotalArea está sublinhado no diagrama, ou seja, deve ser static.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Implemente a interface Scalable e adapte as classes já existentes para suportar redimensionamento.
+A interface deve permitir que uma forma geométrica tenha suas dimensões alteradas por um fator de escala.
+&lt;br&gt;
+Regras:
+&lt;ul&gt;
+  &lt;li&gt;O fator de escala será um valor do tipo double&lt;/li&gt;
+  &lt;li&gt;Um fator maior que 1 aumenta o tamanho&lt;/li&gt;
+  &lt;li&gt;Um fator entre 0 e 1 diminui o tamanho&lt;/li&gt;
+  &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&#34;plantuml-1778526629362160000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Scalable \u003c\u003cinterface\u003e\u003e\u007b\n\u002bscale(factor: double): void\n\u007d\ninterface Shape \u007b\n\u002bgetArea(): double\n\u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Circle\nShape \u003c|.. Triangle\n\nScalable \u003c|.up. Rect\nScalable \u003c|.up. Circle\nScalable \u003c|.up. Triangle\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778526629362160000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle e Triangle), exiba a área e o perímetro originais, aplique um fator de escala (por exemplo, 2.0) e, em seguida, exiba novamente a área e o perímetro após o redimensionamento.
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Lista Baseada em Arranjo</title>
       <link>http://localhost:1313/disciplinas/estd-1/lista-baseada-em-arranjos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -348,7 +477,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778014470620611000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778526629625356000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -361,7 +490,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778014470620611000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778526629625356000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -841,7 +970,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778014470636985000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778526629641989000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -854,7 +983,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778014470636985000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778526629641989000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

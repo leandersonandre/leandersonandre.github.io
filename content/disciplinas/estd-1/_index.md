@@ -15,6 +15,8 @@ toc: false
   {{< card link="/disciplinas/estd-1/lista-duplamente-encadeada" title="Lista Duplamente Encadeada" >}}
   {{< card link="/disciplinas/estd-1/lista-encadeada-circular" title="Lista Encadeada Circular" >}}
   {{< card link="/disciplinas/estd-1/comparacao-entre-listas-encadeadas" title="Comparação entre Lista Encadeadas" >}}
+  {{< card link="/disciplinas/estd-1/pilha" title="Pilha" >}}
+  {{< card link="/disciplinas/estd-1/fila" title="Fila" >}}
 {{< /cards >}}
 <br><br>
 
