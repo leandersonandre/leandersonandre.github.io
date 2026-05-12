@@ -40,6 +40,23 @@ Faça um programa que exibe no terminal um Triângulo de Pascal. O programa deve
   </tr>
 </table>
 
+{{< solucao letra=" " >}}
+{{< code >}}
+linhas = int(input("Digite a quantidade de linhas: "))
+
+for i in range(linhas):
+    valor = 1
+
+    for j in range(i + 1):
+        print(valor, end="\t")
+
+        # Calcula o próximo número da linha
+        valor = valor * (i - j) // (j + 1)
+
+    print()
+
+{{< /code >}}
+{{< /solucao >}}
 
 {{< /questao >}}
 
@@ -79,6 +96,28 @@ Modifique o programa do Triângulo de Pascal para que imprima o triângulo alinh
   </tr>
 </table>
 
+{{< solucao letra=" " >}}
+{{< code >}}
+linhas = int(input("Digite a quantidade de linhas: "))
+
+for i in range(linhas):
+    valor = 1
+
+    # Espaços para alinhar à direita
+    for espaco in range(linhas - i - 1):
+        print("    ", end="")
+
+    # Impressão dos valores da linha
+    for j in range(i + 1):
+        print(f"{valor:4}", end="")
+
+        # Calcula o próximo valor
+        valor = valor * (i - j) // (j + 1)
+
+    print()
+{{< /code >}}
+{{< /solucao >}}
+
 {{< /questao >}}
 
 
@@ -94,6 +133,31 @@ Escreva um programa que permita a entrada de um número N inteiro e então exiba
 <br><br>
 Onde, o número entre parênteses indica a potência do fator.
 
+{{< solucao letra=" " >}}
+{{< code >}}
+n = int(input("Digite um número inteiro: "))
+
+numero = n
+divisor = 2
+
+print(f"{n} =", end=" ")
+
+while numero > 1:
+    contador = 0
+
+    # Conta quantas vezes o divisor divide o número
+    while numero % divisor == 0:
+        numero = numero // divisor
+        contador += 1
+
+    # Exibe o fator e sua potência
+    if contador > 0:
+        print(f"{divisor}({contador})", end=" ")
+
+    divisor += 1
+{{< /code >}}
+{{< /solucao >}}
+
 {{< /questao >}}
 
 
@@ -107,6 +171,16 @@ Onde, o número entre parênteses indica a potência do fator.
 <br>
 <a href="https://codeforces.com/gym/105327/problem/A">
     Submeta a sua solução no CodeForces</a>
+
+{{< solucao letra=" " >}}
+{{< code >}}
+diretores = int(input())
+tempo = int(input())
+tempo_que_sobra = tempo - (diretores-1)
+tempoDeCadaFala = int(tempo_que_sobra / diretores)
+print(tempoDeCadaFala)
+{{< /code >}}
+{{< /solucao >}}
 
 {{< /questao >}}
 

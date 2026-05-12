@@ -54,6 +54,9 @@ toc: false
 {{< cards  cols="1">}}
   {{< card link="/disciplinas/apc-1/exercicios-01" title="Exercícios 5 de Maio" >}}
 {{< /cards >}}
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-1/exercicios-02" title="Exercícios 11 de Maio" >}}
+{{< /cards >}}
 
 <br>
 
