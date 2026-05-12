@@ -73,7 +73,7 @@
 &lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
 &lt;li&gt;Losango → decisão&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;plantuml-1778553532017521000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030460771000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -86,7 +86,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778553532017521000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030460771000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -161,7 +161,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778530101300912000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030760140000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -174,7 +174,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101300912000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030760140000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -793,6 +793,202 @@
 &lt;p&gt;Dessa forma, os elementos do array são exibidos de maneira legível.&lt;/p&gt;
 &lt;h2&gt;Conclusão&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;conclusão&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#conclus%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Arrays são estruturas simples e eficientes, caracterizadas por armazenamento contínuo em memória, acesso por índice e tamanho fixo definido na criação.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Classes Abstratas</title>
+      <link>http://localhost:1313/disciplinas/poo-1/classes-abstratas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/classes-abstratas/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe abstrata é um tipo de classe que não pode ser instanciada diretamente e que permite definir métodos abstratos (sem implementação) e métodos concretos (com implementação).&lt;/p&gt;
+&lt;p&gt;Os métodos abstratos devem obrigatoriamente ser implementados pelas classes que herdam dessa classe.&lt;/p&gt;
+&lt;h3&gt;Objetivos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;objetivos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#objetivos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A classe abstrata permite:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstração de código&lt;/li&gt;
+&lt;li&gt;Permitir  o uso  do polimorfismo&lt;/li&gt;
+&lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;p&gt;Observe que o nome da classe abstrata está em itálico.
+O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto está em itálico.&lt;/p&gt;
+&lt;div id=&#34;plantuml-1778616967937817000&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nabstract class Shape  \u007b\n  \u007babstract\u007d \u002barea() : double\n  \u002bgetName(): String\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1778616967937817000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;abstract class Shape  {
+  {abstract} &amp;#43;area() : double
+  &amp;#43;getName(): String
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4&gt;Código Java&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;código-java&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%b3digo-java&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;A classe abstrata é definida com a palavra-reservada &lt;code&gt;abstract&lt;/code&gt;.
+Os métodos abstratos devem ser indicados com esta palavra chave.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;abstract&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Shape&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;abstract&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;double&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;area&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A classe abstrata pode possuir atributos e métodos como uma classe regular.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;abstract&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Shape&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;abstract&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;double&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;area&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;getName&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Implementação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;implementação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#implementa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A classe abstrata não pode ser instanciada, portanto, deve ser realizada herança. Na classe filha, os métodos abstratos devem ser implementados.&lt;/p&gt;
+&lt;h4&gt;Passo 1&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;passo-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#passo-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Indicar na classe a herança de classe abstrata. Após o nome da classe utilize a palavra-chave &lt;strong&gt;extends&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Rect&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;extends&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Shape&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;Passo 2&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;passo-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#passo-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;A classe obrigatoriamente deve implementar todos os métodos abstratos da classe abstrata. Recomenda-se sempre utilizar a anotação &lt;strong&gt;@Override&lt;/strong&gt; nos métodos implementados.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Rect&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;extends&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Shape&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Override&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;double&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;area&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;     &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;0&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Instanciação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;instanciação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#instancia%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Um objeto não pode ser criado a partir de uma classe abstrata. Deve ser sempre instanciado um objeto da classe que estenda a  classe abstrata.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// ERRADO&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Shape&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;s&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Shape&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// CERTO&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Rect&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;r&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Rect&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Polimorfismo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;polimorfismo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#polimorfismo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Um objeto de uma classe que extende uma classe abstrata pode ser referenciado por uma variável do tipo da classe abstrata. O uso de classes abstratas facilita a aplicação do polimorfismo.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Shape&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;s&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Rect&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Retornar ao objeto original,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// deve ser utilizado o operador de casting&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Rect&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;r&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Rect&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;s&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O casting só é seguro quando o objeto realmente é do tipo convertido.
+A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Múltiplas heranças de classe abstrata&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-heranças-de-classe-abstrata&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%baltiplas-heran%c3%a7as-de-classe-abstrata&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A linguagem java não permite a herança de múltiplas classes.&lt;/p&gt;
 
       </description>
     </item>
@@ -1961,33 +2157,49 @@ print(tempoDeCadaFala)
 
     &lt;div class=&#34;questao-body&#34;&gt;
 
-Faça um programa que exibe no terminal um Triângulo de Pascal. O programa deve pedir a quantidades de linhas que o triângulo deverá ter.
+&lt;b&gt;Problema J - João João (adaptado de Maratona Fase Regional 2025)&lt;/b&gt;
+&lt;br&gt;
 
-&lt;table style=&#34;text-align:left; border-collapse: collapse;&#34;&gt;
+Em 2025, o responsável por coordenar a equipe criadora da prova da OBI – Olimpíada Brasileira de Influenciadores – é o professor João João, que, além de professor, é um famoso e influente influenciador.
+&lt;br&gt;
+Até o momento, a equipe criou 10 tarefas, e cada uma dessas tarefas foi categorizada em um de quatro níveis de dificuldade: 1, 2, 3 e 4.
+&lt;br&gt;
+O professor João João deseja saber quantas tarefas ainda faltam ser criadas para que seja possível montar uma prova composta de exatamente quatro tarefas, sendo cada tarefa de um nível de dificuldade distinto.
+&lt;br&gt;
+Dada a lista dos níveis de dificuldade das tarefas já criadas, você poderia ajudar o professor João João a determinar quantas tarefas faltam ser criadas?
+&lt;br&gt;
+&lt;b&gt;Entrada&lt;/b&gt;&lt;br&gt;
+A entrada é composta por 10 linhas. Cada linha contém um inteiro D&lt;sub&gt;i&lt;/sub&gt;, representando o nível de dificuldade da tarefa i 
+(1 ≤ D&lt;sub&gt;i&lt;/sub&gt; ≤ 4, para 1 ≤ i ≤ 10).
+&lt;br&gt;
+&lt;b&gt;Saída&lt;/b&gt;&lt;br&gt;
+Seu programa deve produzir uma única linha na saída, contendo um único número inteiro: a menor quantidade de tarefas que precisam ser criadas para que uma prova com quatro tarefas de níveis distintos possa ser produzida.
+
+&lt;table border=&#34;1&#34; cellpadding=&#34;8&#34; cellspacing=&#34;0&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
+    &lt;th&gt;Exemplo de entrada 1&lt;/th&gt;
+    &lt;th&gt;Exemplo de saída 1&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;1&lt;br&gt;3&lt;br&gt;4&lt;br&gt;1&lt;br&gt;3&lt;br&gt;4&lt;br&gt;1&lt;br&gt;3&lt;br&gt;4&lt;br&gt;1&lt;/td&gt;
+    &lt;td style=&#34;vertical-align: top;&#34;&gt;1&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
+Explicação do exemplo 1:
+Já foram criadas tarefas de níveis de dificuldade 1, 3 e 4. Falta apenas uma tarefa de nível 2, então a resposta é 1.
+
+&lt;table border=&#34;1&#34; cellpadding=&#34;8&#34; cellspacing=&#34;0&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Exemplo de entrada 2&lt;/th&gt;
+    &lt;th&gt;Exemplo de saída 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;br&gt;1&lt;br&gt;1&lt;br&gt;4&lt;br&gt;3&lt;br&gt;1&lt;br&gt;2&lt;br&gt;1&lt;br&gt;2&lt;br&gt;2&lt;/td&gt;
+    &lt;td style=&#34;vertical-align: top;&#34;&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+Explicação do exemplo 2:
+Já foram criadas tarefas de níveis de dificuldade 1, 2, 3 e 4. Como não falta nenhum nível de dificuldade, a resposta é 0.
 
 &lt;div class=&#34;solucao&#34;&gt;
     &lt;div class=&#34;resposta&#34;&gt;
@@ -2016,18 +2228,6 @@ Faça um programa que exibe no terminal um Triângulo de Pascal. O programa deve
             
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-linhas = int(input(&#34;Digite a quantidade de linhas: &#34;))
-
-for i in range(linhas):
-    valor = 1
-
-    for j in range(i + 1):
-        print(valor, end=&#34;\t&#34;)
-
-        # Calcula o próximo número da linha
-        valor = valor * (i - j) // (j + 1)
-
-    print()
 
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
@@ -2038,10 +2238,8 @@ for i in range(linhas):
     &lt;/div&gt;
 &lt;/div&gt;
 
-
 &lt;/div&gt;
 &lt;/div&gt;
-
 
 
 
@@ -2050,7 +2248,83 @@ for i in range(linhas):
 
     &lt;div class=&#34;questao-body&#34;&gt;
 
-Modifique o programa do Triângulo de pascal utilizando as demais  estruturas de repetição ( ENQUANTO-FAÇA, REPITA-ATÉ, PARA=ATÉ-FAÇA).
+&lt;b&gt;Problema A - Andando no tempo (adaptado de Maratona Fase Regional 2016)&lt;/b&gt;
+&lt;br&gt;
+
+Imagine que você tenha uma máquina do tempo que pode ser usada no máximo três vezes, e a cada uso da máquina você pode escolher voltar para o passado ou ir para o futuro. A máquina possui três créditos fixos; cada crédito representa uma certa quantidade de anos, e pode ser usado para ir essa quantidade de anos para o passado ou para o futuro. Você pode fazer uma, duas ou três viagens, e cada um desses três créditos pode ser usado uma vez apenas. Por exemplo, se os créditos forem 5, 12 e 9, você poderia decidir fazer duas viagens: ir 5 anos para o futuro e, depois, voltar 9 anos para o passado. Dessa forma, você terminaria quatro anos no passado, em 2022. Também poderia fazer três viagens, todas indo para o futuro, usando os créditos em qualquer ordem, terminando em 2052.
+&lt;br&gt;
+Neste problema, dados os valores dos três créditos da máquina, seu programa deve dizer se é ou não possível viajar no tempo e voltar para o presente, fazendo pelo menos uma viagem e, no máximo, três viagens; sempre usando cada um dos três créditos no máximo uma vez.
+&lt;br&gt;
+&lt;b&gt;Entrada&lt;/b&gt;&lt;br&gt;
+A entrada consiste de três linhas, cada uma contendo o valor de um crédito: A, B e C (1 ≤ A, B, C ≤ 1000).
+&lt;br&gt;
+&lt;b&gt;Saída&lt;/b&gt;&lt;br&gt;
+Seu programa deve imprimir uma linha contendo o caractere “S” se é possível viajar e voltar para o presente, ou “N” caso contrário.
+&lt;table border=&#34;1&#34; cellpadding=&#34;8&#34; cellspacing=&#34;0&#34;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Exemplo de entrada 1&lt;/th&gt;
+    &lt;th&gt;Exemplo de saída 1&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;22&lt;br&gt;5&lt;br&gt;22&lt;/td&gt;
+    &lt;td style=&#34;vertical-align: top;&#34;&gt;S&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;th&gt;Exemplo de entrada 2&lt;/th&gt;
+    &lt;th&gt;Exemplo de saída 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;31&lt;br&gt;110&lt;br&gt;79&lt;/td&gt;
+    &lt;td style=&#34;vertical-align: top;&#34;&gt;S&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;th&gt;Exemplo de entrada 3&lt;/th&gt;
+    &lt;th&gt;Exemplo de saída 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;45&lt;br&gt;8&lt;br&gt;7&lt;/td&gt;
+    &lt;td style=&#34;vertical-align: top;&#34;&gt;N&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2062,32 +2336,14 @@ Modifique o programa do Triângulo de pascal utilizando as demais  estruturas de
 
     &lt;div class=&#34;questao-body&#34;&gt;
 
-Modifique o programa do Triângulo de Pascal para que imprima o triângulo alinhado a direita.
+&lt;b&gt;Problema B - Bobo da Corte (Maratona Fase Regional 2019)&lt;/b&gt;
+&lt;br&gt;
 
-&lt;table style=&#34;text-align:right; border-collapse: collapse;&#34;&gt;
-  &lt;tr&gt;
-    &lt;td colspan=&#34;5&#34;&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td colspan=&#34;4&#34;&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td colspan=&#34;3&#34;&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td colspan=&#34;2&#34;&gt;1&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+ &lt;a href=&#34;https://github.com/univille-cp/cadernos-de-problemas/blob/main/maratona-de-programacao/regional/2019.pdf&#34;&gt;Descrição da questão &lt;/a&gt;
+
+&lt;br&gt;
+&lt;a href=&#34;https://judge.beecrowd.com/pt/problems/view/2963&#34;&gt;
+    Submeta a sua solução no Beecrowd&lt;/a&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
     &lt;div class=&#34;resposta&#34;&gt;
@@ -2116,23 +2372,7 @@ Modifique o programa do Triângulo de Pascal para que imprima o triângulo alinh
             
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-linhas = int(input(&#34;Digite a quantidade de linhas: &#34;))
 
-for i in range(linhas):
-    valor = 1
-
-    # Espaços para alinhar à direita
-    for espaco in range(linhas - i - 1):
-        print(&#34;    &#34;, end=&#34;&#34;)
-
-    # Impressão dos valores da linha
-    for j in range(i + 1):
-        print(f&#34;{valor:4}&#34;, end=&#34;&#34;)
-
-        # Calcula o próximo valor
-        valor = valor * (i - j) // (j + 1)
-
-    print()
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -2145,7 +2385,6 @@ for i in range(linhas):
 
 &lt;/div&gt;
 &lt;/div&gt;
-
 
 
 
@@ -2154,91 +2393,13 @@ for i in range(linhas):
 
     &lt;div class=&#34;questao-body&#34;&gt;
 
-Escreva um programa que permita a entrada de um número N inteiro e então exiba a decomposição desse número em seus fatores primos, exemplo:
-&lt;br&gt;&lt;br&gt;
-6 = 2 (1) 3(1)
-&lt;br&gt;
-9 = 3(2)
-&lt;br&gt;
-24 = 2(3) 3(1)
-&lt;br&gt;&lt;br&gt;
-Onde, o número entre parênteses indica a potência do fator.
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-n = int(input(&#34;Digite um número inteiro: &#34;))
-
-numero = n
-divisor = 2
-
-print(f&#34;{n} =&#34;, end=&#34; &#34;)
-
-while numero &gt; 1:
-    contador = 0
-
-    # Conta quantas vezes o divisor divide o número
-    while numero % divisor == 0:
-        numero = numero // divisor
-        contador += 1
-
-    # Exibe o fator e sua potência
-    if contador &gt; 0:
-        print(f&#34;{divisor}({contador})&#34;, end=&#34; &#34;)
-
-    divisor += 1
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-
-&lt;b&gt;Problema A - Atenção a Reunião (Maratona Fase Regional 2025)&lt;/b&gt;
+&lt;b&gt;Problema D - Desvendando Mounty hall (Maratona Fase Regional 2018)&lt;/b&gt;
 &lt;br&gt;
 
- &lt;a href=&#34;https://github.com/univille-cp/cadernos-de-problemas/blob/main/maratona-de-programacao/regional/2024.pdf&#34;&gt;Descrição da questão &lt;/a&gt;
+ &lt;a href=&#34;https://github.com/univille-cp/cadernos-de-problemas/blob/main/maratona-de-programacao/regional/2018.pdf&#34;&gt;Descrição da questão &lt;/a&gt;
 
 &lt;br&gt;
-&lt;a href=&#34;https://codeforces.com/gym/105327/problem/A&#34;&gt;
+&lt;a href=&#34;https://codeforces.com/gym/101908/problem/D&#34;&gt;
     Submeta a sua solução no CodeForces&lt;/a&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -2268,11 +2429,7 @@ while numero &gt; 1:
             
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-diretores = int(input())
-tempo = int(input())
-tempo_que_sobra = tempo - (diretores-1)
-tempoDeCadaFala = int(tempo_que_sobra / diretores)
-print(tempoDeCadaFala)
+
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -2285,6 +2442,36 @@ print(tempoDeCadaFala)
 
 &lt;/div&gt;
 &lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios sobre Classes Abstratas</title>
+      <link>http://localhost:1313/disciplinas/poo-1/classes-abstratas-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/classes-abstratas-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
 
 
 &lt;/div&gt;
@@ -3215,7 +3402,7 @@ Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando
 Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
 Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
 
-&lt;div id=&#34;plantuml-1778526629362125000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942471000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3228,7 +3415,7 @@ Após a implementação, instancie objetos de cada classe e apresente no termina
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629362125000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942471000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3247,7 +3434,7 @@ Crie uma nova classe responsável por operações com objetos do tipo Shape.
 Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
 O resultado deve ser retornado como um valor do tipo double.
 
-&lt;div id=&#34;plantuml-1778526629362145000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942495000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3260,7 +3447,7 @@ O resultado deve ser retornado como um valor do tipo double.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629362145000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942495000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3290,7 +3477,7 @@ Regras:
   &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div id=&#34;plantuml-1778526629362160000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942515000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3303,7 +3490,7 @@ Regras:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629362160000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942515000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5651,7 +5838,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a fila se 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778530101304903000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030771942000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5664,7 +5851,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a fila se 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101304903000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030771942000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6192,7 +6379,7 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
 &lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1778526629365622000&#34;&gt;&lt;/div&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1778616967943417000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6205,7 +6392,7 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629365622000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967943417000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6335,7 +6522,7 @@ No entanto, a partir do Java 8, interfaces também podem possuir métodos defaul
 A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Múltiplas realizações de interface&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-realizações-de-interface&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#m%c3%baltiplas-realiza%c3%a7%c3%b5es-de-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe pode realizar a implementação de múltiplas interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778526629365633000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967943434000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6348,7 +6535,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629365633000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967943434000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6410,7 +6597,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
 &lt;/div&gt;
 &lt;h3&gt;Herança de interfaces&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herança-de-interfaces&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#heran%c3%a7a-de-interfaces&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As interfaces podem realizar uma ou múltiplas heranças de outras interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778526629365642000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967943446000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6423,7 +6610,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629365642000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967943446000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6568,7 +6755,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778530101309574000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030762812000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6581,7 +6768,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101309574000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030762812000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7063,7 +7250,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778530101313717000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030777901000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7076,7 +7263,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101313717000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030777901000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7568,7 +7755,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
 &lt;/div&gt;
 &lt;h2&gt;Representação estrutural&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-estrutural&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#representa%c3%a7%c3%a3o-estrutural&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A lista circular forma um ciclo contínuo entre os nós.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778530101318055000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030779183000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7581,7 +7768,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101318055000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030779183000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8096,7 +8283,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778530101325013000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030792257000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8109,7 +8296,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101325013000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030792257000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9357,7 +9544,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778530101328347000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778615030784350000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9370,7 +9557,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778530101328347000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778615030784350000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14324,7 +14511,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778526629391743000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936545000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14337,7 +14524,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629391743000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936545000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14456,7 +14643,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778526629391800000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936676000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14469,7 +14656,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629391800000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936676000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14584,7 +14771,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778526629391848000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936810000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14597,7 +14784,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629391848000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936810000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14712,7 +14899,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778526629391893000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936941000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14725,7 +14912,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629391893000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936941000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14847,7 +15034,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778526629391936000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937069000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14860,7 +15047,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629391936000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937069000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14979,7 +15166,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778526629391980000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937203000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14992,7 +15179,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629391980000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937203000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16335,7 +16522,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1778526629392570000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938328000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16348,7 +16535,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392570000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938328000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16422,7 +16609,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392608000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938387000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16435,7 +16622,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392608000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938387000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16509,7 +16696,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392646000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938449000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16522,7 +16709,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392646000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938449000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16596,7 +16783,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392684000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938505000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16609,7 +16796,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392684000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938505000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16683,7 +16870,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392724000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938565000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16696,7 +16883,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392724000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938565000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16770,7 +16957,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392763000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938621000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16783,7 +16970,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392763000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938621000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16857,7 +17044,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392804000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938680000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16870,7 +17057,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392804000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938680000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16944,7 +17131,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392846000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938735000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16957,7 +17144,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392846000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938735000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17031,7 +17218,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392884000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938791000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17044,7 +17231,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392884000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938791000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17118,7 +17305,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778526629392921000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938846000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17131,7 +17318,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629392921000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938846000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19075,7 +19262,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1778526629393909000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937357000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19088,7 +19275,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629393909000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937357000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19161,7 +19348,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1778526629393948000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937469000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19174,7 +19361,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629393948000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937469000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19247,7 +19434,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778526629393987000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937579000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19260,7 +19447,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629393987000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937579000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19333,7 +19520,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778526629394026000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937691000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19346,7 +19533,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629394026000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937691000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19419,7 +19606,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778526629394070000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967937945000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19432,7 +19619,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629394070000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967937945000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19505,7 +19692,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778526629394122000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938065000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19518,7 +19705,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629394122000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938065000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19591,7 +19778,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778526629394163000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967938183000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19604,7 +19791,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629394163000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967938183000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -21883,7 +22070,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1778526629395273000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935648000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -21896,7 +22083,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395273000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935648000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -21969,7 +22156,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1778526629395311000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935724000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -21982,7 +22169,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395311000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935724000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22068,7 +22255,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395353000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935808000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22081,7 +22268,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395353000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935808000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22092,7 +22279,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395364000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935827000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22105,7 +22292,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395364000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935827000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22116,7 +22303,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395375000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935845000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22129,7 +22316,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395375000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935845000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22140,7 +22327,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395386000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935863000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22153,7 +22340,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395386000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935863000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22229,7 +22416,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395413000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935912000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22242,7 +22429,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395413000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935912000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22253,7 +22440,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395425000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935931000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22266,7 +22453,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395425000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935931000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22277,7 +22464,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395436000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935948000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22290,7 +22477,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395436000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935948000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22301,7 +22488,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395447000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967935965000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22314,7 +22501,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395447000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967935965000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22387,7 +22574,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395473000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936010000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22400,7 +22587,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395473000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936010000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22411,7 +22598,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395484000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936028000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22424,7 +22611,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395484000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936028000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22435,7 +22622,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395496000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936046000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22448,7 +22635,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395496000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936046000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22459,7 +22646,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778526629395507000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967936064000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22472,7 +22659,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629395507000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967936064000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28255,7 +28442,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398291000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942654000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28268,7 +28455,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398291000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942654000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28314,7 +28501,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398310000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942681000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28327,7 +28514,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398310000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942681000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28373,7 +28560,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398328000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942703000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28386,7 +28573,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398328000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942703000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28432,7 +28619,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398350000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942724000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28445,7 +28632,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398350000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942724000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28491,7 +28678,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398436000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942746000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28504,7 +28691,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398436000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942746000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28550,7 +28737,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398472000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942766000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28563,7 +28750,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398472000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942766000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28609,7 +28796,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398499000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942786000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28622,7 +28809,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398499000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942786000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28668,7 +28855,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398527000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942807000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28681,7 +28868,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398527000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942807000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28727,7 +28914,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629398906000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942826000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28740,7 +28927,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629398906000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942826000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28786,7 +28973,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399043000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942856000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28799,7 +28986,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399043000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942856000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28846,7 +29033,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399107000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942877000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28859,7 +29046,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399107000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942877000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28905,7 +29092,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399165000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942897000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28918,7 +29105,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399165000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942897000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28964,7 +29151,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399237000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942919000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28977,7 +29164,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399237000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942919000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29023,7 +29210,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399297000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942939000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29036,7 +29223,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399297000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942939000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29084,7 +29271,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399355000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942959000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29097,7 +29284,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399355000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942959000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29143,7 +29330,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778526629399441000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967942981000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29156,7 +29343,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629399441000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967942981000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32398,7 +32585,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1778526629401491000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967943872000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32411,7 +32598,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629401491000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967943872000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32474,7 +32661,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1778526629401529000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967943977000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32487,7 +32674,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629401529000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967943977000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32668,7 +32855,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1778526629401625000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967944236000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32681,7 +32868,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629401625000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967944236000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32744,7 +32931,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1778526629401673000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967944334000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32757,7 +32944,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629401673000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967944334000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -33206,7 +33393,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1778526629401901000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967944941000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -33219,7 +33406,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629401901000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967944941000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -33283,7 +33470,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1778526629401937000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1778616967945035000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -33296,7 +33483,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778526629401937000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1778616967945035000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -37485,563 +37672,6 @@ float(3) converte para 3.0.
 &lt;p&gt;MENEZES, Nilo Ney Coutinho. &lt;em&gt;Introdução à programação com Python: algoritmos e lógica de programação para iniciantes&lt;/em&gt;. 4. ed. São Paulo: Novatec, 2024.&lt;/p&gt;
 &lt;p&gt;SOUZA, Marco A. Furlan de. &lt;em&gt;Algoritmos e lógica da programação&lt;/em&gt;. São Paulo: Érica, 2019.&lt;/p&gt;
 &lt;p&gt;PYTHON SOFTWARE FOUNDATION. &lt;em&gt;Python.org&lt;/em&gt;. Disponível em: &lt;a href=&#34;https://www.python.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.python.org/&lt;/a&gt;. Acesso em: 26 abr. 2026.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Referências bibliográficas</title>
-      <link>http://localhost:1313/disciplinas/estd-1/referencias/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/disciplinas/estd-1/referencias/</guid>
-      <description>
-        
-        
-        &lt;p&gt;CORMEN, Thomas H.; LEISERSON, Charles E.; RIVEST, Ronald L.; STEIN, Clifford. &lt;em&gt;Algoritmos: teoria e prática&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;TAMASSIA, Roberto; GOODRICH, Michael T.; GOLDWASSER, Michael H. &lt;em&gt;Estruturas de dados e algoritmos em Java&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;MCDOWELL, Gayle Laakmann. &lt;em&gt;Cracking the coding interview&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;MCDOWELL, Gayle Laakmann. &lt;em&gt;Beyond cracking the coding interview&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;LAAKSONEN, Antti. &lt;em&gt;Guide to competitive programming: learning and improving algorithms through contests&lt;/em&gt;. 2024.&lt;/p&gt;
-&lt;p&gt;BHARGAVA, Aditya Y. &lt;em&gt;Entendendo algoritmos&lt;/em&gt;. 2017.&lt;/p&gt;
-&lt;p&gt;SKIENA, Steven S. &lt;em&gt;The algorithm design manual&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;DASGUPTA, Sanjoy; PAPADIMITRIOU, Christos H.; VAZIRANI, Umesh V. &lt;em&gt;Algoritmos&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;LA ROCCA, Marcello. &lt;em&gt;Entendendo estruturas de dados&lt;/em&gt;. 2025.&lt;/p&gt;
-&lt;p&gt;SIPSER, Michael. &lt;em&gt;Introdução à teoria da computação&lt;/em&gt;. 2005.&lt;/p&gt;
-&lt;p&gt;SEDGEWICK, Robert; WAYNE, Kevin. &lt;em&gt;Algorithms&lt;/em&gt;. 2011.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Repetições</title>
-      <link>http://localhost:1313/disciplinas/apc-1/repeticoes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/disciplinas/apc-1/repeticoes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;A linguagem Python suporta duas principais estruturas de repetição: &lt;strong&gt;while&lt;/strong&gt; e &lt;strong&gt;for&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2&gt;While&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;while&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#while&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#cf222e&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;None&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;While é recomendado utilizar quando não se conhece o número exato de repetições.&lt;/p&gt;
-&lt;h3&gt;Controle de repetições&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;controle-de-repetições&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#controle-de-repeti%c3%a7%c3%b5es&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A quantidade de repetições pode ser controlada de diferentes maneiras. Geralmente a estrutura repete um número fixo de vezes, onde é preciso contar manualmente as iterações. Para isso, é utilizada uma variável chamada &lt;strong&gt;contador&lt;/strong&gt;, incrementá-lo  e avaliar se a repetição deve continuar.&lt;/p&gt;
-&lt;h4&gt;Contador&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;contador&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#contador&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;A quantidade de repetições (iterações ou &lt;em&gt;loops&lt;/em&gt;) pode ser contada. Para isso, utiliza-se uma variável chamada de &lt;strong&gt;contador&lt;/strong&gt;. Esta variável normalmente é nomeada por apenas uma letra, por exemplo: i, j, k, etc.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# a variável i é utilizada para contar/controlar a quantidade de repetições&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# inicialização&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4&gt;Incremento&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;incremento&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#incremento&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;O contador precisa ser incrementado, ou seja, atualizado a cada repetição da estrutura.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# contador&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#57606a&#34;&gt;# incremento&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4&gt;Decisão&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;decisão&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#decis%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Na estrutura &lt;strong&gt;while&lt;/strong&gt;, é definida a condição que irá permitir ou não a próxima iteração.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# contador&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# decisão - repete enquanto i for menor que 10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#57606a&#34;&gt;# incremento&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Contagem regressiva&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;contagem-regressiva&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#contagem-regressiva&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Também é possível realizar contagens em ordem decrescente, ou seja, do maior para o menor valor.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;O contador inicia em um valor maior (&lt;code&gt;10&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;A condição garante que a repetição continue até &lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;O contador é decrementado (&lt;code&gt;i = i - 1&lt;/code&gt;) a cada iteração&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Acumulador&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;acumulador&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#acumulador&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Um &lt;strong&gt;acumulador&lt;/strong&gt; é uma variável utilizada para armazenar resultados parciais ao longo das repetições de um laço.&lt;/p&gt;
-&lt;p&gt;A cada iteração, o acumulador é atualizado com um novo valor, geralmente somando, multiplicando ou concatenando dados.&lt;/p&gt;
-&lt;h4&gt;Exemplo (soma)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-soma&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#exemplo-soma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;soma &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#57606a&#34;&gt;# acumulador&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    soma &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; soma &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; i
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;  &lt;span style=&#34;color:#57606a&#34;&gt;# resultado: 15&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4&gt;Exemplo (produto)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-produto&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#exemplo-produto&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;produto &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#57606a&#34;&gt;# acumulador&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    produto &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; produto &lt;span style=&#34;color:#0550ae&#34;&gt;*&lt;/span&gt; i
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;produto&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;  &lt;span style=&#34;color:#57606a&#34;&gt;# resultado: 24&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4&gt;Resumo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resumo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#resumo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;O acumulador &lt;strong&gt;guarda resultados parciais&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;É &lt;strong&gt;atualizado a cada repetição&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Normalmente inicia com:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;0&lt;/code&gt; para soma&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1&lt;/code&gt; para multiplicação&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Loop infinito&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;loop-infinito&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#loop-infinito&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Ocorre quando o laço de repetição nunca é encerrado.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#cf222e&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Repetiu&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Quebra de laço&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;quebra-de-laço&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#quebra-de-la%c3%a7o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O laço de repetição pode ser interrompido utilizando a palavra reservada &lt;strong&gt;break&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#cf222e&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite um número: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Pulo de laço&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pulo-de-laço&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pulo-de-la%c3%a7o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O laço de repetição pode ser pulado utilizando a palavra reservada &lt;strong&gt;continue&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;continue&lt;/span&gt; &lt;span style=&#34;color:#57606a&#34;&gt;# pula o valor 3&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Cláusula else&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cláusula-else&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#cl%c3%a1usula-else&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Quando a condição do while for falsa, o bloco &lt;code&gt;else&lt;/code&gt; é executado. O bloco &lt;code&gt;else&lt;/code&gt; só é executado quando o laço não for interrompido com o comando &lt;strong&gt;break&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;else&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Fim do while&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2&gt;For&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;for&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#for&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A estrutura &lt;strong&gt;for&lt;/strong&gt; é utilizada para percorrer sequências ou executar um bloco de código um número definido de vezes.&lt;/p&gt;
-&lt;p&gt;Em Python, é comum utilizar a função &lt;strong&gt;range()&lt;/strong&gt; para gerar sequências numéricas. O comportamento do &lt;code&gt;range()&lt;/code&gt; segue o padrão: [início, fim), ou seja, inclui o início e exclui o fim.&lt;/p&gt;
-&lt;h3&gt;Range básico&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;range-básico&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#range-b%c3%a1sico&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;O &lt;code&gt;range(5)&lt;/code&gt; gera valores de &lt;code&gt;0&lt;/code&gt; até &lt;code&gt;4&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;O valor final &lt;strong&gt;não é incluído&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;Range com início (start)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;range-com-início-start&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#range-com-in%c3%adcio-start&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Inicia em &lt;code&gt;2&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Vai até &lt;code&gt;5&lt;/code&gt; (o &lt;code&gt;6&lt;/code&gt; não é incluído)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;Range com início e passo (step)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;range-com-início-e-passo-step&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#range-com-in%c3%adcio-e-passo-step&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Inicia em &lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Vai até &lt;code&gt;9&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Incrementa de &lt;code&gt;2&lt;/code&gt; em &lt;code&gt;2&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Saída:&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;pre&gt;&lt;code&gt;0 2 4 6 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3&gt;Range regressivo (passo negativo)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;range-regressivo-passo-negativo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#range-regressivo-passo-negativo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Também é possível fazer contagem regressiva utilizando um passo negativo.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Inicia em &lt;code&gt;10&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Vai até &lt;code&gt;1&lt;/code&gt; (o &lt;code&gt;0&lt;/code&gt; não é incluído)&lt;/li&gt;
-&lt;li&gt;Decrementa de &lt;code&gt;1&lt;/code&gt; em &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;Resumo do range()&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resumo-do-range&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#resumo-do-range&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;inicio&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; fim&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; passo&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;inicio&lt;/code&gt;: valor inicial (opcional, padrão = 0)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fim&lt;/code&gt;: valor final (&lt;strong&gt;não incluído&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;passo&lt;/code&gt;: incremento/decremento (opcional, padrão = 1)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Usando reversed()&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;usando-reversed&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#usando-reversed&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Outra forma de percorrer valores em ordem decrescente é utilizando a função &lt;code&gt;reversed()&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;reversed&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste caso:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;O &lt;code&gt;range(10)&lt;/code&gt; gera valores de &lt;code&gt;0&lt;/code&gt; até &lt;code&gt;9&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;O &lt;code&gt;reversed()&lt;/code&gt; inverte a ordem → &lt;code&gt;9&lt;/code&gt; até &lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;Comparação com range regressivo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparação-com-range-regressivo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#compara%c3%a7%c3%a3o-com-range-regressivo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# usando range com passo negativo&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;9&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# usando reversed&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;reversed&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Ambos produzem o mesmo resultado.&lt;/p&gt;
-&lt;h3&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#observa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;reversed()&lt;/code&gt; não altera a sequência original&lt;/li&gt;
-&lt;li&gt;Apenas permite iterar sobre ela em ordem inversa&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Laços aninhados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;laços-aninhados&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#la%c3%a7os-aninhados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Laços aninhados ocorrem quando uma estrutura de repetição está dentro de outra. Para cada iteração do laço externo, o laço interno é executado completamente.&lt;/p&gt;
-&lt;h3&gt;Exemplo básico&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-básico&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#exemplo-b%c3%a1sico&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; j&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Neste exemplo, o laço externo controla o valor de &lt;code&gt;i&lt;/code&gt;. Para cada valor de &lt;code&gt;i&lt;/code&gt;, o laço interno percorre todos os valores de &lt;code&gt;j&lt;/code&gt;, gerando todas as combinações possíveis entre eles.&lt;/p&gt;
-&lt;p&gt;Saída:&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;pre&gt;&lt;code&gt;0 0
-0 1
-0 2
-1 0
-1 1
-1 2
-2 0
-2 1
-2 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Exemplo com while&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-com-while&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#exemplo-com-while&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    j &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; j &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; j&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        j &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; j &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;O funcionamento é o mesmo do exemplo anterior, mas utilizando a estrutura &lt;code&gt;while&lt;/code&gt;. Note que o contador interno (&lt;code&gt;j&lt;/code&gt;) é reiniciado a cada nova iteração do laço externo.&lt;/p&gt;
-&lt;h3&gt;Exemplo prático (tabuada)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-prático-tabuada&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#exemplo-pr%c3%a1tico-tabuada&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;--- Tabuada de&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;---&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; j&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;*&lt;/span&gt; j&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Esse padrão é comum em problemas que envolvem tabelas, matrizes ou combinações. O laço interno sempre será executado completamente antes que o laço externo avance para o próximo valor.&lt;/p&gt;
-&lt;h3&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação-1&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#observa%c3%a7%c3%a3o-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Laços aninhados aumentam a quantidade de execuções rapidamente, pois multiplicam o número de iterações. Por isso, devem ser usados com atenção, principalmente em problemas maiores.&lt;/p&gt;
-&lt;h2&gt;Quando usar cada estrutura?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;quando-usar-cada-estrutura&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#quando-usar-cada-estrutura&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;while&lt;/strong&gt;: quando não se sabe quantas vezes o laço será executado.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;for&lt;/strong&gt;: quando se sabe o número de repetições ou ao percorrer uma sequência.&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>
