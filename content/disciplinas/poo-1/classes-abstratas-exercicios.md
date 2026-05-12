@@ -12,7 +12,7 @@ tags:
 
 {{< questao >}}
 
-Crie uma pequena biblioteca de componentes de interface renderizados no terminal. A biblioteca deverá conter os componentes como Text, Button, CheckBox, RadioButton, Toogle e Chip. Permita que os componentes sejam personalizados, trocar de cor, propriedades, etc. Faça o melhor uso da orientação à objetos para construir a biblioteca. Utilize os caracteres especiais da [tabela ASCII/UTF-8](https://www.unicode.org/charts/PDF/U2500.pdf) para desenhar os componentes no terminal.
+Crie uma pequena biblioteca de componentes de interface renderizados no terminal. A biblioteca deverá conter os componentes como Text, Button, CheckBox, RadioButton, Toogle e Chip. Permita que os componentes sejam personalizados, trocar de cor, propriedades, etc. Faça o melhor uso da orientação à objetos para construir a biblioteca. Utilize os caracteres especiais da <a href="https://www.unicode.org/charts/PDF/U2500.pdf">tabela ASCII/UTF-8</a> para desenhar os componentes no terminal.
 Crie o diagram de classe da UML e o código correspondente. Exemplos dos componentes:
 <br>
 Toogle: [ ON ] / [ OFF ]
