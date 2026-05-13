@@ -119,11 +119,11 @@ print(type(x))
 {{< /code >}}
 
 {{< alternativa >}} int {{< /alternativa >}}
-{{< alternativa >}} <class 'int'> {{< /alternativa >}}
+{{< alternativa >}} int {{< /alternativa >}}
 {{< alternativa >}} number {{< /alternativa >}}
 {{< alternativa >}} type int {{< /alternativa >}}
 {{< solucao letra="B" >}}
-O Python exibe o tipo como <class 'int'>.
+O Python exibe o tipo como int.
 {{< /solucao >}}
 {{< /questao >}}
 
