@@ -70,7 +70,7 @@ Como converter um valor lido com input() para decimal?
 {{< alternativa >}} input(int) {{< /alternativa >}}
 {{< alternativa >}} str(input()) {{< /alternativa >}}
 {{< alternativa >}} float(input()) {{< /alternativa >}}
-{{< solucao letra="A" >}}
+{{< solucao letra="D" >}}
 Utiliza-se float(input()) para converter para decimal.
 {{< /solucao >}}
 {{< /questao >}}
