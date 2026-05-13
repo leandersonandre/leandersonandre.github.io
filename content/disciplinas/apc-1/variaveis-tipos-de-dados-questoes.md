@@ -118,7 +118,7 @@ print(type(x))
 
 {{< /code >}}
 
-{{< alternativa >}} int {{< /alternativa >}}
+{{< alternativa >}} float {{< /alternativa >}}
 {{< alternativa >}} int {{< /alternativa >}}
 {{< alternativa >}} number {{< /alternativa >}}
 {{< alternativa >}} type int {{< /alternativa >}}
