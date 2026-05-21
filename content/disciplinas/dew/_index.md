@@ -5,7 +5,8 @@ toc: false
 ---
 
 {{< cards cols="1" >}}
-  {{< card link="/disciplinas/dew/interfaces" title="Formulários" >}}
+  {{< card link="/disciplinas/dew/hello-world" title="Hello World em HTML" >}}
+  {{< card link="/disciplinas/dew/formularios" title="Formulários" >}}
 {{< /cards >}}
 
 <br>
