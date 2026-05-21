@@ -20,4 +20,4 @@ toc: false
 
 - GRONER, Loiane. *Estruturas de dados e algoritmos com JavaScript: escreva um código JavaScript complexo e eficaz usando a mais recente ECMAScript*. 2. ed. São Paulo: Novatec Editora, 2019.
 
-- SILVA, Maurício Samy. **Fundamentos de HTML5 e CSS3**. 1. ed. São Paulo: Novatec, 2015.
+- SILVA, Maurício Samy. *Fundamentos de HTML5 e CSS3*. 1. ed. São Paulo: Novatec, 2015.
