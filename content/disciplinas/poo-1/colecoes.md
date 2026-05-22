@@ -389,6 +389,78 @@ O `HashMap` é a implementação mais comum, em que os elementos são armazenado
 
 #### Criação de um mapa
 
+
+{{< tabs items="Diagrama,PlantUML" >}}
+{{< tab >}}
+{{< plantuml >}}
+
+
+interface Map<K, V> {
+    + put(key: K, value: V): V
+    + get(key: Object): V
+    + remove(key: Object): V
+    + containsKey(key: Object): boolean
+    + containsValue(value: Object): boolean
+    + size(): int
+    + isEmpty(): boolean
+    + clear(): void
+    + keySet(): Set<K>
+    + values(): Collection<V>
+    + entrySet(): Set<Map.Entry<K,V>>
+}
+
+class HashMap<K, V> {
+    - table: Node<K,V>[]
+    - size: int
+    - loadFactor: float
+
+    + HashMap()
+
+}
+
+Map <|.r. HashMap
+
+
+{{< /plantuml >}}
+
+{{< /tab >}}
+
+{{< tab >}} Como criar o diagrama utilizando PlantUML
+
+```
+
+
+interface Map<K, V> {
+    + put(key: K, value: V): V
+    + get(key: Object): V
+    + remove(key: Object): V
+    + containsKey(key: Object): boolean
+    + containsValue(value: Object): boolean
+    + size(): int
+    + isEmpty(): boolean
+    + clear(): void
+    + keySet(): Set<K>
+    + values(): Collection<V>
+    + entrySet(): Set<Map.Entry<K,V>>
+}
+
+class HashMap<K, V> {
+    - table: Node<K,V>[]
+    - size: int
+    - loadFactor: float
+
+    + HashMap()
+
+}
+
+Map <|.r. HashMap
+
+
+```
+{{< /tab >}}
+
+{{< /tabs >}}
+
 #### Adicionando um par de elementos
 
 #### Obter o elemento pela sua chave
