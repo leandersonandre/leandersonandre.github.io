@@ -73,7 +73,7 @@
 &lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
 &lt;li&gt;Losango → decisão&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;plantuml-1778615030460771000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760451844000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -86,7 +86,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030460771000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760451844000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -161,7 +161,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778615030760140000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760752621000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -174,7 +174,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030760140000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760752621000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -830,7 +830,7 @@
 &lt;/div&gt;
 &lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;p&gt;Observe que o nome da classe abstrata está em itálico.
 O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto está em itálico.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778616967937817000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760458796000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nabstract class Shape  \u007b\n  \u007babstract\u007d \u002barea() : double\n  \u002bgetName(): String\n\u007d\n\n@enduml\n`;
@@ -842,7 +842,7 @@ O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto est�
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937817000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760458796000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -2469,6 +2469,23 @@ Seu programa deve imprimir uma linha contendo o caractere “S” se é possíve
     &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma pequena biblioteca de componentes de interface renderizados no terminal. A biblioteca deverá conter os componentes como Text, Button, CheckBox, RadioButton, Toogle e Chip. Permita que os componentes sejam personalizados, trocar de cor, propriedades, etc. Faça o melhor uso da orientação à objetos para construir a biblioteca. Utilize os caracteres especiais da &lt;a href=&#34;https://www.unicode.org/charts/PDF/U2500.pdf&#34;&gt;tabela ASCII/UTF-8&lt;/a&gt; para desenhar os componentes no terminal.
+Crie o diagram de classe da UML e o código correspondente. Exemplos dos componentes:
+&lt;br&gt;
+Toogle: [ ON ] / [ OFF ]
+&lt;br&gt;
+CheckBox: [x] / [ ]
+&lt;br&gt;
+RadioButton: ( ) Opção ( X ) Opção
+&lt;br&gt;
+Chip: [ Opção ] [ Opção X ]
+&lt;br&gt;
+Text: Um texto
+&lt;br&gt;
+Button: [Salvar]
+
+
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3402,7 +3419,7 @@ Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando
 Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
 Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
 
-&lt;div id=&#34;plantuml-1778616967942471000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760469357000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3415,7 +3432,7 @@ Após a implementação, instancie objetos de cada classe e apresente no termina
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942471000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760469357000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3434,7 +3451,7 @@ Crie uma nova classe responsável por operações com objetos do tipo Shape.
 Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
 O resultado deve ser retornado como um valor do tipo double.
 
-&lt;div id=&#34;plantuml-1778616967942495000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760469373000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3447,7 +3464,7 @@ O resultado deve ser retornado como um valor do tipo double.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942495000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760469373000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3477,7 +3494,7 @@ Regras:
   &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div id=&#34;plantuml-1778616967942515000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760469387000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3490,7 +3507,7 @@ Regras:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942515000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760469387000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5838,7 +5855,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a fila se 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778615030771942000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760763635000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5851,7 +5868,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a fila se 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030771942000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760763635000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6360,6 +6377,176 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
     </item>
     
     <item>
+      <title>Formulários</title>
+      <link>http://localhost:1313/disciplinas/dew/formularios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/dew/formularios/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Um formulário é utilizado para coletar dados do usuário. Geralmente os dados são enviados para um servidor para ser processado.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Elemento input&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;elemento-input&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#elemento-input&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O elemento input é um dos campos mais utilizados para coletar os dados do usuário. O elemento input permite informar uma gama diferente de informações. O atributo &lt;code&gt;type&lt;/code&gt; define o tipo de campo e layout.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;color&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;datetime-local&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;email&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;hidden&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;image&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;month&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;number&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;range&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;reset&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;search&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;tel&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;time&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;week&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O layout e tipo de informação do campo depende do navegador utilizado. Caso o navegador não suportar, o campo input assume o tipo &lt;code&gt;text&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Atributos do input&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;atributos-do-input&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#atributos-do-input&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O elemento input possui os atributos &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;value&lt;/code&gt; e &lt;code&gt;placeholder&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;João&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;placeholder&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite seu nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Atributo&lt;/th&gt;
+          &lt;th&gt;Descrição&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;id&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Identifica unicamente o elemento na página. É muito usado para CSS, JavaScript e associação com &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Define o nome do campo enviado ao servidor quando o formulário é submetido.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;value&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Define o valor inicial do campo ou o valor associado ao input.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;placeholder&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Exibe um texto de exemplo ou dica dentro do campo enquanto ele estiver vazio.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Labels&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;labels&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#labels&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O elemento &lt;code&gt;label&lt;/code&gt; define um texto para explicar qual conteúdo deve ser informado em um campo de formulário (&lt;code&gt;input&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;label&lt;/code&gt; é associado a um &lt;code&gt;input&lt;/code&gt; por meio do atributo &lt;code&gt;for&lt;/code&gt;, cujo valor deve ser igual ao atributo &lt;code&gt;id&lt;/code&gt; do &lt;code&gt;input&lt;/code&gt; correspondente.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Nome:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;placeholder&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite seu nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Hello World em HTML</title>
+      <link>http://localhost:1313/disciplinas/dew/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/dew/hello-world/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pt-BR&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Hello World em HTML&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Minha página em HTML&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Meu parágrafo.&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Interfaces</title>
       <link>http://localhost:1313/disciplinas/poo-1/interfaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6379,7 +6566,7 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
 &lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1778616967943417000&#34;&gt;&lt;/div&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1779451760475798000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6392,7 +6579,7 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967943417000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760475798000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6522,7 +6709,7 @@ No entanto, a partir do Java 8, interfaces também podem possuir métodos defaul
 A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Múltiplas realizações de interface&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-realizações-de-interface&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#m%c3%baltiplas-realiza%c3%a7%c3%b5es-de-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe pode realizar a implementação de múltiplas interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778616967943434000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760475809000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6535,7 +6722,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967943434000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760475809000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6597,7 +6784,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
 &lt;/div&gt;
 &lt;h3&gt;Herança de interfaces&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herança-de-interfaces&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#heran%c3%a7a-de-interfaces&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As interfaces podem realizar uma ou múltiplas heranças de outras interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778616967943446000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760475818000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6610,7 +6797,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967943446000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760475818000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6755,7 +6942,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778615030762812000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760754110000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6768,7 +6955,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030762812000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760754110000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7250,7 +7437,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778615030777901000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760765148000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7263,7 +7450,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030777901000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760765148000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7755,7 +7942,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
 &lt;/div&gt;
 &lt;h2&gt;Representação estrutural&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-estrutural&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#representa%c3%a7%c3%a3o-estrutural&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A lista circular forma um ciclo contínuo entre os nós.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1778615030779183000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760766264000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7768,7 +7955,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030779183000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760766264000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8283,7 +8470,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778615030792257000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760775207000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8296,7 +8483,7 @@ Diferente dos métodos &lt;strong&gt;default&lt;/strong&gt;, métodos &lt;strong
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030792257000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760775207000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9544,7 +9731,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1778615030784350000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760773480000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9557,7 +9744,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778615030784350000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760773480000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14511,7 +14698,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778616967936545000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760503884000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14524,7 +14711,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936545000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760503884000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14643,7 +14830,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778616967936676000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760503929000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14656,7 +14843,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936676000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760503929000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14771,7 +14958,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778616967936810000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760503973000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14784,7 +14971,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936810000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760503973000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14899,7 +15086,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778616967936941000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504017000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14912,7 +15099,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936941000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504017000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15034,7 +15221,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778616967937069000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504060000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15047,7 +15234,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937069000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504060000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15166,7 +15353,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1778616967937203000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504104000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15179,7 +15366,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937203000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504104000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16522,7 +16709,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1778616967938328000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504664000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16535,7 +16722,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938328000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504664000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16609,7 +16796,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938387000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504703000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16622,7 +16809,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938387000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504703000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16696,7 +16883,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938449000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504742000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16709,7 +16896,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938449000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504742000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16783,7 +16970,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938505000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504791000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16796,7 +16983,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938505000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504791000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16870,7 +17057,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938565000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504831000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16883,7 +17070,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938565000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504831000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -16957,7 +17144,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938621000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504868000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -16970,7 +17157,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938621000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504868000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17044,7 +17231,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938680000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504906000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17057,7 +17244,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938680000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504906000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17131,7 +17318,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938735000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504944000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17144,7 +17331,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938735000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504944000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17218,7 +17405,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938791000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760504981000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17231,7 +17418,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938791000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760504981000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -17305,7 +17492,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1778616967938846000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760505019000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -17318,7 +17505,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938846000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760505019000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19262,7 +19449,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1778616967937357000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506034000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19275,7 +19462,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937357000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506034000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19348,7 +19535,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1778616967937469000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506072000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19361,7 +19548,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937469000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506072000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19434,7 +19621,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778616967937579000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506119000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19447,7 +19634,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937579000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506119000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19520,7 +19707,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778616967937691000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506157000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19533,7 +19720,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937691000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506157000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19606,7 +19793,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778616967937945000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506195000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19619,7 +19806,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967937945000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506195000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19692,7 +19879,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778616967938065000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506232000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19705,7 +19892,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938065000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506232000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19778,7 +19965,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1778616967938183000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760506272000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19791,7 +19978,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967938183000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760506272000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -21175,7 +21362,7 @@ Como converter um valor lido com input() para decimal?
         
         &lt;div class=&#34;resposta-body hidden&#34;&gt;
             &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
             &lt;/div&gt;
 
             
@@ -22070,7 +22257,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1778616967935648000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507377000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22083,7 +22270,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935648000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507377000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -22156,7 +22343,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1778616967935724000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507415000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22169,7 +22356,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935724000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507415000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22255,7 +22442,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935808000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507466000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22268,7 +22455,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935808000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507466000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22279,7 +22466,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935827000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507478000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22292,7 +22479,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935827000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507478000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22303,7 +22490,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935845000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507489000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22316,7 +22503,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935845000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507489000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22327,7 +22514,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935863000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507499000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22340,7 +22527,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935863000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507499000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22416,7 +22603,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935912000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507537000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22429,7 +22616,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935912000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507537000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22440,7 +22627,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935931000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507547000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22453,7 +22640,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935931000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507547000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22464,7 +22651,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935948000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507558000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22477,7 +22664,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935948000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507558000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22488,7 +22675,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967935965000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507569000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22501,7 +22688,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967935965000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507569000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22574,7 +22761,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967936010000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507596000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22587,7 +22774,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936010000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507596000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22598,7 +22785,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967936028000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507606000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22611,7 +22798,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936028000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507606000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22622,7 +22809,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967936046000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507617000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22635,7 +22822,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936046000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507617000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22646,7 +22833,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1778616967936064000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760507628000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22659,7 +22846,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967936064000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760507628000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28442,7 +28629,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942654000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511390000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28455,7 +28642,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942654000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511390000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28501,7 +28688,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942681000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511422000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28514,7 +28701,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942681000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511422000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28560,7 +28747,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942703000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511438000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28573,7 +28760,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942703000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511438000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28619,7 +28806,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942724000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511454000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28632,7 +28819,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942724000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511454000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28678,7 +28865,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942746000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511470000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28691,7 +28878,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942746000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511470000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28737,7 +28924,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942766000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511484000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28750,7 +28937,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942766000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511484000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28796,7 +28983,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942786000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511500000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28809,7 +28996,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942786000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511500000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28855,7 +29042,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942807000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511517000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28868,7 +29055,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942807000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511517000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28914,7 +29101,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942826000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511531000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28927,7 +29114,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942826000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511531000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -28973,7 +29160,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942856000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511546000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -28986,7 +29173,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942856000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511546000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29033,7 +29220,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942877000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511572000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29046,7 +29233,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942877000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511572000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29092,7 +29279,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942897000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511587000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29105,7 +29292,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942897000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511587000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29151,7 +29338,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942919000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511614000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29164,7 +29351,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942919000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511614000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29210,7 +29397,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942939000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511630000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29223,7 +29410,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942939000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511630000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29271,7 +29458,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942959000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511645000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29284,7 +29471,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942959000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511645000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -29330,7 +29517,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1778616967942981000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760511662000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -29343,7 +29530,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967942981000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760511662000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32585,7 +32772,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1778616967943872000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760513335000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32598,7 +32785,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967943872000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760513335000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32661,7 +32848,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1778616967943977000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760513374000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32674,7 +32861,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967943977000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760513374000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32855,7 +33042,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1778616967944236000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760513464000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32868,7 +33055,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967944236000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760513464000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -32931,7 +33118,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1778616967944334000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760513497000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -32944,7 +33131,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967944334000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760513497000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -33393,7 +33580,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1778616967944941000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760513698000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -33406,7 +33593,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967944941000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760513698000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -33470,7 +33657,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1778616967945035000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1779451760513731000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -33483,7 +33670,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1778616967945035000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1779451760513731000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -36696,982 +36883,6 @@ Saída final: 0 2
 
 &lt;/div&gt;
 
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Questões sobre Variáveis e tipos de dados</title>
-      <link>http://localhost:1313/disciplinas/apc-1/variaveis-tipos-de-dados-questoes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/disciplinas/apc-1/variaveis-tipos-de-dados-questoes/</guid>
-      <description>
-        
-        
-        
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-O que é uma variável em Python?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Um tipo de dado fixo 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Um espaço na memória para armazenar um valor 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Um comando de repetição 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Um operador matemático 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Uma variável armazena um valor na memória.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual das opções representa corretamente a criação de uma variável?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     int x = 10 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     x := 10 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     x = 10 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     var x = 10 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Em Python, utiliza-se x = 10 para atribuição.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o tipo da variável?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = 10
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     float 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     int 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     str 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     bool 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-10 é um número inteiro.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o tipo da variável?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = 3.14
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     int 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     float 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     str 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     bool 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-3.14 é um número decimal (float).
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o tipo da variável?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = &#34;Python&#34;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     int 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     float 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     str 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     bool 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Texto é do tipo string.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o tipo da variável?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = True
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     int 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     float 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     str 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     bool 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-True é um valor booleano.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual função retorna o tipo de uma variável?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     type() 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     typeof() 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     class() 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     var() 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-A função type() mostra o tipo da variável.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será a saída?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = 10
-print(type(x))
-
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     int 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     &lt;class &#39;int&#39;&gt; 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     number 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     type int 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-O Python exibe o tipo como &lt;class &#39;int&#39;&gt;.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o tipo da variável?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = &#34;10&#34;
-y = 10
-
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     x e y têm o mesmo tipo 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     x é string e y é inteiro 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     ambos são inteiros 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     ambos são strings 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-x é string e y é inteiro.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o resultado?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = 5
-y = 2
-print(x / y)
-
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     2 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     2.5 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     3 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Erro 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-A divisão retorna float.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o resultado?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = 5
-y = 2
-print(x // y)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     2.5 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     2 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     3 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Erro 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-// retorna divisão inteira.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual conversão transforma string em inteiro?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     str() 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     int() 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     float() 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     bool() 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-int() converte para inteiro.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o resultado?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = int(&#34;5&#34;)
-print(x + 2)
-
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     52 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     7 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     5 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Erro 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-A string foi convertida para inteiro.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual será o tipo da variável?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-x = float(3)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     x será inteiro 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     x será float 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     x será string 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     erro 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-float(3) converte para 3.0.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Referências bibliográficas</title>
-      <link>http://localhost:1313/disciplinas/apc-1/referencias/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/disciplinas/apc-1/referencias/</guid>
-      <description>
-        
-        
-        &lt;p&gt;MANZANO, José Augusto N. G. &lt;em&gt;Algoritmos: lógica para desenvolvimento de programação imperativa de computadores&lt;/em&gt;. São Paulo: Érica, 2025.&lt;/p&gt;
-&lt;p&gt;MATTHES, Eric. &lt;em&gt;Curso intensivo de Python: uma introdução prática e baseada em projetos à programação&lt;/em&gt;. São Paulo: Novatec, 2023.&lt;/p&gt;
-&lt;p&gt;MENEZES, Nilo Ney Coutinho. &lt;em&gt;Introdução à programação com Python: algoritmos e lógica de programação para iniciantes&lt;/em&gt;. 4. ed. São Paulo: Novatec, 2024.&lt;/p&gt;
-&lt;p&gt;SOUZA, Marco A. Furlan de. &lt;em&gt;Algoritmos e lógica da programação&lt;/em&gt;. São Paulo: Érica, 2019.&lt;/p&gt;
-&lt;p&gt;PYTHON SOFTWARE FOUNDATION. &lt;em&gt;Python.org&lt;/em&gt;. Disponível em: &lt;a href=&#34;https://www.python.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.python.org/&lt;/a&gt;. Acesso em: 26 abr. 2026.&lt;/p&gt;
 
       </description>
     </item>
