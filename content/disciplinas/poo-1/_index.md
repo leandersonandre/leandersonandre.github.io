@@ -9,6 +9,8 @@ toc: false
   {{< card link="/disciplinas/poo-1/interfaces-exercicios" title="Exercícios sobre Interfaces" >}}
   {{< card link="/disciplinas/poo-1/classes-abstratas" title="Classes Abstratas" >}}
   {{< card link="/disciplinas/poo-1/classes-abstratas-exercicios" title="Exercícios sobre Classes Abstratas" >}}
+  {{< card link="/disciplinas/poo-1/colecoes" title="Coleções" >}}
+  {{< card link="/disciplinas/poo-1/colecoes-exercicios" title="Exercícios sobre Coleções" >}}
 {{< /cards >}}
 
 <br>

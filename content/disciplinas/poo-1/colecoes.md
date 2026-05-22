@@ -12,11 +12,107 @@ tags:
 
 ## Definição
 
+Coleções são estruturas de dados utilizadas para armazenar e manipular grupos de objetos. O framework Collections do Java fornece interfaces e implementações prontas para representar listas, conjuntos e mapas, oferecendo operações como inserção, remoção, busca e iteração. As principais coleções da biblioteca padrão estão disponíveis no pacote `java.util`.
 
+Diagrama da API de coleções da linguagem Java.
+
+{{< plantuml >}}
+scale 0.7
+
+interface Iterable
+interface Collection
+interface List
+interface Set
+interface Queue
+interface Deque
+
+abstract class AbstractCollection
+abstract class AbstractList
+abstract class AbstractSequentialList
+abstract class AbstractSet
+abstract class AbstractQueue
+
+class ArrayList
+class LinkedList
+class Vector
+class Stack
+
+class HashSet
+class LinkedHashSet
+class TreeSet
+class EnumSet
+
+class PriorityQueue
+class ArrayDeque
+
+Iterable <|-- Collection
+
+Collection <|-- List
+Collection <|-- Set
+Collection <|-- Queue
+
+Queue <|-- Deque
+
+Collection <|-- AbstractCollection
+
+AbstractCollection <|-- AbstractList
+AbstractCollection <|-- AbstractSet
+AbstractCollection <|-- AbstractQueue
+
+AbstractList <|-- AbstractSequentialList
+
+List <|.. AbstractList
+Set <|.. AbstractSet
+Queue <|.. AbstractQueue
+
+AbstractList <|-- ArrayList
+AbstractSequentialList <|-- LinkedList
+AbstractList <|-- Vector
+Vector <|-- Stack
+
+AbstractSet <|-- HashSet
+HashSet <|-- LinkedHashSet
+AbstractSet <|-- TreeSet
+AbstractSet <|-- EnumSet
+
+AbstractQueue <|-- PriorityQueue
+AbstractQueue <|-- ArrayDeque
+Deque <|.. ArrayDeque
+Deque <|.. LinkedList
+
+
+{{< /plantuml >}}
+
+
+{{< plantuml >}}
+
+interface Map
+abstract class AbstractMap
+
+class HashMap
+class LinkedHashMap
+class TreeMap
+class WeakHashMap
+class IdentityHashMap
+class EnumMap
+class Hashtable
+
+
+Map <|.. AbstractMap
+
+AbstractMap <|-- HashMap
+HashMap <|-- LinkedHashMap
+AbstractMap <|-- TreeMap
+AbstractMap <|-- WeakHashMap
+AbstractMap <|-- IdentityHashMap
+AbstractMap <|-- EnumMap
+AbstractMap <|-- Hashtable
+
+{{< /plantuml >}}
 
 ## Listas
 
-As listas são coleções de objetos onde é possível adicionar elementos repetidos e a ordem importa. A lista é relacionado com a sequência da matemática.
+As listas são coleções de objetos onde é possível adicionar elementos repetidos e a ordem importa. A lista corresponde ao conceito matemático de sequência.
 O Java possui a interface `List` para definir a estrutura de dados das listas e possui implementações de alguns tipos de listas, entre eles o `ArrayList`, `LinkedList` e `Vector`.
 
 O `ArrayList` é a estrutura mais comum onde os elementos são armazenados dentro de um arranjo.
@@ -103,13 +199,13 @@ List <|.r. ArrayList
 
 {{< /tabs >}}
 
-A instanciação da `List` deve ser feito através do tipo concreto, ou seja, a classe `ArrayList`.  
+A instanciação da `List` deve ser feita através do tipo concreto, ou seja, a classe `ArrayList`.  
 
 ```java
 // Criação de uma lista
 List<Integer> lista = new ArrayList<Integer>();
 
-// Cria um arraylist com um arranjo de tamanho 200 para guardar os elementos.
+// Cria um ArrayList com capacidade inicial para 200 elementos.
 List<Integer> lista = new ArrayList<Integer>(200);
 
 // Pode ser utilizado a inferência de tipos,
@@ -136,6 +232,9 @@ O método `add(index,elemento)` adiciona o elemento na posição `index`. Caso a
 
 ```java
 var lista = new ArrayList<Integer>();
+lista.add(1);
+lista.add(2);
+lista.add(3);
 
 lista.add(1,99);
 
@@ -147,6 +246,9 @@ O método `get(index)` retorna o elemento na posição `index`. Caso a posição
 
 ```java
 var lista = new ArrayList<Integer>();
+lista.add(1);
+lista.add(2);
+lista.add(3);
 
 lista.get(1);
 
@@ -158,6 +260,9 @@ O método `set(index,elemento)` substitui o elemento na posição `index`. O mé
 
 ```java
 var lista = new ArrayList<Integer>();
+lista.add(1);
+lista.add(2);
+lista.add(3);
 
 var substituido = lista.set(1,99);
 
@@ -170,8 +275,11 @@ O método `remove(index)` remove o elemento na posição `index`. O método reto
 
 ```java
 var lista = new ArrayList<Integer>();
+lista.add(1);
+lista.add(2);
+lista.add(3);
 
-var removido = lista.remove(99);
+var removido = lista.remove(2);
 ```
 
 #### Métodos úteis
@@ -185,23 +293,23 @@ var lista = new ArrayList<Integer>();
 // Verifica se possui um elemento -
 // true -> se possuir o elemento
 // false -> se não possuir o elemento
-var contem = list.contains(99);
+var contem = lista.contains(99);
 
 // Localiza o índice do elemento
 // Retorna -1 caso não encontrar o elemento na lista
-var indice = list.indexOf(99);
+var indice = lista.indexOf(99);
 
 // Retorna o índice do último elemento 99
-var indice = list.lastIndexOf(99);
+var indice = lista.lastIndexOf(99);
 
 // tamanho da lista
-var tamanho = list.size();
+var tamanho = lista.size();
 
 // Verificar se a lista está vazia
-boolean vazio = list.isEmpty();
+boolean vazio = lista.isEmpty();
 
 // Limpar a lista / remover todos os elementos
-list.clear();
+lista.clear();
 ```
 
 #### Percorrer a lista
@@ -232,13 +340,14 @@ for(var e : lista){
 
 Os conjuntos são coleções de objetos em que não é permitido adicionar elementos repetidos e a ordem dos elementos não é garantida. A coleção conjunto funciona de forma semelhante aos conjuntos da matemática. 
 
-O Java possui a interface Set para definir a estrutura de dados dos conjuntos e possui implementações de alguns tipos de conjuntos, entre eles o `HashSet`, `EnumSet`, `LinkedSet` e `TreeSet`.
+O Java possui a interface Set para definir a estrutura de dados dos conjuntos e possui implementações de alguns tipos de conjuntos, entre eles o `HashSet`, `EnumSet`, `LinkedHashSet` e `TreeSet`.
 
-O `HashSet` é a estrutura mais comum onde os elementos são armazenados dentro de um mapa.
+
+O `HashSet` é a implementação mais comum da interface `Set`. Internamente, seus elementos são armazenados utilizando uma tabela hash.
 
 #### Criação de um conjunto
 
-Um conjunto pode ser definido por meio de uma variável do tipo `Set`.  A instanciação do conjunto deve ser feito através do tipo concreto, ou seja, a classe `HashSet`.
+Um conjunto pode ser definido por meio de uma variável do tipo `Set`.  A instanciação do conjunto deve ser feita através do tipo concreto, ou seja, a classe `HashSet`.
 
 
 {{< tabs items="Diagrama,PlantUML" >}}
@@ -461,7 +570,7 @@ Map <|.r. HashMap
 
 {{< /tabs >}}
 
-O mapa possui dois tipos genéricos. O `K` representa o tipos de dados da chave e o `V` representa o tipo de dados do valor.
+O mapa possui dois tipos genéricos. O `K` representa o tipos de dado da chave e o `V` representa o tipo de dado do valor.
 
 ```java
 // Map<K,V>
@@ -473,15 +582,119 @@ var mapa = new HashMap<Integer,String>();
 
 #### Adicionando um par de elementos
 
+O método `put(chave,valor)`  adiciona o par (chave, valor) no mapa. Caso a chave já exista no mapa, o valor é substituído.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+
+mapa.put(1,"Brasil");
+mapa.put(2,"Argentina");
+
+```
+
 #### Obter o elemento pela sua chave
+
+O método `get(chave)`  retorna o valor associado a chave. Caso a chave não exista no mapa, o método retorna `null`.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+
+mapa.put(1,"Brasil");
+var valor = mapa.get(1);
+
+valor = mapa.get(99);
+
+```
+
+O método `getOrDefault(chave,default)`  retorna o valor associado a chave. Caso a chave não exista no mapa, o método retorna `default`.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+var valor = mapa.getOrDefault(1,"Não encontrado");
+
+```
 
 #### Verificar se existe uma chave
 
+O método `containsKey(chave)`  verifica se a chave existe no mapa. Retorna `true` caso existir. Caso contrário retorna `false`.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+var chaveExiste = mapa.containsKey(1);
+
+```
+
+
+#### Verificar se existe um elemento (valor)
+
+O método `containsValue(valor)`  verifica se um elemento existe no mapa. Retorna `true` caso existir. Caso contrário retorna `false`.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+var elementoExiste = mapa.containsValue("Brasil");
+
+```
+
 #### Remover uma chave
+
+O método `remove(chave)`  remove a chave do mapa e retorna o valor associado.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+var valor = mapa.remove(1);
+
+```
 
 #### Métodos úteis
 
+O mapa fornece uma gama de métodos uteis, tais como size, clear entre outros.
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+
+// Verificar o tamanho
+mapa.size();
+
+// Verificar se está vazio
+var estaVazio = mapa.isEmpty();
+
+// Remover todos os elementos
+mapa.clear();
+
+```
 
 #### Percorrendo um mapa
 
 
+O mapa não possui o conceito de posições ou sequência dos elementos. Para percorrer os elementos de um mapa, utiliza-se um `Iterator`.
+
+O mapa permite percorrer o conjunto de chaves, valores e os pares (chave,valor).
+
+```java
+
+var mapa = new HashMap<Integer,String>();
+
+// Percorrer as chaves
+for(var chave : mapa.keySet()){
+  System.out.println(chave);
+}
+
+// Percorrer os valores
+for(var valor : mapa.values()){
+  System.out.println(valor);
+}
+
+// Percorrer os pares (chave,valor)
+for(var par : mapa.entrySet()){
+  System.out.println(par.getKey());
+  System.out.println(par.getValue());
+}
+
+```
