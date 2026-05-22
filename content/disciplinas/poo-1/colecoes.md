@@ -60,7 +60,7 @@ class ArrayList<E> {
 
 List <|.r. ArrayList
 
-{{< \plantuml >}}
+{{< /plantuml >}}
 
 {{< /tab >}}
 
@@ -174,7 +174,7 @@ var lista = new ArrayList<Integer>();
 var removido = lista.remove(99);
 ```
 
-#### Métodos uteis
+#### Métodos úteis
 
 O `List` fornece uma gama de métodos uteis, tais como size, clear, contains entre outros.
 
