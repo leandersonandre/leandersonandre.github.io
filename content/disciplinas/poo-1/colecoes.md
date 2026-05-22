@@ -461,6 +461,16 @@ Map <|.r. HashMap
 
 {{< /tabs >}}
 
+O mapa possui dois tipos genéricos. O `K` representa o tipos de dados da chave e o `V` representa o tipo de dados do valor.
+
+```java
+// Map<K,V>
+Map<Integer,String> mapa = new HashMap<Integer,String>();
+
+var mapa = new HashMap<Integer,String>();
+
+```
+
 #### Adicionando um par de elementos
 
 #### Obter o elemento pela sua chave
