@@ -231,6 +231,74 @@ for(var e : lista){
 ## Conjuntos
 
 Os conjuntos são coleções de objetos onde não é possível adicionar elementos repetidos e a ordem não importa. A coleção conjunto funciona da mesma maneira que os conjuntos na matemática.
+O conjunto pode ser definida através de uma variável do tipo `Set`. 
+
+
+{{< tabs items="Diagrama,PlantUML" >}}
+{{< tab >}}
+{{< plantuml >}}
+
+
+interface Set<E> {
+    + add(element: E): boolean
+    + remove(element: Object): boolean
+    + contains(element: Object): boolean
+    + size(): int
+    + isEmpty(): boolean
+    + clear(): void
+    + iterator(): Iterator<E>
+    + toArray(): Object[]
+}
+
+class HashSet<E> {
+    - map: HashMap<E, Object>
+
+    + HashSet()
+
+}
+
+Set <|.r. HashSet
+{{< /plantuml >}}
+
+{{< /tab >}}
+
+{{< tab >}} Como criar o diagrama utilizando PlantUML
+
+```
+
+
+interface Set<E> {
+    + add(element: E): boolean
+    + remove(element: Object): boolean
+    + contains(element: Object): boolean
+    + size(): int
+    + isEmpty(): boolean
+    + clear(): void
+    + iterator(): Iterator<E>
+    + toArray(): Object[]
+}
+
+class HashSet<E> {
+    - map: HashMap<E, Object>
+
+    + HashSet()
+
+}
+
+Set <|.r. HashSet
+```
+{{< /tab >}}
+
+{{< /tabs >}}
+
+
+```java
+Set<Integer> conjunto = new HashSet<Integer>();
+
+var conjunto = new HashSet<Integer>();
+
+```
+
 
 #### Criação de um conjunto
 
