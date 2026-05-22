@@ -231,7 +231,14 @@ for(var e : lista){
 ## Conjuntos
 
 Os conjuntos são coleções de objetos onde não é possível adicionar elementos repetidos e a ordem não importa. A coleção conjunto funciona da mesma maneira que os conjuntos na matemática.
-O conjunto pode ser definida através de uma variável do tipo `Set`. 
+
+O Java possui a interface Set para definir a estrutura de dados dos conjuntos e possui implementações de alguns tipos de conjuntos, entre eles o `HashSet`, `EnumSet`, `LinkedSet` e `TreeSet`.
+
+O `HashSet` é a estrutura mais comum onde os elementos são armazenados dentro de um mapa.
+
+#### Criação de um conjunto
+
+O conjunto pode ser definida através de uma variável do tipo `Set`.  A instanciação do conjunto deve ser feito através do tipo concreto, ou seja, a classe `HashSet`.
 
 
 {{< tabs items="Diagrama,PlantUML" >}}
@@ -300,19 +307,78 @@ var conjunto = new HashSet<Integer>();
 ```
 
 
-#### Criação de um conjunto
+
 
 #### Adicionar elementos
 
+O método `add(elemento)`  adiciona o elemento no conjunto. O elemento é descartado caso já existir no conjunto.
+
+```java
+
+var conjunto = new HashSet<Integer>();
+conjunto.add(1);
+conjunto.add(2);
+conjunto.add(3);
+
+```
+
+#### Verificar se um elemento existe
+
+O método `contains(elemento)`  verifica se o elemento existe no conjunto. Caso existir, retorna `true`. Caso contrário, retorna `false`.
+
+```java
+
+var conjunto = new HashSet<Integer>();
+var existe = conjunto.contains(1);
+
+```
 
 #### Remover elementos
 
+O método `remove(elemento)`  remove o elemento no conjunto. O método retorna  `true` se o elemento existia no conjunto e foi removido. Caso contrário, retorna `false`.
+
+```java
+
+var conjunto = new HashSet<Integer>();
+var foiRemovido = conjunto.remove(1);
+
+```
 
 #### Métodos úteis
 
+O conjunto fornece uma gama de métodos uteis, tais como size, clear entre outros.
+
+```java
+
+var conjunto = new HashSet<Integer>();
+
+// Verificar o tamanho
+conjunto.size();
+
+// Verificar se está vazio
+var estaVazio = conjunto.isEmpty();
+
+// Remover todos os elementos
+conjunto.clear();
+
+```
 
 #### Percorrer o conjunto
 
+O conjunto não possui o conceito de posições ou sequência. Para percorrer um conjunto, é utilizado o `Iterator`.
 
+
+```java
+
+var conjunto = new HashSet<Integer>();
+conjunto.add(1);
+conjunto.add(10);
+conjunto.add(100);
+
+for(var e : conjunto){
+  System.out.println(e);
+}
+
+```
 
 ## Mapas
