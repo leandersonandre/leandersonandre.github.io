@@ -10,11 +10,11 @@ tags:
 ---
 
 
-### Definição
+## Definição
 
 
 
-### Listas
+## Listas
 
 As listas são coleções de objetos onde é possível adicionar elementos repetidos e a ordem importa. A lista é relacionado com a sequência da matemática.
 O Java possui a interface `List` para definir a estrutura de dados das listas e possui implementações de alguns tipos de listas, entre eles o `ArrayList`, `LinkedList` e `Vector`.
@@ -26,7 +26,7 @@ O `ArrayList` é a estrutura mais comum onde os elementos são armazenados dentr
 A lista pode ser definida através de uma variável do tipo `List`. As coleções do Java utilizam tipos genéricos, portanto é preciso indicar qual o tipo de dados que será armazenado na lista. Para este fim, se utiliza o operador diamante `<>` para indicar o tipo de dados. 
 
 {{< tabs items="Diagrama,PlantUML" >}}
-
+{{< tab >}}
 {{< plantuml >}}
 
 interface List<E> {
@@ -228,6 +228,23 @@ for(var e : lista){
 
 ```
 
-### Conjuntos
+## Conjuntos
 
-### Mapas
+Os conjuntos são coleções de objetos onde não é possível adicionar elementos repetidos e a ordem não importa. A coleção conjunto funciona da mesma maneira que os conjuntos na matemática.
+
+#### Criação de um conjunto
+
+#### Adicionar elementos
+
+
+#### Remover elementos
+
+
+#### Métodos úteis
+
+
+#### Percorrer o conjunto
+
+
+
+## Mapas
