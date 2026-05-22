@@ -25,11 +25,50 @@ O `ArrayList` é a estrutura mais comum onde os elementos são armazenados dentr
 
 A lista pode ser definida através de uma variável do tipo `List`. As coleções do Java utilizam tipos genéricos, portanto é preciso indicar qual o tipo de dados que será armazenado na lista. Para este fim, se utiliza o operador diamante `<>` para indicar o tipo de dados. 
 
+
+{{< plantuml >}}
+
+interface List<E> {
+    + add(element: E): boolean
+    + add(index: int, element: E): void
+    + get(index: int): E
+    + set(index: int, element: E): E
+    + remove(index: int): E
+    + remove(element: Object): boolean
+    + size(): int
+    + isEmpty(): boolean
+    + contains(element: Object): boolean
+    + clear(): void
+    + indexOf(element: Object): int
+    + lastIndexOf(element: Object): int
+    + iterator(): Iterator<E>
+    + toArray(): Object[]
+}
+
+class ArrayList<E> {
+    - elementData: Object[]
+    - size: int
+
+    + ArrayList()
+    + ArrayList(initialCapacity: int)
+
+    + ensureCapacity(minCapacity: int): void
+    + trimToSize(): void
+    + iterator(): Iterator<E>
+}
+
+List <|.r. ArrayList
+
+{{< \plantuml >}}
+
 A instanciação da `List` deve ser feito através do tipo concreto, ou seja, a classe `ArrayList`.  
 
 ```java
 // Criação de uma lista
 List<Integer> lista = new ArrayList<Integer>();
+
+// Cria um arraylist com um arranjo de tamanho 200 para guardar os elementos.
+List<Integer> lista = new ArrayList<Integer>(200);
 
 // Pode ser utilizado a inferência de tipos,
 // porém o tipo de dados da variável é ArrayList
