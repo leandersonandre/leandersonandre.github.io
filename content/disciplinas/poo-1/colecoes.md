@@ -16,6 +16,28 @@ tags:
 
 ### Listas
 
+As listas são coleções de objetos onde é possível adicionar elementos repetidos e a ordem importa. A lista é relacionado com a sequência da matemática.
+O Java possui a interface `List` para definir a estrutura de dados das listas e possui implementações de alguns tipos de listas, entre eles o `ArrayList`, `LinkedList` e `Vector`.
+
+O `ArrayList` é a estrutura mais comum onde os elementos são armazenados dentro de um arranjo.
+
+#### Criação da Lista
+
+A lista pode ser definida através de uma variável do tipo `List`. As coleções do Java utilizam tipos genéricos, portanto é preciso indicar qual o tipo de dados que será armazenado na lista. Para este fim, se utiliza o operador diamante `<>` para indicar o tipo de dados. 
+
+A instanciação da `List` deve ser feito através do tipo concreto, ou seja, a classe `ArrayList`.  
+
+```java
+// Criação de uma lista
+List<Integer> lista = new ArrayList<Integer>();
+
+// Pode ser utilizado a inferência de tipos,
+// porém o tipo de dados da variável é ArrayList
+var lista = new ArrayList<Integer>();
+
+```
+
+
 #### Adicionar elementos
 
 O método `add(elemento)` sempre adiciona no final da lista.
@@ -69,6 +91,36 @@ O método `remove(index)` remove o elemento na posição `index`. O método reto
 var lista = new ArrayList<Integer>();
 
 var removido = lista.remove(99);
+```
+
+#### Métodos uteis
+
+O `List` fornece uma gama de métodos uteis, tais como size, clear, contains entre outros.
+
+```java
+var lista = new ArrayList<Integer>();
+
+
+// Verifica se possui um elemento -
+// true -> se possuir o elemento
+// false -> se não possuir o elemento
+var contem = list.contains(99);
+
+// Localiza o índice do elemento
+// Retorna -1 caso não encontrar o elemento na lista
+var indice = list.indexOf(99);
+
+// Retorna o índice do último elemento 99
+var indice = list.lastIndexOf(99);
+
+// tamanho da lista
+var tamanho = list.size();
+
+// Verificar se a lista está vazia
+boolean vazio = list.isEmpty();
+
+// Limpar a lista / remover todos os elementos
+list.clear();
 ```
 
 #### Percorrer a lista
