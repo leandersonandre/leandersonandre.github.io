@@ -230,7 +230,7 @@ for(var e : lista){
 
 ## Conjuntos
 
-Os conjuntos são coleções de objetos onde não é possível adicionar elementos repetidos e a ordem não importa. A coleção conjunto funciona da mesma maneira que os conjuntos na matemática.
+Os conjuntos são coleções de objetos em que não é permitido adicionar elementos repetidos e a ordem dos elementos não é garantida. A coleção conjunto funciona de forma semelhante aos conjuntos da matemática. 
 
 O Java possui a interface Set para definir a estrutura de dados dos conjuntos e possui implementações de alguns tipos de conjuntos, entre eles o `HashSet`, `EnumSet`, `LinkedSet` e `TreeSet`.
 
@@ -238,7 +238,7 @@ O `HashSet` é a estrutura mais comum onde os elementos são armazenados dentro 
 
 #### Criação de um conjunto
 
-O conjunto pode ser definida através de uma variável do tipo `Set`.  A instanciação do conjunto deve ser feito através do tipo concreto, ou seja, a classe `HashSet`.
+Um conjunto pode ser definido por meio de uma variável do tipo `Set`.  A instanciação do conjunto deve ser feito através do tipo concreto, ou seja, a classe `HashSet`.
 
 
 {{< tabs items="Diagrama,PlantUML" >}}
@@ -365,7 +365,7 @@ conjunto.clear();
 
 #### Percorrer o conjunto
 
-O conjunto não possui o conceito de posições ou sequência. Para percorrer um conjunto, é utilizado o `Iterator`.
+O conjunto não possui o conceito de posições ou sequência dos elementos. Para percorrer os elementos de um conjunto, utiliza-se um `Iterator`.
 
 
 ```java
@@ -382,3 +382,24 @@ for(var e : conjunto){
 ```
 
 ## Mapas
+
+Os mapas são coleções de objetos em que uma chave é utilizada para associar um determinado valor. A coleção mapa funciona de forma semelhante aos dicionários.
+O Java possui a interface `Map` para definir a estrutura de dados dos mapas e disponibiliza implementações de diferentes tipos de mapas, entre elas `HashMap`, `LinkedHashMap` e `TreeMap`.
+O `HashMap` é a implementação mais comum, em que os elementos são armazenados em uma estrutura baseada em tabela hash.
+
+#### Criação de um mapa
+
+#### Adicionando um par de elementos
+
+#### Obter o elemento pela sua chave
+
+#### Verificar se existe uma chave
+
+#### Remover uma chave
+
+#### Métodos úteis
+
+
+#### Percorrendo um mapa
+
+
