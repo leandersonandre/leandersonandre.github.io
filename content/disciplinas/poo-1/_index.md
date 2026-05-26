@@ -11,6 +11,8 @@ toc: false
   {{< card link="/disciplinas/poo-1/classes-abstratas-exercicios" title="Exercícios sobre Classes Abstratas" >}}
   {{< card link="/disciplinas/poo-1/colecoes" title="Coleções" >}}
   {{< card link="/disciplinas/poo-1/colecoes-exercicios" title="Exercícios sobre Coleções" >}}
+  {{< card link="/disciplinas/poo-1/imutabilidade" title="Imutabilidade" >}}
+  {{< card link="/disciplinas/poo-1/imutabilidade-exercicios" title="Exercícios sobre Imutabilidade" >}}
 {{< /cards >}}
 
 <br>
