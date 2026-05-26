@@ -13,6 +13,8 @@ toc: false
   {{< card link="/disciplinas/poo-1/colecoes-exercicios" title="Exercícios sobre Coleções" >}}
   {{< card link="/disciplinas/poo-1/imutabilidade" title="Imutabilidade" >}}
   {{< card link="/disciplinas/poo-1/imutabilidade-exercicios" title="Exercícios sobre Imutabilidade" >}}
+  {{< card link="/disciplinas/poo-1/arquivos" title="Manipulação de Arquivos" >}}
+  {{< card link="/disciplinas/poo-1/arquivos-exercicios" title="Exercícios sobre Manipulação de Arquivos" >}}
 {{< /cards >}}
 
 <br>
