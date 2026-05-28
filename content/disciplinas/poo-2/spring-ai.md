@@ -44,10 +44,10 @@ Selecione as dependências:
 * Spring Boot DevTools
 * Mistral AI
 
-Adicione sua chave MistralAI ao `applications.properties`:
+Adicione sua chave [MistralAI](https://mistral.ai/) ao `applications.properties`:
 
 ```
-spring.ai.openai.api-key=<SUA CHAVE MISTRAL-AI>
+spring.ai.mistralai.api-key=<SUA CHAVE MISTRAL-AI>
 ```
 
 Adicione o seguinte trecho a sua classe `SpringAiDemoApplication`:
@@ -57,7 +57,7 @@ Adicione o seguinte trecho a sua classe `SpringAiDemoApplication`:
 public CommandLineRunner runner(ChatClient.Builder builder) {
     return args -> {
         ChatClient chatClient = builder.build();
-        String response = chatClient.prompt("Vai chover hoje em Joinville?").call().content();							
+        String response = chatClient.prompt("Vai chover em Joinville?").call().content();							
         System.out.println(response);
     };
 }
