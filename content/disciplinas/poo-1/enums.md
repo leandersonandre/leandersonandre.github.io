@@ -18,14 +18,14 @@ Nos diagramas de classe da UML, os enumeradores são representados pelo estereó
 
 {{< tabs items="Diagrama,PlantUML" >}}
 {{< tab >}}
-{{< plantuml> }}
+{{< plantuml >}}
 enum Prioridade <<enumeration>> {
   BAIXA
   MEDIA
   ALTA
   URGENTE
 }
-{{< /plantuml> }}
+{{< /plantuml >}}
 {{< /tab >}}
 {{< tab >}}
 Como criar o diagrama utilizando PlantUML.
