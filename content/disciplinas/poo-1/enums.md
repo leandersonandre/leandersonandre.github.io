@@ -12,6 +12,33 @@ tags:
 *Enumeradores* é um tipo especial de classe que define um conjunto de objetos imutáveis.
 
 
+## Implementação de enumeradores no Java
+
+```java
+public enum Prioridade{
+  BAIXA,
+  MEDIA,
+  ALTA,
+  URGENTE
+}
+```
+
+
+```java
+Prioridade p = Prioridade.BAIXA;
+
+// BAIXA
+System.out.println(p);
+```
+
+```java
+Prioridade p = Prioridade.ALTA;
+
+if(p == Prioridade.ALTA){
+  System.out.println("A prioridade é alta");
+}
+```
+
 ## Representação de enumeradores na UML
 
 Nos diagramas de classe da UML, os enumeradores são representados pelo estereótipo `enumeration`. Os valores da enumeração devem estar em caixa alta.
