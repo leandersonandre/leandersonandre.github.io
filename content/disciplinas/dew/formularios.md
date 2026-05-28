@@ -83,6 +83,31 @@ O `label` é associado a um `input` por meio do atributo `for`, cujo valor deve 
 
 ## Exemplo de Formulário
 
+{{< tabs items="Formulário,Código HTML" >}}
+{{< tab >}}
+
+ <form>
+    <table>
+        <tr>
+            <td><label for="nome">Nome:</label></td>
+            <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Digite seu email"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Senha:</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Digite seu password"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Limpar"></td>
+        </tr>
+    </table>
+</form>
+
+{{< /tab >}}
+{{< tab >}}
 ```html
  <form>
     <table>
@@ -104,9 +129,54 @@ O `label` é associado a um `input` por meio do atributo `for`, cujo valor deve 
     </table>
 </form>
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 Exemplo de uso de `checkbox` e `radio button`.
+{{< tabs items="Formulário,Código HTML" >}}
+{{< tab >}}
 
+
+<form>
+        <table>
+            <tr>
+                <td><label for="nome">Sabores da pizza:</label></td>
+                <td><input type="checkbox" id="cb_4_queijos" name="cb_4_queijos">4 Queijos</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="cb_calabreza" name="cb_calabreza">Calabreza</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="cb_portuguesa" name="cb_portuguesa">Portuguesa</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="cb_frango_catupiry" name="cb_frango_catupiry">Frango com Catupiry</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><label for="nome">Refrigerante:</label></td>
+                <td><input type="radio" id="radio_cocacola" name="refrigerante">Coca-Cola</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" id="radio_cocacola_zero" name="refrigerante">Coca-Cola Zero</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" id="radio_sprite" name="refrigerante">Sprite</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" id="radio_fanta" name="refrigerante">Fanta Laranja</td>
+            </tr>
+        </table>
+    </form>
+{{< /tab >}}
+{{< tab >}}
 ```html
 <form>
         <table>
@@ -147,4 +217,6 @@ Exemplo de uso de `checkbox` e `radio button`.
         </table>
     </form>
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
