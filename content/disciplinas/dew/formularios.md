@@ -220,3 +220,46 @@ Exemplo de uso de `checkbox` e `radio button`.
 {{< /tab >}}
 {{< /tabs >}}
 
+
+Exemplo de uso de `range`, `data` e `color`.
+{{< tabs items="Formulário,Código HTML" >}}
+{{< tab >}}
+<form>
+        <table>
+            <tr>
+                <td><label for="volume">Volume:</label></td>
+                <td><input type="range" id="volume" name="volume"></td>
+            </tr>
+            <tr>
+                <td><label for="data">Data:</label></td>
+                <td><input type="date" id="data" name="data"></td>
+            </tr>
+            <tr>
+                <td><label for="cor">Cor:</label></td>
+                <td><input type="color" id="cor" name="cor"></td>
+            </tr>
+        </table>
+    </form>
+{{< /tab >}}
+{{< tab >}}
+```html
+<form>
+        <table>
+            <tr>
+                <td><label for="volume">Volume:</label></td>
+                <td><input type="range" id="volume" name="volume"></td>
+            </tr>
+            <tr>
+                <td><label for="data">Data:</label></td>
+                <td><input type="date" id="data" name="data"></td>
+            </tr>
+            <tr>
+                <td><label for="cor">Cor:</label></td>
+                <td><input type="color" id="cor" name="cor"></td>
+            </tr>
+        </table>
+    </form>
+```
+{{< /tab >}}
+{{< /tabs >}}
+
