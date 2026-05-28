@@ -20,30 +20,6 @@ Um formulário é utilizado para coletar dados do usuário. Geralmente os dados 
 
 O elemento input é um dos campos mais utilizados para coletar os dados do usuário. O elemento input permite informar uma gama diferente de informações. O atributo ```type``` define o tipo de campo e layout.
 
-```html
-<input type="button">
-<input type="checkbox">
-<input type="color">
-<input type="date">
-<input type="datetime-local">
-<input type="email">
-<input type="file">
-<input type="hidden">
-<input type="image">
-<input type="month">
-<input type="number">
-<input type="password">
-<input type="radio">
-<input type="range">
-<input type="reset">
-<input type="search">
-<input type="submit">
-<input type="tel">
-<input type="text">
-<input type="time">
-<input type="url">
-<input type="week">
-```
 
 | Tipo                            | Explicação                                                                    | Exemplo de uso                      |
 | ------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------- |
@@ -128,3 +104,47 @@ O `label` é associado a um `input` por meio do atributo `for`, cujo valor deve 
     </table>
 </form>
 ```
+
+Exemplo de uso de `checkbox` e `radio button`.
+
+```html
+<form>
+        <table>
+            <tr>
+                <td><label for="nome">Sabores da pizza:</label></td>
+                <td><input type="checkbox" id="cb_4_queijos" name="cb_4_queijos">4 Queijos</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="cb_calabreza" name="cb_calabreza">Calabreza</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="cb_portuguesa" name="cb_portuguesa">Portuguesa</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="cb_frango_catupiry" name="cb_frango_catupiry">Frango com Catupiry</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><label for="nome">Refrigerante:</label></td>
+                <td><input type="radio" id="radio_cocacola" name="refrigerante">Coca-Cola</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" id="radio_cocacola_zero" name="refrigerante">Coca-Cola Zero</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" id="radio_sprite" name="refrigerante">Sprite</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" id="radio_fanta" name="refrigerante">Fanta Laranja</td>
+            </tr>
+        </table>
+    </form>
+```
+
