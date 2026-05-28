@@ -89,7 +89,7 @@ Indique no `chatCliente` o tipo de dados que será retornado.
  var lista = chatClient.prompt()
                     .user(meuPrompt)
                     .call()
-                    .entity(new ParameterizedTypeReference<List<CidadeDTO>>() {}); # O tipo de dados ue irá retornar.
+                    .entity(new ParameterizedTypeReference<List<CidadeDTO>>() {}); // O tipo de dados ue irá retornar.
 ```
 
 Exemplo completo:
