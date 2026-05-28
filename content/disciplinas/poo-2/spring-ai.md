@@ -87,29 +87,30 @@ Indique no `chatCliente` o tipo de dados que será retornado.
 
 ```java
  var lista = chatClient.prompt()
-                    .user(meuPrompt)
-                    .call()
-                    .entity(new ParameterizedTypeReference<List<CidadeDTO>>() {}); // O tipo de dados ue irá retornar.
+              .user(meuPrompt)
+              .call()
+              // O tipo de dados que irá retornar.
+              .entity(new ParameterizedTypeReference<List<CidadeDTO>>() {}); 
 ```
 
 Exemplo completo:
 ```java
 @Bean
-    public CommandLineRunner runner(ChatClient.Builder builder) {
-        return args -> {
-            var meuPrompt = """
-                Liste as 10 cidades (nome, estado e país) mais turísticas da Europa.
-                """;
-            ChatClient chatClient = builder.build();
-            var lista = chatClient.prompt()
-                    .user(meuPrompt)
-                    .call()
-                    .entity(new ParameterizedTypeReference<List<CidadeDTO>>() {});
-            System.out.println(String.format("%-20s", "Cidade")+"\t\t\t\t"+String.format("%-20s", "Estado")+"\t\t\t\tPaís");
-            System.out.println("-----------------------------------------------------------------------------------------");
-            for(var cidade : lista) {
-                System.out.println(String.format("%-20s", cidade.nome())+"\t\t\t\t"+String.format("%-20s", cidade.estado())+"\t\t\t\t"+cidade.pais());
-            }
-        };
-    }
+public CommandLineRunner runner(ChatClient.Builder builder) {
+    return args -> {
+        var meuPrompt = """
+            Liste as 10 cidades (nome, estado e país) mais turísticas da Europa.
+            """;
+        ChatClient chatClient = builder.build();
+        var lista = chatClient.prompt()
+                .user(meuPrompt)
+                .call()
+                .entity(new ParameterizedTypeReference<List<CidadeDTO>>() {});
+        System.out.println(String.format("%-20s", "Cidade")+"\t\t\t\t"+String.format("%-20s", "Estado")+"\t\t\t\tPaís");
+        System.out.println("-----------------------------------------------------------------------------------------");
+        for(var cidade : lista) {
+            System.out.println(String.format("%-20s", cidade.nome())+"\t\t\t\t"+String.format("%-20s", cidade.estado())+"\t\t\t\t"+cidade.pais());
+        }
+    };
+}
 ```
