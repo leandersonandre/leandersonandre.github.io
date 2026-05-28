@@ -45,6 +45,32 @@ O elemento input é um dos campos mais utilizados para coletar os dados do usuá
 <input type="week">
 ```
 
+| Tipo                            | Explicação                                                                    | Exemplo de uso                      |
+| ------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------- |
+| `<input type="button">`         | Cria um botão clicável sem ação automática. Normalmente usado com JavaScript. | Abrir modal, executar função        |
+| `<input type="checkbox">`       | Caixa de seleção que permite marcar múltiplas opções.                         | Aceitar termos, escolher hobbies    |
+| `<input type="color">`          | Permite selecionar uma cor em um seletor visual.                              | Escolher tema/cor de perfil         |
+| `<input type="date">`           | Campo para selecionar uma data.                                               | Data de nascimento                  |
+| `<input type="datetime-local">` | Permite escolher data e hora local.                                           | Agendamento de reunião              |
+| `<input type="email">`          | Campo específico para e-mail com validação automática.                        | Cadastro de usuário                 |
+| `<input type="file">`           | Permite enviar arquivos do computador.                                        | Upload de imagem ou PDF             |
+| `<input type="hidden">`         | Campo oculto que não aparece para o usuário.                                  | Enviar ID interno no formulário     |
+| `<input type="image">`          | Usa uma imagem como botão de envio do formulário.                             | Botão personalizado                 |
+| `<input type="month">`          | Permite selecionar mês e ano.                                                 | Validade de cartão                  |
+| `<input type="number">`         | Campo para números, podendo limitar mínimo e máximo.                          | Quantidade de produtos              |
+| `<input type="password">`       | Campo de senha com caracteres ocultos.                                        | Login                               |
+| `<input type="radio">`          | Permite selecionar apenas uma opção entre várias.                             | Escolher gênero, forma de pagamento |
+| `<input type="range">`          | Controle deslizante para escolher valores em intervalo.                       | Controle de volume                  |
+| `<input type="reset">`          | Botão que limpa os dados do formulário.                                       | Resetar formulário                  |
+| `<input type="search">`         | Campo otimizado para buscas.                                                  | Barra de pesquisa                   |
+| `<input type="submit">`         | Botão que envia o formulário.                                                 | Enviar cadastro                     |
+| `<input type="tel">`            | Campo para números de telefone.                                               | Cadastro de contato                 |
+| `<input type="text">`           | Campo de texto simples.                                                       | Nome do usuário                     |
+| `<input type="time">`           | Permite selecionar horário.                                                   | Escolher hora de consulta           |
+| `<input type="url">`            | Campo específico para URLs com validação.                                     | Site pessoal                        |
+| `<input type="week">`           | Permite selecionar semana e ano.                                              | Planejamento semanal                |
+
+
 O layout e tipo de informação do campo depende do navegador utilizado. Caso o navegador não suportar, o campo input assume o tipo ```text```.
 
 
@@ -77,4 +103,28 @@ O `label` é associado a um `input` por meio do atributo `for`, cujo valor deve 
 ```html
 <label for="nome">Nome:</label>
 <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+```
+
+## Exemplo de Formulário
+
+```html
+ <form>
+    <table>
+        <tr>
+            <td><label for="nome">Nome:</label></td>
+            <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Digite seu email"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Senha:</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Digite seu password"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Limpar"></td>
+        </tr>
+    </table>
+</form>
 ```
