@@ -5,6 +5,7 @@ toc: false
 ---
 {{< cards cols="1" >}}
   {{< card link="/disciplinas/poo-2/spring-ai" title="Spring AI" >}}
+  {{< card link="/disciplinas/poo-2/spring-ai-exercicios" title="Exercícios sobre Spring AI" >}}
 {{< /cards >}}
 
 <br>
