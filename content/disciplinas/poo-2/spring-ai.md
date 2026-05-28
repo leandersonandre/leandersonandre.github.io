@@ -5,6 +5,7 @@ description: "Spring AI"
 tags:
 - generative-ai
 - spring-ai
+- mistral-ai
 ---
 
 
