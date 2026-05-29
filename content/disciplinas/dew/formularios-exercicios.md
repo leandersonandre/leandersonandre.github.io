@@ -16,7 +16,7 @@ Crie uma página em HTML que apresenta um formulário para cadastrar um endereç
 
 {{< questao >}}
 
-Crie uma página em HTML que apresenta um formulário para enviar uma Email. O formulário deverá ter os campos **enviar para**, **em cópia**, **em cópia oculta** e o corpo do email.
+Crie uma página em HTML que apresenta um formulário para enviar uma Email. O formulário deverá ter os campos <b>enviar para</b>, <b>em cópia</b>, <b>em cópia oculta</b> e o corpo do email (textarea).
 
 {{< /questao >}}
 
