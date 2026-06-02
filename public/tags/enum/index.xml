@@ -1,0 +1,405 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Enum</title>
+    <link>http://localhost:1313/tags/enum/</link>
+    <description>Recent content in Enum on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/enum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Enumerações&lt;/em&gt; são um tipo especial de classe que define um conjunto finito de objetos imutáveis nomeados, chamado de enumeradores.&lt;/p&gt;
+&lt;h2&gt;Implementação de enumerações no Java&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;implementação-de-enumerações-no-java&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#implementa%c3%a7%c3%a3o-de-enumera%c3%a7%c3%b5es-no-java&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A palavra reservada &lt;code&gt;enum&lt;/code&gt; define o tipo de dados enumeração. Os enumeradores são identificados com todas as letras em caixa alta.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;enum&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;BAIXA&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;MEDIA&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;URGENTE&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Cada enumerador possui como tipo a própria enumeração. Assim, o tipo do enumerador &lt;code&gt;BAIXA&lt;/code&gt; é &lt;code&gt;Prioridade&lt;/code&gt;. Ao ser convertido para texto, o enumerador produz seu próprio nome.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;BAIXA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// BAIXA&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Um enumerador não pode ser instanciado com o operador &lt;code&gt;new&lt;/code&gt;. O valor de uma variável deve ser definida a partir do objeto constante na enumeração. Como cada enumerador possui uma única instância, é seguro compará-los com o operador  &lt;code&gt;==&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;A prioridade é alta&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Método values&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;método-values&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%a9todo-values&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O método &lt;code&gt;values&lt;/code&gt;  retorna um arranjo contendo todos os enumeradores definidos na enumeração.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;enumerador&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;values&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;enumerador&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Método valueOf&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;método-valueof&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%a9todo-valueof&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O método &lt;code&gt;valueOf&lt;/code&gt;  retorna o enumerador cujo nome corresponde à &lt;code&gt;String&lt;/code&gt; informada por parâmetro.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;ALTA&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Caso não existir uma enumeração que corresponde à &lt;code&gt;String&lt;/code&gt; informada por parâmetro, uma exceção será lançada.&lt;/p&gt;
+&lt;h3&gt;Construtores, atributos e métodos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;construtores-atributos-e-métodos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#construtores-atributos-e-m%c3%a9todos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As enumerações podem possuir construtores, atributos e métodos assim como as outras classes. Os construtores de uma enumeração são privados e não podem ser invocados diretamente com o operador &lt;code&gt;new&lt;/code&gt;. Quando a enumeração define um construtor com parâmetros, é necessário informar os valores correspondentes para cada enumerador.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;enum&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;BAIXA&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;MEDIA&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;1&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;2&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;URGENTE&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;3&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;Prioridade&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;valor&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;valor&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Os construtores de enumerações são privados e não podem ser invocados diretamente com o operador &lt;code&gt;new&lt;/code&gt;. Cada enumerador é criado durante a inicialização da enumeração e recebe os valores definidos em sua declaração.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Imprime 2&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;valor&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Uso em estruturas &lt;code&gt;switch&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;uso-em-estruturas-switch&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uso-em-estruturas-switch&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Enumerações podem ser utilizadas em estruturas &lt;code&gt;switch&lt;/code&gt;, permitindo executar comportamentos diferentes para cada enumerador.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;switch&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;BAIXA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade baixa&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;MEDIA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade média&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade alta&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;URGENTE&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade urgente&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Ao utilizar uma enumeração em um &lt;code&gt;switch&lt;/code&gt;, os rótulos &lt;code&gt;case&lt;/code&gt; devem utilizar apenas o nome dos enumeradores, sem o prefixo do tipo.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Correto&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Incorreto&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Representação de Enumerações na UML&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-de-enumerações-na-uml&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-de-enumera%c3%a7%c3%b5es-na-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Nos diagramas de classe da UML, as enumerações são representadas pelo estereótipo &lt;code&gt;enumeration&lt;/code&gt;. Por convenção, os enumeradores são escritos em caixa alta.&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428565790147000&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Prioridade \u003c\u003cenumeration\u003e\u003e \u007b\n  BAIXA\n  MEDIA\n  ALTA\n  URGENTE\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1780428565790147000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;enum Prioridade &amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt; {
+  BAIXA
+  MEDIA
+  ALTA
+  URGENTE
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios sobre Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Semaforo&lt;/code&gt; para representar um semáforo de trânsito. As fases do semáforo (&lt;code&gt;VERMELHO&lt;/code&gt;,  &lt;code&gt;AMARELO&lt;/code&gt; e &lt;code&gt;VERDE&lt;/code&gt;) devem ser representadas por uma enumeração. 
+&lt;br&gt;
+A classe deve armazenar a fase atual e possuir um método &lt;code&gt;trocarFase()&lt;/code&gt; que avance para a próxima fase da sequência:
+&lt;br&gt;
+&lt;br&gt;
+VERMELHO → VERDE → AMARELO → VERMELHO.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe `Dinheiro` para representar um valor monetário. Os tipos de moeda (&lt;code&gt;REAL&lt;/code&gt;, &lt;code&gt;DOLAR&lt;/code&gt; e &lt;code&gt;EURO&lt;/code&gt;) devem ser representadas por uma enumeração.
+&lt;br&gt;
+A classe deve armazenar o tipo da moeda e o valor monetário. Implemente um método &lt;code&gt;converterPara(tipoDaMoeda)&lt;/code&gt; que converta o valor utilizando as taxas da tabela abaixo e retorne um novo objeto Dinheiro com o valor convertido.
+&lt;br&gt;
+&lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Moeda&lt;/th&gt;
+      &lt;th&gt;Valor em Real (BRL)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;REAL&lt;/td&gt;
+      &lt;td&gt;1.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DOLAR&lt;/td&gt;
+      &lt;td&gt;5.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EURO&lt;/td&gt;
+      &lt;td&gt;5.50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Carta&lt;/code&gt; para representar uma carta de baralho. O naipe e o valor da carta devem ser representados por enumerações.
+
+A classe &lt;code&gt;Carta&lt;/code&gt; deve armazenar o naipe e o valor da carta, além de implementar um método &lt;code&gt;compararCom(carta)&lt;/code&gt; que compare duas cartas e retorne:
+&lt;ul&gt;
+&lt;li&gt;1 se a carta atual possuir valor maior;&lt;/li&gt;
+&lt;li&gt;0 se as cartas possuírem o mesmo valor;&lt;/li&gt;
+&lt;li&gt;-1 se a carta atual possuir valor menor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Exemplo:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Carta c1 = new Carta(Naipe.COPAS, Valor.REI);
+Carta c2 = new Carta(Naipe.ESPADAS, Valor.DEZ);
+// Saída: 1
+System.out.println(c1.compararCom(c2));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma enumeração &lt;code&gt;Operacao&lt;/code&gt; para representar operações matemáticas básicas.
+A enumeração deve possuir os seguintes enumeradores:
+
+&lt;ul&gt;
+    &lt;li&gt;SOMA&lt;/li&gt;
+    &lt;li&gt;SUBTRACAO&lt;/li&gt;
+    &lt;li&gt;DIVISAO&lt;/li&gt;
+    &lt;li&gt;MULTIPLICACAO&lt;/li&gt;
+&lt;/ul&gt;
+
+Implemente um método &lt;code&gt;calcular(a, b)&lt;/code&gt; que receba dois valores numéricos e retorne o resultado da operação correspondente.
+&lt;br&gt;
+Exemplos:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Saída: 15
+System.out.println(Operacao.SOMA.calcular(10, 5));
+// Saída: 50
+System.out.println(Operacao.MULTIPLICACAO.calcular(10, 5));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

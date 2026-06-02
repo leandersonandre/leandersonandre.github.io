@@ -1,0 +1,151 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Questoes</title>
+    <link>http://localhost:1313/tags/questoes/</link>
+    <description>Recent content in Questoes on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/questoes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Questões sobre Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums-questoes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Semaforo&lt;/code&gt; para representar um semáforo de trânsito. As fases do semáforo (&lt;code&gt;VERMELHO&lt;/code&gt;,  &lt;code&gt;AMARELO&lt;/code&gt; e &lt;code&gt;VERDE&lt;/code&gt;) devem ser representadas por uma enumeração. 
+&lt;br&gt;
+A classe deve armazenar a fase atual e possuir um método &lt;code&gt;trocarFase()&lt;/code&gt; que avance para a próxima fase da sequência:
+&lt;br&gt;
+&lt;br&gt;
+VERMELHO → VERDE → AMARELO → VERMELHO.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe `Dinheiro` para representar um valor monetário. Os tipos de moeda (&lt;code&gt;REAL&lt;/code&gt;, &lt;code&gt;DOLAR&lt;/code&gt; e &lt;code&gt;EURO&lt;/code&gt;) devem ser representadas por uma enumeração.
+&lt;br&gt;
+A classe deve armazenar o tipo da moeda e o valor monetário. Implemente um método &lt;code&gt;converterPara(tipoDaMoeda)&lt;/code&gt; que converta o valor utilizando as taxas da tabela abaixo e retorne um novo objeto Dinheiro com o valor convertido.
+&lt;br&gt;
+&lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Moeda&lt;/th&gt;
+      &lt;th&gt;Valor em Real (BRL)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;REAL&lt;/td&gt;
+      &lt;td&gt;1.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DOLAR&lt;/td&gt;
+      &lt;td&gt;5.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EURO&lt;/td&gt;
+      &lt;td&gt;5.50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Carta&lt;/code&gt; para representar uma carta de baralho. O naipe e o valor da carta devem ser representados por enumerações.
+
+A classe &lt;code&gt;Carta&lt;/code&gt; deve armazenar o naipe e o valor da carta, além de implementar um método &lt;code&gt;compararCom(carta)&lt;/code&gt; que compare duas cartas e retorne:
+&lt;ul&gt;
+&lt;li&gt;1 se a carta atual possuir valor maior;&lt;/li&gt;
+&lt;li&gt;0 se as cartas possuírem o mesmo valor;&lt;/li&gt;
+&lt;li&gt;-1 se a carta atual possuir valor menor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Exemplo:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Carta c1 = new Carta(Naipe.COPAS, Valor.REI);
+Carta c2 = new Carta(Naipe.ESPADAS, Valor.DEZ);
+// Saída: 1
+System.out.println(c1.compararCom(c2));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma enumeração &lt;code&gt;Operacao&lt;/code&gt; para representar operações matemáticas básicas.
+A enumeração deve possuir os seguintes enumeradores:
+
+&lt;ul&gt;
+    &lt;li&gt;SOMA&lt;/li&gt;
+    &lt;li&gt;SUBTRACAO&lt;/li&gt;
+    &lt;li&gt;DIVISAO&lt;/li&gt;
+    &lt;li&gt;MULTIPLICACAO&lt;/li&gt;
+&lt;/ul&gt;
+
+Implemente um método &lt;code&gt;calcular(a, b)&lt;/code&gt; que receba dois valores numéricos e retorne o resultado da operação correspondente.
+&lt;br&gt;
+Exemplos:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Saída: 15
+System.out.println(Operacao.SOMA.calcular(10, 5));
+// Saída: 50
+System.out.println(Operacao.MULTIPLICACAO.calcular(10, 5));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -47,7 +47,7 @@
 &lt;/div&gt;
 &lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;p&gt;Observe que o nome da classe abstrata está em itálico.
 O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto está em itálico.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1779816765350466000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249271000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nabstract class Shape  \u007b\n  \u007babstract\u007d \u002barea() : double\n  \u002bgetName(): String\n\u007d\n\n@enduml\n`;
@@ -59,7 +59,7 @@ O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto est�
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765350466000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249271000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -222,7 +222,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
         &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Coleções são estruturas de dados utilizadas para armazenar e manipular grupos de objetos. O framework Collections do Java fornece interfaces e implementações prontas para representar listas, conjuntos e mapas, oferecendo operações como inserção, remoção, busca e iteração. As principais coleções da biblioteca padrão estão disponíveis no pacote &lt;code&gt;java.util&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Diagrama da API de coleções da linguagem Java.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1779816765362355000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258718000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -235,11 +235,11 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765362355000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258718000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
-&lt;div id=&#34;plantuml-1779816765362390000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258751000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -252,7 +252,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765362390000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258751000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -270,7 +270,7 @@ O Java possui a interface &lt;code&gt;List&lt;/code&gt; para definir a estrutura
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779816765362427000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428725258789000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface List\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b add(index: int, element: E): void\n    \u002b get(index: int): E\n    \u002b set(index: int, element: E): E\n    \u002b remove(index: int): E\n    \u002b remove(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b contains(element: Object): boolean\n    \u002b clear(): void\n    \u002b indexOf(element: Object): int\n    \u002b lastIndexOf(element: Object): int\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\nclass ArrayList\u003cE\u003e \u007b\n    - elementData: Object[]\n    - size: int\n\n    \u002b ArrayList()\n    \u002b ArrayList(initialCapacity: int)\n\n    \u002b ensureCapacity(minCapacity: int): void\n    \u002b trimToSize(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n\u007d\n\nList \u003c|.r. ArrayList\n\n@enduml\n`;
@@ -282,7 +282,7 @@ O Java possui a interface &lt;code&gt;List&lt;/code&gt; para definir a estrutura
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765362427000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258789000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -547,7 +547,7 @@ List &amp;lt;|.r. ArrayList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-03-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-03-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-03-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-03-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779816765362756000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428725259128000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Set\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b remove(element: Object): boolean\n    \u002b contains(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\nclass HashSet\u003cE\u003e \u007b\n    - map: HashMap\u003cE, Object\u003e\n\n    \u002b HashSet()\n\n\u007d\n\nSet \u003c|.r. HashSet\n\n@enduml\n`;
@@ -559,7 +559,7 @@ List &amp;lt;|.r. ArrayList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765362756000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725259128000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -733,7 +733,7 @@ O &lt;code&gt;HashMap&lt;/code&gt; é a implementação mais comum, em que os el
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-04-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-04-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-04-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-04-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779816765363018000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428725259400000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Map\u003cK, V\u003e \u007b\n    \u002b put(key: K, value: V): V\n    \u002b get(key: Object): V\n    \u002b remove(key: Object): V\n    \u002b containsKey(key: Object): boolean\n    \u002b containsValue(value: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b keySet(): Set\u003cK\u003e\n    \u002b values(): Collection\u003cV\u003e\n    \u002b entrySet(): Set\u003cMap.Entry\u003cK,V\u003e\u003e\n\u007d\n\nclass HashMap\u003cK, V\u003e \u007b\n    - table: Node\u003cK,V\u003e[]\n    - size: int\n    - loadFactor: float\n\n    \u002b HashMap()\n\n\u007d\n\nMap \u003c|.r. HashMap\n\n@enduml\n`;
@@ -745,7 +745,7 @@ O &lt;code&gt;HashMap&lt;/code&gt; é a implementação mais comum, em que os el
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765363018000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725259400000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -985,6 +985,260 @@ Map &amp;lt;|.r. HashMap&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;
     </item>
     
     <item>
+      <title>Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Enumerações&lt;/em&gt; são um tipo especial de classe que define um conjunto finito de objetos imutáveis nomeados, chamado de enumeradores.&lt;/p&gt;
+&lt;h2&gt;Implementação de enumerações no Java&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;implementação-de-enumerações-no-java&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#implementa%c3%a7%c3%a3o-de-enumera%c3%a7%c3%b5es-no-java&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A palavra reservada &lt;code&gt;enum&lt;/code&gt; define o tipo de dados enumeração. Os enumeradores são identificados com todas as letras em caixa alta.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;enum&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;BAIXA&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;MEDIA&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;URGENTE&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Cada enumerador possui como tipo a própria enumeração. Assim, o tipo do enumerador &lt;code&gt;BAIXA&lt;/code&gt; é &lt;code&gt;Prioridade&lt;/code&gt;. Ao ser convertido para texto, o enumerador produz seu próprio nome.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;BAIXA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// BAIXA&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Um enumerador não pode ser instanciado com o operador &lt;code&gt;new&lt;/code&gt;. O valor de uma variável deve ser definida a partir do objeto constante na enumeração. Como cada enumerador possui uma única instância, é seguro compará-los com o operador  &lt;code&gt;==&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;A prioridade é alta&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Método values&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;método-values&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%a9todo-values&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O método &lt;code&gt;values&lt;/code&gt;  retorna um arranjo contendo todos os enumeradores definidos na enumeração.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;enumerador&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;values&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;enumerador&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Método valueOf&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;método-valueof&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#m%c3%a9todo-valueof&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O método &lt;code&gt;valueOf&lt;/code&gt;  retorna o enumerador cujo nome corresponde à &lt;code&gt;String&lt;/code&gt; informada por parâmetro.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;ALTA&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Caso não existir uma enumeração que corresponde à &lt;code&gt;String&lt;/code&gt; informada por parâmetro, uma exceção será lançada.&lt;/p&gt;
+&lt;h3&gt;Construtores, atributos e métodos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;construtores-atributos-e-métodos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#construtores-atributos-e-m%c3%a9todos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As enumerações podem possuir construtores, atributos e métodos assim como as outras classes. Os construtores de uma enumeração são privados e não podem ser invocados diretamente com o operador &lt;code&gt;new&lt;/code&gt;. Quando a enumeração define um construtor com parâmetros, é necessário informar os valores correspondentes para cada enumerador.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;enum&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;BAIXA&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;MEDIA&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;1&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;2&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;URGENTE&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;3&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;Prioridade&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;valor&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;valor&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;valor&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Os construtores de enumerações são privados e não podem ser invocados diretamente com o operador &lt;code&gt;new&lt;/code&gt;. Cada enumerador é criado durante a inicialização da enumeração e recebe os valores definidos em sua declaração.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Imprime 2&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;valor&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Uso em estruturas &lt;code&gt;switch&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;uso-em-estruturas-switch&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uso-em-estruturas-switch&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Enumerações podem ser utilizadas em estruturas &lt;code&gt;switch&lt;/code&gt;, permitindo executar comportamentos diferentes para cada enumerador.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;prioridade&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;switch&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;BAIXA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade baixa&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;MEDIA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade média&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade alta&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;URGENTE&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Prioridade urgente&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Ao utilizar uma enumeração em um &lt;code&gt;switch&lt;/code&gt;, os rótulos &lt;code&gt;case&lt;/code&gt; devem utilizar apenas o nome dos enumeradores, sem o prefixo do tipo.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Correto&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ALTA&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Incorreto&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Prioridade&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;ALTA&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Representação de Enumerações na UML&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-de-enumerações-na-uml&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-de-enumera%c3%a7%c3%b5es-na-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Nos diagramas de classe da UML, as enumerações são representadas pelo estereótipo &lt;code&gt;enumeration&lt;/code&gt;. Por convenção, os enumeradores são escritos em caixa alta.&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428725251801000&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Prioridade \u003c\u003cenumeration\u003e\u003e \u007b\n  BAIXA\n  MEDIA\n  ALTA\n  URGENTE\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1780428725251801000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;enum Prioridade &amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt; {
+  BAIXA
+  MEDIA
+  ALTA
+  URGENTE
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Exercícios sobre Classes Abstratas</title>
       <link>http://localhost:1313/disciplinas/poo-1/classes-abstratas-exercicios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1219,6 +1473,139 @@ Um mapa pode armazenar uma chave com valor &lt;code&gt;null&lt;/code&gt;?
     </item>
     
     <item>
+      <title>Exercícios sobre Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Semaforo&lt;/code&gt; para representar um semáforo de trânsito. As fases do semáforo (&lt;code&gt;VERMELHO&lt;/code&gt;,  &lt;code&gt;AMARELO&lt;/code&gt; e &lt;code&gt;VERDE&lt;/code&gt;) devem ser representadas por uma enumeração. 
+&lt;br&gt;
+A classe deve armazenar a fase atual e possuir um método &lt;code&gt;trocarFase()&lt;/code&gt; que avance para a próxima fase da sequência:
+&lt;br&gt;
+&lt;br&gt;
+VERMELHO → VERDE → AMARELO → VERMELHO.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe `Dinheiro` para representar um valor monetário. Os tipos de moeda (&lt;code&gt;REAL&lt;/code&gt;, &lt;code&gt;DOLAR&lt;/code&gt; e &lt;code&gt;EURO&lt;/code&gt;) devem ser representadas por uma enumeração.
+&lt;br&gt;
+A classe deve armazenar o tipo da moeda e o valor monetário. Implemente um método &lt;code&gt;converterPara(tipoDaMoeda)&lt;/code&gt; que converta o valor utilizando as taxas da tabela abaixo e retorne um novo objeto Dinheiro com o valor convertido.
+&lt;br&gt;
+&lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Moeda&lt;/th&gt;
+      &lt;th&gt;Valor em Real (BRL)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;REAL&lt;/td&gt;
+      &lt;td&gt;1.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DOLAR&lt;/td&gt;
+      &lt;td&gt;5.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EURO&lt;/td&gt;
+      &lt;td&gt;5.50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Carta&lt;/code&gt; para representar uma carta de baralho. O naipe e o valor da carta devem ser representados por enumerações.
+
+A classe &lt;code&gt;Carta&lt;/code&gt; deve armazenar o naipe e o valor da carta, além de implementar um método &lt;code&gt;compararCom(carta)&lt;/code&gt; que compare duas cartas e retorne:
+&lt;ul&gt;
+&lt;li&gt;1 se a carta atual possuir valor maior;&lt;/li&gt;
+&lt;li&gt;0 se as cartas possuírem o mesmo valor;&lt;/li&gt;
+&lt;li&gt;-1 se a carta atual possuir valor menor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Exemplo:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Carta c1 = new Carta(Naipe.COPAS, Valor.REI);
+Carta c2 = new Carta(Naipe.ESPADAS, Valor.DEZ);
+// Saída: 1
+System.out.println(c1.compararCom(c2));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma enumeração &lt;code&gt;Operacao&lt;/code&gt; para representar operações matemáticas básicas.
+A enumeração deve possuir os seguintes enumeradores:
+
+&lt;ul&gt;
+    &lt;li&gt;SOMA&lt;/li&gt;
+    &lt;li&gt;SUBTRACAO&lt;/li&gt;
+    &lt;li&gt;DIVISAO&lt;/li&gt;
+    &lt;li&gt;MULTIPLICACAO&lt;/li&gt;
+&lt;/ul&gt;
+
+Implemente um método &lt;code&gt;calcular(a, b)&lt;/code&gt; que receba dois valores numéricos e retorne o resultado da operação correspondente.
+&lt;br&gt;
+Exemplos:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Saída: 15
+System.out.println(Operacao.SOMA.calcular(10, 5));
+// Saída: 50
+System.out.println(Operacao.MULTIPLICACAO.calcular(10, 5));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Exercícios sobre Imutabilidade</title>
       <link>http://localhost:1313/disciplinas/poo-1/imutabilidade-exercicios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1357,7 +1744,7 @@ Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando
 Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
 Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
 
-&lt;div id=&#34;plantuml-1779816765356091000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725262160000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1370,7 +1757,7 @@ Após a implementação, instancie objetos de cada classe e apresente no termina
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765356091000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725262160000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1389,7 +1776,7 @@ Crie uma nova classe responsável por operações com objetos do tipo Shape.
 Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
 O resultado deve ser retornado como um valor do tipo double.
 
-&lt;div id=&#34;plantuml-1779816765356113000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725262191000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1402,7 +1789,7 @@ O resultado deve ser retornado como um valor do tipo double.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765356113000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725262191000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1432,7 +1819,7 @@ Regras:
   &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div id=&#34;plantuml-1779816765356137000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725262216000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1445,7 +1832,7 @@ Regras:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765356137000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725262216000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2005,7 +2392,7 @@ Utilize a biblioteca Jackson para realizar a leitura do arquivo JSON e a classe
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779816765361778000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428725273465000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Person \u007b\n     -name : String \u007breadOnly\u007d\n    \u002b Person(name : String)\n    \u002b name() : String\n\u007d\n\n@enduml\n`;
@@ -2017,7 +2404,7 @@ Utilize a biblioteca Jackson para realizar a leitura do arquivo JSON e a classe
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765361778000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725273465000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
@@ -2183,7 +2570,7 @@ Utilize a biblioteca Jackson para realizar a leitura do arquivo JSON e a classe
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-01-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-01-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-01-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-01-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779816765361917000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428725273842000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Pessoa \u003c\u003crecord\u003e\u003e \u007b\n    nome : String\n    idade : int\n\u007d\n\n@enduml\n`;
@@ -2195,7 +2582,7 @@ Utilize a biblioteca Jackson para realizar a leitura do arquivo JSON e a classe
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765361917000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725273842000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
@@ -2265,7 +2652,7 @@ Em vez de alterar objetos existentes, operações produzem novos objetos contend
 &lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1779816765360517000&#34;&gt;&lt;/div&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1780428725265313000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2278,7 +2665,7 @@ Em vez de alterar objetos existentes, operações produzem novos objetos contend
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360517000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725265313000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2408,7 +2795,7 @@ No entanto, a partir do Java 8, interfaces também podem possuir métodos defaul
 A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Múltiplas realizações de interface&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-realizações-de-interface&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#m%c3%baltiplas-realiza%c3%a7%c3%b5es-de-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe pode realizar a implementação de múltiplas interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1779816765360530000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725265338000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2421,7 +2808,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360530000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725265338000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2483,7 +2870,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
 &lt;/div&gt;
 &lt;h3&gt;Herança de interfaces&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herança-de-interfaces&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#heran%c3%a7a-de-interfaces&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As interfaces podem realizar uma ou múltiplas heranças de outras interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1779816765360546000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725265360000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2496,7 +2883,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360546000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725265360000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -3933,7 +4320,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1779816765348176000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725246688000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -3946,7 +4333,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765348176000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725246688000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4065,7 +4452,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1779816765348245000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725246833000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4078,7 +4465,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765348245000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725246833000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4193,7 +4580,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1779816765348311000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725246969000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4206,7 +4593,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765348311000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725246969000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4321,7 +4708,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1779816765348377000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725247097000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4334,7 +4721,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765348377000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725247097000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4456,7 +4843,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1779816765348443000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725247228000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4469,7 +4856,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765348443000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725247228000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4588,7 +4975,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1779816765348507000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725247355000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4601,7 +4988,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765348507000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725247355000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5944,7 +6331,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1779816765349280000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248819000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5957,7 +6344,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349280000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248819000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6031,7 +6418,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349334000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248929000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6044,7 +6431,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349334000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248929000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6118,7 +6505,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349387000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249036000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6131,7 +6518,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349387000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249036000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6205,7 +6592,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349442000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249140000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6218,7 +6605,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349442000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249140000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6292,7 +6679,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349498000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249248000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6305,7 +6692,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349498000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249248000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6379,7 +6766,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349551000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249340000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6392,7 +6779,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349551000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249340000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6466,7 +6853,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349610000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249429000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6479,7 +6866,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349610000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249429000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6553,7 +6940,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349661000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249516000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6566,7 +6953,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349661000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249516000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6640,7 +7027,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349714000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249604000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6653,7 +7040,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349714000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249604000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6727,7 +7114,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1779816765349767000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725249695000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6740,7 +7127,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349767000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725249695000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7979,7 +8366,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1779816765349095000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248181000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7992,7 +8379,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349095000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248181000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8065,7 +8452,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1779816765349217000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248307000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8078,7 +8465,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349217000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248307000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8151,7 +8538,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1779816765349339000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248425000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8164,7 +8551,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349339000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248425000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8237,7 +8624,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1779816765349450000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248551000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8250,7 +8637,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349450000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248551000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8323,7 +8710,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1779816765349565000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248666000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8336,7 +8723,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349565000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248666000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8409,7 +8796,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1779816765349677000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248794000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8422,7 +8809,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349677000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248794000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8495,7 +8882,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1779816765349791000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725248922000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8508,7 +8895,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765349791000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725248922000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8574,6 +8961,1971 @@ O diagrama indica método público com dois parâmetros (String e int) e retorno
 &lt;/div&gt;
 
 
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Questões sobre Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums-questoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums-questoes/</guid>
+      <description>
+        
+        
+        
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+O que é uma enumeração (enum) em Java?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Uma variável especial que armazena números inteiros. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Um tipo que define um conjunto fixo de constantes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Um método utilizado para criar objetos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Um atributo compartilhado entre classes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Uma enumeração define um conjunto limitado e fixo de valores constantes.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Dia {
+    SEGUNDA,
+    TERCA,
+    QUARTA
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Quantos valores a enumeração possui?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     1 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     4 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A enumeração possui os valores SEGUNDA, TERCA e QUARTA.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Cor {
+    VERMELHO,
+    VERDE,
+    AZUL
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual das alternativas representa um valor válido da enumeração?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Cor 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     AZUL 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     String 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     cor 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+AZUL é um dos valores definidos na enumeração.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Status {
+    ABERTO,
+    FECHADO
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+O que acontece se tentarmos utilizar o valor CANCELADO?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O programa funcionará normalmente. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     CANCELADO será criado automaticamente. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Ocorrerá erro, pois o valor não existe na enumeração. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     CANCELADO será convertido para ABERTO. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Somente os valores definidos na enumeração podem ser utilizados.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o estado atual da variável dia.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Dia {
+    SEGUNDA,
+    TERCA
+}
+
+Dia dia = Dia.TERCA;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Dia.SEGUNDA 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Dia.TERCA 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     null 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     0 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A variável recebeu explicitamente o valor Dia.TERCA.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Status {
+    ABERTO,
+    FECHADO
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Status s = Status.ABERTO;
+        System.out.println(s);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Status 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     ABERTO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     FECHADO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     null 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O método println imprime o nome do valor da enumeração.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Nivel {
+    BAIXO,
+    MEDIO,
+    ALTO
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Nivel n = Nivel.ALTO;
+        System.out.println(n.ordinal());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     0 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     1 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Os índices começam em 0: BAIXO=0, MEDIO=1 e ALTO=2.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Moeda {
+    REAL,
+    DOLAR,
+    EURO
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual alternativa representa corretamente o tipo da variável?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Moeda m = Moeda.REAL;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     REAL 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     String 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Moeda 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     enum 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A variável possui tipo Moeda.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise a UML abaixo.
+
+&lt;div id=&#34;plantuml-1780428962263239000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Status \u007b\n  ABERTO\n  FECHADO\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1780428962263239000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+Qual alternativa está correta?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     A enumeração possui um método chamado ABERTO. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     A enumeração possui dois valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     A enumeração possui dois atributos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     A enumeração possui duas classes internas. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+ABERTO e FECHADO são valores da enumeração.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Prioridade {
+    BAIXA,
+    MEDIA,
+    ALTA
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual é a principal vantagem de utilizar enumerações?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Permitir qualquer valor possível. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Garantir que apenas valores previamente definidos sejam utilizados. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Tornar todos os atributos públicos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Eliminar a necessidade de classes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Enums restringem os valores possíveis a um conjunto conhecido.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Dia {
+    SEGUNDA,
+    TERCA,
+    QUARTA
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual método retorna todos os valores da enumeração?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     valueOf() 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     values() 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     getValues() 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     listar() 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O método estático &lt;code&gt;values()&lt;/code&gt; retorna um vetor contendo todos os valores da enumeração.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Cor {
+    VERMELHO,
+    VERDE,
+    AZUL
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Cor.values().length);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     0 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     1 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     3 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A enumeração possui três valores, portanto o tamanho retornado é 3.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Status {
+    ABERTO,
+    FECHADO
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Status s = Status.valueOf(&#34;FECHADO&#34;);
+        System.out.println(s);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     ABERTO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     FECHADO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Status 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     null 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O método &lt;code&gt;valueOf()&lt;/code&gt; retorna o valor da enumeração correspondente ao texto informado.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Status {
+    ABERTO,
+    FECHADO
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+O que acontece ao executar o código abaixo?
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Status.valueOf(&#34;CANCELADO&#34;);
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Retorna null. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Retorna ABERTO. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Retorna FECHADO. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Ocorre erro em tempo de execução. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores. 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O texto informado não corresponde a nenhum valor da enumeração.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise a enumeração abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Nivel {
+    BAIXO,
+    MEDIO,
+    ALTO
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual valor possui ordinal igual a 1?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     BAIXO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     MEDIO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     ALTO 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     null 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Os índices são: BAIXO=0, MEDIO=1 e ALTO=2.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 16&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Moeda {
+    REAL(&#34;R$&#34;),
+    DOLAR(&#34;$&#34;);
+
+    private String simbolo;
+
+    Moeda(String simbolo){
+        this.simbolo = simbolo;
+    }
+
+    public String getSimbolo(){
+        return simbolo;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual é o tipo do atributo &lt;code&gt;simbolo&lt;/code&gt;?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Moeda 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     enum 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     String 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Object 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O atributo foi declarado como &lt;code&gt;private String simbolo&lt;/code&gt;.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 17&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Moeda {
+    REAL(&#34;R$&#34;),
+    DOLAR(&#34;$&#34;);
+
+    private String simbolo;
+
+    Moeda(String simbolo){
+        this.simbolo = simbolo;
+    }
+
+    public String getSimbolo(){
+        return simbolo;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Moeda.REAL.getSimbolo());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     REAL 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     R$ 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     $ 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     simbolo 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O valor associado ao elemento REAL é &#34;R$&#34;.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 18&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código abaixo e identifique o valor impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Prioridade {
+    BAIXA(1),
+    ALTA(2);
+
+    private int codigo;
+
+    Prioridade(int codigo){
+        this.codigo = codigo;
+    }
+
+    public int getCodigo(){
+        return codigo;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Prioridade.ALTA.getCodigo());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     0 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     1 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     2 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     ALTA 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O valor ALTA foi associado ao código 2.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 19&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise a UML abaixo.
+
+&lt;div id=&#34;plantuml-1780428962263916000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Moeda \u007b\n  REAL\n  DOLAR\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1780428962263916000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+Qual código Java corresponde ao diagrama?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+    
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public class Moeda {
+    REAL,
+    DOLAR
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+    
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public enum Moeda {
+    REAL,
+    DOLAR
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+    
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public interface Moeda {
+    REAL,
+    DOLAR
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+    
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+public record Moeda {
+    REAL,
+    DOLAR
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama representa uma enumeração chamada Moeda.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 20&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise a UML abaixo.
+
+&lt;div id=&#34;plantuml-1780428962263999000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Prioridade \u007b\n  BAIXA\n  ALTA\n  \u002bgetCodigo(): int\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1780428962263999000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+Qual alternativa está correta?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     A enumeração possui apenas valores. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     A enumeração possui um método chamado getCodigo. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     A enumeração possui um atributo chamado getCodigo. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     A enumeração não possui métodos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O diagrama mostra explicitamente um método público chamado &lt;code&gt;getCodigo()&lt;/code&gt;.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 21&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise a UML abaixo.
+
+&lt;div id=&#34;plantuml-1780428962264073000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Status \u007b\n  ABERTO\n  FECHADO\n  \u002bisFinalizado(): boolean\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1780428962264073000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+
+Qual alternativa está correta?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     O método retorna boolean. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     O método retorna String. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     O método retorna int. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O método possui um parâmetro boolean. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O tipo indicado após os dois pontos é &lt;code&gt;boolean&lt;/code&gt;.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 22&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual das alternativas é uma vantagem do uso de enumerações em relação ao uso de Strings?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Permitem qualquer valor textual. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Ocupam sempre menos memória. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Reduzem erros causados por valores inválidos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Eliminam a necessidade de classes. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A enumeração restringe os valores possíveis a um conjunto previamente definido.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 23&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Qual das alternativas é verdadeira sobre enumerações em Java?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Não podem possuir métodos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Não podem possuir atributos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Podem possuir atributos, construtores e métodos. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     São equivalentes a variáveis String. 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;E.&lt;/span&gt;
+     Nenhuma das anteriores 
+&lt;/li&gt;
+
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Enums em Java são tipos completos e podem conter atributos, construtores e métodos.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 
 
@@ -8863,7 +11215,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1779816765353819000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725257635000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8876,7 +11228,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765353819000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725257635000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -8949,7 +11301,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1779816765353873000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725257750000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8962,7 +11314,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765353873000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725257750000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9048,7 +11400,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765353942000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725257900000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9061,7 +11413,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765353942000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725257900000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9072,7 +11424,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765353958000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725257933000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9085,7 +11437,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765353958000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725257933000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9096,7 +11448,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765353973000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725257964000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9109,7 +11461,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765353973000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725257964000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9120,7 +11472,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765353987000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725257995000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9133,7 +11485,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765353987000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725257995000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9209,7 +11561,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354025000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258069000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9222,7 +11574,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354025000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258069000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9233,7 +11585,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354040000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258100000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9246,7 +11598,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354040000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258100000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9257,7 +11609,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354054000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258130000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9270,7 +11622,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354054000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258130000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9281,7 +11633,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354070000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258160000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9294,7 +11646,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354070000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258160000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9367,7 +11719,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354116000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258238000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9380,7 +11732,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354116000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258238000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9391,7 +11743,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354134000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258275000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9404,7 +11756,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354134000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258275000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9415,7 +11767,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354148000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258306000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9428,7 +11780,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354148000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258306000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9439,7 +11791,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1779816765354162000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725258339000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9452,7 +11804,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765354162000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725258339000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12060,7 +14412,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765357853000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725267209000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12073,7 +14425,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765357853000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725267209000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12119,7 +14471,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765357911000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725267367000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12132,7 +14484,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765357911000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725267367000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12178,7 +14530,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765357956000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725267444000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12191,7 +14543,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765357956000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725267444000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12237,7 +14589,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765357997000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270070000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12250,7 +14602,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765357997000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270070000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12296,7 +14648,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359234000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270112000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12309,7 +14661,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359234000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270112000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12355,7 +14707,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359281000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270147000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12368,7 +14720,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359281000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270147000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12414,7 +14766,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359321000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270183000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12427,7 +14779,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359321000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270183000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12473,7 +14825,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359361000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270215000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12486,7 +14838,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359361000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270215000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12532,7 +14884,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359398000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270248000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12545,7 +14897,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359398000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270248000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12591,7 +14943,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359439000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270282000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12604,7 +14956,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359439000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270282000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12651,7 +15003,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359477000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270316000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12664,7 +15016,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359477000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270316000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12710,7 +15062,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359518000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270349000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12723,7 +15075,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359518000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270349000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12769,7 +15121,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359566000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270385000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12782,7 +15134,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359566000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270385000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12828,7 +15180,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359612000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270419000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12841,7 +15193,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359612000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270419000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12889,7 +15241,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359652000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270452000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12902,7 +15254,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359652000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270452000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12948,7 +15300,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1779816765359698000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725270498000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12961,7 +15313,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765359698000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725270498000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13123,7 +15475,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1779816765360383000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725267642000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13136,7 +15488,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360383000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725267642000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13199,7 +15551,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1779816765360430000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725267772000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13212,7 +15564,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360430000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725267772000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13393,7 +15745,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1779816765360545000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725268118000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13406,7 +15758,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360545000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725268118000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13469,7 +15821,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1779816765360589000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725268240000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13482,7 +15834,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360589000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725268240000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13931,7 +16283,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1779816765360860000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725269002000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13944,7 +16296,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360860000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725269002000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14008,7 +16360,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1779816765360904000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428725269135000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14021,7 +16373,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779816765360904000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428725269135000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

@@ -26,7 +26,7 @@
         &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Coleções são estruturas de dados utilizadas para armazenar e manipular grupos de objetos. O framework Collections do Java fornece interfaces e implementações prontas para representar listas, conjuntos e mapas, oferecendo operações como inserção, remoção, busca e iteração. As principais coleções da biblioteca padrão estão disponíveis no pacote &lt;code&gt;java.util&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Diagrama da API de coleções da linguagem Java.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1779804757072383000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428565780178000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -39,11 +39,11 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779804757072383000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428565780178000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
-&lt;div id=&#34;plantuml-1779804757072399000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428565780197000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -56,7 +56,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779804757072399000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428565780197000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -74,7 +74,7 @@ O Java possui a interface &lt;code&gt;List&lt;/code&gt; para definir a estrutura
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779804757072412000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428565780214000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface List\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b add(index: int, element: E): void\n    \u002b get(index: int): E\n    \u002b set(index: int, element: E): E\n    \u002b remove(index: int): E\n    \u002b remove(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b contains(element: Object): boolean\n    \u002b clear(): void\n    \u002b indexOf(element: Object): int\n    \u002b lastIndexOf(element: Object): int\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\nclass ArrayList\u003cE\u003e \u007b\n    - elementData: Object[]\n    - size: int\n\n    \u002b ArrayList()\n    \u002b ArrayList(initialCapacity: int)\n\n    \u002b ensureCapacity(minCapacity: int): void\n    \u002b trimToSize(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n\u007d\n\nList \u003c|.r. ArrayList\n\n@enduml\n`;
@@ -86,7 +86,7 @@ O Java possui a interface &lt;code&gt;List&lt;/code&gt; para definir a estrutura
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779804757072412000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428565780214000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -351,7 +351,7 @@ List &amp;lt;|.r. ArrayList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-03-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-03-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-03-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-03-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779804757072536000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428565780355000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Set\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b remove(element: Object): boolean\n    \u002b contains(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\nclass HashSet\u003cE\u003e \u007b\n    - map: HashMap\u003cE, Object\u003e\n\n    \u002b HashSet()\n\n\u007d\n\nSet \u003c|.r. HashSet\n\n@enduml\n`;
@@ -363,7 +363,7 @@ List &amp;lt;|.r. ArrayList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779804757072536000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428565780355000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -537,7 +537,7 @@ O &lt;code&gt;HashMap&lt;/code&gt; é a implementação mais comum, em que os el
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-04-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-04-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-04-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-04-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1779804757072652000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1780428565780479000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Map\u003cK, V\u003e \u007b\n    \u002b put(key: K, value: V): V\n    \u002b get(key: Object): V\n    \u002b remove(key: Object): V\n    \u002b containsKey(key: Object): boolean\n    \u002b containsValue(value: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b keySet(): Set\u003cK\u003e\n    \u002b values(): Collection\u003cV\u003e\n    \u002b entrySet(): Set\u003cMap.Entry\u003cK,V\u003e\u003e\n\u007d\n\nclass HashMap\u003cK, V\u003e \u007b\n    - table: Node\u003cK,V\u003e[]\n    - size: int\n    - loadFactor: float\n\n    \u002b HashMap()\n\n\u007d\n\nMap \u003c|.r. HashMap\n\n@enduml\n`;
@@ -549,7 +549,7 @@ O &lt;code&gt;HashMap&lt;/code&gt; é a implementação mais comum, em que os el
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779804757072652000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428565780479000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;

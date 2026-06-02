@@ -249,6 +249,187 @@ Um mapa pode armazenar uma chave com valor &lt;code&gt;null&lt;/code&gt;?
     </item>
     
     <item>
+      <title>Exercícios sobre Enumerações</title>
+      <link>http://localhost:1313/disciplinas/poo-1/enums-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/enums-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Semaforo&lt;/code&gt; para representar um semáforo de trânsito. As fases do semáforo (&lt;code&gt;VERMELHO&lt;/code&gt;,  &lt;code&gt;AMARELO&lt;/code&gt; e &lt;code&gt;VERDE&lt;/code&gt;) devem ser representadas por uma enumeração. 
+&lt;br&gt;
+A classe deve armazenar a fase atual e possuir um método &lt;code&gt;trocarFase()&lt;/code&gt; que avance para a próxima fase da sequência:
+&lt;br&gt;
+&lt;br&gt;
+VERMELHO → VERDE → AMARELO → VERMELHO.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe `Dinheiro` para representar um valor monetário. Os tipos de moeda (&lt;code&gt;REAL&lt;/code&gt;, &lt;code&gt;DOLAR&lt;/code&gt; e &lt;code&gt;EURO&lt;/code&gt;) devem ser representadas por uma enumeração.
+&lt;br&gt;
+A classe deve armazenar o tipo da moeda e o valor monetário. Implemente um método &lt;code&gt;converterPara(tipoDaMoeda)&lt;/code&gt; que converta o valor utilizando as taxas da tabela abaixo e retorne um novo objeto Dinheiro com o valor convertido.
+&lt;br&gt;
+&lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Moeda&lt;/th&gt;
+      &lt;th&gt;Valor em Real (BRL)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;REAL&lt;/td&gt;
+      &lt;td&gt;1.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DOLAR&lt;/td&gt;
+      &lt;td&gt;5.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EURO&lt;/td&gt;
+      &lt;td&gt;5.50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie uma classe &lt;code&gt;Carta&lt;/code&gt; para representar uma carta de baralho. O naipe e o valor da carta devem ser representados por enumerações.
+
+A classe &lt;code&gt;Carta&lt;/code&gt; deve armazenar o naipe e o valor da carta, além de implementar um método &lt;code&gt;compararCom(carta)&lt;/code&gt; que compare duas cartas e retorne:
+&lt;ul&gt;
+&lt;li&gt;1 se a carta atual possuir valor maior;&lt;/li&gt;
+&lt;li&gt;0 se as cartas possuírem o mesmo valor;&lt;/li&gt;
+&lt;li&gt;-1 se a carta atual possuir valor menor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Exemplo:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Carta c1 = new Carta(Naipe.COPAS, Valor.REI);
+Carta c2 = new Carta(Naipe.ESPADAS, Valor.DEZ);
+// Saída: 1
+System.out.println(c1.compararCom(c2));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma enumeração &lt;code&gt;Operacao&lt;/code&gt; para representar operações matemáticas básicas.
+A enumeração deve possuir os seguintes enumeradores:
+
+&lt;ul&gt;
+    &lt;li&gt;SOMA&lt;/li&gt;
+    &lt;li&gt;SUBTRACAO&lt;/li&gt;
+    &lt;li&gt;DIVISAO&lt;/li&gt;
+    &lt;li&gt;MULTIPLICACAO&lt;/li&gt;
+&lt;/ul&gt;
+
+Implemente um método &lt;code&gt;calcular(a, b)&lt;/code&gt; que receba dois valores numéricos e retorne o resultado da operação correspondente.
+&lt;br&gt;
+Exemplos:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+// Saída: 15
+System.out.println(Operacao.SOMA.calcular(10, 5));
+// Saída: 50
+System.out.println(Operacao.MULTIPLICACAO.calcular(10, 5));
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios sobre Formulários</title>
+      <link>http://localhost:1313/disciplinas/dew/formularios-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/dew/formularios-exercicios/</guid>
+      <description>
+        
+        
+        
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma página em HTML que apresenta um formulário para cadastrar um endereço de entrega. 
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma página em HTML que apresenta um formulário para enviar uma Email. O formulário deverá ter os campos &lt;b&gt;enviar para&lt;/b&gt;, &lt;b&gt;em cópia&lt;/b&gt;, &lt;b&gt;em cópia oculta&lt;/b&gt; e o corpo do email (textarea).
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma página em HTML que apresenta um formulário para selecionar uma cidade.
+O formulário deverá apresentar um campo do tipo `select` para selecionar o estado. Conforme o Estado for selecionado,
+em um campo do tipo `datalist`, deverá apresentar as cidades com a funcionalidade de `autocomplete`. Utilize a propriedade `onChange` do select para mudar a lista de valores do `datalist`.
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Exercícios sobre Imutabilidade</title>
       <link>http://localhost:1313/disciplinas/poo-1/imutabilidade-exercicios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -258,6 +439,481 @@ Um mapa pode armazenar uma chave com valor &lt;code&gt;null&lt;/code&gt;?
         
         
         
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;p&gt;
+Desenvolva uma classe imutável chamada &lt;code&gt;LicensePlate&lt;/code&gt; para representar
+a placa de um veículo. A classe deve armazenar o número da placa e garantir que
+esse valor não possa ser alterado após a criação do objeto.
+&lt;/p&gt;
+
+&lt;p&gt;
+Implemente um construtor que receba o número da placa e realize as validações
+necessárias. Considere apenas placas no formato Mercosul, por exemplo:
+&lt;code&gt;ABC1D23&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A classe não deve possuir métodos &lt;em&gt;setters&lt;/em&gt;. Após a criação da instância,
+o número da placa deve permanecer inalterado durante toda a vida do objeto.
+&lt;/p&gt;
+
+&lt;p&gt;
+Implemente um método de acesso para consultar o número da placa.
+&lt;/p&gt;
+
+&lt;p&gt;
+Adicione também um método chamado &lt;code&gt;withNumber()&lt;/code&gt; que permita criar uma
+nova placa com outro número. Como a classe é imutável, esse método não deve
+alterar o objeto atual. Em vez disso, ele deve retornar uma nova instância com
+o novo valor informado.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ao concluir a implementação, verifique que o objeto original permanece
+inalterado após a criação da nova placa.
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva uma classe imutável chamada &lt;code&gt;Time&lt;/code&gt; para representar um horário
+composto por horas e minutos. A classe deve garantir que seu estado não possa ser
+alterado após a criação da instância.
+&lt;/p&gt;
+
+&lt;p&gt;
+Os valores de hora devem estar no intervalo de &lt;code&gt;0&lt;/code&gt; a &lt;code&gt;23&lt;/code&gt;, e os
+valores de minuto no intervalo de &lt;code&gt;0&lt;/code&gt; a &lt;code&gt;59&lt;/code&gt;. Realize as validações
+necessárias durante a construção do objeto.
+&lt;/p&gt;
+
+&lt;p&gt;
+Implemente métodos que permitam adicionar e subtrair horas e minutos. Como a classe é
+imutável, essas operações não devem modificar o objeto atual. Em vez disso, cada método
+deve retornar uma nova instância de &lt;code&gt;Time&lt;/code&gt; contendo o horário resultante da
+operação.
+&lt;/p&gt;
+
+&lt;p&gt;
+Considere também situações em que a operação provoque a mudança de dia. Por exemplo,
+ao adicionar 30 minutos ao horário &lt;code&gt;23:45&lt;/code&gt;, o resultado deve ser
+&lt;code&gt;00:15&lt;/code&gt;. Da mesma forma, ao subtrair 20 minutos de &lt;code&gt;00:10&lt;/code&gt;,
+o resultado deve ser &lt;code&gt;23:50&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Implemente um método para exibir o horário no formato &lt;code&gt;HH:mm&lt;/code&gt;, garantindo
+que horas e minutos sejam apresentados com dois dígitos.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ao concluir a implementação, verifique se o objeto original permanece inalterado após
+cada operação, confirmando que a classe é verdadeiramente imutável. Também é recomendável
+implementar os métodos &lt;code&gt;equals()&lt;/code&gt; e &lt;code&gt;hashCode()&lt;/code&gt; para que dois
+objetos que representem o mesmo horário sejam considerados equivalentes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Como desafio adicional, reimplemente a solução utilizando um &lt;code&gt;record&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios sobre manipulação de arquivos</title>
+      <link>http://localhost:1313/disciplinas/poo-1/arquivos-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/arquivos-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva um programa para realizar o cadastro de clientes em um arquivo no formato CSV
+(&lt;em&gt;Comma-Separated Values&lt;/em&gt;). Cada cliente deve ser armazenado em uma única linha
+do arquivo, e os campos devem ser separados pelo caractere &lt;code&gt;;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Para cada cliente, devem ser registradas as seguintes informações:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Identificador único;&lt;/li&gt;
+    &lt;li&gt;Nome completo;&lt;/li&gt;
+    &lt;li&gt;E-mail;&lt;/li&gt;
+    &lt;li&gt;Telefone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Ao final da execução, o programa deve gerar um arquivo contendo todos os clientes
+cadastrados no seguinte formato:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria@email.com;(47) 99999-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize a API NIO do Java para realizar a escrita do arquivo.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva um programa capaz de realizar a leitura de um arquivo no formato CSV
+contendo informações de clientes. Cada linha do arquivo representa um cliente e
+os campos são separados pelo caractere &lt;code&gt;;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Cada registro do arquivo possui as seguintes informações:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Identificador único;&lt;/li&gt;
+    &lt;li&gt;Nome completo;&lt;/li&gt;
+    &lt;li&gt;E-mail;&lt;/li&gt;
+    &lt;li&gt;Telefone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+O programa deve ler todas as linhas do arquivo, converter os dados para objetos
+da classe &lt;code&gt;Client&lt;/code&gt; e armazená-los em uma coleção.
+&lt;/p&gt;
+
+&lt;p&gt;
+Considere que o arquivo possui o seguinte formato:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria@email.com;(47) 99999-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Ao final da leitura, o programa deve exibir as informações dos clientes no console
+ou disponibilizá-las para processamento posterior pela aplicação.
+&lt;/p&gt;
+
+&lt;p&gt;
+Utilize a API NIO do Java para realizar a leitura do arquivo e a API de Streams
+para converter cada linha em um objeto &lt;code&gt;Client&lt;/code&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva um programa capaz de gerenciar as informações de clientes armazenadas
+em um arquivo CSV. O programa deve realizar a leitura dos dados do arquivo,
+permitir a atualização das informações de um cliente e persistir as alterações
+novamente no arquivo.
+&lt;/p&gt;
+
+&lt;p&gt;
+Cada linha do arquivo representa um cliente e os campos são separados pelo
+caractere &lt;code&gt;;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+As informações armazenadas para cada cliente são:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Identificador único;&lt;/li&gt;
+    &lt;li&gt;Nome completo;&lt;/li&gt;
+    &lt;li&gt;E-mail;&lt;/li&gt;
+    &lt;li&gt;Telefone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+O programa deve localizar um cliente a partir de seu identificador único,
+atualizar uma ou mais informações e, em seguida, sobrescrever o arquivo com
+os dados atualizados.
+&lt;/p&gt;
+
+&lt;p&gt;
+Considere o seguinte conteúdo inicial para o arquivo:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria@email.com;(47) 99999-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Após atualizar o e-mail e o telefone da cliente de identificador &lt;code&gt;2&lt;/code&gt;,
+o arquivo deverá conter:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria.souza@email.com;(47) 98888-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize a API NIO do Java para realizar a leitura e a escrita do arquivo.
+Após modificar os dados em memória, o programa deve regravar todo o conteúdo
+do arquivo com as informações atualizadas.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;p&gt;
+Desenvolva um programa capaz de verificar se uma determinada palavra pertence ao
+vocabulário da língua portuguesa. Para isso, utilize uma lista de palavras
+armazenada em um arquivo texto, contendo uma palavra por linha.
+&lt;/p&gt;
+
+&lt;p&gt;
+O programa deve solicitar ao usuário uma palavra e informar se ela foi encontrada
+ou não no dicionário.
+&lt;/p&gt;
+
+&lt;p&gt;
+A busca não deve diferenciar letras maiúsculas e minúsculas. Por exemplo,
+as palavras &lt;code&gt;Casa&lt;/code&gt;, &lt;code&gt;CASA&lt;/code&gt; e &lt;code&gt;casa&lt;/code&gt; devem ser
+consideradas equivalentes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Exemplos:
+&lt;/p&gt;
+
+&lt;pre&gt;
+Digite uma palavra: computador
+Palavra encontrada no dicionário.
+&lt;/pre&gt;
+
+&lt;pre&gt;
+Digite uma palavra: xablauzito
+Palavra não encontrada no dicionário.
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize como base os arquivos disponibilizados pelo Instituto de Matemática e
+Estatística da USP, que contêm listas de palavras do português brasileiro.
+A versão recomendada para este exercício é o arquivo em UTF-8:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href=&#34;https://www.ime.usp.br/~pf/dicios/br-utf8.txt&#34;&gt;
+https://www.ime.usp.br/~pf/dicios/br-utf8.txt
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+O conjunto de arquivos disponibilizado pela USP contém centenas de milhares de
+palavras do português brasileiro e pode ser utilizado para validar a existência
+de palavras em aplicações de processamento de texto. O arquivo
+&lt;code&gt;br-utf8.txt&lt;/code&gt; possui uma palavra por linha e utiliza codificação UTF-8.
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;p&gt;
+Desenvolva um jogo de adivinhação no qual o jogador deve descobrir o nome de um
+país sorteado aleatoriamente pelo programa.
+&lt;/p&gt;
+
+&lt;p&gt;
+A lista de países deve ser armazenada em um arquivo no formato JSON. Durante a
+execução, o programa deve carregar os dados do arquivo, selecionar um país de
+forma aleatória e solicitar que o usuário tente adivinhar seu nome.
+&lt;/p&gt;
+
+&lt;p&gt;
+O jogador terá no máximo &lt;strong&gt;3 tentativas&lt;/strong&gt; para acertar o país
+sorteado.
+&lt;/p&gt;
+
+&lt;p&gt;
+Após cada tentativa incorreta, o programa deve informar que a resposta está
+errada e exibir a quantidade de tentativas restantes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Se o jogador acertar o nome do país dentro do limite de tentativas, uma mensagem
+de parabéns deve ser exibida. Caso contrário, o programa deve informar que o
+jogador perdeu e revelar o país sorteado.
+&lt;/p&gt;
+
+&lt;p&gt;
+Exemplo de arquivo JSON:
+&lt;/p&gt;
+
+&lt;pre&gt;
+[
+  &#34;Brasil&#34;,
+  &#34;Argentina&#34;,
+  &#34;Chile&#34;,
+  &#34;Canadá&#34;,
+  &#34;Japão&#34;,
+  &#34;Portugal&#34;,
+  &#34;Austrália&#34;
+]
+&lt;/pre&gt;
+
+&lt;p&gt;
+Exemplo de execução com vitória:
+&lt;/p&gt;
+
+&lt;pre&gt;
+Tentativa 1 de 3
+Digite o nome do país: Brasil
+Resposta incorreta.
+
+Tentativa 2 de 3
+Digite o nome do país: Japão
+
+Parabéns! Você acertou o país sorteado.
+&lt;/pre&gt;
+
+&lt;p&gt;
+Exemplo de execução com derrota:
+&lt;/p&gt;
+
+&lt;pre&gt;
+Tentativa 1 de 3
+Digite o nome do país: Brasil
+Resposta incorreta.
+
+Tentativa 2 de 3
+Digite o nome do país: Argentina
+Resposta incorreta.
+
+Tentativa 3 de 3
+Digite o nome do país: Chile
+Resposta incorreta.
+
+Você perdeu!
+O país sorteado era: Canadá
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize a biblioteca Jackson para realizar a leitura do arquivo JSON e a classe
+&lt;code&gt;Random&lt;/code&gt; para selecionar o país sorteado.
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Exercícios sobre Spring-AI</title>
+      <link>http://localhost:1313/disciplinas/poo-2/spring-ai-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-2/spring-ai-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie um sistema com Spring AI onde utilize um modelo de AI para listar as 30 cidades mais populosas do mundo (ranking, nome, estado, país, continente).
+Apresente a lista de cidades em uma página web.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Crie um sistema web com Spring Framework para jogar o jogo da velha. O jogo deve utilizar um modelo de AI para jogar contra o usuário.
+Apresente o tabuleiro do jogo da velha em uma página web.
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     

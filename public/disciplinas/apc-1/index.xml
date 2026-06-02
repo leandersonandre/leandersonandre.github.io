@@ -73,7 +73,7 @@
 &lt;li&gt;Paralelogramo → entrada/saída&lt;/li&gt;
 &lt;li&gt;Losango → decisão&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;plantuml-1779804757060898000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1780428565766755000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -86,7 +86,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1779804757060898000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1780428565766755000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4669,6 +4669,115 @@ Resposta final: A
 &lt;h2&gt;Observação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observação&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#observa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A formatação de números melhora a apresentação dos dados e é muito utilizada em relatórios, interfaces e exibição de resultados.&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Listas</title>
+      <link>http://localhost:1313/disciplinas/apc-1/listas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-1/listas/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Uma &lt;strong&gt;lista&lt;/strong&gt; é uma estrutura de dados lineares que permite armazenar uma coleção de objetos. Os objetos podem ser acessados através de um índice, ou seja, a posição na lista.&lt;/p&gt;
+&lt;h2&gt;Criando uma lista&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;criando-uma-lista&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#criando-uma-lista&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A lista é definida com os valores entre colchetes [ ] e separados por vírgula.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# lista vazia&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lista &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;lista&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# lista com elementos&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lista &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;lista&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Tamanho da lista&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tamanho-da-lista&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tamanho-da-lista&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A função &lt;code&gt;len&lt;/code&gt; calcula o tamanho de uma lista.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lista &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tamanho &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;len&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;lista&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Tamaho da lista:&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;tamanho&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Obter um elemento pela posição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;obter-um-elemento-pela-posição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#obter-um-elemento-pela-posi%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O acesso de uma posição em uma lista é feita com os []. A primeira posição da lista é o Zero.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lista &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;elemento &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; lista&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Elemento na posição 2:&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;elemento&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Acessar uma posição inválida na lista irá lançar uma exceção.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lista &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;# acesso a uma posição inválida&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;elemento &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; lista&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;20&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Modificar o elemento na posição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;modificar-o-elemento-na-posição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#modificar-o-elemento-na-posi%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lista &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tamanho &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;len&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;lista&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Tamaho da lista:&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;tamanho&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Percorrer a lista&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;percorrer-a-lista&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#percorrer-a-lista&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2&gt;Adicionar elementos na lista&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;adicionar-elementos-na-lista&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#adicionar-elementos-na-lista&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2&gt;Remover elementos na lista&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;remover-elementos-na-lista&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#remover-elementos-na-lista&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
       </description>
     </item>
     

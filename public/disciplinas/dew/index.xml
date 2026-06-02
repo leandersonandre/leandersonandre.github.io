@@ -15,6 +15,54 @@
     
     
     <item>
+      <title>Exercícios sobre Formulários</title>
+      <link>http://localhost:1313/disciplinas/dew/formularios-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/dew/formularios-exercicios/</guid>
+      <description>
+        
+        
+        
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma página em HTML que apresenta um formulário para cadastrar um endereço de entrega. 
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma página em HTML que apresenta um formulário para enviar uma Email. O formulário deverá ter os campos &lt;b&gt;enviar para&lt;/b&gt;, &lt;b&gt;em cópia&lt;/b&gt;, &lt;b&gt;em cópia oculta&lt;/b&gt; e o corpo do email (textarea).
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+Crie uma página em HTML que apresenta um formulário para selecionar uma cidade.
+O formulário deverá apresentar um campo do tipo `select` para selecionar o estado. Conforme o Estado for selecionado,
+em um campo do tipo `datalist`, deverá apresentar as cidades com a funcionalidade de `autocomplete`. Utilize a propriedade `onChange` do select para mudar a lista de valores do `datalist`.
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Formulários</title>
       <link>http://localhost:1313/disciplinas/dew/formularios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,41 +90,127 @@
 &lt;/div&gt;
 &lt;h3&gt;Elemento input&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;elemento-input&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#elemento-input&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O elemento input é um dos campos mais utilizados para coletar os dados do usuário. O elemento input permite informar uma gama diferente de informações. O atributo &lt;code&gt;type&lt;/code&gt; define o tipo de campo e layout.&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;color&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;datetime-local&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;email&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;hidden&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;image&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;month&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;number&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;range&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;reset&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;search&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;tel&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;time&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;week&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copiar código&#34;
-    aria-label=&#34;Copiar código&#34;
-    data-copied-label=&#34;Copiado!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Tipo&lt;/th&gt;
+          &lt;th&gt;Explicação&lt;/th&gt;
+          &lt;th&gt;Exemplo de uso&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;button&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Cria um botão clicável sem ação automática. Normalmente usado com JavaScript.&lt;/td&gt;
+          &lt;td&gt;Abrir modal, executar função&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Caixa de seleção que permite marcar múltiplas opções.&lt;/td&gt;
+          &lt;td&gt;Aceitar termos, escolher hobbies&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;color&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite selecionar uma cor em um seletor visual.&lt;/td&gt;
+          &lt;td&gt;Escolher tema/cor de perfil&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;date&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo para selecionar uma data.&lt;/td&gt;
+          &lt;td&gt;Data de nascimento&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;datetime-local&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite escolher data e hora local.&lt;/td&gt;
+          &lt;td&gt;Agendamento de reunião&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;email&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo específico para e-mail com validação automática.&lt;/td&gt;
+          &lt;td&gt;Cadastro de usuário&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;file&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite enviar arquivos do computador.&lt;/td&gt;
+          &lt;td&gt;Upload de imagem ou PDF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;hidden&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo oculto que não aparece para o usuário.&lt;/td&gt;
+          &lt;td&gt;Enviar ID interno no formulário&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;image&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Usa uma imagem como botão de envio do formulário.&lt;/td&gt;
+          &lt;td&gt;Botão personalizado&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;month&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite selecionar mês e ano.&lt;/td&gt;
+          &lt;td&gt;Validade de cartão&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;number&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo para números, podendo limitar mínimo e máximo.&lt;/td&gt;
+          &lt;td&gt;Quantidade de produtos&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;password&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo de senha com caracteres ocultos.&lt;/td&gt;
+          &lt;td&gt;Login&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;radio&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite selecionar apenas uma opção entre várias.&lt;/td&gt;
+          &lt;td&gt;Escolher gênero, forma de pagamento&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;range&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Controle deslizante para escolher valores em intervalo.&lt;/td&gt;
+          &lt;td&gt;Controle de volume&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;reset&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Botão que limpa os dados do formulário.&lt;/td&gt;
+          &lt;td&gt;Resetar formulário&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;search&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo otimizado para buscas.&lt;/td&gt;
+          &lt;td&gt;Barra de pesquisa&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;submit&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Botão que envia o formulário.&lt;/td&gt;
+          &lt;td&gt;Enviar cadastro&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;tel&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo para números de telefone.&lt;/td&gt;
+          &lt;td&gt;Cadastro de contato&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo de texto simples.&lt;/td&gt;
+          &lt;td&gt;Nome do usuário&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;time&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite selecionar horário.&lt;/td&gt;
+          &lt;td&gt;Escolher hora de consulta&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;url&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Campo específico para URLs com validação.&lt;/td&gt;
+          &lt;td&gt;Site pessoal&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;week&amp;quot;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Permite selecionar semana e ano.&lt;/td&gt;
+          &lt;td&gt;Planejamento semanal&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;O layout e tipo de informação do campo depende do navegador utilizado. Caso o navegador não suportar, o campo input assume o tipo &lt;code&gt;text&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;Atributos do input&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;atributos-do-input&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#atributos-do-input&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O elemento input possui os atributos &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;value&lt;/code&gt; e &lt;code&gt;placeholder&lt;/code&gt;.&lt;/p&gt;
@@ -143,6 +277,218 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;h2&gt;Exemplo de Formulário&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exemplo-de-formulário&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exemplo-de-formul%c3%a1rio&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Formulário&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Código HTML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt; &lt;form&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;nome&#34;&gt;Nome:&lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; id=&#34;nome&#34; name=&#34;nome&#34; placeholder=&#34;Digite seu nome&#34;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;email&#34;&gt;Email:&lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34; placeholder=&#34;Digite seu email&#34;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;password&#34;&gt;Senha:&lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;password&#34; id=&#34;password&#34; name=&#34;password&#34; placeholder=&#34;Digite seu password&#34;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;input type=&#34;reset&#34; value=&#34;Limpar&#34;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Nome:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;placeholder&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite seu nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;email&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Email:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;email&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;email&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;email&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;placeholder&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite seu email&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Senha:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;placeholder&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Digite seu password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;reset&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Limpar&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Exemplo de uso de &lt;code&gt;checkbox&lt;/code&gt; e &lt;code&gt;radio button&lt;/code&gt;.
+
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-01-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-01-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Formulário&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-01-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-01-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Código HTML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;form&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for=&#34;nome&#34;&gt;Sabores da pizza:&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cb_4_queijos&#34; name=&#34;cb_4_queijos&#34;&gt;4 Queijos&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cb_calabreza&#34; name=&#34;cb_calabreza&#34;&gt;Calabreza&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cb_portuguesa&#34; name=&#34;cb_portuguesa&#34;&gt;Portuguesa&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cb_frango_catupiry&#34; name=&#34;cb_frango_catupiry&#34;&gt;Frango com Catupiry&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for=&#34;nome&#34;&gt;Refrigerante:&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;radio&#34; id=&#34;radio_cocacola&#34; name=&#34;refrigerante&#34;&gt;Coca-Cola&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;radio&#34; id=&#34;radio_cocacola_zero&#34; name=&#34;refrigerante&#34;&gt;Coca-Cola Zero&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;radio&#34; id=&#34;radio_sprite&#34; name=&#34;refrigerante&#34;&gt;Sprite&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;radio&#34; id=&#34;radio_fanta&#34; name=&#34;refrigerante&#34;&gt;Fanta Laranja&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/form&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Sabores da pizza:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_4_queijos&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_4_queijos&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;4 Queijos&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_calabreza&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_calabreza&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Calabreza&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_portuguesa&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_portuguesa&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Portuguesa&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_frango_catupiry&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cb_frango_catupiry&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Frango com Catupiry&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Refrigerante:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio_cocacola&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;refrigerante&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Coca-Cola&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio_cocacola_zero&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;refrigerante&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Coca-Cola Zero&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio_sprite&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;refrigerante&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Sprite&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;radio_fanta&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;refrigerante&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Fanta Laranja&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Exemplo de uso de &lt;code&gt;range&lt;/code&gt;, &lt;code&gt;data&lt;/code&gt; e &lt;code&gt;color&lt;/code&gt;.
+
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Formulário&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Código HTML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;form&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for=&#34;volume&#34;&gt;Volume:&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;range&#34; id=&#34;volume&#34; name=&#34;volume&#34;&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for=&#34;data&#34;&gt;Data:&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;date&#34; id=&#34;data&#34; name=&#34;data&#34;&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for=&#34;cor&#34;&gt;Cor:&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&#34;color&#34; id=&#34;cor&#34; name=&#34;cor&#34;&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/form&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;volume&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Volume:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;range&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;volume&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;volume&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Data:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cor&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Cor:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;color&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cor&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;cor&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/p&gt;
 
       </description>
     </item>

@@ -14,5 +14,1023 @@
       
     
     
+    <item>
+      <title>Exercícios sobre manipulação de arquivos</title>
+      <link>http://localhost:1313/disciplinas/poo-1/arquivos-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/arquivos-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva um programa para realizar o cadastro de clientes em um arquivo no formato CSV
+(&lt;em&gt;Comma-Separated Values&lt;/em&gt;). Cada cliente deve ser armazenado em uma única linha
+do arquivo, e os campos devem ser separados pelo caractere &lt;code&gt;;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Para cada cliente, devem ser registradas as seguintes informações:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Identificador único;&lt;/li&gt;
+    &lt;li&gt;Nome completo;&lt;/li&gt;
+    &lt;li&gt;E-mail;&lt;/li&gt;
+    &lt;li&gt;Telefone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Ao final da execução, o programa deve gerar um arquivo contendo todos os clientes
+cadastrados no seguinte formato:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria@email.com;(47) 99999-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize a API NIO do Java para realizar a escrita do arquivo.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva um programa capaz de realizar a leitura de um arquivo no formato CSV
+contendo informações de clientes. Cada linha do arquivo representa um cliente e
+os campos são separados pelo caractere &lt;code&gt;;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Cada registro do arquivo possui as seguintes informações:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Identificador único;&lt;/li&gt;
+    &lt;li&gt;Nome completo;&lt;/li&gt;
+    &lt;li&gt;E-mail;&lt;/li&gt;
+    &lt;li&gt;Telefone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+O programa deve ler todas as linhas do arquivo, converter os dados para objetos
+da classe &lt;code&gt;Client&lt;/code&gt; e armazená-los em uma coleção.
+&lt;/p&gt;
+
+&lt;p&gt;
+Considere que o arquivo possui o seguinte formato:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria@email.com;(47) 99999-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Ao final da leitura, o programa deve exibir as informações dos clientes no console
+ou disponibilizá-las para processamento posterior pela aplicação.
+&lt;/p&gt;
+
+&lt;p&gt;
+Utilize a API NIO do Java para realizar a leitura do arquivo e a API de Streams
+para converter cada linha em um objeto &lt;code&gt;Client&lt;/code&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+&lt;p&gt;
+Desenvolva um programa capaz de gerenciar as informações de clientes armazenadas
+em um arquivo CSV. O programa deve realizar a leitura dos dados do arquivo,
+permitir a atualização das informações de um cliente e persistir as alterações
+novamente no arquivo.
+&lt;/p&gt;
+
+&lt;p&gt;
+Cada linha do arquivo representa um cliente e os campos são separados pelo
+caractere &lt;code&gt;;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+As informações armazenadas para cada cliente são:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Identificador único;&lt;/li&gt;
+    &lt;li&gt;Nome completo;&lt;/li&gt;
+    &lt;li&gt;E-mail;&lt;/li&gt;
+    &lt;li&gt;Telefone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+O programa deve localizar um cliente a partir de seu identificador único,
+atualizar uma ou mais informações e, em seguida, sobrescrever o arquivo com
+os dados atualizados.
+&lt;/p&gt;
+
+&lt;p&gt;
+Considere o seguinte conteúdo inicial para o arquivo:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria@email.com;(47) 99999-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Após atualizar o e-mail e o telefone da cliente de identificador &lt;code&gt;2&lt;/code&gt;,
+o arquivo deverá conter:
+&lt;/p&gt;
+
+&lt;pre&gt;
+1;João da Silva;joao@email.com;(47) 99999-1111
+2;Maria Souza;maria.souza@email.com;(47) 98888-2222
+3;Pedro Santos;pedro@email.com;(47) 99999-3333
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize a API NIO do Java para realizar a leitura e a escrita do arquivo.
+Após modificar os dados em memória, o programa deve regravar todo o conteúdo
+do arquivo com as informações atualizadas.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;p&gt;
+Desenvolva um programa capaz de verificar se uma determinada palavra pertence ao
+vocabulário da língua portuguesa. Para isso, utilize uma lista de palavras
+armazenada em um arquivo texto, contendo uma palavra por linha.
+&lt;/p&gt;
+
+&lt;p&gt;
+O programa deve solicitar ao usuário uma palavra e informar se ela foi encontrada
+ou não no dicionário.
+&lt;/p&gt;
+
+&lt;p&gt;
+A busca não deve diferenciar letras maiúsculas e minúsculas. Por exemplo,
+as palavras &lt;code&gt;Casa&lt;/code&gt;, &lt;code&gt;CASA&lt;/code&gt; e &lt;code&gt;casa&lt;/code&gt; devem ser
+consideradas equivalentes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Exemplos:
+&lt;/p&gt;
+
+&lt;pre&gt;
+Digite uma palavra: computador
+Palavra encontrada no dicionário.
+&lt;/pre&gt;
+
+&lt;pre&gt;
+Digite uma palavra: xablauzito
+Palavra não encontrada no dicionário.
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize como base os arquivos disponibilizados pelo Instituto de Matemática e
+Estatística da USP, que contêm listas de palavras do português brasileiro.
+A versão recomendada para este exercício é o arquivo em UTF-8:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href=&#34;https://www.ime.usp.br/~pf/dicios/br-utf8.txt&#34;&gt;
+https://www.ime.usp.br/~pf/dicios/br-utf8.txt
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+O conjunto de arquivos disponibilizado pela USP contém centenas de milhares de
+palavras do português brasileiro e pode ser utilizado para validar a existência
+de palavras em aplicações de processamento de texto. O arquivo
+&lt;code&gt;br-utf8.txt&lt;/code&gt; possui uma palavra por linha e utiliza codificação UTF-8.
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;p&gt;
+Desenvolva um jogo de adivinhação no qual o jogador deve descobrir o nome de um
+país sorteado aleatoriamente pelo programa.
+&lt;/p&gt;
+
+&lt;p&gt;
+A lista de países deve ser armazenada em um arquivo no formato JSON. Durante a
+execução, o programa deve carregar os dados do arquivo, selecionar um país de
+forma aleatória e solicitar que o usuário tente adivinhar seu nome.
+&lt;/p&gt;
+
+&lt;p&gt;
+O jogador terá no máximo &lt;strong&gt;3 tentativas&lt;/strong&gt; para acertar o país
+sorteado.
+&lt;/p&gt;
+
+&lt;p&gt;
+Após cada tentativa incorreta, o programa deve informar que a resposta está
+errada e exibir a quantidade de tentativas restantes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Se o jogador acertar o nome do país dentro do limite de tentativas, uma mensagem
+de parabéns deve ser exibida. Caso contrário, o programa deve informar que o
+jogador perdeu e revelar o país sorteado.
+&lt;/p&gt;
+
+&lt;p&gt;
+Exemplo de arquivo JSON:
+&lt;/p&gt;
+
+&lt;pre&gt;
+[
+  &#34;Brasil&#34;,
+  &#34;Argentina&#34;,
+  &#34;Chile&#34;,
+  &#34;Canadá&#34;,
+  &#34;Japão&#34;,
+  &#34;Portugal&#34;,
+  &#34;Austrália&#34;
+]
+&lt;/pre&gt;
+
+&lt;p&gt;
+Exemplo de execução com vitória:
+&lt;/p&gt;
+
+&lt;pre&gt;
+Tentativa 1 de 3
+Digite o nome do país: Brasil
+Resposta incorreta.
+
+Tentativa 2 de 3
+Digite o nome do país: Japão
+
+Parabéns! Você acertou o país sorteado.
+&lt;/pre&gt;
+
+&lt;p&gt;
+Exemplo de execução com derrota:
+&lt;/p&gt;
+
+&lt;pre&gt;
+Tentativa 1 de 3
+Digite o nome do país: Brasil
+Resposta incorreta.
+
+Tentativa 2 de 3
+Digite o nome do país: Argentina
+Resposta incorreta.
+
+Tentativa 3 de 3
+Digite o nome do país: Chile
+Resposta incorreta.
+
+Você perdeu!
+O país sorteado era: Canadá
+&lt;/pre&gt;
+
+&lt;p&gt;
+Utilize a biblioteca Jackson para realizar a leitura do arquivo JSON e a classe
+&lt;code&gt;Random&lt;/code&gt; para selecionar o país sorteado.
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Manipulação de Arquivos</title>
+      <link>http://localhost:1313/disciplinas/poo-1/arquivos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-1/arquivos/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Um &lt;strong&gt;arquivo&lt;/strong&gt; é uma unidade de armazenamento de dados utilizada para guardar informações de forma permanente em um dispositivo, como um disco rígido, SSD, pendrive ou armazenamento em nuvem. Um arquivo pode conter diferentes tipos de conteúdo, como textos, imagens, vídeos, áudios ou dados utilizados por programas.&lt;/p&gt;
+&lt;p&gt;Cada arquivo normalmente possui um &lt;strong&gt;nome&lt;/strong&gt;, uma &lt;strong&gt;extensão&lt;/strong&gt; (que indica seu tipo, como &lt;code&gt;.txt&lt;/code&gt;, &lt;code&gt;.pdf&lt;/code&gt; ou &lt;code&gt;.jpg&lt;/code&gt;) e está localizado em um diretório ou pasta dentro do sistema de arquivos.&lt;/p&gt;
+&lt;h2&gt;Leitura de arquivos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;leitura-de-arquivos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#leitura-de-arquivos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A plataforma Java oferece diferentes maneiras de realizar a leitura de arquivos. O framework Java NIO oferece uma das formas mais simples de ler um arquivo de texto.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linhas&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readAllLines&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O método &lt;code&gt;Paths.get&lt;/code&gt; cria um objeto do tipo &lt;code&gt;Path&lt;/code&gt;, que representa o caminho para o arquivo no sistema de arquivos. Esse objeto não realiza a leitura nem a abertura efetiva do arquivo; ele apenas encapsula o caminho informado.&lt;/p&gt;
+&lt;p&gt;Em seguida, o método &lt;code&gt;Files.readAllLines&lt;/code&gt; lê todo o conteúdo do arquivo e retorna uma lista de linhas (&lt;code&gt;List&amp;lt;String&amp;gt;&lt;/code&gt;), onde cada elemento corresponde a uma linha do arquivo.&lt;/p&gt;
+&lt;p&gt;Por exemplo:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linha&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linhas&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;linha&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Esse código percorre todas as linhas lidas do arquivo e as exibe no console.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; o método &lt;code&gt;readAllLines&lt;/code&gt; carrega todo o conteúdo do arquivo na memória. Para arquivos muito grandes, pode ser mais adequado utilizar abordagens baseadas em streams, como &lt;code&gt;Files.lines&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Leitura com &lt;code&gt;Files.lines&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;leitura-com-fileslines&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#leitura-com-fileslines&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para arquivos maiores, uma alternativa mais eficiente é utilizar o método &lt;code&gt;Files.lines&lt;/code&gt;, que retorna um &lt;code&gt;Stream&amp;lt;String&amp;gt;&lt;/code&gt;. Dessa forma, as linhas são processadas sob demanda, sem a necessidade de carregar todo o arquivo na memória de uma só vez.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;try&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Stream&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linhas&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;lines&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;linhas&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;forEach&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;::&lt;/span&gt;println&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, cada linha do arquivo é lida e exibida no console.&lt;/p&gt;
+&lt;p&gt;O bloco &lt;code&gt;try-with-resources&lt;/code&gt; garante que o arquivo seja fechado automaticamente após o término da leitura.&lt;/p&gt;
+&lt;p&gt;Também é possível utilizar as operações da API de Streams para filtrar e transformar os dados:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;try&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Stream&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linhas&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;lines&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;))&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;linhas&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;filter&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;linha&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;!&lt;/span&gt;linha&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;isBlank&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;())&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;map&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#1f2328&#34;&gt;::&lt;/span&gt;toUpperCase&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;forEach&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;::&lt;/span&gt;println&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse caso, apenas as linhas não vazias são processadas e convertidas para letras maiúsculas antes de serem exibidas.&lt;/p&gt;
+&lt;h2&gt;Escrita de arquivos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;escrita-de-arquivos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#escrita-de-arquivos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O framework Java NIO também fornece métodos simples para escrever arquivos. A maneira mais direta é utilizar o método &lt;code&gt;Files.write&lt;/code&gt;, que grava uma coleção de linhas em um arquivo.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linhas&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Primeira linha&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Segunda linha&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Terceira linha&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;write&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;linhas&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Se o arquivo não existir, ele será criado automaticamente. Caso já exista, seu conteúdo será substituído pelo novo conteúdo.&lt;/p&gt;
+&lt;h3&gt;Acrescentando conteúdo ao arquivo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;acrescentando-conteúdo-ao-arquivo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#acrescentando-conte%c3%bado-ao-arquivo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para adicionar conteúdo ao final de um arquivo existente, utilize a opção &lt;code&gt;StandardOpenOption.APPEND&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;write&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Nova linha&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;StandardOpenOption&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;APPEND&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Escrevendo uma única String&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;escrevendo-uma-única-string&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#escrevendo-uma-%c3%banica-string&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Também é possível gravar diretamente uma &lt;code&gt;String&lt;/code&gt; utilizando o método &lt;code&gt;Files.writeString&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeString&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Olá, mundo!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Para adicionar texto ao final do arquivo:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;meu_arquivo.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeString&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;\nNova linha&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;StandardOpenOption&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;APPEND&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Assim como na leitura, os métodos da classe &lt;code&gt;Files&lt;/code&gt; são adequados para operações simples. Para arquivos muito grandes ou quando é necessário escrever dados continuamente, pode ser mais apropriado utilizar classes como &lt;code&gt;BufferedWriter&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Criando ou adicionando conteúdo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;criando-ou-adicionando-conteúdo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#criando-ou-adicionando-conte%c3%bado&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma combinação bastante comum é utilizar as opções &lt;code&gt;CREATE&lt;/code&gt; e &lt;code&gt;APPEND&lt;/code&gt;. Nesse caso, o arquivo será criado caso não exista. Se já existir, o conteúdo será adicionado ao final do arquivo.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;log.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeString&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Nova mensagem\n&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;StandardOpenOption&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;CREATE&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;StandardOpenOption&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;APPEND&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Manipulação de arquivos no modo binário&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;manipulação-de-arquivos-no-modo-binário&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#manipula%c3%a7%c3%a3o-de-arquivos-no-modo-bin%c3%a1rio&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Arquivos binários armazenam dados na forma de bytes, sem uma representação textual legível para humanos. Esse formato é frequentemente utilizado para imagens, vídeos, arquivos compactados e também para o armazenamento eficiente de estruturas de dados.&lt;/p&gt;
+&lt;p&gt;Em Java, podemos utilizar as classes &lt;code&gt;DataOutputStream&lt;/code&gt; e &lt;code&gt;DataInputStream&lt;/code&gt; para escrever e ler dados binários.&lt;/p&gt;
+&lt;h3&gt;Gravando records em um arquivo binário&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;gravando-records-em-um-arquivo-binário&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gravando-records-em-um-arquivo-bin%c3%a1rio&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Considere o seguinte record:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;record&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;surname&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Suponha uma lista de pessoas:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;João&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Silva&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Maria&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Souza&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Pedro&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Santos&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Podemos armazenar essa lista em um arquivo binário utilizando um &lt;code&gt;DataOutputStream&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.dat&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;try&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;out&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;DataOutputStream&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;newOutputStream&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;out&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeInt&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;people&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;Person&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;person&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;out&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;person&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;out&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;person&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;surname&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O número de registros é gravado primeiro utilizando &lt;code&gt;writeInt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Para cada pessoa, o nome e o sobrenome são gravados utilizando &lt;code&gt;writeUTF&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Lendo records de um arquivo binário&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;lendo-records-de-um-arquivo-binário&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lendo-records-de-um-arquivo-bin%c3%a1rio&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para recuperar os dados do arquivo, utilizamos um &lt;code&gt;DataInputStream&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.dat&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ArrayList&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;try&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;DataInputStream&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;newInputStream&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;size&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readInt&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;0&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;size&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;i&lt;span style=&#34;color:#0550ae&#34;&gt;++&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;surname&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;people&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;            &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;surname&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O código realiza a leitura na mesma ordem em que os dados foram gravados:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lê a quantidade de registros.&lt;/li&gt;
+&lt;li&gt;Lê o nome.&lt;/li&gt;
+&lt;li&gt;Lê o sobrenome.&lt;/li&gt;
+&lt;li&gt;Reconstrói o objeto &lt;code&gt;Person&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Importância da ordem dos dados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;importância-da-ordem-dos-dados&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#import%c3%a2ncia-da-ordem-dos-dados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Ao trabalhar com arquivos binários, a ordem de leitura deve ser exatamente a mesma utilizada durante a gravação. Caso contrário, os dados serão interpretados incorretamente.&lt;/p&gt;
+&lt;p&gt;Por exemplo, se o arquivo foi gravado utilizando:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;out&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;person&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;out&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;person&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;surname&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A leitura deve seguir a mesma sequência:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;surname&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readUTF&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Caso a ordem seja alterada, os valores recuperados não corresponderão aos dados originais.&lt;/p&gt;
+&lt;h3&gt;Vantagens dos arquivos binários&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;vantagens-dos-arquivos-binários&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vantagens-dos-arquivos-bin%c3%a1rios&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Menor espaço de armazenamento quando comparado a formatos textuais.&lt;/li&gt;
+&lt;li&gt;Leitura e escrita geralmente mais rápidas.&lt;/li&gt;
+&lt;li&gt;Permitem armazenar tipos de dados primitivos diretamente (&lt;code&gt;int&lt;/code&gt;, &lt;code&gt;long&lt;/code&gt;, &lt;code&gt;double&lt;/code&gt;, etc.).&lt;/li&gt;
+&lt;li&gt;São adequados para persistir estruturas de dados quando não há necessidade de edição manual do arquivo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A principal desvantagem é que o conteúdo não pode ser facilmente inspecionado ou editado por um ser humano, exigindo que a aplicação conheça o formato utilizado para interpretar os dados corretamente.&lt;/p&gt;
+&lt;h2&gt;Serialização de objetos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;serialização-de-objetos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#serializa%c3%a7%c3%a3o-de-objetos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A serialização é o processo de converter um objeto em uma sequência de bytes para que ele possa ser armazenado em um arquivo, transmitido pela rede ou persistido em outro meio de armazenamento.&lt;/p&gt;
+&lt;p&gt;Posteriormente, essa sequência de bytes pode ser utilizada para reconstruir o objeto original por meio do processo de desserialização.&lt;/p&gt;
+&lt;h3&gt;Tornando um objeto serializável&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tornando-um-objeto-serializável&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tornando-um-objeto-serializ%c3%a1vel&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para que um objeto possa ser serializado utilizando a API padrão do Java, sua classe deve implementar a interface &lt;code&gt;Serializable&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;import&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#24292e&#34;&gt;java.io.Serializable&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;record&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;surname&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;implements&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Serializable&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A interface &lt;code&gt;Serializable&lt;/code&gt; não possui métodos. Ela funciona apenas como uma marcação indicando que objetos daquela classe podem ser serializados.&lt;/p&gt;
+&lt;h3&gt;Gravando objetos em um arquivo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;gravando-objetos-em-um-arquivo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gravando-objetos-em-um-arquivo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O Java fornece a classe &lt;code&gt;ObjectOutputStream&lt;/code&gt; para serializar objetos.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;João&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Silva&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Maria&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Souza&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.ser&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;try&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;out&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectOutputStream&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;newOutputStream&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;out&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;people&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, toda a lista de pessoas é serializada e gravada em um único arquivo.&lt;/p&gt;
+&lt;h3&gt;Lendo objetos de um arquivo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;lendo-objetos-de-um-arquivo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lendo-objetos-de-um-arquivo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para reconstruir os objetos serializados, utiliza-se a classe &lt;code&gt;ObjectInputStream&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;path&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.ser&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;try&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectInputStream&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;newInputStream&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;path&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@SuppressWarnings&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;unchecked&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;in&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;people&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O método &lt;code&gt;readObject&lt;/code&gt; retorna um &lt;code&gt;Object&lt;/code&gt;, sendo necessário realizar o cast para o tipo esperado.&lt;/p&gt;
+&lt;h3&gt;Funcionamento da serialização&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;funcionamento-da-serialização&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#funcionamento-da-serializa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Durante a serialização, o Java percorre o objeto e seus atributos, convertendo-os para uma representação binária.&lt;/p&gt;
+&lt;p&gt;O arquivo gerado não possui uma estrutura textual legível e deve ser interpretado utilizando a própria API de serialização do Java.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;people.ser
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└── Dados binários do objeto&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Considerações sobre serialização&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;considerações-sobre-serialização&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#considera%c3%a7%c3%b5es-sobre-serializa%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A serialização nativa do Java é simples de utilizar e pode ser útil para armazenamento temporário de objetos ou comunicação entre aplicações Java.&lt;/p&gt;
+&lt;p&gt;Entretanto, em aplicações modernas é comum utilizar formatos como JSON ou XML para persistência e troca de dados, pois eles são independentes da linguagem de programação e podem ser facilmente inspecionados e processados por diferentes sistemas.&lt;/p&gt;
+&lt;p&gt;Por esse motivo, a serialização nativa costuma ser reservada para cenários específicos em que aplicações Java precisam compartilhar objetos diretamente.&lt;/p&gt;
+&lt;h2&gt;Leitura e escrita de arquivos no formato JSON&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;leitura-e-escrita-de-arquivos-no-formato-json&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#leitura-e-escrita-de-arquivos-no-formato-json&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;JSON (&lt;em&gt;JavaScript Object Notation&lt;/em&gt;) é um formato textual amplamente utilizado para armazenamento e troca de dados. Sua principal vantagem é ser legível por humanos e suportado por diversas linguagens de programação.&lt;/p&gt;
+&lt;p&gt;Em aplicações Java, uma das bibliotecas mais populares para trabalhar com JSON é a Jackson.&lt;/p&gt;
+&lt;h3&gt;Dependência&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dependência&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#depend%c3%aancia&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para utilizar a Jackson em projetos Maven, adicione a seguinte dependência:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;&amp;lt;!-- Consulte a versão mais recente da documentação --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.fasterxml.jackson.core&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;jackson-databind&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;{versao}&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Escrevendo objetos em JSON&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;escrevendo-objetos-em-json&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#escrevendo-objetos-em-json&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Considere o seguinte record:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;record&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Person&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;surname&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;E uma lista de pessoas:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;João&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Silva&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Maria&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Souza&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Person&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Pedro&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Santos&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Podemos converter essa lista para JSON e gravá-la em um arquivo utilizando a classe &lt;code&gt;ObjectMapper&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ObjectMapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectMapper&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapper&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeValue&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;toFile&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O arquivo gerado terá um conteúdo semelhante ao seguinte:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;João&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;#34;surname&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Silva&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Maria&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;#34;surname&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Souza&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Pedro&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;#34;surname&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Santos&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Formatando o JSON&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;formatando-o-json&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#formatando-o-json&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Por padrão, o JSON é gravado em uma única linha. Para gerar um arquivo formatado, utilize o método &lt;code&gt;writerWithDefaultPrettyPrinter&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ObjectMapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectMapper&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapper&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writerWithDefaultPrettyPrinter&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeValue&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;toFile&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Lendo objetos de um arquivo JSON&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;lendo-objetos-de-um-arquivo-json&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lendo-objetos-de-um-arquivo-json&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para reconstruir os objetos a partir do arquivo:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ObjectMapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectMapper&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readValue&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;toFile&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;TypeReference&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Após a leitura, a variável &lt;code&gt;people&lt;/code&gt; conterá os mesmos objetos que foram originalmente gravados.&lt;/p&gt;
+&lt;h3&gt;Utilizando a API Files&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;utilizando-a-api-files&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#utilizando-a-api-files&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Também é possível combinar a Jackson com a API NIO.&lt;/p&gt;
+&lt;p&gt;Gravando:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ObjectMapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectMapper&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;[]&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;json&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;writeValueAsBytes&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;people&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;write&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;json&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lendo:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ObjectMapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ObjectMapper&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;[]&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;json&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Files&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readAllBytes&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;Paths&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;people.json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;people&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mapper&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;readValue&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;json&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;TypeReference&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Person&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Vantagens do JSON&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;vantagens-do-json&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vantagens-do-json&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Formato legível por humanos.&lt;/li&gt;
+&lt;li&gt;Independente de linguagem de programação.&lt;/li&gt;
+&lt;li&gt;Amplamente utilizado em APIs REST.&lt;/li&gt;
+&lt;li&gt;Fácil integração com bancos de dados e serviços externos.&lt;/li&gt;
+&lt;li&gt;Suporte nativo em diversas bibliotecas e frameworks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Por esses motivos, JSON é frequentemente utilizado como alternativa à serialização nativa do Java para armazenamento e transferência de dados.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
