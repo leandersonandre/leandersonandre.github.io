@@ -1,6 +1,6 @@
 ---
 title: "Exercícios sobre Imutabilidade"
-slug: "imutabilidade-exercicios"
+slug: "imutabilidade-questoes"
 description: "Exercícios sobre imutabilidade"
 tags:
 - imutabilidade
