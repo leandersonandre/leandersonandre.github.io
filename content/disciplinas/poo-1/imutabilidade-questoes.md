@@ -1,11 +1,11 @@
 ---
-title: "Exercícios sobre Imutabilidade"
+title: "Questões sobre Imutabilidade"
 slug: "imutabilidade-questoes"
-description: "Exercícios sobre imutabilidade"
+description: "Questões sobre imutabilidade"
 tags:
 - imutabilidade
 - record
-- exercicios
+- questoes
 ---
 
 {{< lista-questoes >}}
