@@ -28,7 +28,7 @@ Qual símbolo é utilizado para declarar um parâmetro de tipo genérico?
 
 {{< alternativa >}} (T) {{< /alternativa >}}
 {{< alternativa >}} [T] {{< /alternativa >}}
-{{< alternativa >}} <T> {{< /alternativa >}}
+{{< alternativa >}} &lt;T&gt; {{< /alternativa >}}
 {{< alternativa >}} {T} {{< /alternativa >}}
 
 {{< solucao letra="C" >}}
@@ -41,7 +41,7 @@ Os parâmetros de tipo são declarados entre sinais de menor e maior, como <code
 Analise o código abaixo.
 
 {{< code >}}
-public class Caixa<T>{
+public class Caixa&lt;T&gt;{
 }
 {{< /code >}}
 
@@ -76,7 +76,7 @@ Generics ajudam a detectar erros de tipo durante a compilação.
 Analise o código abaixo.
 
 {{< code >}}
-Caixa<String> caixa = new Caixa<>();
+Caixa&lt;String&gt; caixa = new Caixa<>();
 {{< /code >}}
 
 Qual é o tipo associado ao parâmetro T?
@@ -96,7 +96,7 @@ Ao utilizar <code>Caixa&lt;String&gt;</code>, o parâmetro genérico T represent
 Analise o código abaixo.
 
 {{< code >}}
-public class Caixa<T>{
+public class Caixa&lt;T&gt;{
     private T valor;
 }
 {{< /code >}}
@@ -118,7 +118,7 @@ O atributo utiliza o parâmetro genérico T definido pela classe.
 Analise o código abaixo.
 
 {{< code >}}
-List<String> nomes = new ArrayList<>();
+List&lt;String&gt; nomes = new ArrayList<>();
 {{< /code >}}
 
 Qual tipo de elemento pode ser armazenado na lista?
@@ -138,7 +138,7 @@ A lista foi parametrizada com <code>String</code>.
 Analise o código abaixo.
 
 {{< code >}}
-List<Integer> numeros = new ArrayList<>();
+List&lt;Integer&gt; numeros = new ArrayList<>();
 numeros.add(10);
 numeros.add(20);
 {{< /code >}}
@@ -160,7 +160,7 @@ Foram adicionados dois elementos do tipo Integer.
 Analise o código abaixo.
 
 {{< code >}}
-List<Integer> numeros = new ArrayList<>();
+List&lt;Integer&gt; numeros = new ArrayList<>();
 numeros.add("10");
 {{< /code >}}
 
@@ -181,7 +181,7 @@ A lista aceita apenas elementos do tipo Integer.
 Analise o código abaixo.
 
 {{< code >}}
-public class Par<K,V>{
+public class Par&lt;K,V&gt;{
 }
 {{< /code >}}
 
@@ -202,7 +202,7 @@ A classe possui dois parâmetros genéricos: <code>K</code> e <code>V</code>.
 Analise o código abaixo.
 
 {{< code >}}
-public class Caixa<T>{
+public class Caixa&lt;T&gt;{
     private T valor;
 
     public T getValor(){
@@ -315,7 +315,7 @@ O método recebe um parâmetro chamado <code>obj</code> do tipo T.
 Analise o código abaixo.
 
 {{< code >}}
-List<Double> notas = new ArrayList<>();
+List&lt;Double&gt; notas = new ArrayList<>();
 {{< /code >}}
 
 Qual alternativa está correta?
