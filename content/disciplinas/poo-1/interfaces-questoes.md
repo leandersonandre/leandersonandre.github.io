@@ -14,7 +14,7 @@ tags:
 Analise o diagrama UML abaixo.
 
 {{< plantuml >}}
-interface <<interface>> Animal {
+interface  Animal <<interface>> {
   emitirSom() : void
 }
 {{< /plantuml >}}
@@ -36,7 +36,7 @@ O diagrama indica explicitamente uma interface.
 Analise o diagrama UML abaixo.
 
 {{< plantuml >}}
-interface <<interface>> Forma {
+interface  Forma <<interface>> {
   calcularArea() : double
 }
 {{< /plantuml >}}
@@ -58,7 +58,7 @@ O retorno indicado no diagrama é do tipo <code>double</code>.
 Analise o diagrama UML abaixo.
 
 {{< plantuml >}}
-interface <<interface>> Imprimivel {
+interface Imprimivel <<interface>> {
   imprimir() : void
 }
 
@@ -84,7 +84,7 @@ A linha tracejada com triângulo indica implementação de interface.
 Analise o diagrama UML abaixo.
 
 {{< plantuml >}}
-interface <<interface>> Autenticavel {
+interface Autenticavel <<interface>> {
   autenticar(login:String, senha:String) : boolean
 }
 {{< /plantuml >}}
@@ -106,7 +106,7 @@ O método possui os parâmetros <code>login</code> e <code>senha</code>.
 Analise o diagrama UML abaixo.
 
 {{< plantuml >}}
-interface <<interface>> Persistivel {
+interface  Persistivel <<interface>> {
   salvar() : void
 }
 
@@ -212,7 +212,7 @@ A palavra-chave <code>interface</code> define uma interface.
 Analise o código abaixo.
 
 {{< code >}}
-public interface <<interface>> Animal{
+public interface Animal <<interface>>{
   void emitirSom();
 }
 
@@ -237,7 +237,7 @@ Uma classe concreta que implementa uma interface deve implementar seus métodos.
 Analise o código abaixo.
 
 {{< code >}}
-public interface <<interface>> Animal{
+public interface Animal <<interface>>{
   void emitirSom();
 }
 
@@ -279,11 +279,11 @@ Uma classe pode implementar múltiplas interfaces.
 Analise o código abaixo.
 
 {{< code >}}
-public interface <<interface>> A{
+public interface  A <<interface>>{
   void executar();
 }
 
-public interface <<interface>> B{
+public interface B <<interface>>{
   void imprimir();
 }
 
