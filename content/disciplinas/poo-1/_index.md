@@ -23,6 +23,7 @@ toc: false
   {{< card link="/disciplinas/poo-1/enums-questoes" title="Questões sobre Enumerações" >}}
   {{< card link="/disciplinas/poo-1/arquivos" title="Manipulação de Arquivos" >}}
   {{< card link="/disciplinas/poo-1/arquivos-exercicios" title="Exercícios sobre Manipulação de Arquivos" >}}
+  {{< card link="/disciplinas/poo-1/arquivos-questoes" title="Questões sobre Manipulação de Arquivos" >}}
 {{< /cards >}}
 
 <br>
