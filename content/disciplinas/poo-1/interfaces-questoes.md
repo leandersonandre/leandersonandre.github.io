@@ -1,7 +1,7 @@
 ---
-title: "Exercícios sobre Interfaces"
-slug: "interfaces-exercicios"
-description: "Exercícios sobre interfaces"
+title: "Questões sobre Interfaces"
+slug: "interfaces-questoes"
+description: "Questões sobre interfaces"
 tags:
 - questões
 - interfaces
