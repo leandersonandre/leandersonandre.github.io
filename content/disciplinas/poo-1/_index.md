@@ -11,6 +11,7 @@ toc: false
   {{< card link="/disciplinas/poo-1/classes-abstratas" title="Classes Abstratas" >}}
   {{< card link="/disciplinas/poo-1/classes-abstratas-exercicios" title="Exercícios sobre Classes Abstratas" >}}
   {{< card link="/disciplinas/poo-1/classes-abstratas-questoes" title="Questões sobre Classes Abstratas" >}}
+  {{< card link="/disciplinas/poo-1/tipos-genericos-questoes" title="Questões sobre Tipos Genéricos" >}}
   {{< card link="/disciplinas/poo-1/colecoes" title="Coleções" >}}
   {{< card link="/disciplinas/poo-1/colecoes-exercicios" title="Exercícios sobre Coleções" >}}
   {{< card link="/disciplinas/poo-1/colecoes-questoes" title="Questões sobre Coleções" >}}
