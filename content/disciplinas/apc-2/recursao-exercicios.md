@@ -13,13 +13,17 @@ tags:
 
 {{< questao >}}
 Faça uma função recursiva para somar todos os elementos em uma lista.
-{{< solucao letra=" ">}}
+{{< solucao letra=" " >}}
+
+
 {{< code >}}
 def somar(lista, pos=0):
   if pos == len(lista):
     return 0
   return somar(lista,pos+1)+lista[pos]
+
 {{< /code >}}
+
 {{< /solucao >}}
 
 {{< /questao >}}
