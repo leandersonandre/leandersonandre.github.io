@@ -73,7 +73,7 @@ toc: false
   {{< card link="/disciplinas/apc-2/recursao" title="Recursão" >}}
 {{< /cards >}}
 {{< cards cols="2" >}}
-  {{< card link="/disciplinas/apc-2/recursao-exercicios" title="Exercícios" >}}
+  {{< card link="/disciplinas/apc-2/recursao-exercicios" title="Exercícios"lean >}}
 {{< /cards >}}
 
 <br>
