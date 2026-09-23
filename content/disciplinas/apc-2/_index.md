@@ -68,6 +68,13 @@ toc: false
         {{< /cards >}}
     <br>
     
+<br>
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-2/recursao" title="Recursão" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="/disciplinas/apc-2/recursao-exercicios" title="Exercícios" >}}
+{{< /cards >}}
 
 <br>
 
