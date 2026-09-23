@@ -37,7 +37,7 @@ Faça uma função recursiva que multiplique dois números inteiro positivos, x 
 {{< /questao >}}
 
 {{< questao >}}
-Faça uma função recursiva que calcule o Máximo Divisor Comum entre dois números inteiros negativos. Confira o algoritmo de Euclides.
+Faça uma função recursiva que calcule o Máximo Divisor Comum entre dois números inteiros não negativos. Confira o algoritmo de Euclides.
 {{< /questao >}}
 
 {{< questao >}}
@@ -57,7 +57,27 @@ Faça uma função recursiva que, dada uma string s e um caractere c, conte o n�
 {{< /questao >}}
 
 {{< questao >}}
-Faça uma função recursiva que inverta uma String.
+Faça uma função recursiva que calcule o fatorial de um número inteiro não negativo n.
+{{< /questao >}}
+
+{{< questao >}}
+Faça uma função recursiva que calcule o n-ésimo termo da sequência de Fibonacci.
+{{< /questao >}}
+
+{{< questao >}}
+Faça uma função recursiva que determine se um número inteiro positivo é primo.
+{{< /questao >}}
+
+{{< questao >}}
+Faça uma função recursiva que verifique se uma lista está ordenada em ordem crescente.
+{{< /questao >}}
+
+{{< questao >}}
+Faça uma função recursiva que encontre o segundo maior elemento de uma lista.
+{{< /questao >}}
+
+{{< questao >}}
+Faça uma função recursiva que remova todas as ocorrências de um determinado valor de uma lista.
 {{< /questao >}}
 
 {{< /lista-questoes >}}
