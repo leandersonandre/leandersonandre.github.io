@@ -156,131 +156,17 @@ FIFO significa First In, First Out, ou seja, primeiro a entrar, primeiro a sair.
     &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Qual situação do cotidiano representa melhor o funcionamento de uma fila?
+Considere uma fila representada pela lista abaixo:
 
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Uma pilha de pratos. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Pessoas aguardando atendimento em uma fila. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Livros organizados em uma estante por ordem alfabética. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Uma lista de números ordenada. 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Em uma fila de atendimento, normalmente a primeira pessoa a chegar é a primeira a ser atendida, seguindo o princípio FIFO.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = [10, 20, 30, 40]
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
 &lt;/div&gt;
 
 
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Considere uma fila inicialmente vazia. Após inserir os elementos `10`, `20` e `30`, qual elemento deverá ser removido primeiro?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     10 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     20 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     30 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Nenhum elemento 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Como a fila segue o princípio FIFO, o primeiro elemento inserido, 10, será o primeiro a sair.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Considere a fila `[10, 20, 30, 40]`, em que `10` é o primeiro elemento da fila. Qual elemento será removido primeiro?
+Qual é o primeiro elemento da fila?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
@@ -327,7 +213,7 @@ Considere a fila `[10, 20, 30, 40]`, em que `10` é o primeiro elemento da fila.
             &lt;/div&gt;
 
             
-O primeiro elemento da fila é o primeiro a ser removido.
+Em uma fila implementada com uma lista, o primeiro elemento da lista representa o primeiro elemento da fila.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -339,29 +225,29 @@ O primeiro elemento da fila é o primeiro a ser removido.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Em uma fila, qual operação normalmente é utilizada para adicionar um novo elemento?
+Considere uma fila inicialmente vazia. Qual comando deve ser utilizado para adicionar o elemento `10` ao final da fila?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Inserção no início da fila. 
+     `fila.insert(0, 10)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Inserção no final da fila. 
+     `fila.append(10)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Remoção do início da fila. 
+     `fila.pop(10)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Remoção do final da fila. 
+     `fila.remove(10)` 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -389,7 +275,7 @@ Em uma fila, qual operação normalmente é utilizada para adicionar um novo ele
             &lt;/div&gt;
 
             
-Em uma fila, novos elementos são adicionados ao final, enquanto os elementos são removidos do início.
+O método `append()` adiciona um elemento ao final da lista, sendo adequado para representar a entrada de um elemento na fila.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -401,29 +287,29 @@ Em uma fila, novos elementos são adicionados ao final, enquanto os elementos s�
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 5&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Em uma fila, de onde normalmente é removido um elemento?
+Qual comando pode ser utilizado para remover o primeiro elemento de uma fila implementada com uma lista?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Do início da fila. 
+     `fila.pop()` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Do final da fila. 
+     `fila.pop(0)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Do meio da fila. 
+     `fila.remove()` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     De qualquer posição aleatória. 
+     `fila.delete(0)` 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -447,11 +333,11 @@ Em uma fila, de onde normalmente é removido um elemento?
         
         &lt;div class=&#34;resposta-body hidden&#34;&gt;
             &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
             &lt;/div&gt;
 
             
-Em uma fila, a remoção acontece no início, mantendo o comportamento FIFO.
+`pop(0)` remove e retorna o elemento que está no índice 0, ou seja, o primeiro elemento da fila.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -463,23 +349,98 @@ Em uma fila, a remoção acontece no início, mantendo o comportamento FIFO.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 6&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Analise a sequência de operações realizada sobre uma fila inicialmente vazia.
+Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-entrar(10)
-entrar(20)
-entrar(30)
-sair()
+fila = []
+
+fila.append(10)
+fila.append(20)
+fila.append(30)
+
+print(fila)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
 
 
-Qual elemento será removido?
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     [30, 20, 10] 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     [10, 20, 30] 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     [10, 30, 20] 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     [] 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Cada `append()` adiciona um elemento ao final da lista. Portanto, a fila fica `[10, 20, 30]`.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 7&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código e identifique o que será impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = [10, 20, 30]
+
+elemento = fila.pop(0)
+
+print(elemento)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
@@ -498,7 +459,7 @@ Qual elemento será removido?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Nenhum 
+     0 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -526,7 +487,7 @@ Qual elemento será removido?
             &lt;/div&gt;
 
             
-A fila fica com `10`, `20` e `30`. Como o primeiro elemento inserido é o primeiro a sair, o elemento removido é 10.
+`pop(0)` remove e retorna o elemento que está na primeira posição da lista. Portanto, o resultado é 10.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -538,43 +499,41 @@ A fila fica com `10`, `20` e `30`. Como o primeiro elemento inserido é o primei
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 8&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Analise a sequência de operações realizada sobre uma fila inicialmente vazia.
+Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-entrar(&#34;A&#34;)
-entrar(&#34;B&#34;)
-entrar(&#34;C&#34;)
-sair()
-sair()
+fila = [10, 20, 30]
+
+fila.pop(0)
+
+print(fila)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
 
 
-Qual será o segundo elemento removido?
-
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     A 
+     [10, 20, 30] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     B 
+     [20, 30] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     C 
+     [10, 30] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Nenhum 
+     [30] 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -602,7 +561,85 @@ Qual será o segundo elemento removido?
             &lt;/div&gt;
 
             
-O primeiro `sair()` remove `&#34;A&#34;` e o segundo `sair()` remove `&#34;B&#34;`.
+`pop(0)` remove o primeiro elemento, que é 10. Os elementos restantes são 20 e 30.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 9&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere a fila inicialmente vazia. Analise as operações abaixo.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = []
+
+fila.append(&#34;Ana&#34;)
+fila.append(&#34;Bruno&#34;)
+fila.append(&#34;Carlos&#34;)
+
+fila.pop(0)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual pessoa será removida da fila?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Ana 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Bruno 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Carlos 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Nenhuma pessoa 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Ana foi a primeira pessoa adicionada à fila. Como a fila segue FIFO, ela será a primeira a sair.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -617,15 +654,88 @@ O primeiro `sair()` remove `&#34;A&#34;` e o segundo `sair()` remove `&#34;B&#34
     &lt;div class=&#34;questao-header&#34;&gt;Questão 10&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Considere uma fila inicialmente vazia. Após as operações abaixo, qual será o conteúdo da fila?
+Considere a fila abaixo:
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-entrar(10)
-entrar(20)
-entrar(30)
-sair()
-entrar(40)
+fila = [&#34;Ana&#34;, &#34;Bruno&#34;, &#34;Carlos&#34;, &#34;Daniel&#34;]
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Se for executado `fila.pop(0)` duas vezes, quais elementos serão removidos?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     Ana e Bruno 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     Bruno e Carlos 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Carlos e Daniel 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     Daniel e Carlos 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+A primeira execução remove Ana e a segunda remove Bruno, pois os elementos saem pela frente da fila.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código e identifique o que será impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = [10, 20, 30]
+
+fila.append(40)
+fila.pop(0)
+
+print(fila)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -648,7 +758,7 @@ entrar(40)
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     [30, 20, 40] 
+     [10, 20, 40] 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -676,69 +786,7 @@ entrar(40)
             &lt;/div&gt;
 
             
-O `sair()` remove o primeiro elemento, 10. Depois, 40 é inserido no final. A fila fica `[20, 30, 40]`.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 11&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual estrutura de dados é mais adequada para representar uma fila de pessoas aguardando atendimento?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Fila. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Pilha. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Matriz. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Tupla. 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Uma fila representa naturalmente situações em que o primeiro elemento a chegar deve ser o primeiro a ser atendido.
+O `append(40)` adiciona 40 ao final. Depois, `pop(0)` remove 10. A fila fica `[20, 30, 40]`.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -753,26 +801,26 @@ Uma fila representa naturalmente situações em que o primeiro elemento a chegar
     &lt;div class=&#34;questao-header&#34;&gt;Questão 12&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Em Python, qual classe da biblioteca `collections` pode ser utilizada para implementar uma fila de forma adequada?
+Qual alternativa representa corretamente as operações de uma fila implementada utilizando uma lista?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     `list` 
+     Adicionar no início com `insert()` e remover no final com `pop()`. 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     `tuple` 
+     Adicionar no final com `append()` e remover no início com `pop(0)`. 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     `deque` 
+     Adicionar no início com `append()` e remover no início com `pop()`. 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     `set` 
+     Adicionar no final com `insert()` e remover no final com `pop(0)`. 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -796,11 +844,11 @@ Em Python, qual classe da biblioteca `collections` pode ser utilizada para imple
         
         &lt;div class=&#34;resposta-body hidden&#34;&gt;
             &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
             &lt;/div&gt;
 
             
-A classe `deque`, disponível em `collections`, fornece operações eficientes para inserir e remover elementos nas extremidades.
+Uma forma simples de implementar uma fila com `list` é utilizar `append()` para adicionar elementos ao final e `pop(0)` para remover elementos do início.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -815,81 +863,18 @@ A classe `deque`, disponível em `collections`, fornece operações eficientes p
     &lt;div class=&#34;questao-header&#34;&gt;Questão 13&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Qual comando importa corretamente `deque` da biblioteca `collections`?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     `import deque` 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     `from collections import deque` 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     `from deque import collections` 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     `import collections.deque` 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-A classe `deque` pode ser importada utilizando `from collections import deque`.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
+fila = []
 
-fila = deque()
+fila.append(1)
+fila.append(2)
+fila.append(3)
 
-fila.append(10)
-fila.append(20)
-fila.append(30)
-
-print(fila)
+print(fila.pop(0))
+print(fila.pop(0))
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -897,84 +882,22 @@ print(fila)
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     deque([30, 20, 10]) 
+     1 e 2 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     deque([10, 20, 30]) 
+     2 e 3 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     [10, 20, 30] 
+     3 e 2 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     deque([]) 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-O método `append()` adiciona os elementos ao final do `deque`. Assim, a fila fica `deque([10, 20, 30])`.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Em uma `deque` utilizada como fila, qual método pode ser utilizado para adicionar um elemento ao final?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     `append()` 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     `remove()` 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     `popleft()` 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     `popfirst()` 
+     1 e 3 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1002,7 +925,7 @@ Em uma `deque` utilizada como fila, qual método pode ser utilizado para adicion
             &lt;/div&gt;
 
             
-O método `append()` adiciona um elemento ao final da `deque`.
+Os elementos entram na ordem 1, 2 e 3. As duas operações `pop(0)` removem primeiro 1 e depois 2.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1014,29 +937,45 @@ O método `append()` adiciona um elemento ao final da `deque`.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 16&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 14&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Em uma `deque` utilizada como fila, qual método remove e retorna o primeiro elemento?
+Analise o código e identifique o conteúdo final da fila.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = []
+
+fila.append(&#34;A&#34;)
+fila.append(&#34;B&#34;)
+fila.append(&#34;C&#34;)
+
+fila.pop(0)
+
+fila.append(&#34;D&#34;)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     `pop()` 
+     [&#34;A&#34;, &#34;B&#34;, &#34;C&#34;, &#34;D&#34;] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     `remove()` 
+     [&#34;B&#34;, &#34;C&#34;, &#34;D&#34;] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     `popleft()` 
+     [&#34;D&#34;, &#34;B&#34;, &#34;C&#34;] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     `delete()` 
+     [&#34;C&#34;, &#34;D&#34;] 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1060,11 +999,11 @@ Em uma `deque` utilizada como fila, qual método remove e retorna o primeiro ele
         
         &lt;div class=&#34;resposta-body hidden&#34;&gt;
             &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
             &lt;/div&gt;
 
             
-O método `popleft()` remove e retorna o elemento que está no início da `deque`.
+O primeiro `pop(0)` remove `&#34;A&#34;`. Depois, `&#34;D&#34;` é adicionado ao final da fila. O resultado é `[&#34;B&#34;, &#34;C&#34;, &#34;D&#34;]`.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1076,22 +1015,19 @@ O método `popleft()` remove e retorna o elemento que está no início da `deque
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 17&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 15&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
+fila = [10, 20, 30]
 
-fila = deque()
-
-fila.append(&#34;Ana&#34;)
-fila.append(&#34;Bruno&#34;)
-fila.append(&#34;Carlos&#34;)
-
-print(fila.popleft())
+if len(fila) &gt; 0:
+    print(&#34;Fila possui elementos&#34;)
+else:
+    print(&#34;Fila vazia&#34;)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -1099,17 +1035,17 @@ print(fila.popleft())
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Ana 
+     Fila possui elementos 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Bruno 
+     Fila vazia 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Carlos 
+     3 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
@@ -1142,7 +1078,7 @@ print(fila.popleft())
             &lt;/div&gt;
 
             
-`popleft()` remove e retorna o primeiro elemento da fila, que é `&#34;Ana&#34;`.
+A lista possui três elementos, portanto `len(fila) &gt; 0` é verdadeiro.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1154,21 +1090,19 @@ print(fila.popleft())
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 18&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 16&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
+fila = []
 
-fila = deque([10, 20, 30])
-
-fila.append(40)
-fila.popleft()
-
-print(fila)
+if len(fila) &gt; 0:
+    print(&#34;Fila possui elementos&#34;)
+else:
+    print(&#34;Fila vazia&#34;)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -1176,22 +1110,22 @@ print(fila)
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     deque([10, 20, 30, 40]) 
+     Fila possui elementos 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     deque([20, 30, 40]) 
+     Fila vazia 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     deque([40, 20, 30]) 
+     0 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     deque([10, 20, 40]) 
+     Nada será impresso 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1219,7 +1153,7 @@ print(fila)
             &lt;/div&gt;
 
             
-O `append(40)` adiciona 40 ao final. Depois, `popleft()` remove o primeiro elemento, 10. A fila fica `deque([20, 30, 40])`.
+A lista está vazia, portanto `len(fila)` é 0 e a condição é falsa.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1231,44 +1165,29 @@ O `append(40)` adiciona 40 ao final. Depois, `popleft()` remove o primeiro eleme
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 19&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 17&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Analise o código e identifique o que será impresso.
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
-
-fila = deque([&#34;A&#34;, &#34;B&#34;, &#34;C&#34;])
-
-primeiro = fila.popleft()
-
-print(primeiro)
-print(fila)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
+Qual código verifica corretamente se uma fila está vazia?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     A e deque([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]) 
+     `if fila == 0:` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     C e deque([&#39;A&#39;, &#39;B&#39;]) 
+     `if len(fila) == 0:` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     A e deque([&#39;B&#39;, &#39;C&#39;]) 
+     `if fila.length == 0:` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     B e deque([&#39;A&#39;, &#39;C&#39;]) 
+     `if fila.empty():` 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1292,11 +1211,11 @@ print(fila)
         
         &lt;div class=&#34;resposta-body hidden&#34;&gt;
             &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
             &lt;/div&gt;
 
             
-`popleft()` retorna `&#34;A&#34;` e remove esse elemento da fila. Os elementos restantes são `&#34;B&#34;` e `&#34;C&#34;`.
+A função `len()` retorna a quantidade de elementos da lista. Portanto, `len(fila) == 0` verifica se a fila está vazia.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1308,18 +1227,14 @@ print(fila)
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 20&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 18&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
-
-fila = deque([10, 20, 30])
-
-fila.append(40)
+fila = [10, 20, 30, 40]
 
 print(len(fila))
 &lt;/code&gt;&lt;/pre&gt;
@@ -1372,7 +1287,7 @@ print(len(fila))
             &lt;/div&gt;
 
             
-A fila inicialmente possui três elementos e o `append(40)` adiciona mais um, totalizando quatro elementos.
+A fila possui quatro elementos, portanto `len(fila)` retorna 4.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1384,21 +1299,19 @@ A fila inicialmente possui três elementos e o `append(40)` adiciona mais um, to
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 21&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 19&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Analise o código e identifique o que será impresso.
+Considere uma fila inicialmente vazia. Analise o código.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
+fila = []
 
-fila = deque([10, 20, 30])
+for i in range(5):
+    fila.append(i)
 
-if fila:
-    print(&#34;Fila não está vazia&#34;)
-else:
-    print(&#34;Fila vazia&#34;)
+print(fila)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -1406,22 +1319,22 @@ else:
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Fila vazia 
+     [1, 2, 3, 4, 5] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Fila não está vazia 
+     [0, 1, 2, 3, 4] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Nada será impresso 
+     [0, 1, 2, 3, 4, 5] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Será gerado um erro 
+     [5, 4, 3, 2, 1] 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1449,7 +1362,166 @@ else:
             &lt;/div&gt;
 
             
-Uma `deque` contendo elementos é avaliada como verdadeira em uma condição. Portanto, a mensagem `&#34;Fila não está vazia&#34;` será impressa.
+`range(5)` produz os valores de 0 até 4. Cada valor é adicionado ao final da fila.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 20&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma fila inicialmente vazia. Analise o código.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = []
+
+for i in range(5):
+    fila.append(i)
+
+for i in range(5):
+    print(fila.pop(0))
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual será a ordem dos elementos impressos?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     4, 3, 2, 1, 0 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     0, 1, 2, 3, 4 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     1, 2, 3, 4, 5 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     0, 2, 4, 1, 3 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Os elementos são inseridos na ordem 0, 1, 2, 3 e 4. Como `pop(0)` remove sempre o primeiro elemento, eles são removidos nessa mesma ordem.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 21&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Uma fila possui os elementos abaixo:
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = [&#34;Ana&#34;, &#34;Bruno&#34;, &#34;Carlos&#34;]
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+Qual será o conteúdo da fila depois de executar:
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila.pop(0)
+fila.append(&#34;Daniel&#34;)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     [&#34;Ana&#34;, &#34;Bruno&#34;, &#34;Carlos&#34;, &#34;Daniel&#34;] 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     [&#34;Bruno&#34;, &#34;Carlos&#34;, &#34;Daniel&#34;] 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     [&#34;Daniel&#34;, &#34;Bruno&#34;, &#34;Carlos&#34;] 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     [&#34;Carlos&#34;, &#34;Daniel&#34;] 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+`pop(0)` remove `&#34;Ana&#34;` e `append(&#34;Daniel&#34;)` adiciona `&#34;Daniel&#34;` ao final. A fila fica `[&#34;Bruno&#34;, &#34;Carlos&#34;, &#34;Daniel&#34;]`.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1468,14 +1540,12 @@ Analise o código e identifique o que será impresso.
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
+fila = [10, 20, 30]
 
-fila = deque()
+primeiro = fila.pop(0)
 
-if fila:
-    print(&#34;Fila não está vazia&#34;)
-else:
-    print(&#34;Fila vazia&#34;)
+print(primeiro)
+print(fila)
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
@@ -1483,22 +1553,22 @@ else:
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Fila não está vazia 
+     10 e [10, 20, 30] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Fila vazia 
+     10 e [20, 30] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Nada será impresso 
+     20 e [10, 30] 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Será gerado um erro 
+     30 e [10, 20] 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1526,7 +1596,7 @@ else:
             &lt;/div&gt;
 
             
-Uma `deque` vazia é avaliada como falsa em uma condição.
+`pop(0)` retorna o primeiro elemento, 10, e também o remove da lista. Por isso, a fila passa a ser `[20, 30]`.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1541,229 +1611,26 @@ Uma `deque` vazia é avaliada como falsa em uma condição.
     &lt;div class=&#34;questao-header&#34;&gt;Questão 23&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Considere uma fila inicialmente vazia. Qual será o conteúdo da fila após a execução do código?
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-from collections import deque
-
-fila = deque()
-
-fila.append(&#34;A&#34;)
-fila.append(&#34;B&#34;)
-fila.append(&#34;C&#34;)
-
-fila.popleft()
-fila.append(&#34;D&#34;)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
+Qual das alternativas abaixo implementa corretamente uma operação para adicionar uma pessoa ao final de uma fila?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     deque([&#34;A&#34;, &#34;B&#34;, &#34;C&#34;, &#34;D&#34;]) 
+     `fila.pop(0)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     deque([&#34;B&#34;, &#34;C&#34;, &#34;D&#34;]) 
+     `fila.remove(0)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     deque([&#34;D&#34;, &#34;B&#34;, &#34;C&#34;]) 
+     `fila.append(pessoa)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     deque([&#34;C&#34;, &#34;D&#34;]) 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-O primeiro `popleft()` remove `&#34;A&#34;`. Em seguida, `&#34;D&#34;` é adicionado ao final da fila. O resultado é `deque([&#34;B&#34;, &#34;C&#34;, &#34;D&#34;])`.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 24&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual alternativa representa corretamente as operações de uma fila?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     Inserir no início e remover no início. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     Inserir no final e remover no início. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Inserir no início e remover no final. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Inserir e remover sempre do final. 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-Em uma fila, os elementos entram pelo final e saem pelo início.
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 25&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Qual é a principal diferença entre uma fila e uma pilha?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     A fila utiliza FIFO e a pilha utiliza LIFO. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     A fila utiliza LIFO e a pilha utiliza FIFO. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     Ambas utilizam FIFO. 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     Ambas utilizam LIFO. 
-&lt;/li&gt;
-
-&lt;div class=&#34;solucao&#34;&gt;
-    &lt;div class=&#34;resposta&#34;&gt;
-        
-        &lt;div class=&#34;resposta-header&#34;&gt;
-            &lt;button
-                type=&#34;button&#34;
-                onclick=&#34;
-                    const body = this.parentElement.nextElementSibling;
-                    body.classList.toggle(&#39;hidden&#39;);
-                    this.textContent = body.classList.contains(&#39;hidden&#39;)
-                        ? &#39;Mostrar solução&#39;
-                        : &#39;Ocultar solução&#39;;
-                &#34;
-            &gt;
-                Mostrar solução
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        
-        &lt;div class=&#34;resposta-body hidden&#34;&gt;
-            &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
-            &lt;/div&gt;
-
-            
-A fila segue o princípio FIFO, enquanto a pilha segue o princípio LIFO (Last In, First Out).
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 26&lt;/div&gt;
-
-    &lt;div class=&#34;questao-body&#34;&gt;
-Uma fila possui os elementos `[10, 20, 30, 40]`, nessa ordem. Se dois elementos forem removidos, quais elementos permanecerão na fila?
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     [10, 20] 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     [20, 30] 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     [30, 40] 
-&lt;/li&gt;
-
-&lt;li class=&#34;alternativa&#34;&gt;
-    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     [40, 30] 
+     `fila.pop()` 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1791,7 +1658,7 @@ Uma fila possui os elementos `[10, 20, 30, 40]`, nessa ordem. Se dois elementos 
             &lt;/div&gt;
 
             
-Os dois primeiros elementos, 10 e 20, serão removidos. Portanto, permanecerão 30 e 40.
+`append()` adiciona o novo elemento ao final da lista, que representa o final da fila.
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1803,44 +1670,29 @@ Os dois primeiros elementos, 10 e 20, serão removidos. Portanto, permanecerão 
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 27&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 24&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Considere uma fila inicialmente vazia e as seguintes operações:
-
-&lt;div class=&#34;questao-code&#34;&gt;
-    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
-entrar(1)
-entrar(2)
-sair()
-entrar(3)
-sair()
-entrar(4)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-
-Qual será o primeiro elemento da fila ao final das operações?
+Qual das alternativas abaixo implementa corretamente uma operação para atender a primeira pessoa de uma fila?
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
-     1 
+     `fila.append(0)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
-     2 
+     `fila.pop()` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
-     3 
+     `fila.pop(0)` 
 &lt;/li&gt;
 
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
-     4 
+     `fila.insert(0)` 
 &lt;/li&gt;
 
 &lt;div class=&#34;solucao&#34;&gt;
@@ -1864,11 +1716,146 @@ Qual será o primeiro elemento da fila ao final das operações?
         
         &lt;div class=&#34;resposta-body hidden&#34;&gt;
             &lt;div class=&#34;resposta-titulo&#34;&gt;
-                Resposta correta: &lt;strong&gt;D&lt;/strong&gt;
+                Resposta correta: &lt;strong&gt;C&lt;/strong&gt;
             &lt;/div&gt;
 
             
-Após as operações, 1 e 2 foram removidos. O 3 também foi removido na segunda operação `sair()`. Portanto, apenas 4 permanece na fila.
+A primeira pessoa está no índice 0. Portanto, `pop(0)` remove e retorna o primeiro elemento da fila.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 25&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Analise o código e identifique o que será impresso.
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+fila = [&#34;A&#34;, &#34;B&#34;, &#34;C&#34;]
+
+while len(fila) &gt; 0:
+    print(fila.pop(0))
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     A, B e C, nessa ordem 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     C, B e A, nessa ordem 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     Apenas A 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     O programa entra em um loop infinito 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;A&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+Enquanto a fila não estiver vazia, `pop(0)` remove seu primeiro elemento. Assim, os elementos são impressos na ordem A, B e C.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 26&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma fila de atendimento representada por uma lista. Qual código atende todas as pessoas da fila até que ela fique vazia?
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
+     `while fila: fila.append()` 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
+     `while len(fila) &gt; 0: fila.pop(0)` 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
+     `while len(fila) == 0: fila.pop()` 
+&lt;/li&gt;
+
+&lt;li class=&#34;alternativa&#34;&gt;
+    &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
+     `for fila: pop(0)` 
+&lt;/li&gt;
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt;B&lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+O `while` continua enquanto existem elementos na fila e `pop(0)` remove cada elemento pela frente.
 
         &lt;/div&gt;
     &lt;/div&gt;

@@ -67,13 +67,17 @@ toc: false
             {{< card link="/disciplinas/apc-2/dicionarios-questoes" title="Questões" >}}
         {{< /cards >}}
     <br>
-    
+    <br>    
+{{< cards cols="1" >}}
+  {{< card link="/disciplinas/apc-2/funcoes-questoes" title="Questões" >}}
+{{< /cards >}}
 <br>
 {{< cards  cols="1">}}
   {{< card link="/disciplinas/apc-2/recursao" title="Recursão" >}}
 {{< /cards >}}
 {{< cards cols="2" >}}
-  {{< card link="/disciplinas/apc-2/recursao-exercicios" title="Exercícios" >}}
+{{< card link="/disciplinas/apc-2/recursao-questoes" title="Questões" >}}
+{{< card link="/disciplinas/apc-2/recursao-exercicios" title="Exercícios" >}}
 {{< /cards >}}
 
 <br>
