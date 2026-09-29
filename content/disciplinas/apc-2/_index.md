@@ -69,7 +69,9 @@ toc: false
     <br>
     <br>    
 {{< cards cols="1" >}}
-  {{< card link="/disciplinas/apc-2/funcoes-questoes" title="Questões" >}}
+    {{< card link="/disciplinas/apc-2/funcoes" title="Funções" >}}
+{{< /cards >}}{{< cards cols="1" >}}
+    {{< card link="/disciplinas/apc-2/funcoes-questoes" title="Questões" >}}
 {{< /cards >}}
 <br>
 {{< cards  cols="1">}}
