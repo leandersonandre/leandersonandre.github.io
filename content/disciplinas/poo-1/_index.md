@@ -5,6 +5,7 @@ toc: false
 ---
 
 {{< cards cols="1" >}}
+  {{< card link="/disciplinas/poo-1/heranca-questoes" title="Questões sobre Herança" >}}
   {{< card link="/disciplinas/poo-1/interfaces" title="Interfaces" >}}
   {{< card link="/disciplinas/poo-1/interfaces-exercicios" title="Exercícios sobre Interfaces" >}}
   {{< card link="/disciplinas/poo-1/interfaces-questoes" title="Questões sobre Interfaces" >}}
