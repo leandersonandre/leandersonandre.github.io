@@ -12,7 +12,7 @@
 <title>Leanderson André</title>
   <meta name="description" content="" /><link rel="canonical" href="http://localhost:1313/" itemprop="url" />
 
-<meta property="og:title" content="Leanderson André">
+<meta property="og:title" content="">
 <meta
   property="og:description"
   content="
@@ -29,10 +29,13 @@
 
 
   <meta itemprop="name" content="Leanderson André">
+  <meta itemprop="description" content="Hoje Semana">
   <meta itemprop="datePublished" content="2026-04-27T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-04-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Leanderson André">
+  <meta name="twitter:description" content="Hoje Semana">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -908,6 +911,18 @@
       </div>
             </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/disciplinas/enade/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">ENADE</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
       hx:hextra-focus-visible-inset
         hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
@@ -1686,9 +1701,495 @@
 
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
-        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Leanderson André</h1>
+        
         <div class="content">
-          
+          <div class="minhas-aulas">
+
+  <div class="minhas-aulas-tabs">
+    <button
+      type="button"
+      class="minhas-aulas-tab active"
+      data-tab="hoje">
+      Hoje
+    </button>
+
+    <button
+      type="button"
+      class="minhas-aulas-tab"
+      data-tab="semana">
+      Semana
+    </button>
+  </div>
+
+  <div
+    id="minhas-aulas-hoje"
+    class="minhas-aulas-content active">
+  </div>
+
+  <div
+    id="minhas-aulas-semana"
+    class="minhas-aulas-content">
+  </div>
+
+  <script>
+    (() => {
+      const aulas = {"quarta":[{"disciplina":"POO 2 B","horario":"19:00","sala":"LAB C322"},{"disciplina":"POO 2 C","horario":"20:50","sala":"LAB C323"}],"quinta":[{"disciplina":"ALG 2","horario":"09:35 - 11:15","sala":"LAB C322"},{"disciplina":"APC 2","horario":"19:00","sala":"LAB C330"},{"disciplina":"POO 2 C","horario":"20:50","sala":"LAB C321-B"}],"segunda":[{"disciplina":"POO 1","horario":"19:00","observacao":"Prova C - 319","sala":"LAB C321-B"},{"disciplina":"POO 2 B","horario":"20:50","sala":"LAB C322"}],"sexta":[{"disciplina":"POO 2 A","horario":"19:00","sala":"LAB C324/C326"},{"disciplina":"APC 2","horario":"20:50","observacao":"Prova C - 214","sala":"LAB C326"}],"terca":[{"disciplina":"ALG 2","horario":"09:35 - 11:15","sala":"LAB C322"},{"disciplina":"POO 2 A","horario":"19:00","sala":"LAB C322"},{"disciplina":"POO 1","horario":"20:50","sala":"LAB C323"}]};
+
+      const dias = [
+        "domingo",
+        "segunda",
+        "terca",
+        "quarta",
+        "quinta",
+        "sexta",
+        "sabado"
+      ];
+
+      const nomesDias = [
+        "Domingo",
+        "Segunda-feira",
+        "Terça-feira",
+        "Quarta-feira",
+        "Quinta-feira",
+        "Sexta-feira",
+        "Sábado"
+      ];
+
+      const hoje = new Date();
+      const numeroDia = hoje.getDay();
+      const diaAtual = dias[numeroDia];
+
+      const hojeElement =
+        document.getElementById("minhas-aulas-hoje");
+
+      const semanaElement =
+        document.getElementById("minhas-aulas-semana");
+
+      function escapeHtml(valor) {
+        if (valor === undefined || valor === null) {
+          return "";
+        }
+
+        return String(valor)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function criarAulas(lista) {
+
+        if (!lista || lista.length === 0) {
+          return `
+            <div class="minhas-aulas-vazio">
+              Nenhuma aula.
+            </div>
+          `;
+        }
+
+        return `
+          <div class="minhas-aulas-lista">
+
+            ${lista.map(aula => `
+              <div class="minha-aula">
+
+                <div class="minha-aula-horario">
+                  ${escapeHtml(aula.horario)}
+                </div>
+
+                <div class="minha-aula-info">
+
+                  <div class="minha-aula-disciplina">
+                    ${escapeHtml(aula.disciplina)}
+                  </div>
+
+                  <div class="minha-aula-sala">
+                    ${escapeHtml(aula.sala)}
+                  </div>
+
+                  ${
+                    aula.observacao
+                    ? `
+                      <div class="minha-aula-observacao">
+                        ${escapeHtml(aula.observacao)}
+                      </div>
+                    `
+                    : ""
+                  }
+
+                </div>
+
+              </div>
+            `).join("")}
+
+          </div>
+        `;
+      }
+
+      function criarDia(nome, chave) {
+
+        const lista = aulas[chave] || [];
+
+        return `
+          <section class="minhas-aulas-dia">
+
+            <h3 class="minhas-aulas-dia-titulo">
+              ${nome}
+            </h3>
+
+            ${criarAulas(lista)}
+
+          </section>
+        `;
+      }
+
+      
+
+
+      hojeElement.innerHTML = `
+        <div class="minhas-aulas-cabecalho">
+
+          <div class="minhas-aulas-data">
+            ${nomesDias[numeroDia]}
+          </div>
+
+          <div class="minhas-aulas-data-completa">
+            ${hoje.toLocaleDateString("pt-BR", {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric"
+            })}
+          </div>
+
+        </div>
+
+        ${criarAulas(aulas[diaAtual])}
+      `;
+
+
+      
+
+
+      let semanaHtml = "";
+
+      for (let i = 1; i <= 5; i++) {
+
+        const chave = dias[i];
+
+        semanaHtml += criarDia(
+          nomesDias[i],
+          chave
+        );
+      }
+
+      semanaElement.innerHTML = semanaHtml;
+
+
+      
+
+
+      const tabs =
+        document.querySelectorAll(".minhas-aulas-tab");
+
+      const contents =
+        document.querySelectorAll(".minhas-aulas-content");
+
+      tabs.forEach(tab => {
+
+        tab.addEventListener("click", () => {
+
+          const destino = tab.dataset.tab;
+
+          tabs.forEach(t =>
+            t.classList.remove("active")
+          );
+
+          contents.forEach(content =>
+            content.classList.remove("active")
+          );
+
+          tab.classList.add("active");
+
+          document
+            .getElementById(
+              `minhas-aulas-${destino}`
+            )
+            .classList.add("active");
+
+        });
+
+      });
+
+    })();
+  </script>
+
+</div>
+
+<style>
+
+   
+
+  .minhas-aulas .minhas-aulas-tabs {
+    display: flex;
+    gap: 0;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .minhas-aulas .minhas-aulas-tab {
+    appearance: none;
+    -webkit-appearance: none;
+
+    margin: 0;
+    padding: 0.65rem 1.1rem;
+
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease,
+      background-color 0.15s ease;
+  }
+
+  .minhas-aulas .minhas-aulas-tab:hover {
+    color: #2563eb;
+    background: #f9fafb;
+  }
+
+  .minhas-aulas .minhas-aulas-tab.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+
+    font-weight: 600;
+  }
+
+
+   
+
+  .minhas-aulas .minhas-aulas-content {
+    display: none;
+  }
+
+  .minhas-aulas .minhas-aulas-content.active {
+    display: block;
+  }
+
+
+   
+
+  .minhas-aulas .minhas-aulas-cabecalho {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .minhas-aulas .minhas-aulas-data {
+    margin: 0;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .minhas-aulas .minhas-aulas-data-completa {
+    margin-top: 0.25rem;
+
+    color: #6b7280;
+
+    font-size: 0.9rem;
+  }
+
+
+   
+
+  .minhas-aulas .minhas-aulas-dia {
+    margin: 0 0 2rem 0;
+  }
+
+  .minhas-aulas .minhas-aulas-dia-titulo {
+    margin: 0 0 0.75rem 0;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+
+   
+
+  .minhas-aulas .minhas-aulas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+
+    margin: 0;
+    padding: 0;
+  }
+
+
+   
+
+  .minhas-aulas .minha-aula {
+    display: flex;
+    align-items: stretch;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 0.65rem;
+
+    background: #ffffff;
+
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease,
+      transform 0.15s ease;
+  }
+
+  .minhas-aulas .minha-aula:hover {
+    border-color: #93c5fd;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+
+    transform: translateY(-1px);
+  }
+
+
+   
+
+  .minhas-aulas .minha-aula-horario {
+    display: flex;
+    align-items: center;
+
+    flex: 0 0 125px;
+    box-sizing: border-box;
+
+    padding: 1rem;
+
+    border-right: 1px solid #e5e7eb;
+
+    background: #f9fafb;
+
+    color: #374151;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    font-variant-numeric: tabular-nums;
+  }
+
+
+   
+
+  .minhas-aulas .minha-aula-info {
+    flex: 1;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 0.85rem 1rem;
+  }
+
+  .minhas-aulas .minha-aula-disciplina {
+    margin: 0;
+
+    color: inherit;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .minhas-aulas .minha-aula-sala {
+    margin: 0.3rem 0 0 0;
+
+    color: #6b7280;
+
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+
+   
+
+  .minhas-aulas .minha-aula-observacao {
+    display: inline-block;
+
+    margin: 0.5rem 0 0 0;
+    padding: 0.2rem 0.5rem;
+
+    border-radius: 0.3rem;
+
+    background: #f3f4f6;
+
+    color: #4b5563;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+
+   
+
+  .minhas-aulas .minhas-aulas-vazio {
+    box-sizing: border-box;
+
+    padding: 1.25rem;
+
+    border: 1px dashed #d1d5db;
+    border-radius: 0.65rem;
+
+    color: #6b7280;
+
+    text-align: center;
+  }
+
+
+   
+
+  @media (max-width: 640px) {
+
+    .minhas-aulas .minhas-aula-horario {
+      flex: 0 0 105px;
+
+      padding: 0.8rem;
+
+      font-size: 0.85rem;
+    }
+
+    .minhas-aulas .minha-aula-info {
+      padding: 0.8rem;
+    }
+
+    .minhas-aulas .minhas-aulas-tab {
+      padding: 0.6rem 0.9rem;
+    }
+
+  }
+
+</style>
+
+
         </div>
       </main>
     </article>
