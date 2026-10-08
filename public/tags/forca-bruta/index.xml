@@ -1,0 +1,141 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanderson André – Forca-Bruta</title>
+    <link>http://localhost:1313/tags/forca-bruta/</link>
+    <description>Recent content in Forca-Bruta on Leanderson André</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	  <atom:link href="http://localhost:1313/tags/forca-bruta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Exercícios sobre Força Bruta</title>
+      <link>http://localhost:1313/disciplinas/apc-2/forca-bruta-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-2/forca-bruta-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere um cadeado que utiliza uma combinação de 4 dígitos, sendo que cada posição pode assumir um valor de 0 a 9.
+
+O objetivo é desenvolver um algoritmo que utilize a técnica de força bruta (brute force) para descobrir a combinação correta do cadeado.
+
+O algoritmo deve testar, de forma sistemática, todas as combinações possíveis, começando por 0000 e avançando até 9999, até encontrar a combinação que corresponde à senha definida.
+
+Por exemplo, se a combinação correta for 5732, o algoritmo deverá testar:
+
+0000
+0001
+0002
+...
+5730
+5731
+5732  ← combinação encontrada
+
+O algoritmo deve informar a combinação encontrada e a quantidade de tentativas realizadas até descobri-la.
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma sequência de DNA representada pelos caracteres A, C, G e T. Dada uma sequência de DNA maior e uma sequência menor, o objetivo é descobrir se a sequência menor aparece como uma substring dentro da sequência maior.
+
+Por exemplo, considere a seguinte entrada:
+
+```
+Sequência de DNA:
+ACGTACGTTACGGAATCG
+
+Sequência procurada:
+TACG
+```
+
+A sequência TACG aparece dentro da sequência de DNA, começando na posição 4.
+
+O algoritmo deve realizar a busca comparando a sequência procurada com cada possível posição da sequência de DNA. Caso encontre uma correspondência completa, deve informar a posição onde ela começa. Caso contrário, deve informar que a sequência não foi encontrada.
+
+Entrada:
+Duas sequências de DNA, sendo a primeira a sequência onde será realizada a busca e a segunda a sequência que deve ser procurada.
+
+Saída:
+A posição em que a sequência procurada foi encontrada ou uma mensagem informando que ela não existe na sequência.
+
+Exemplo:
+
+```
+Entrada:
+ACGTACGTTACGGAATCG
+TACG
+
+Saída:
+Sequência encontrada na posição 4.
+```
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

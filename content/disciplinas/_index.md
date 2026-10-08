@@ -21,3 +21,7 @@ toc: false
   {{< card link="/disciplinas/estd-1" title="Estruturas de Dados I" >}}
   {{< card link="/disciplinas/dew" title="Desenvolvimento Web" >}}
 {{< /cards >}}
+
+{{< cards cols="1" >}}
+  {{< card link="/disciplinas/enade" title="ENADE" >}}
+{{< /cards >}}

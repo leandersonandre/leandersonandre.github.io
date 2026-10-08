@@ -2658,6 +2658,142 @@
     </item>
     
     <item>
+      <title>Exercícios sobre Força Bruta</title>
+      <link>http://localhost:1313/disciplinas/apc-2/forca-bruta-exercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-2/forca-bruta-exercicios/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;lista-questoes&#34;&gt;
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere um cadeado que utiliza uma combinação de 4 dígitos, sendo que cada posição pode assumir um valor de 0 a 9.
+&lt;br&gt;
+O objetivo é desenvolver um algoritmo que utilize a técnica de força bruta (brute force) para descobrir a combinação correta do cadeado.
+&lt;br&gt;
+O algoritmo deve testar, de forma sistemática, todas as combinações possíveis, começando por 0000 e avançando até 9999, até encontrar a combinação que corresponde à senha definida.
+
+Por exemplo, se a combinação correta for 5732, o algoritmo deverá testar:
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+0000
+0001
+0002
+...
+5730
+5731
+5732  ← combinação encontrada
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+O algoritmo deve informar a combinação encontrada e a quantidade de tentativas realizadas até descobri-la.
+
+&lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+            
+
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
+Considere uma sequência de DNA representada pelos caracteres A, C, G e T. Dada uma sequência de DNA maior e uma sequência menor, o objetivo é descobrir se a sequência menor aparece como uma substring dentro da sequência maior.
+
+Por exemplo, considere a seguinte entrada:
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Sequência de DNA:
+ACGTACGTTACGGAATCG
+
+Sequência procurada:
+TACG
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+A sequência TACG aparece dentro da sequência de DNA, começando na posição 4.
+&lt;br&gt;&lt;br&gt;
+O algoritmo deve realizar a busca comparando a sequência procurada com cada possível posição da sequência de DNA. Caso encontre uma correspondência completa, deve informar a posição onde ela começa. Caso contrário, deve informar que a sequência não foi encontrada.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Entrada:&lt;/b&gt;
+Duas sequências de DNA, sendo a primeira a sequência onde será realizada a busca e a segunda a sequência que deve ser procurada.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Saída:&lt;/b&gt;
+A posição em que a sequência procurada foi encontrada ou uma mensagem informando que ela não existe na sequência.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Exemplo:&lt;/b&gt;
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Entrada:
+ACGTACGTTACGGAATCG
+TACG
+
+Saída:
+Sequência encontrada na posição 4.
+
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Exercícios sobre Listas</title>
       <link>http://localhost:1313/disciplinas/apc-2/listas-exercicios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -82,6 +82,11 @@ toc: false
 {{< card link="/disciplinas/apc-2/recursao-exercicios" title="Exercícios" >}}
 {{< /cards >}}
 
+
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-2/forca-bruta-exercicios" title="Exercícios sobre Força Bruta" >}}
+{{< /cards >}}
+
 <br>
 
 
