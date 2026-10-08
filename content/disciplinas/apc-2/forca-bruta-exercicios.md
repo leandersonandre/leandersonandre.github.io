@@ -12,6 +12,53 @@ tags:
 {{< lista-questoes >}}
 
 {{< questao >}}
+Dado um conjunto de números e um valor <i>S</i>, verificar se existe algum
+subconjunto cuja soma seja igual a <i>S</i>.
+
+<br><br>
+<b>Entrada:</b>
+Um conjunto de números inteiros e um valor <i>S</i>, que representa a soma procurada.
+<br><br>
+<b>Saída:</b>
+Os elementos de um subconjunto cuja soma seja igual a <i>S</i> ou uma mensagem informando que não existe tal subconjunto.
+<br><br>
+<b>Exemplo:</b>
+
+{{< code >}}
+Entrada:
+2 4 7 10 15
+17
+
+Saída:
+Subconjunto encontrado: 2 15
+{{< /code >}}
+<br><br>
+<b>Exemplo 2:</b>
+
+{{< code >}}
+Entrada:
+3 5 8 12 20
+16
+
+Saída:
+Subconjunto encontrado: 3 5 8
+{{< /code >}}
+<br><br>
+<b>Exemplo 3:</b>
+
+{{< code >}}
+Entrada:
+2 4 6 9 11
+20
+
+Saída:
+Subconjunto não encontrado.
+{{< /code >}}
+
+
+{{< /questao >}}
+
+{{< questao >}}
 Considere um cadeado que utiliza uma combinação de 4 dígitos, sendo que cada posição pode assumir um valor de 0 a 9.
 <br>
 O objetivo é desenvolver um algoritmo que utilize a técnica de força bruta (brute force) para descobrir a combinação correta do cadeado.

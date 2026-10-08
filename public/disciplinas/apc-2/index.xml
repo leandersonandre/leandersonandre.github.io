@@ -2675,6 +2675,75 @@
     &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
+Dado um conjunto de números e um valor *S*, verificar se existe algum
+subconjunto cuja soma seja igual a *S*.
+
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Entrada:&lt;/b&gt;
+Um conjunto de números inteiros e um valor &lt;i&gt;S&lt;/i&gt;, que representa a soma procurada.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Saída:&lt;/b&gt;
+Os elementos de um subconjunto cuja soma seja igual a &lt;i&gt;S&lt;/i&gt; ou uma mensagem informando que não existe tal subconjunto.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Exemplo:&lt;/b&gt;
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Entrada:
+2 4 7 10 15
+17
+
+Saída:
+Subconjunto encontrado: 2 15
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Exemplo 2:&lt;/b&gt;
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Entrada:
+3 5 8 12 20
+16
+
+Saída:
+Subconjunto encontrado: 3 5 8
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Exemplo 3:&lt;/b&gt;
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Entrada:
+2 4 6 9 11
+20
+
+Saída:
+Subconjunto não encontrado.
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
 Considere um cadeado que utiliza uma combinação de 4 dígitos, sendo que cada posição pode assumir um valor de 0 a 9.
 &lt;br&gt;
 O objetivo é desenvolver um algoritmo que utilize a técnica de força bruta (brute force) para descobrir a combinação correta do cadeado.
@@ -2736,7 +2805,7 @@ O algoritmo deve informar a combinação encontrada e a quantidade de tentativas
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Considere uma sequência de DNA representada pelos caracteres A, C, G e T. Dada uma sequência de DNA maior e uma sequência menor, o objetivo é descobrir se a sequência menor aparece como uma substring dentro da sequência maior.
