@@ -32,33 +32,33 @@ Saída: Vetor [4]
 
 
 {{< code >}}
-def maior_subarray(lista):,
-        # define o tamanho do subarray,
-        # 1, 2, 3, ...,
-        # indices do subarray com a maior soma,
-        subarray = [],
-        maior_soma = 0,
-        for tamanho in range(1,len(lista)):,
-            for i in range(len(lista)):,
-                soma = 0,
-                temp_subarray = [],
-                # evita acessar posições inválidas,
-                # além do tamanho da lista,
-                if i + tamanho <= len(lista):,
-                    for j in range(tamanho):,
-                        temp_subarray.append(lista[i+j]),
-                        soma += lista[i+j],
-                # se ainda não foi definido um subarray,
-                if len(subarray) == 0:,
-                    subarray = temp_subarray,
-                    maior_soma = soma,
-                # se encontrei um subarray com uma soma maior,
-                elif maior_soma < soma:,
-                    subarray = temp_subarray,
-                    maior_soma = soma,
-        return subarray,
-    print(maior_subarray([1,2,3,4])),
-    print(maior_subarray([-1,2,-2,-4,8])),
+def maior_subarray(lista):
+        # define o tamanho do subarray
+        # 1, 2, 3, ...
+        # indices do subarray com a maior soma
+        subarray = []
+        maior_soma = 0
+        for tamanho in range(1,len(lista)):
+            for i in range(len(lista)):
+                soma = 0
+                temp_subarray = []
+                # evita acessar posições inválidas
+                # além do tamanho da lista
+                if i + tamanho <= len(lista):
+                    for j in range(tamanho):
+                        temp_subarray.append(lista[i+j])
+                        soma += lista[i+j]
+                # se ainda não foi definido um subarray
+                if len(subarray) == 0:
+                    subarray = temp_subarray
+                    maior_soma = soma
+                # se encontrei um subarray com uma soma maior
+                elif maior_soma < soma:
+                    subarray = temp_subarray
+                    maior_soma = soma
+        return subarray
+    print(maior_subarray([1,2,3,4]))
+    print(maior_subarray([-1,2,-2,-4,8]))
     print(maior_subarray([0,0,0,0]))
 
 {{< /code >}}
