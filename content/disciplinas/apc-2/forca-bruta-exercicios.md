@@ -12,6 +12,62 @@ tags:
 {{< lista-questoes >}}
 
 {{< questao >}}
+
+<b>Maior subarray:</b>
+Dado um vetor de números, encontrar o intervalo contíguo cuja soma seja
+máxima.
+<br>
+
+{{< code >}}
+Exemplo 01:
+Entrada: Vetor [ 1, 2, 3, 4, 5]
+Saída: Vetor [ 2, 3, 4, 5]
+
+Exemplo 02:
+Entrada: Vetor [ -1, 2, -3, 4, -5]
+Saída: Vetor [4]
+{{< /code >}}
+
+ {{< solucao   letra=" " >}} 
+
+
+{{< code >}}
+def maior_subarray(lista):\n,
+        # define o tamanho do subarray\n,
+        # 1, 2, 3, ...\n,
+        # indices do subarray com a maior soma\n,
+        subarray = []\n,
+        maior_soma = 0\n,
+        for tamanho in range(1,len(lista)):\n,
+            for i in range(len(lista)):\n,
+                soma = 0\n,
+                temp_subarray = []\n,
+                # evita acessar posições inválidas\n,
+                # além do tamanho da lista\n,
+                if i + tamanho <= len(lista):\n,
+                    for j in range(tamanho):\n,
+                        temp_subarray.append(lista[i+j])\n,
+                        soma += lista[i+j]\n,
+                # se ainda não foi definido um subarray\n,
+                if len(subarray) == 0:\n,
+                    subarray = temp_subarray\n,
+                    maior_soma = soma\n,
+                # se encontrei um subarray com uma soma maior\n,
+                elif maior_soma < soma:\n,
+                    subarray = temp_subarray\n,
+                    maior_soma = soma\n,
+        return subarray\n,
+    print(maior_subarray([1,2,3,4]))\n,
+    print(maior_subarray([-1,2,-2,-4,8]))\n,
+    print(maior_subarray([0,0,0,0]))
+
+{{< /code >}}
+
+ {{< /solucao >}} 
+
+{{< /questao >}}
+
+{{< questao >}}
 Dado um conjunto de números e um valor <i>S</i>, verificar se existe algum
 subconjunto cuja soma seja igual a <i>S</i>.
 
