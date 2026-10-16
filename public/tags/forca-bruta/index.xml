@@ -32,6 +32,104 @@
     &lt;div class=&#34;questao-header&#34;&gt;Questão 1&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
+
+&lt;b&gt;Maior subarray:&lt;/b&gt;
+Dado um vetor de números, encontrar o intervalo contíguo cuja soma seja
+máxima.
+&lt;br&gt;
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+Exemplo 01:
+Entrada: Vetor [ 1, 2, 3, 4, 5]
+Saída: Vetor [ 2, 3, 4, 5]
+
+Exemplo 02:
+Entrada: Vetor [ -1, 2, -3, 4, -5]
+Saída: Vetor [4]
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+ &lt;div class=&#34;solucao&#34;&gt;
+    &lt;div class=&#34;resposta&#34;&gt;
+        
+        &lt;div class=&#34;resposta-header&#34;&gt;
+            &lt;button
+                type=&#34;button&#34;
+                onclick=&#34;
+                    const body = this.parentElement.nextElementSibling;
+                    body.classList.toggle(&#39;hidden&#39;);
+                    this.textContent = body.classList.contains(&#39;hidden&#39;)
+                        ? &#39;Mostrar solução&#39;
+                        : &#39;Ocultar solução&#39;;
+                &#34;
+            &gt;
+                Mostrar solução
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div class=&#34;resposta-body hidden&#34;&gt;
+            &lt;div class=&#34;resposta-titulo&#34;&gt;
+                Resposta correta: &lt;strong&gt; &lt;/strong&gt;
+            &lt;/div&gt;
+
+             
+
+
+&lt;div class=&#34;questao-code&#34;&gt;
+    &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
+def maior_subarray(lista):
+        # define o tamanho do subarray
+        # 1, 2, 3, ...
+        # indices do subarray com a maior soma
+        subarray = []
+        maior_soma = 0
+        for tamanho in range(1,len(lista)):
+            for i in range(len(lista)):
+                soma = 0
+                temp_subarray = []
+                # evita acessar posições inválidas
+                # além do tamanho da lista
+                if i + tamanho &lt;= len(lista):
+                    for j in range(tamanho):
+                        temp_subarray.append(lista[i+j])
+                        soma += lista[i+j]
+                # se ainda não foi definido um subarray
+                if len(subarray) == 0:
+                    subarray = temp_subarray
+                    maior_soma = soma
+                # se encontrei um subarray com uma soma maior
+                elif maior_soma &lt; soma:
+                    subarray = temp_subarray
+                    maior_soma = soma
+        return subarray
+    print(maior_subarray([1,2,3,4]))
+    print(maior_subarray([-1,2,-2,-4,8]))
+    print(maior_subarray([0,0,0,0]))
+
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+
+ 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+ 
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;questao-container&#34;&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+
+    &lt;div class=&#34;questao-body&#34;&gt;
 Dado um conjunto de números e um valor &lt;i&gt;S&lt;/i&gt;, verificar se existe algum
 subconjunto cuja soma seja igual a &lt;i&gt;S&lt;/i&gt;.
 
@@ -94,7 +192,7 @@ Subconjunto não encontrado.
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 2&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Considere um cadeado que utiliza uma combinação de 4 dígitos, sendo que cada posição pode assumir um valor de 0 a 9.
@@ -158,7 +256,7 @@ O algoritmo deve informar a combinação encontrada e a quantidade de tentativas
 
 
 &lt;div class=&#34;questao-container&#34;&gt;
-    &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
+    &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Considere uma sequência de DNA representada pelos caracteres A, C, G e T. Dada uma sequência de DNA maior e uma sequência menor, o objetivo é descobrir se a sequência menor aparece como uma substring dentro da sequência maior.
