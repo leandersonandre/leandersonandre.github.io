@@ -184,11 +184,13 @@ Saída:  [-1, 8, 7, 9, 19]
     &lt;div class=&#34;questao-header&#34;&gt;Questão 3&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Um terreno retangular possui largura \(L\) e altura \(A\). Deseja-se dividir esse terreno em quadrados iguais, tão grandes quanto possível, sem que haja sobras. Implemente um algoritmo utilizando o paradigma Dividir para Conquistar para determinar o tamanho do lado desses quadrados.
+Um terreno retangular possui largura L e altura A. Deseja-se dividir esse terreno em quadrados iguais, tão grandes quanto possível, sem que haja sobras. Implemente um algoritmo utilizando o paradigma Dividir para Conquistar para determinar o tamanho do lado desses quadrados.
+
+&lt;img src=&#34;https://www.shutterstock.com/image-vector/seamless-hand-drawn-square-grid-260nw-2754856577.jpg&#34; alt=&#34;Grade de quadrados&#34;&gt;
 
 &lt;br&gt;&lt;br&gt;
 
-**Exemplo:**
+&lt;b&gt;Exemplo 1:&lt;/b&gt;
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
@@ -204,7 +206,7 @@ Saída: 8
 
 &lt;br&gt;&lt;br&gt;
 
-**Exemplo 2:**
+&lt;b&gt;Exemplo 2:&lt;/b&gt;
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
@@ -260,41 +262,47 @@ Saída: 8
     &lt;div class=&#34;questao-header&#34;&gt;Questão 4&lt;/div&gt;
 
     &lt;div class=&#34;questao-body&#34;&gt;
-Uma coleção possui 9 moedas visualmente idênticas, mas uma delas é falsa e possui peso menor que as demais. Você possui uma balança de dois pratos que permite comparar o peso de dois grupos de moedas. Implemente um algoritmo que determine qual moeda é falsa utilizando o menor número possível de pesagens.
-
-Considere que todas as moedas verdadeiras possuem o mesmo peso e que a moeda falsa é sempre mais leve.
+Você possui 9 moedas visualmente idênticas, sendo que uma delas é falsa e pesa menos que as demais. As outras 8 moedas possuem exatamente o mesmo peso.
+&lt;br&gt;&lt;br&gt;
+Você dispõe de uma balança de dois pratos, que permite comparar dois grupos de moedas e informar qual grupo é mais leve ou se ambos possuem o mesmo peso.
+&lt;br&gt;&lt;br&gt;
+Implemente um algoritmo utilizando o paradigma Dividir para Conquistar para descobrir qual moeda é falsa, realizando o menor número possível de pesagens.
+&lt;br&gt;&lt;br&gt;
+Considere que existe uma função `pesar(grupo1, grupo2)` que recebe dois grupos de moedas e retorna qual grupo é mais leve ou se ambos possuem o mesmo peso. Você pode utilizar essa função, mas não conhece previamente a moeda falsa.
 
 &lt;br&gt;&lt;br&gt;
 
-**Exemplo:**
+&lt;b&gt;Exemplo 1:&lt;/b&gt;
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
 Entrada:
 moedas = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-Saída: 7
+Saída:
+Moeda falsa: 7
+Número de pesagens: 2
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
 
-
-&lt;br&gt;&lt;br&gt;
-
-**Exemplo 2:**
+&lt;br&gt;
+&lt;b&gt;Exemplo 2:&lt;/b&gt;
 
 &lt;div class=&#34;questao-code&#34;&gt;
     &lt;pre&gt;&lt;code class=&#34;language-&#34;&gt;
 Entrada:
 moedas = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-Saída: 3
+Saída:
+Moeda falsa: 3
+Número de pesagens: 2
 &lt;/code&gt;&lt;/pre&gt;
     &lt;br /&gt;
 &lt;/div&gt;
 
 
-Nos exemplos, a saída representa o identificador da moeda falsa. Considere que o algoritmo pode simular as pesagens a partir do peso das moedas, ou que uma função auxiliar informa qual dos grupos é mais leve.
+Os exemplos representam execuções diferentes. A moeda falsa não é informada na entrada; ela deve ser descoberta pelo algoritmo por meio das pesagens.
 
 &lt;div class=&#34;solucao&#34;&gt;
     &lt;div class=&#34;resposta&#34;&gt;
