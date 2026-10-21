@@ -40,3 +40,7 @@ tags:
 ### O que é uma classe abstrata?
 
 ### Qual é a diferença entre uma classe abstrata e uma interface?
+
+### Como uma classe é representada no diagrama de classes da UML?
+
+### Como os relacionacionamentos entre classes são apresentados no diagrama de classes da UML?
