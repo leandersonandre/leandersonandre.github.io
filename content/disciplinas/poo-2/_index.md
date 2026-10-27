@@ -4,6 +4,11 @@ layout: "single"
 toc: false
 ---
 {{< cards cols="1" >}}
+  {{< card link="/disciplinas/poo-2/thymeleaf" title="Thymeleaf" >}}
+  {{< card link="/disciplinas/poo-2/formularios-spring-thymeleaf" title="Formulários com Spring Boot e Thymeleaf" >}}
+{{< /cards >}}
+
+{{< cards cols="1" >}}
   {{< card link="/disciplinas/poo-2/spring-ai" title="Spring AI" >}}
   {{< card link="/disciplinas/poo-2/spring-ai-exercicios" title="Exercícios sobre Spring AI" >}}
 {{< /cards >}}

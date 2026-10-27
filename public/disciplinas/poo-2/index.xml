@@ -58,6 +58,208 @@ Apresente o tabuleiro do jogo da velha em uma página web.
     </item>
     
     <item>
+      <title>Formulários com Spring Boot e Thymeleaf</title>
+      <link>http://localhost:1313/disciplinas/poo-2/formularios-spring-thymeleaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-2/formularios-spring-thymeleaf/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Formulários HTML permitem que os usuários enviem informações para uma aplicação web, como dados de cadastro, pesquisa e edição.&lt;/p&gt;
+&lt;p&gt;Em aplicações desenvolvidas com Spring Boot e Thymeleaf, os formulários podem ser integrados aos controllers para receber, processar e apresentar os dados enviados pelo usuário.&lt;/p&gt;
+&lt;p&gt;O Thymeleaf disponibiliza atributos como &lt;code&gt;th:action&lt;/code&gt;, &lt;code&gt;th:object&lt;/code&gt; e &lt;code&gt;th:field&lt;/code&gt;, que facilitam a associação entre os campos HTML e os objetos Java.&lt;/p&gt;
+&lt;h2&gt;Criando a classe de domínio&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;criando-a-classe-de-domínio&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#criando-a-classe-de-dom%c3%adnio&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Para demonstrar o funcionamento de um formulário, será utilizado o cadastro de países.&lt;/p&gt;
+&lt;p&gt;Crie a classe &lt;code&gt;Pais&lt;/code&gt; com os atributos &lt;code&gt;nome&lt;/code&gt; e &lt;code&gt;capital&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Pais&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;getNome&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;setNome&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;nome&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;getCapital&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;setCapital&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;capital&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Os métodos getters e setters permitem que o Spring e o Thymeleaf acessem e atualizem os atributos do objeto.&lt;/p&gt;
+&lt;h2&gt;Criando o Controller&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;criando-o-controller&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#criando-o-controller&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O Controller será responsável por apresentar o formulário e receber os dados enviados pelo usuário.&lt;/p&gt;
+&lt;p&gt;Crie a classe &lt;code&gt;PaisController&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Controller&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;/paises&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;PaisController&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@GetMapping&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;/novo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;novo&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pais-form&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;addObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pais&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Pais&lt;span style=&#34;color:#1f2328&#34;&gt;());&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@PostMapping&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;salvar&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@ModelAttribute&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Pais&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;pais&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pais-resultado&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;addObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pais&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;pais&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O método &lt;code&gt;novo()&lt;/code&gt; responde a uma requisição HTTP GET para &lt;code&gt;/paises/novo&lt;/code&gt;. Ele disponibiliza um objeto &lt;code&gt;Pais&lt;/code&gt; vazio para preencher o formulário.&lt;/p&gt;
+&lt;p&gt;O método &lt;code&gt;salvar()&lt;/code&gt; responde a uma requisição HTTP POST para &lt;code&gt;/paises&lt;/code&gt;. O Spring utiliza os dados enviados pelo formulário para preencher o objeto &lt;code&gt;Pais&lt;/code&gt;, recebido pelo parâmetro anotado com &lt;code&gt;@ModelAttribute&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Neste exemplo, os dados são apenas recebidos e apresentados na resposta. O cadastro ainda não é persistido em um banco de dados.&lt;/p&gt;
+&lt;h2&gt;Criando o formulário HTML&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;criando-o-formulário-html&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#criando-o-formul%c3%a1rio-html&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Crie o arquivo &lt;code&gt;pais-form.html&lt;/code&gt; na pasta &lt;code&gt;src/main/resources/templates&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pt-BR&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;xmlns:th&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;http://www.thymeleaf.org&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Cadastro de país&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Cadastro de país&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:action&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/paises}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#1f2328&#34;&gt;th:object&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#1f2328&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;post&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Nome:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               &lt;span style=&#34;color:#1f2328&#34;&gt;th:field&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;*{nome}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               &lt;span style=&#34;color:#1f2328&#34;&gt;required&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;capital&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Capital:&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               &lt;span style=&#34;color:#1f2328&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;capital&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               &lt;span style=&#34;color:#1f2328&#34;&gt;th:field&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;*{capital}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               &lt;span style=&#34;color:#1f2328&#34;&gt;required&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Salvar&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;button&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O formulário utiliza três atributos importantes do Thymeleaf:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;th:action=&amp;quot;@{/paises}&amp;quot;&lt;/code&gt;: define o endereço para o qual os dados serão enviados.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th:object=&amp;quot;${pais}&amp;quot;&lt;/code&gt;: associa o formulário ao objeto &lt;code&gt;pais&lt;/code&gt; disponibilizado pelo Controller.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th:field=&amp;quot;*{nome}&amp;quot;&lt;/code&gt; e &lt;code&gt;th:field=&amp;quot;*{capital}&amp;quot;&lt;/code&gt;: associam os campos HTML aos atributos do objeto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A expressão &lt;code&gt;*{...}&lt;/code&gt; acessa propriedades do objeto definido em &lt;code&gt;th:object&lt;/code&gt;. Dessa forma, &lt;code&gt;*{nome}&lt;/code&gt; corresponde à propriedade &lt;code&gt;nome&lt;/code&gt; do objeto &lt;code&gt;pais&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O atributo &lt;code&gt;method=&amp;quot;post&amp;quot;&lt;/code&gt; indica que o formulário enviará os dados por meio de uma requisição HTTP POST.&lt;/p&gt;
+&lt;h2&gt;Exibindo os dados enviados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exibindo-os-dados-enviados&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exibindo-os-dados-enviados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Após o envio do formulário, o Controller disponibiliza o objeto preenchido para a página &lt;code&gt;pais-resultado.html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Crie o arquivo em &lt;code&gt;src/main/resources/templates/pais-resultado.html&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pt-BR&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;xmlns:th&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;http://www.thymeleaf.org&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;País cadastrado&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Dados recebidos&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        País:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:text&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais.nome}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Capital:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:text&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais.capital}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:href&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/paises/novo}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Cadastrar outro país&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O atributo &lt;code&gt;th:text&lt;/code&gt; apresenta os valores recebidos do Controller. Como o Thymeleaf escapa caracteres HTML especiais por padrão nessa expressão, os valores são exibidos como texto, em vez de serem interpretados como marcação HTML.&lt;/p&gt;
+&lt;h2&gt;Testando a aplicação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;testando-a-aplicação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#testando-a-aplica%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Execute a aplicação Spring Boot e acesse o endereço:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;http://localhost:8080/paises/novo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Preencha os campos com o nome de um país e sua capital e clique em &lt;strong&gt;Salvar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;O navegador enviará uma requisição POST para &lt;code&gt;/paises&lt;/code&gt;. O Spring preencherá o objeto &lt;code&gt;Pais&lt;/code&gt; com os valores informados e o Controller retornará a página com os dados recebidos.&lt;/p&gt;
+&lt;h2&gt;Resumo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resumo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resumo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Neste exemplo, foram utilizados os seguintes recursos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;@GetMapping&lt;/code&gt;: disponibiliza a página do formulário.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@PostMapping&lt;/code&gt;: recebe os dados enviados pelo formulário.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@ModelAttribute&lt;/code&gt;: associa os dados da requisição a um objeto Java.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th:action&lt;/code&gt;: define o destino do formulário.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th:object&lt;/code&gt;: associa o formulário a um objeto.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th:field&lt;/code&gt;: associa os campos do formulário às propriedades do objeto.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th:text&lt;/code&gt;: apresenta os dados na página HTML.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Essa integração permite criar formulários dinâmicos com HTML e Thymeleaf, processando as requisições com Spring Boot. Em uma aplicação real, o próximo passo seria adicionar validação dos dados e persistência em um banco de dados.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Java Swing</title>
       <link>http://localhost:1313/disciplinas/poo-2/java-swing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -259,6 +461,551 @@ Apresente o tabuleiro do jogo da velha em uma página web.
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Thymeleaf</title>
+      <link>http://localhost:1313/disciplinas/poo-2/thymeleaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-2/thymeleaf/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Thymeleaf&lt;/strong&gt; é um mecanismo de templates para Java (Java Template Engine), utilizado principalmente no desenvolvimento de aplicações web com Spring Boot para gerar páginas HTML dinâmicas no servidor.&lt;/p&gt;
+&lt;p&gt;Ele permite combinar HTML com expressões e atributos especiais que acessam dados enviados pelo controlador (Controller), exibindo informações, preenchendo formulários e criando páginas dinâmicas.&lt;/p&gt;
+&lt;h2&gt;Principais características&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;principais-características&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#principais-caracter%c3%adsticas&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Thymeleaf fornece:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integração com Spring Boot: facilita a comunicação entre controllers e páginas HTML.&lt;/li&gt;
+&lt;li&gt;Renderização no servidor: o HTML é processado no servidor antes de ser enviado ao navegador.&lt;/li&gt;
+&lt;li&gt;Acesso a dados: permite exibir atributos de objetos Java nas páginas.&lt;/li&gt;
+&lt;li&gt;Formulários: facilita preencher, enviar e validar dados.&lt;/li&gt;
+&lt;li&gt;HTML natural: os arquivos continuam sendo HTML válido, mesmo com os atributos do Thymeleaf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Documentação oficial&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;documentação-oficial&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#documenta%c3%a7%c3%a3o-oficial&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Página oficial do &lt;a href=&#34;https://www.thymeleaf.org&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thymeleaf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Documentação do &lt;a href=&#34;https://www.thymeleaf.org/documentation.html&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thymeleaf&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Hello World com Thymeleaf&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;hello-world-com-thymeleaf&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hello-world-com-thymeleaf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Crie uma aplicação web Spring Boot com a dependência Thymeleaf e Spring Web. Este &lt;a href=&#34;https://start.spring.io/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link do Spring Initializr&lt;/a&gt; pode ajudar você a inicializar a aplicação.&lt;/p&gt;
+&lt;p&gt;Selecione as dependências:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Web&lt;/li&gt;
+&lt;li&gt;Thymeleaf&lt;/li&gt;
+&lt;li&gt;Spring Boot DevTools (opcional, para facilitar o desenvolvimento)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Controller&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;controller&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#controller&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Crie um controller &lt;code&gt;HelloController&lt;/code&gt; que retorne uma página html.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Controller&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;HelloController&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@GetMapping&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;index&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A classe &lt;code&gt;ModelAndView&lt;/code&gt; é responsável por combinar a visão (&lt;code&gt;hello.html&lt;/code&gt;) com os objetos que devem ser manipulados pelo Thymeleaf. Para adicionar os objetos no &lt;code&gt;ModelAndView&lt;/code&gt; se utiliza o método &lt;code&gt;addObject&lt;/code&gt; informando a chave e o valor. A chave será utilizada para acessar o objeto dentro do arquivo html.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Controller&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;HelloController&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@GetMapping&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;index&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(){&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// usuario é a chave&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;// Tom Cruise é o valor associado a chave &amp;#34;usuario&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;addObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;usuario&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Tom Cruise&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A chave &lt;code&gt;usuario&lt;/code&gt; será usada na expressão &lt;code&gt;${usuario}&lt;/code&gt; no HTML.&lt;/p&gt;
+&lt;p&gt;É permitido adicionar vários objetos, desde que, cada um tenha uma chave única.&lt;/p&gt;
+&lt;h3&gt;Página HTML&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;página-html&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#p%c3%a1gina-html&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A página &lt;code&gt;hello.html&lt;/code&gt; deve ser criada na pasta &lt;code&gt;templates&lt;/code&gt; nos &lt;code&gt;resources&lt;/code&gt; do projeto (&lt;code&gt;src/main/resources/templates/hello.html&lt;/code&gt;).&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pt-BR&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;xmlns:th&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;http://www.thymeleaf.org&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Hello World&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Olá Thymeleaf&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Bem vindo &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Utilizando o Thymeleaf&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;utilizando-o-thymeleaf&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#utilizando-o-thymeleaf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O Thymeleaf permite utilizar atributos especiais nos elementos HTML, geralmente identificados pelo prefixo &lt;code&gt;th&lt;/code&gt;. Para exibir uma string ou outro valor como conteúdo textual de um elemento HTML, pode-se utilizar o atributo &lt;code&gt;th:text&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Bem vindo &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:text&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${usuario}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Se o controller disponibilizar o atributo &lt;code&gt;usuario&lt;/code&gt; com o valor &lt;code&gt;Tom Cruise&lt;/code&gt;, o resultado será:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Bem vindo &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Tom Cruise&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Além disso, o &lt;code&gt;th:text&lt;/code&gt; escapa caracteres HTML especiais, ajudando a evitar que um valor fornecido pelo usuário seja interpretado como HTML.&lt;/p&gt;
+&lt;h2&gt;Condicionais&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;condicionais&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#condicionais&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O Thymeleaf permite utilizar estruturas condicionais para controlar quais elementos HTML serão exibidos de acordo com determinadas condições. Para isso, disponibiliza os atributos &lt;code&gt;th:if&lt;/code&gt;, &lt;code&gt;th:unless&lt;/code&gt; e &lt;code&gt;th:switch&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;th:if&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thif&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thif&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O atributo &lt;code&gt;th:if&lt;/code&gt; permite exibir um elemento HTML somente quando uma condição for verdadeira.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:if&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${idade &amp;gt;= 18}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Maior de idade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Neste exemplo, o parágrafo será exibido somente se o atributo &lt;code&gt;idade&lt;/code&gt; disponibilizado pelo Controller tiver um valor maior ou igual a 18.&lt;/p&gt;
+&lt;p&gt;Se a condição for falsa, o elemento não será incluído no HTML gerado.&lt;/p&gt;
+&lt;h3&gt;th:unless&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thunless&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thunless&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O atributo &lt;code&gt;th:unless&lt;/code&gt; funciona de maneira inversa ao &lt;code&gt;th:if&lt;/code&gt;: o elemento será exibido quando a condição for falsa.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:unless&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${idade &amp;gt;= 18}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Menor de idade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Neste exemplo, o parágrafo será exibido quando o valor de &lt;code&gt;idade&lt;/code&gt; for menor que 18.&lt;/p&gt;
+&lt;h3&gt;th:switch e th:case&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thswitch-e-thcase&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thswitch-e-thcase&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Os atributos &lt;code&gt;th:switch&lt;/code&gt; e &lt;code&gt;th:case&lt;/code&gt; permitem selecionar qual conteúdo será exibido de acordo com o valor de uma expressão. São semelhantes à estrutura &lt;code&gt;switch-case&lt;/code&gt; da linguagem Java.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:switch&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${dia}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Domingo&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Segunda-feira&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;3&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Terça-feira&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;4&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Quarta-feira&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;5&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Quinta-feira&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;6&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Sexta-feira&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;7&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Sábado&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:case&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;*&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Dia inválido&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Neste exemplo, o valor do atributo &lt;code&gt;dia&lt;/code&gt; determina qual parágrafo será exibido. Se o valor for &lt;code&gt;1&lt;/code&gt;, será exibido o texto &amp;ldquo;Domingo&amp;rdquo;; se for &lt;code&gt;2&lt;/code&gt;, será exibido &amp;ldquo;Segunda-feira&amp;rdquo;, e assim sucessivamente.&lt;/p&gt;
+&lt;p&gt;O atributo &lt;code&gt;th:case=&amp;quot;*&amp;quot;&lt;/code&gt; funciona como a opção padrão, sendo utilizado quando nenhum dos casos anteriores corresponde ao valor informado.&lt;/p&gt;
+&lt;p&gt;Dessa forma, as estruturas condicionais do Thymeleaf permitem controlar dinamicamente a apresentação dos elementos HTML de acordo com os dados disponibilizados pela aplicação Java.&lt;/p&gt;
+&lt;h2&gt;Iteração&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;iteração&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#itera%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O Thymeleaf permite percorrer coleções de objetos e gerar elementos HTML dinamicamente. Para isso, utiliza-se o atributo &lt;code&gt;th:each&lt;/code&gt;, que funciona de maneira semelhante às estruturas de repetição, como o &lt;code&gt;for-each&lt;/code&gt; da linguagem Java.&lt;/p&gt;
+&lt;h3&gt;th:each&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;theach&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#theach&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O atributo &lt;code&gt;th:each&lt;/code&gt; permite percorrer uma coleção, como uma lista (&lt;code&gt;List&lt;/code&gt;), e gerar um elemento HTML para cada item.&lt;/p&gt;
+&lt;p&gt;Considere um Controller que disponibiliza uma lista de nomes de países:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Controller&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;/paises&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;PaisController&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@GetMapping&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;listar&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;ModelAndView&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;paises&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;paises&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;            &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Brasil&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;            &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Argentina&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;            &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Chile&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;addObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;paises&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;paises&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, o método &lt;code&gt;addObject()&lt;/code&gt; disponibiliza a lista de países com a chave &lt;code&gt;paises&lt;/code&gt;, que será utilizada no template HTML.&lt;/p&gt;
+&lt;p&gt;Na página &lt;code&gt;paises.html&lt;/code&gt;, podemos utilizar o atributo &lt;code&gt;th:each&lt;/code&gt; para percorrer a lista:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#57606a&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pt-BR&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;xmlns:th&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;http://www.thymeleaf.org&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Países&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Lista de países&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;ul&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:each&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pais : ${paises}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;th:text&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;ul&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A expressão &lt;code&gt;th:each=&amp;quot;pais : ${paises}&amp;quot;&lt;/code&gt; indica que o Thymeleaf deve percorrer a coleção &lt;code&gt;paises&lt;/code&gt;, atribuindo cada elemento à variável &lt;code&gt;pais&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para cada item da lista, será gerado um elemento HTML &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; com o nome do país correspondente.&lt;/p&gt;
+&lt;p&gt;O resultado será semelhante a:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;ul&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Brasil&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Argentina&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Chile&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;ul&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Iteração sobre uma lista de objetos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;iteração-sobre-uma-lista-de-objetos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#itera%c3%a7%c3%a3o-sobre-uma-lista-de-objetos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O &lt;code&gt;th:each&lt;/code&gt; também pode ser utilizado para percorrer uma coleção de objetos Java e acessar seus atributos.&lt;/p&gt;
+&lt;p&gt;Considere a seguinte classe &lt;code&gt;Pais&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;Pais&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;private&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;Pais&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;nome&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;capital&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;getNome&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;nome&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;getCapital&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;capital&lt;span style=&#34;color:#1f2328&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O Controller pode disponibilizar uma lista de objetos &lt;code&gt;Pais&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt;Pais&lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;paises&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;List&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Pais&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Brasil&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Brasília&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Pais&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Argentina&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Buenos Aires&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;new&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;Pais&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Chile&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Santiago&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mv&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;addObject&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;paises&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;paises&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;No template HTML, podemos acessar as propriedades de cada objeto utilizando expressões do Thymeleaf:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;thead&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;th&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;País&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;th&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;th&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Capital&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;th&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;thead&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tbody&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:each&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;pais : ${paises}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:text&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais.nome}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:text&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais.capital}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;td&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tr&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;tbody&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, o Thymeleaf percorre a lista &lt;code&gt;paises&lt;/code&gt; e gera uma linha da tabela para cada objeto. As expressões &lt;code&gt;${pais.nome}&lt;/code&gt; e &lt;code&gt;${pais.capital}&lt;/code&gt; acessam as propriedades do objeto atual por meio dos métodos de acesso correspondentes.&lt;/p&gt;
+&lt;p&gt;Dessa forma, o &lt;code&gt;th:each&lt;/code&gt; permite construir listas, tabelas e outros elementos HTML a partir de coleções de dados disponibilizadas pela aplicação Java.&lt;/p&gt;
+&lt;h2&gt;Navegação e URLs de imagens&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;navegação-e-urls-de-imagens&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#navega%c3%a7%c3%a3o-e-urls-de-imagens&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O Thymeleaf disponibiliza atributos que permitem gerar URLs dinamicamente para links, formulários e imagens. Entre eles, destacam-se &lt;code&gt;th:href&lt;/code&gt;, &lt;code&gt;th:action&lt;/code&gt; e &lt;code&gt;th:src&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;th:href&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thhref&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thhref&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O atributo &lt;code&gt;th:href&lt;/code&gt; permite definir dinamicamente o endereço de um link HTML. É útil para navegar entre páginas da aplicação e construir URLs que contenham parâmetros.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:href&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/paises}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Listar países&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, o Thymeleaf gera um link para o caminho &lt;code&gt;/paises&lt;/code&gt;, considerando o contexto da aplicação.&lt;/p&gt;
+&lt;p&gt;Também é possível incluir parâmetros na URL:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:href&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/pais(id=1)}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Consultar país&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O Thymeleaf gera uma URL equivalente a &lt;code&gt;/pais?id=1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para utilizar valores de variáveis na URL, pode-se escrever:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:href&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/pais(id=${pais.id})}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Consultar país
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse caso, o valor de &lt;code&gt;pais.id&lt;/code&gt; será utilizado como parâmetro da URL.&lt;/p&gt;
+&lt;h3&gt;th:action&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thaction&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thaction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O atributo &lt;code&gt;th:action&lt;/code&gt; permite definir dinamicamente o endereço para o qual um formulário HTML será enviado.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:action&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/paises}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;get&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;nome&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;Pesquisar&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;button&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;form&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, o formulário envia uma requisição HTTP GET para &lt;code&gt;/paises&lt;/code&gt;, incluindo o valor digitado no campo &lt;code&gt;nome&lt;/code&gt; como parâmetro da requisição.&lt;/p&gt;
+&lt;p&gt;O atributo &lt;code&gt;th:action&lt;/code&gt; é especialmente útil em formulários de cadastro, edição e pesquisa.&lt;/p&gt;
+&lt;h3&gt;th:src&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thsrc&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thsrc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O atributo &lt;code&gt;th:src&lt;/code&gt; permite definir dinamicamente o endereço de uma imagem. Pode ser utilizado tanto com imagens externas quanto com arquivos disponibilizados pela própria aplicação.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Imagem externa&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;https://exemplo.com/imagens/brasil.png&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#1f2328&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Bandeira do Brasil&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Se o endereço for fixo, o atributo HTML &lt;code&gt;src&lt;/code&gt; é suficiente. O Thymeleaf não precisa ser utilizado nesse caso.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Imagem com URL dinâmica&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:src&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;${pais.bandeira}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#1f2328&#34;&gt;th:alt&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;|Bandeira de ${pais.nome}|&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, o endereço da imagem é obtido do atributo &lt;code&gt;bandeira&lt;/code&gt; do objeto &lt;code&gt;pais&lt;/code&gt;, enquanto o texto alternativo é construído com o nome do país.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Imagem armazenada na aplicação&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Se a imagem estiver na pasta &lt;code&gt;src/main/resources/static/imagens&lt;/code&gt;, ela poderá ser referenciada assim:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;th:src&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;@{/imagens/logo.png}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#1f2328&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Logo da aplicação&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O Thymeleaf gera a URL considerando o contexto da aplicação, facilitando o acesso ao arquivo estático.&lt;/p&gt;
+&lt;h3&gt;Resumo dos atributos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resumo-dos-atributos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resumo-dos-atributos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Atributo&lt;/th&gt;
+          &lt;th&gt;Finalidade&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;th:href&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Define URLs de links.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;th:action&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Define o destino de formulários.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;th:src&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Define URLs de imagens e outros recursos compatíveis com &lt;code&gt;src&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Esses atributos permitem gerar URLs dinamicamente e integrar a navegação das páginas HTML aos dados e às rotas disponibilizados pela aplicação Spring Boot.&lt;/p&gt;
 
       </description>
     </item>
