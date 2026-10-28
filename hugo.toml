@@ -2,7 +2,7 @@ baseURL = 'https://leandersonandre.com/'
 languageCode = "pt-br"
 defaultContentLanguage = "pt-br"
 title = 'Leanderson André'
-theme = "hextra"
+theme = ["hextra", "reveal-hugo"]
 
 [menu]
 
@@ -65,5 +65,12 @@ theme = "hextra"
   [markup.highlight]
     style = "github"
       [markup.goldmark]
-        [markup.goldmark.renderer]
-          unsafe = true
+[markup.goldmark.renderer]
+    unsafe = true
+
+[outputFormats.Reveal]
+    baseName = "index"
+    mediaType = "text/html"
+    isHTML = true
+[params.reveal_hugo]
+    theme = "moon"
