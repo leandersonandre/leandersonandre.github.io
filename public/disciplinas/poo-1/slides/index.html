@@ -54,7 +54,7 @@ dos objetos.</p>
 </div>
 </div>
 </section><section>
-<div id="plantuml-1793273829321647000"></div>
+<div id="plantuml-1793287994459507000"></div>
 
 <script>
 (async function() {
@@ -67,7 +67,7 @@ dos objetos.</p>
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793273829321647000").innerHTML = output;
+  document.getElementById("plantuml-1793287994459507000").innerHTML = output;
 })();
 </script>
 
@@ -84,7 +84,23 @@ dos objetos.</p>
 
 
 </div>
-      
+      <div id="slide-header"></div>
+
+<script>
+  function atualizarTituloSlide(event) {
+    const slide = event.currentSlide;
+    const header = document.getElementById("slide-header");
+
+    if (!slide || !header) return;
+
+    const titulo = slide.querySelector("h1, h2, h3, h4");
+
+    header.textContent = titulo ? titulo.textContent : "";
+  }
+
+  Reveal.on("ready", atualizarTituloSlide);
+  Reveal.on("slidechanged", atualizarTituloSlide);
+</script>
 
     </div>
 <script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
@@ -692,6 +708,8 @@ dos objetos.</p>
 
   
   
+    
+  
 
   
   
@@ -987,6 +1005,20 @@ dos objetos.</p>
   </script>
 
 
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+  
+
+<script type="text/javascript" id="MathJax-script" async src="/tex-svg_7522271970123696654.js"></script>
 
     
     

@@ -1,0 +1,8 @@
+<div class="beamer-block">
+  <div class="beamer-block-title">
+    {{ .Get "titulo" }}
+  </div>
+  <div class="beamer-block-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div id="slide-header"></div>
+
+<script>
+  window.addEventListener("load", function () {
+    const header = document.getElementById("slide-header");
+
+    if (!header || typeof Reveal === "undefined") {
+      console.error("Reveal.js ou slide-header não encontrado.");
+      return;
+    }
+
+    // Retira a faixa de dentro do contêiner do Reveal.
+    document.body.appendChild(header);
+
+    function atualizarTituloSlide(event) {
+      const slide = event?.currentSlide || Reveal.getCurrentSlide();
+      const header = document.getElementById("slide-header");
+
+      if (!slide || !header) return;
+
+      // Oculta a faixa na capa.
+      if (slide.querySelector(".capa-container")) {
+        header.style.display = "none";
+        return;
+      }
+
+      const titulo = slide.querySelector("h1, h2, h3, h4");
+
+      if (titulo) {
+        header.textContent = titulo.textContent.trim();
+        header.style.display = "flex";
+        titulo.classList.add("titulo-no-topo");
+      } else {
+        header.style.display = "none";
+      }
+    }
+
+    Reveal.on("ready", atualizarTituloSlide);
+    Reveal.on("slidechanged", atualizarTituloSlide);
+
+    // Garante o título inicial.
+    atualizarTituloSlide({});
+  });
+</script>

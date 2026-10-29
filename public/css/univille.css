@@ -41,3 +41,81 @@
   font-size: 0.6em;
   margin: 0;
 }
+
+.reveal .beamer-block {
+  margin: 20px 0;
+  border-radius: 0px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.85em;
+  box-shadow: none;
+}
+
+.reveal .beamer-block-title {
+  background: #008000;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-weight: bold;
+}
+
+.reveal .beamer-block-content {
+  background: #E0EDE2;
+  color: #222222;
+  padding: 16px;
+  border-top: none;
+}
+
+.reveal .beamer-block-content p {
+  margin: 0.5em 0;
+}
+
+.reveal .beamer-block-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Faixa fixa com o título do slide */
+body.reveal-viewport #slide-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 55px !important;
+  margin: 0 !important;
+  padding: 0 30px !important;
+  box-sizing: border-box !important;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #008000 !important;
+  color: #ffffff !important;
+  font-size: 2em;
+  line-height: 1.2;
+
+  z-index: 99999;
+}
+
+/* Evita que o título apareça duas vezes */
+.reveal .slides section .titulo-no-topo {
+  display: none !important;
+}
+
+/* Reserva espaço para a faixa */
+.reveal .slides section {
+  padding-top: 70px !important;
+  box-sizing: border-box;
+}
+
+/* Oculta o título original, mantendo-o na faixa verde */
+.reveal .slides section .titulo-no-topo {
+  display: none !important;
+}
+
+.reveal .slides section .sem-margem {
+  width: 100vw;
+  max-width: none;
+  margin: 0 calc(50% - 50vw);
+  padding: 0;
+  box-sizing: border-box;
+}
