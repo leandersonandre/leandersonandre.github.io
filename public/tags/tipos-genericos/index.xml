@@ -831,11 +831,11 @@ O método retorna um valor do tipo definido pelo parâmetro genérico T.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038660518000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829428009000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Caixa\u003cT\u003e \u007b\n  valor : T\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Caixa\u003cT\u003e \u007b\n  valor : T\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -844,7 +844,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038660518000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829428009000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -915,11 +915,11 @@ O atributo utiliza o parâmetro de tipo genérico T.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038660557000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829428050000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Par\u003cK,V\u003e \u007b\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Par\u003cK,V\u003e \u007b\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -928,7 +928,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038660557000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829428050000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -999,11 +999,11 @@ A notação &lt;code&gt;&amp;lt;K,V&amp;gt;&lt;/code&gt; indica dois parâmetros
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038660594000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829428090000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Caixa\u003cT\u003e \u007b\n  \u002bgetValor() : T\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Caixa\u003cT\u003e \u007b\n  \u002bgetValor() : T\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1012,7 +1012,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038660594000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829428090000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1083,11 +1083,11 @@ O método retorna um valor do tipo genérico T.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038660630000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829428151000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Repositorio\u003cT\u003e \u007b\n  \u002bsalvar(obj : T) : void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Repositorio\u003cT\u003e \u007b\n  \u002bsalvar(obj : T) : void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1096,7 +1096,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038660630000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829428151000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

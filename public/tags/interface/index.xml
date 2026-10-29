@@ -37,11 +37,11 @@ Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando
 Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
 Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
 
-&lt;div id=&#34;plantuml-1793209038541368000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829314897000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Shape \u003c\u003cinterface\u003e\u003e\u007b\n  \u002bgetArea(): double\n  \u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Triangle\nShape \u003c|.. Circle\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Shape \u003c\u003cinterface\u003e\u003e\u007b\n  \u002bgetArea(): double\n  \u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Triangle\nShape \u003c|.. Circle\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -50,7 +50,7 @@ Após a implementação, instancie objetos de cada classe e apresente no termina
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038541368000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829314897000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -69,11 +69,11 @@ Crie uma nova classe responsável por operações com objetos do tipo Shape.
 Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
 O resultado deve ser retornado como um valor do tipo double.
 
-&lt;div id=&#34;plantuml-1793209038541490000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829314914000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ShapeUtils \u007b\n  -ShapeUtils()\n  \u007bstatic\u007d \u002bgetTotalArea(shapes: List\u003cShape\u003e): double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ShapeUtils \u007b\n  -ShapeUtils()\n  \u007bstatic\u007d \u002bgetTotalArea(shapes: List\u003cShape\u003e): double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -82,7 +82,7 @@ O resultado deve ser retornado como um valor do tipo double.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038541490000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829314914000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -112,11 +112,11 @@ Regras:
   &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div id=&#34;plantuml-1793209038541542000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829314929000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Scalable \u003c\u003cinterface\u003e\u003e\u007b\n\u002bscale(factor: double): void\n\u007d\ninterface Shape \u007b\n\u002bgetArea(): double\n\u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Circle\nShape \u003c|.. Triangle\n\nScalable \u003c|.up. Rect\nScalable \u003c|.up. Circle\nScalable \u003c|.up. Triangle\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Scalable \u003c\u003cinterface\u003e\u003e\u007b\n\u002bscale(factor: double): void\n\u007d\ninterface Shape \u007b\n\u002bgetArea(): double\n\u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Circle\nShape \u003c|.. Triangle\n\nScalable \u003c|.up. Rect\nScalable \u003c|.up. Circle\nScalable \u003c|.up. Triangle\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -125,7 +125,7 @@ Regras:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038541542000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829314929000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -163,11 +163,11 @@ Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle 
 &lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1793209038568485000&#34;&gt;&lt;/div&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1793273829338564000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -176,7 +176,7 @@ Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038568485000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829338564000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -306,11 +306,11 @@ No entanto, a partir do Java 8, interfaces também podem possuir métodos defaul
 A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Múltiplas realizações de interface&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-realizações-de-interface&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#m%c3%baltiplas-realiza%c3%a7%c3%b5es-de-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe pode realizar a implementação de múltiplas interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1793209038568496000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829338576000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\ninterface Cloneable  \u003c\u003cinterface\u003e\u003e \u007b\n  \n\u007d\n\nclass Person\u007b\n\u007d\n\nPrintable \u003c|.. Person\nCloneable \u003c|.. Person\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\ninterface Cloneable  \u003c\u003cinterface\u003e\u003e \u007b\n  \n\u007d\n\nclass Person\u007b\n\u007d\n\nPrintable \u003c|.. Person\nCloneable \u003c|.. Person\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -319,7 +319,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038568496000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829338576000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -381,11 +381,11 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
 &lt;/div&gt;
 &lt;h3&gt;Herança de interfaces&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herança-de-interfaces&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#heran%c3%a7a-de-interfaces&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As interfaces podem realizar uma ou múltiplas heranças de outras interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1793209038568505000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829338588000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\ninterface Cloneable  \u003c\u003cinterface\u003e\u003e \u007b\n  \n\u007d\nCloneable \u003c|-- Printable\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Printable  \u003c\u003cinterface\u003e\u003e \u007b\n  \u002bprint()\n\u007d\n\ninterface Cloneable  \u003c\u003cinterface\u003e\u003e \u007b\n  \n\u007d\nCloneable \u003c|-- Printable\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -394,7 +394,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038568505000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829338588000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

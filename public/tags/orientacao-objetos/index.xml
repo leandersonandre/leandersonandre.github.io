@@ -610,11 +610,11 @@ Fonte: ENADE 2021, Bacharel em Sistema de Informação, Questão Discursiva 5.
 
 O gestor de uma instituição seguradora solicitou ao desenvolvedor de software o projeto de uma solução computacional para a instituição. Após executar a análise de requisitos, esse desenvolvedor esboçou o diagrama UML (&lt;i&gt;Unified Modeling Language&lt;/i&gt;), contendo os elementos apresentados na figura a seguir.
 
-&lt;div id=&#34;plantuml-1793209038628111000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829396303000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Segurado \u007b\n\u007d\n\nclass Seguro \u007b\n\u007d\n\nclass Residencial \u007b\n\u007d\n\nclass Automotivo \u007b\n\u007d\n\nclass Vida \u007b\n\u007d\n\nSegurado \u00221..1\u0022 -- \u00220..n\u0022 Seguro \n\nSeguro \u003c|-- Residencial\nSeguro \u003c|-- Automotivo\nSeguro \u003c|-- Vida\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Segurado \u007b\n\u007d\n\nclass Seguro \u007b\n\u007d\n\nclass Residencial \u007b\n\u007d\n\nclass Automotivo \u007b\n\u007d\n\nclass Vida \u007b\n\u007d\n\nSegurado \u00221..1\u0022 -- \u00220..n\u0022 Seguro \n\nSeguro \u003c|-- Residencial\nSeguro \u003c|-- Automotivo\nSeguro \u003c|-- Vida\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -623,7 +623,7 @@ O gestor de uma instituição seguradora solicitou ao desenvolvedor de software 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038628111000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829396303000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

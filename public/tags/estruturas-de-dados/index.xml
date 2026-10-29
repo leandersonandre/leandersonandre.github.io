@@ -43,11 +43,11 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039303524000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830080716000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ArranjoOrdenado \u007b\n  - arranjo: int[] \n  - capacidade: int \n  - tamanho: int \n\n  \u002b ArranjoOrdenado(capacidade: int )\n  \u002b inserir(valor: int )\n  \u002b deletar(valor: int )\n  \u002b buscar(valor: int ): int\n  \u002b  percorrer()\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ArranjoOrdenado \u007b\n  - arranjo: int[] \n  - capacidade: int \n  - tamanho: int \n\n  \u002b ArranjoOrdenado(capacidade: int )\n  \u002b inserir(valor: int )\n  \u002b deletar(valor: int )\n  \u002b buscar(valor: int ): int\n  \u002b  percorrer()\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -56,7 +56,7 @@
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039303524000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830080716000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4209,11 +4209,11 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a fila se 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039313930000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830099821000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Queue \u007b\n-head: Node\n-tail: Node\n-size: int\n\u002bqueue(value: int)\n\u002bdequeue(): int\n\u002bpeek(): int\n\u002bisEmpty(): boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Queue \u007b\n-head: Node\n-tail: Node\n-size: int\n\u002bqueue(value: int)\n\u002bdequeue(): int\n\u002bpeek(): int\n\u002bisEmpty(): boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -4222,7 +4222,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a fila se 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039313930000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830099821000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4528,11 +4528,11 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039304804000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830106020000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -4541,7 +4541,7 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039304804000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830106020000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5021,11 +5021,11 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039344961000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830137122000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -5034,7 +5034,7 @@ Isso permite inserir elementos no final e remover do início de forma eficiente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039344961000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830137122000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8527,11 +8527,11 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039355888000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830143008000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Stack \u007b\n-top: Node\n-size: int\n\u002bpush(value: int)\n\u002bpop(): int\n\u002bpeek(): int\n\u002bisEmpty(): boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Stack \u007b\n-top: Node\n-size: int\n\u002bpush(value: int)\n\u002bpop(): int\n\u002bpeek(): int\n\u002bisEmpty(): boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -8540,7 +8540,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039355888000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830143008000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

@@ -1789,11 +1789,11 @@ A variável possui tipo Moeda.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038639762000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829407653000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Status \u007b\n  ABERTO\n  FECHADO\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nenum Status \u007b\n  ABERTO\n  FECHADO\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1802,7 +1802,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038639762000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829407653000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2655,11 +2655,11 @@ O valor ALTA foi associado ao código 2.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038640211000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829408079000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Moeda \u007b\n  REAL\n  DOLAR\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nenum Moeda \u007b\n  REAL\n  DOLAR\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2668,7 +2668,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038640211000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829408079000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2784,11 +2784,11 @@ O diagrama representa uma enumeração chamada Moeda.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038640266000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829408130000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Prioridade \u007b\n  BAIXA\n  ALTA\n  \u002bgetCodigo(): int\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nenum Prioridade \u007b\n  BAIXA\n  ALTA\n  \u002bgetCodigo(): int\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2797,7 +2797,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038640266000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829408130000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2871,11 +2871,11 @@ O diagrama mostra explicitamente um método público chamado &lt;code&gt;getCodi
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038640310000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829408180000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nenum Status \u007b\n  ABERTO\n  FECHADO\n  \u002bisFinalizado(): boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nenum Status \u007b\n  ABERTO\n  FECHADO\n  \u002bisFinalizado(): boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -2884,7 +2884,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038640310000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829408180000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

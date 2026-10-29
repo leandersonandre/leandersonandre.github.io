@@ -34,11 +34,11 @@
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038644327000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829412654000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface  Animal \u003c\u003cinterface\u003e\u003e \u007b\n  emitirSom() : void\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface  Animal \u003c\u003cinterface\u003e\u003e \u007b\n  emitirSom() : void\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -47,7 +47,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038644327000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829412654000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -118,11 +118,11 @@ O diagrama indica explicitamente uma interface.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038644367000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829412710000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface  Forma \u003c\u003cinterface\u003e\u003e \u007b\n  calcularArea() : double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface  Forma \u003c\u003cinterface\u003e\u003e \u007b\n  calcularArea() : double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -131,7 +131,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038644367000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829412710000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -202,11 +202,11 @@ O retorno indicado no diagrama é do tipo &lt;code&gt;double&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038644404000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829412751000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Imprimivel \u003c\u003cinterface\u003e\u003e \u007b\n  imprimir() : void\n\u007d\n\nclass Relatorio\n\nImprimivel \u003c|.. Relatorio\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Imprimivel \u003c\u003cinterface\u003e\u003e \u007b\n  imprimir() : void\n\u007d\n\nclass Relatorio\n\nImprimivel \u003c|.. Relatorio\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -215,7 +215,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038644404000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829412751000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -286,11 +286,11 @@ A linha tracejada com triângulo indica implementação de interface.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038644443000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829412790000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Autenticavel \u003c\u003cinterface\u003e\u003e \u007b\n  autenticar(login:String, senha:String) : boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Autenticavel \u003c\u003cinterface\u003e\u003e \u007b\n  autenticar(login:String, senha:String) : boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -299,7 +299,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038644443000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829412790000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -370,11 +370,11 @@ O método possui os parâmetros &lt;code&gt;login&lt;/code&gt; e &lt;code&gt;sen
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038644481000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829412842000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface  Persistivel \u003c\u003cinterface\u003e\u003e \u007b\n  salvar() : void\n\u007d\n\nclass Usuario\nclass Produto\n\nPersistivel \u003c|.. Usuario\nPersistivel \u003c|.. Produto\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface  Persistivel \u003c\u003cinterface\u003e\u003e \u007b\n  salvar() : void\n\u007d\n\nclass Usuario\nclass Produto\n\nPersistivel \u003c|.. Usuario\nPersistivel \u003c|.. Produto\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -383,7 +383,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038644481000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829412842000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1768,11 +1768,11 @@ O código cliente pode trabalhar com a interface sem conhecer a implementação 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o UML abaixo.
 
-&lt;div id=&#34;plantuml-1793209038645134000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829413454000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Animal \u007b\n  emitirSom() : void\n\u007d\n\nclass Cachorro\nclass Gato\n\nAnimal \u003c|.. Cachorro\nAnimal \u003c|.. Gato\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Animal \u007b\n  emitirSom() : void\n\u007d\n\nclass Cachorro\nclass Gato\n\nAnimal \u003c|.. Cachorro\nAnimal \u003c|.. Gato\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1781,7 +1781,7 @@ Analise o UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038645134000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829413454000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

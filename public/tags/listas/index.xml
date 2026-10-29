@@ -1346,11 +1346,11 @@ else:
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039304804000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830106020000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -1359,7 +1359,7 @@ else:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039304804000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830106020000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

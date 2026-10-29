@@ -343,11 +343,11 @@ Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando
 Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
 Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
 
-&lt;div id=&#34;plantuml-1793209038541368000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829314897000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Shape \u003c\u003cinterface\u003e\u003e\u007b\n  \u002bgetArea(): double\n  \u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Triangle\nShape \u003c|.. Circle\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Shape \u003c\u003cinterface\u003e\u003e\u007b\n  \u002bgetArea(): double\n  \u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Triangle\nShape \u003c|.. Circle\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -356,7 +356,7 @@ Após a implementação, instancie objetos de cada classe e apresente no termina
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038541368000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829314897000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -375,11 +375,11 @@ Crie uma nova classe responsável por operações com objetos do tipo Shape.
 Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
 O resultado deve ser retornado como um valor do tipo double.
 
-&lt;div id=&#34;plantuml-1793209038541490000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829314914000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ShapeUtils \u007b\n  -ShapeUtils()\n  \u007bstatic\u007d \u002bgetTotalArea(shapes: List\u003cShape\u003e): double\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ShapeUtils \u007b\n  -ShapeUtils()\n  \u007bstatic\u007d \u002bgetTotalArea(shapes: List\u003cShape\u003e): double\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -388,7 +388,7 @@ O resultado deve ser retornado como um valor do tipo double.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038541490000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829314914000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -418,11 +418,11 @@ Regras:
   &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div id=&#34;plantuml-1793209038541542000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273829314929000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\ninterface Scalable \u003c\u003cinterface\u003e\u003e\u007b\n\u002bscale(factor: double): void\n\u007d\ninterface Shape \u007b\n\u002bgetArea(): double\n\u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Circle\nShape \u003c|.. Triangle\n\nScalable \u003c|.up. Rect\nScalable \u003c|.up. Circle\nScalable \u003c|.up. Triangle\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Scalable \u003c\u003cinterface\u003e\u003e\u007b\n\u002bscale(factor: double): void\n\u007d\ninterface Shape \u007b\n\u002bgetArea(): double\n\u002bgetPerimeter(): double\n\u007d\n\nclass Rect\u007b\n  -width: double\n  -height: double\n\u007d\n\nclass Triangle\u007b\n  -sideA: double\n  -sideB: double\n  -sideC: double\n\u007d\n\nclass Circle\u007b\n  -radius: double\n\u007d\n\nShape \u003c|.. Rect\nShape \u003c|.. Circle\nShape \u003c|.. Triangle\n\nScalable \u003c|.up. Rect\nScalable \u003c|.up. Circle\nScalable \u003c|.up. Triangle\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -431,7 +431,7 @@ Regras:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209038541542000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273829314929000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -477,11 +477,11 @@ Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039304804000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830106020000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ListaBaseadaEmArranjo \u007b\n\n* elementos: int[]\n* tamanho: int\n\n- adicionar(valor: int)\n- inserir(posicao: int, valor: int)\n- remover(posicao: int)\n- obter(posicao: int): int\n- atualizar(posicao: int): int\n- percorrer()\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -490,7 +490,7 @@ Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039304804000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830106020000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -970,11 +970,11 @@ Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039344961000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830137122000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass ListaSimplesEncadeada \u007b\n\n- inicio: No\n- fim: No\n- tamanho: int\n\u002b adicionarInicio(valor: int)\n\u002b adicionarFim(valor: int)\n\u002b removerInicio(): int\n\u002b removerFim(): int\n\u002b obterInicio(): int\n\u002b obterFim(): int\n\u002b obter(indice: int): int\n\u002b inserir(indice: int, valor: int)\n\u002b remover(indice: int): int\n\u002b percorrer()\n  \u007d\n\nclass No \u007b\n\n- valor: int\n- proximo: No\n  \u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -983,7 +983,7 @@ Após a implementação, crie pelo menos um objeto de cada classe (Rect, Circle 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039344961000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830137122000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

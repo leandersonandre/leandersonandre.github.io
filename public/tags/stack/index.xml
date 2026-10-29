@@ -555,11 +555,11 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;plantuml-1793209039355888000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1793273830143008000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
-  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nhide circle\n\nclass Stack \u007b\n-top: Node\n-size: int\n\u002bpush(value: int)\n\u002bpop(): int\n\u002bpeek(): int\n\u002bisEmpty(): boolean\n\u007d\n\n@enduml\n`;
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Stack \u007b\n-top: Node\n-size: int\n\u002bpush(value: int)\n\u002bpop(): int\n\u002bpeek(): int\n\u002bisEmpty(): boolean\n\u007d\n\n@enduml\n`;
 
   const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
     method: &#34;POST&#34;,
@@ -568,7 +568,7 @@ Quando implementada com &lt;strong&gt;lista encadeada&lt;/strong&gt;, a pilha se
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1793209039355888000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1793273830143008000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

@@ -54,6 +54,24 @@ dos objetos.</p>
 </div>
 </div>
 </section><section>
+<div id="plantuml-1793273829321647000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Animal \u003c\u003cinterface\u003e\u003e \u007b\n    emitirSom() : void\n  \u007d\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1793273829321647000").innerHTML = output;
+})();
+</script>
+
+</section><section>
 <img src="/images/univille.svg" alt="Univille">
 <br>
 <p class="capa-autor">Prof. MSc. Leanderson André</p>
@@ -252,6 +270,51 @@ dos objetos.</p>
   
 
   
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
     
   
   
@@ -521,18 +584,6 @@ dos objetos.</p>
   
 
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
     
   
   
@@ -584,37 +635,7 @@ dos objetos.</p>
   
 
   
-  
-
-  
     
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
   
   
 

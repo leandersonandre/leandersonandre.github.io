@@ -30,4 +30,11 @@ public class Pessoa {
 ```
 ---
 
+  {{< plantuml >}}
+  interface Animal <<interface>> {
+    emitirSom() : void
+  }
+  {{< /plantuml >}}
+___
+
 {{% slide-contracapa %}}

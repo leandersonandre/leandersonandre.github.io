@@ -9312,6 +9312,190 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
     </item>
     
     <item>
+      <title>Programação Dinâmica</title>
+      <link>http://localhost:1313/disciplinas/apc-2/slides/programacao-dinamica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/apc-2/slides/programacao-dinamica/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;capa-container&#34;&gt;
+  &lt;h1&gt;Programação Dinâmica&lt;/h1&gt;
+    &lt;p&gt;Algoritmos e Programação de Computadores II&lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-autor&#34;&gt;Prof. MSc. Leanderson André&lt;/p&gt;
+&lt;p class=&#34;capa-email&#34;&gt;leandersonandre@univille.br&lt;/p&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-universidade&#34;&gt;Universidade da Região de Joinville&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Programação Dinâmica&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;programação-dinâmica&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#programa%c3%a7%c3%a3o-din%c3%a2mica&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Técnica de Design de Algoritmo que pode ser utilizada pra encontrar soluções ótima para problemas e contar o número de soluções.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Problema do Troco&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;problema-do-troco&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#problema-do-troco&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dado um conjunto de moedas  = {c&lt;sub&gt;1&lt;/sub&gt;,c&lt;sub&gt;2&lt;/sub&gt;,&amp;hellip;c&lt;sub&gt;k&lt;/sub&gt;} e uma quantidade dinheiro alvo &lt;em&gt;n&lt;/em&gt;, encontre a menor combinação de moedas que somados resulta na quantidade &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,2,5}, alvo = 12.&lt;/p&gt;
+&lt;p&gt;Qual é a solução ótima?&lt;/p&gt;
+
+
+&lt;span class=&#39;fragment &#39; &gt;&lt;p&gt;3 moedas&lt;br&gt;
+5 + 5 + 2 = 12&lt;/p&gt;
+&lt;/span&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,2,5}, alvo = 12.&lt;/p&gt;
+&lt;p&gt;Qual foi a estratégia adotada?&lt;/p&gt;
+&lt;p&gt;
+
+&lt;span class=&#39;fragment &#39; &gt;Selecione sempre a maior moeda sem exceder o valor da soma.&lt;/span&gt;
+
+
+&lt;br&gt;
+
+
+&lt;span class=&#39;fragment &#39; &gt;&lt;strong&gt;Algoritmo guloso&lt;/strong&gt;&lt;/span&gt;
+
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,3, 4}, alvo = 6.&lt;/p&gt;
+&lt;p&gt;Qual é a solução ótima?&lt;/p&gt;
+&lt;p&gt;
+
+&lt;span class=&#39;fragment &#39; &gt;&lt;strong&gt;Algoritmo guloso:&lt;/strong&gt; 3 moedas: 4 + 1 + 1 = 6&lt;/span&gt;
+
+
+&lt;br&gt;
+
+
+&lt;span class=&#39;fragment &#39; &gt;&lt;strong&gt;Solução ótima:&lt;/strong&gt;  2 moedas: 3 + 3 = 6&lt;/span&gt;
+
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Algoritmos gulosos &lt;b&gt;não garantem&lt;/b&gt; a solução ótima.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Algoritmos de força bruta &lt;b&gt;garantem a solução ótima&lt;/b&gt; por explorar todas as possibilidades, mas podem ser &lt;b&gt;muito lentos&lt;/b&gt; para uma grande quantidade de dados de entrada.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Qual é a alternativa?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;qual-é-a-alternativa&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#qual-%c3%a9-a-alternativa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A programação dinâmica pode encontrar a solução ótima como a força bruta mas sendo &lt;b&gt;eficiente&lt;/b&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Procurando a solução ótima&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;procurando-a-solução-ótima&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#procurando-a-solu%c3%a7%c3%a3o-%c3%b3tima&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O problema pode ser reformulado de maneira recursiva para encontrar a solução para os seus subproblemas.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Por exemplo:&lt;/strong&gt; moedas  = {1,3,4}&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Expressão&lt;/th&gt;
+          &lt;th&gt;Valor&lt;/th&gt;
+          &lt;th&gt;Expressão&lt;/th&gt;
+          &lt;th&gt;Valor&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;resolver(0)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;resolver(6)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;resolver(1)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;resolver(7)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;resolver(2)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;resolver(8)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;resolver(3)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;resolver(9)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;resolver(4)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;resolver(10)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;resolver(5)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;A propriedade essencial de &lt;em&gt;resolver&lt;/em&gt; é que seus valores podem ser calculadas recursivamente para os valores menores.
+&lt;br&gt;
+&lt;strong&gt;Por exemplo:&lt;/strong&gt; moedas  = {1,3,4}&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;resolver(x) = min(resolver(x-1) &amp;#43; 1,
+                  resolver(x-3) &amp;#43; 1,
+                  resolver(x-4) &amp;#43; 1)
+                  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O caso base da recursão é resolver(0) = 0.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Por exemplo:&lt;/strong&gt; moedas  = {1,3,4}, soma = 10&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;resolver(10) = resolver(7) &amp;#43; 1  // x - 3
+             = resolver(4) &amp;#43; 2  // x - 2
+             = resolver(0) &amp;#43; 3  // x - 4     
+             = 3           &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;$$
+\operatorname{resolver}(x)=
+\begin{cases}
+\infty, &amp; x &lt; 0 \\
+0, &amp; x = 0 \\
+\displaystyle\min_{c \in \text{moedas}}
+\left\{\operatorname{resolver}(x-c)+1\right\}, &amp; x &gt; 0
+\end{cases}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resolver:&lt;/strong&gt; moedas  = {1,3,4}, soma = 10&lt;/p&gt;
+&lt;hr&gt;
+&lt;img src=&#34;http://localhost:1313/images/univille.svg&#34; alt=&#34;Univille&#34;&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-autor&#34;&gt;Prof. MSc. Leanderson André&lt;/p&gt;
+&lt;p class=&#34;capa-email&#34;&gt;leandersonandre@univille.br&lt;/p&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-universidade&#34;&gt;Universidade da Região de Joinville&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Questões sobre Conjuntos</title>
       <link>http://localhost:1313/disciplinas/apc-2/conjuntos-questoes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
