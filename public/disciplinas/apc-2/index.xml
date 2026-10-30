@@ -9330,7 +9330,8 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 &lt;br&gt;
 &lt;p class=&#34;capa-universidade&#34;&gt;Universidade da Região de Joinville&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1&gt;Programação Dinâmica&lt;/h1&gt;&lt;div class=&#34;beamer-block&#34;&gt;
+&lt;h2&gt;Programação Dinâmica&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;programação-dinâmica&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#programa%c3%a7%c3%a3o-din%c3%a2mica&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;beamer-block&#34;&gt;
   &lt;div class=&#34;beamer-block-title&#34;&gt;
     Definição
   &lt;/div&gt;
@@ -9341,8 +9342,11 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 &lt;hr&gt;
 &lt;h2&gt;Problema do Troco&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;problema-do-troco&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#problema-do-troco&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dado um conjunto de moedas  = {c&lt;sub&gt;1&lt;/sub&gt;,c&lt;sub&gt;2&lt;/sub&gt;,&amp;hellip;c&lt;sub&gt;k&lt;/sub&gt;} e uma quantidade dinheiro alvo &lt;em&gt;n&lt;/em&gt;, encontre a menor combinação de moedas que somados resulta na quantidade &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.kastatic.org/ka-perseus-images/0d45efb90c57c071c2495f188bf4e5066555c6b7.png&#34;
+alt=&#34;Moedas do real brasileiro&#34;
+style=&#34;height: 200px; width: auto;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,2,5}, alvo = 12.&lt;/p&gt;
+&lt;h1&gt;Problema do Troco&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,2,5}, alvo = 12.&lt;/p&gt;
 &lt;p&gt;Qual é a solução ótima?&lt;/p&gt;
 
 
@@ -9352,7 +9356,7 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 
 
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,2,5}, alvo = 12.&lt;/p&gt;
+&lt;h1&gt;Problema do Troco&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,2,5}, alvo = 12.&lt;/p&gt;
 &lt;p&gt;Qual foi a estratégia adotada?&lt;/p&gt;
 &lt;p&gt;
 
@@ -9366,7 +9370,7 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 
 &lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,3, 4}, alvo = 6.&lt;/p&gt;
+&lt;h1&gt;Problema do Troco&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; moedas = {1,3, 4}, alvo = 6.&lt;/p&gt;
 &lt;p&gt;Qual é a solução ótima?&lt;/p&gt;
 &lt;p&gt;
 
@@ -9380,7 +9384,7 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 
 &lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Algoritmos gulosos &lt;b&gt;não garantem&lt;/b&gt; a solução ótima.
+&lt;h1&gt;Problema do Troco&lt;/h1&gt;&lt;p&gt;Algoritmos gulosos &lt;b&gt;não garantem&lt;/b&gt; a solução ótima.
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Algoritmos de força bruta &lt;b&gt;garantem a solução ótima&lt;/b&gt; por explorar todas as possibilidades, mas podem ser &lt;b&gt;muito lentos&lt;/b&gt; para uma grande quantidade de dados de entrada.&lt;/p&gt;
 &lt;hr&gt;
@@ -9462,7 +9466,47 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 &lt;/div&gt;
 &lt;p&gt;O caso base da recursão é resolver(0) = 0.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Por exemplo:&lt;/strong&gt; moedas  = {1,3,4}, soma = 10&lt;/p&gt;
+&lt;h1&gt;Chamadas recursivas do algortimo&lt;/h1&gt;&lt;p&gt;A cada nível, uma moeda é utilizada.&lt;/p&gt;
+&lt;div class=&#34;sem-margem&#34;&gt;
+&lt;div id=&#34;plantuml-1793390382492646000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\n@startuml\ntop to bottom direction\nskinparam linetype ortho\nskinparam shadowing false\nskinparam rectangle \u007b\n  BorderColor #444444\n  FontColor black\n\u007d\n\nrectangle \u002210\u0022 as n10 #D9EAF7\n\nrectangle \u00229\u0022 as n9 #D5F5E3\nrectangle \u00227\u0022 as n8 #FCF3CF\nrectangle \u00226\u0022 as n6 #E8DAEF\n\nrectangle \u00228\u0022 as n9_1 #FCF3CF\nrectangle \u00226\u0022 as n9_2 #F5CBA7\nrectangle \u00225\u0022 as n9_4 #FADBD8\n\nrectangle \u00226\u0022 as n8_1 #F5CBA7\nrectangle \u00224\u0022 as n8_2 #E8DAEF\nrectangle \u00223\u0022 as n8_4 #D6EAF8\n\nrectangle \u00225\u0022 as n6_1 #FADBD8\nrectangle \u00223\u0022 as n6_2 #D6EAF8\nrectangle \u00222\u0022 as n6_4 #D5DBDB\n\nrectangle \u00227\u0022 as n9_1_1 #F5CBA7\nrectangle \u00225\u0022 as n9_1_2 #E8DAEF\nrectangle \u00224\u0022 as n9_1_4 #D6EAF8\n\nrectangle \u00225\u0022 as n9_2_1 #E8DAEF\nrectangle \u00223\u0022 as n9_2_2 #FADBD8\nrectangle \u00222\u0022 as n9_2_4 #E5E7E9\n\nrectangle \u00224\u0022 as n9_4_1 #D6EAF8\nrectangle \u00222\u0022 as n9_4_2 #E5E7E9\nrectangle \u00221\u0022 as n9_4_4 #D5DBDB\n\nrectangle \u00225\u0022 as n8_1_1 #E8DAEF\nrectangle \u00223\u0022 as n8_1_2 #FADBD8\nrectangle \u00222\u0022 as n8_1_4 #E5E7E9\n\nrectangle \u00223\u0022 as n8_2_1 #FADBD8\nrectangle \u00221\u0022 as n8_2_2 #D6EAF8\nrectangle \u00220\u0022 as n8_2_4 #D5DBDB\n\nrectangle \u00222\u0022 as n8_4_1 #E5E7E9\nrectangle \u00220\u0022 as n8_4_2 #D5DBDB\nrectangle \u0022-1\u0022 as n8_4_4 #D5F5E3\n\nrectangle \u00224\u0022 as n6_1_1 #D6EAF8\nrectangle \u00222\u0022 as n6_1_2 #E5E7E9\nrectangle \u00221\u0022 as n6_1_4 #D5DBDB\n\nrectangle \u00222\u0022 as n6_2_1 #E5E7E9\nrectangle \u00220\u0022 as n6_2_2 #D5DBDB\nrectangle \u0022-1\u0022 as n6_2_4 #D5F5E3\n\nrectangle \u00221\u0022 as n6_4_1 #D5DBDB\nrectangle \u0022-1\u0022 as n6_4_2 #D5F5E3\nrectangle \u0022-2\u0022 as n6_4_4 #F5B7B1\n\nn10 --\u003e n9\nn10 --\u003e n8\nn10 --\u003e n6\n\nn9 --\u003e n9_1\nn9 --\u003e n9_2\nn9 --\u003e n9_4\n\nn8 --\u003e n8_1\nn8 --\u003e n8_2\nn8 --\u003e n8_4\n\nn6 --\u003e n6_1\nn6 --\u003e n6_2\nn6 --\u003e n6_4\n\nn9_1 --\u003e n9_1_1\nn9_1 --\u003e n9_1_2\nn9_1 --\u003e n9_1_4\n\nn9_2 --\u003e n9_2_1\nn9_2 --\u003e n9_2_2\nn9_2 --\u003e n9_2_4\n\nn9_4 --\u003e n9_4_1\nn9_4 --\u003e n9_4_2\nn9_4 --\u003e n9_4_4\n\nn8_1 --\u003e n8_1_1\nn8_1 --\u003e n8_1_2\nn8_1 --\u003e n8_1_4\n\nn8_2 --\u003e n8_2_1\nn8_2 --\u003e n8_2_2\nn8_2 --\u003e n8_2_4\n\nn8_4 --\u003e n8_4_1\nn8_4 --\u003e n8_4_2\nn8_4 --\u003e n8_4_4\n\nn6_1 --\u003e n6_1_1\nn6_1 --\u003e n6_1_2\nn6_1 --\u003e n6_1_4\n\nn6_2 --\u003e n6_2_1\nn6_2 --\u003e n6_2_2\nn6_2 --\u003e n6_2_4\n\nn6_4 --\u003e n6_4_1\nn6_4 --\u003e n6_4_2\nn6_4 --\u003e n6_4_4\n\n@enduml\n\u003c\/div\u003e\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1793390382492646000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;Chamadas recursivas do algortimo&lt;/h1&gt;&lt;p&gt;Caminhos das soluções possíveis.&lt;/p&gt;
+&lt;div class=&#34;sem-margem&#34;&gt;
+&lt;div id=&#34;plantuml-1793390382492667000&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\n@startuml\ntop to bottom direction\nskinparam linetype ortho\nskinparam shadowing false\nskinparam rectangle \u007b\n  BorderColor #444444\n  FontColor WHITE\n\u007d\n\nrectangle \u002210\u0022 as n10 #000000\n\nrectangle \u00229\u0022 as n9 #FFFFFF\nrectangle \u00227\u0022 as n8 #000000\nrectangle \u00226\u0022 as n6 #000000\n\nrectangle \u00228\u0022 as n9_1 #FFFFFF\nrectangle \u00226\u0022 as n9_2 #FFFFFF\nrectangle \u00225\u0022 as n9_4 #FFFFFF\n\nrectangle \u00226\u0022 as n8_1 #FFFFFF\nrectangle \u00224\u0022 as n8_2 #000000\nrectangle \u00223\u0022 as n8_4 #000000\n\nrectangle \u00225\u0022 as n6_1 #FFFFFF\nrectangle \u00223\u0022 as n6_2 #000000\nrectangle \u00222\u0022 as n6_4 #FFFFFF\n\nrectangle \u00227\u0022 as n9_1_1 #FFFFFF\nrectangle \u00225\u0022 as n9_1_2 #FFFFFF\nrectangle \u00224\u0022 as n9_1_4 #FFFFFF\n\nrectangle \u00225\u0022 as n9_2_1 #FFFFFF\nrectangle \u00223\u0022 as n9_2_2 #FFFFFF\nrectangle \u00222\u0022 as n9_2_4 #FFFFFF\n\nrectangle \u00224\u0022 as n9_4_1 #FFFFFF\nrectangle \u00222\u0022 as n9_4_2 #FFFFFF\nrectangle \u00221\u0022 as n9_4_4 #FFFFFF\n\nrectangle \u00225\u0022 as n8_1_1 #FFFFFF\nrectangle \u00223\u0022 as n8_1_2 #FFFFFF\nrectangle \u00222\u0022 as n8_1_4 #FFFFFF\n\nrectangle \u00223\u0022 as n8_2_1 #FFFFFF\nrectangle \u00221\u0022 as n8_2_2 #FFFFFF\nrectangle \u00220\u0022 as n8_2_4 #000000\n\nrectangle \u00222\u0022 as n8_4_1 #FFFFFF\nrectangle \u00220\u0022 as n8_4_2 #000000\nrectangle \u0022-1\u0022 as n8_4_4 #FFFFFF\n\nrectangle \u00224\u0022 as n6_1_1 #FFFFFF\nrectangle \u00222\u0022 as n6_1_2 #FFFFFF\nrectangle \u00221\u0022 as n6_1_4 #FFFFFF\n\nrectangle \u00222\u0022 as n6_2_1 #FFFFFF\nrectangle \u00220\u0022 as n6_2_2 #000000\nrectangle \u0022-1\u0022 as n6_2_4 #FFFFFF\n\nrectangle \u00221\u0022 as n6_4_1 #FFFFFF\nrectangle \u0022-1\u0022 as n6_4_2 #FFFFFF\nrectangle \u0022-2\u0022 as n6_4_4 #FFFFFF\n\nn10 --\u003e n9\nn10 --\u003e n8\nn10 --\u003e n6\n\nn9 --\u003e n9_1\nn9 --\u003e n9_2\nn9 --\u003e n9_4\n\nn8 --\u003e n8_1\nn8 --\u003e n8_2\nn8 --\u003e n8_4\n\nn6 --\u003e n6_1\nn6 --\u003e n6_2\nn6 --\u003e n6_4\n\nn9_1 --\u003e n9_1_1\nn9_1 --\u003e n9_1_2\nn9_1 --\u003e n9_1_4\n\nn9_2 --\u003e n9_2_1\nn9_2 --\u003e n9_2_2\nn9_2 --\u003e n9_2_4\n\nn9_4 --\u003e n9_4_1\nn9_4 --\u003e n9_4_2\nn9_4 --\u003e n9_4_4\n\nn8_1 --\u003e n8_1_1\nn8_1 --\u003e n8_1_2\nn8_1 --\u003e n8_1_4\n\nn8_2 --\u003e n8_2_1\nn8_2 --\u003e n8_2_2\nn8_2 --\u003e n8_2_4\n\nn8_4 --\u003e n8_4_1\nn8_4 --\u003e n8_4_2\nn8_4 --\u003e n8_4_4\n\nn6_1 --\u003e n6_1_1\nn6_1 --\u003e n6_1_2\nn6_1 --\u003e n6_1_4\n\nn6_2 --\u003e n6_2_1\nn6_2 --\u003e n6_2_2\nn6_2 --\u003e n6_2_4\n\nn6_4 --\u003e n6_4_1\nn6_4 --\u003e n6_4_2\nn6_4 --\u003e n6_4_4\n\n@enduml\n\u003c\/div\u003e\n\n@enduml\n`;
+
+  const res = await fetch(&#34;https://kroki.io/plantuml/svg&#34;, {
+    method: &#34;POST&#34;,
+    headers: { &#34;Content-Type&#34;: &#34;text/plain&#34; },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById(&#34;plantuml-1793390382492667000&#34;).innerHTML = output;
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;Solução&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Por exemplo:&lt;/strong&gt; moedas  = {1,3,4}, soma = 10&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
 &lt;div&gt;&lt;pre&gt;&lt;code&gt;resolver(10) = resolver(7) &amp;#43; 1  // x - 3
@@ -9481,7 +9525,7 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;$$
+&lt;h1&gt;Algoritmo recursivo&lt;/h1&gt;&lt;p&gt;$$
 \operatorname{resolver}(x)=
 \begin{cases}
 \infty, &amp; x &lt; 0 \\
@@ -9489,10 +9533,18 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 \displaystyle\min_{c \in \text{moedas}}
 \left\{\operatorname{resolver}(x-c)+1\right\}, &amp; x &gt; 0
 \end{cases}$$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Resolver:&lt;/strong&gt; moedas  = {1,3,4}, soma = 10&lt;/p&gt;
+&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Exercício
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    &lt;p&gt;Codifique a solução recursiva para o problema do troco utilizando a linguagem Python.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entrada:&lt;/strong&gt; moedas = {1,3,4},  x = 10&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Saída:&lt;/strong&gt; 3&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;Solução:&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+&lt;h1&gt;Solução&lt;/h1&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
 &lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;resolver&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;moedas&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; soma &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
@@ -9501,7 +9553,7 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    menor &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#39;inf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; m &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        r &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; resolver&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        r &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; resolver&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        menor &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;menor&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;r&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; menor&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
   &lt;button
@@ -9515,7 +9567,6 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Utilização:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
 &lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;moedas &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
@@ -9532,6 +9583,202 @@ Faça uma função recursiva que remova todas as ocorrências de um determinado 
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Memoização&lt;/h1&gt;&lt;p&gt;A idéia chave na programação dinâmica é a &lt;strong&gt;memoização&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Definição
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    &lt;strong&gt;Memoização&lt;/strong&gt; (do inglês, &lt;em&gt;memoization&lt;/em&gt;) é uma técnica de otimização que armazena os resultados de funções para reutilizá-los em chamadas futuras, evitando recálculos desnecessários.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Aplicação da Memoização no programa do Troco&lt;/h1&gt;&lt;p&gt;Deve-se verificar se a tabela já contêm a solução para aquela instância do problema.&lt;/p&gt;
+&lt;p&gt;Caso tiver, utilize a solução armazenada.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; soma &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Aplicação da Memoização no programa do Troco&lt;/h1&gt;&lt;p&gt;Caso contrário, calcule a solução. Após identificar a melhor solução para a determinada instância do problema, armazene a solução na tabela.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;resolver&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;moedas&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;tabela&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; soma &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#39;inf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; soma &lt;span style=&#34;color:#0550ae&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; soma &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    menor &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#39;inf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; m &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        r &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; resolver&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        menor &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;menor&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;r&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; menor
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; menor&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Implementação iterativa&lt;/h1&gt;&lt;p&gt;Implementação iterativa pode apresentar algumas vantagens como possuir uma implementação mais simples e uso constante de memória.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;resolver&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;moedas&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tabela&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;soma&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#39;inf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; m &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;],&lt;/span&gt;tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Construindo a solução&lt;/h1&gt;&lt;p&gt;Algumas vezes, um determinado problema solicita qual é sua a solução ótima. No problema do troco, é necessário uma estrutura de dados para armazenar a primeira moeda da solução que resolve o problema.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;resolver&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;moedas&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tabela&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    solucao&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;range&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;soma&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#39;inf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#cf222e&#34;&gt;for&lt;/span&gt; m &lt;span style=&#34;color:#0550ae&#34;&gt;in&lt;/span&gt; moedas&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#cf222e&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;and&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;lt;&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;]:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#6639ba&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;],&lt;/span&gt;tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#0550ae&#34;&gt;-&lt;/span&gt;m&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              solucao&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; m
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#57606a&#34;&gt;# Imprimir no terminal neste ponto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt; tabela&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;soma&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Construindo a solução&lt;/h1&gt;&lt;p&gt;Para apresentar a solução ótima no terminal.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    s &lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt; soma
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Solução: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;,&lt;/span&gt;end&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cf222e&#34;&gt;while&lt;/span&gt; s &lt;span style=&#34;color:#0550ae&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#0550ae&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;solucao&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;s&lt;span style=&#34;color:#1f2328&#34;&gt;],&lt;/span&gt;end&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        s &lt;span style=&#34;color:#0550ae&#34;&gt;-=&lt;/span&gt; solucao&lt;span style=&#34;color:#1f2328&#34;&gt;[&lt;/span&gt;s&lt;span style=&#34;color:#1f2328&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6639ba&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Exercícios&lt;/h1&gt;&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Contando as soluções
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    &lt;p&gt;Dado o problema do troco, crie uma solução utilizando a programação dinâmica que retorne a quantidade de soluções válidas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entrada:&lt;/strong&gt; moedas = {1 ,3, 4}, soma = 5&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Saída:&lt;/strong&gt; 6&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1 + 1 + 1 + 1 + 1&lt;/td&gt;
+          &lt;td&gt;3 + 1 + 1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1 + 1 + 3&lt;/td&gt;
+          &lt;td&gt;1 + 4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1 + 3 +1&lt;/td&gt;
+          &lt;td&gt;4 + 1&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1&gt;Exercícios&lt;/h1&gt;&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Longest Increasing Subsequence (LIS)
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    &lt;p&gt;Dada uma sequência de números inteiros, encontre o tamanho da maior subsequência estritamente crescente (não necessariamente contínua). Uma subsequência é formada removendo zero ou mais elementos da sequência original, sem alterar a ordem relativa dos elementos restantes. Crie uma solução utilizando programação dinâmica para determinar o comprimento da Longest Increasing Subsequence (LIS).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entrada:&lt;/strong&gt; sequência = {10, 22, 9, 33, 21, 50, 41, 60}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Saída:&lt;/strong&gt; 5&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Exercícios&lt;/h1&gt;&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Longest Increasing Subsequence (LIS)
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;Entrada:&lt;/strong&gt; sequência = {10, 22, 9, 33, 21, 50, 41, 60}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Saída:&lt;/strong&gt; 5&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explicação:&lt;/strong&gt; A maior subsequência crescente possui comprimento &lt;strong&gt;5&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;10 → 22 → 33 → 50 → 60&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;10 → 22 → 33 → 41 → 60&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;hr&gt;
 &lt;img src=&#34;http://localhost:1313/images/univille.svg&#34; alt=&#34;Univille&#34;&gt;
 &lt;br&gt;

@@ -54,7 +54,7 @@ dos objetos.</p>
 </div>
 </div>
 </section><section>
-<div id="plantuml-1793287994459507000"></div>
+<div id="plantuml-1793385536572244000"></div>
 
 <script>
 (async function() {
@@ -67,7 +67,7 @@ dos objetos.</p>
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793287994459507000").innerHTML = output;
+  document.getElementById("plantuml-1793385536572244000").innerHTML = output;
 })();
 </script>
 
@@ -87,19 +87,46 @@ dos objetos.</p>
       <div id="slide-header"></div>
 
 <script>
-  function atualizarTituloSlide(event) {
-    const slide = event.currentSlide;
+  window.addEventListener("load", function () {
     const header = document.getElementById("slide-header");
 
-    if (!slide || !header) return;
+    if (!header || typeof Reveal === "undefined") {
+      console.error("Reveal.js ou slide-header não encontrado.");
+      return;
+    }
 
-    const titulo = slide.querySelector("h1, h2, h3, h4");
+    
+    document.body.appendChild(header);
 
-    header.textContent = titulo ? titulo.textContent : "";
-  }
+    function atualizarTituloSlide(event) {
+      const slide = event?.currentSlide || Reveal.getCurrentSlide();
+      const header = document.getElementById("slide-header");
 
-  Reveal.on("ready", atualizarTituloSlide);
-  Reveal.on("slidechanged", atualizarTituloSlide);
+      if (!slide || !header) return;
+
+      
+      if (slide.querySelector(".capa-container")) {
+        header.style.display = "none";
+        return;
+      }
+
+      const titulo = slide.querySelector("h1, h2, h3, h4");
+
+      if (titulo) {
+        header.textContent = titulo.textContent.trim();
+        header.style.display = "flex";
+        titulo.classList.add("titulo-no-topo");
+      } else {
+        header.style.display = "none";
+      }
+    }
+
+    Reveal.on("ready", atualizarTituloSlide);
+    Reveal.on("slidechanged", atualizarTituloSlide);
+
+    
+    atualizarTituloSlide({});
+  });
 </script>
 
     </div>

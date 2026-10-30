@@ -166,7 +166,7 @@ style="height: 200px; width: auto;"></p>
 </section><section>
 <h1>Chamadas recursivas do algortimo</h1><p>A cada nível, uma moeda é utilizada.</p>
 <div class="sem-margem">
-<div id="plantuml-1793298458350022000"></div>
+<div id="plantuml-1793390382480956000"></div>
 
 <script>
 (async function() {
@@ -179,14 +179,14 @@ style="height: 200px; width: auto;"></p>
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793298458350022000").innerHTML = output;
+  document.getElementById("plantuml-1793390382480956000").innerHTML = output;
 })();
 </script>
 
 </section><section>
 <h1>Chamadas recursivas do algortimo</h1><p>Caminhos das soluções possíveis.</p>
 <div class="sem-margem">
-<div id="plantuml-1793298458350080000"></div>
+<div id="plantuml-1793390382480979000"></div>
 
 <script>
 (async function() {
@@ -199,7 +199,7 @@ style="height: 200px; width: auto;"></p>
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793298458350080000").innerHTML = output;
+  document.getElementById("plantuml-1793390382480979000").innerHTML = output;
 })();
 </script>
 
@@ -251,7 +251,7 @@ style="height: 200px; width: auto;"></p>
 </span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span>
 </span></span><span style="display:flex;"><span>    menor <span style="color:#0550ae">=</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;inf&#39;</span><span style="color:#1f2328">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> m <span style="color:#0550ae">in</span> moedas<span style="color:#1f2328">:</span>
-</span></span><span style="display:flex;"><span>        r <span style="color:#0550ae">=</span> resolver<span style="color:#1f2328">(</span>soma<span style="color:#0550ae">-</span>m<span style="color:#1f2328">,</span> moedas<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        r <span style="color:#0550ae">=</span> resolver<span style="color:#1f2328">(</span>soma<span style="color:#0550ae">-</span>m<span style="color:#1f2328">,</span> moedas<span style="color:#1f2328">)</span> <span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span>
 </span></span><span style="display:flex;"><span>        menor <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span>menor<span style="color:#1f2328">,</span>r<span style="color:#1f2328">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> menor</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
   <button
@@ -281,6 +281,202 @@ style="height: 200px; width: auto;"></p>
   </button>
 </div>
 </div>
+</section><section>
+<h1>Memoização</h1><p>A idéia chave na programação dinâmica é a <strong>memoização</strong>.</p>
+<div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    <strong>Memoização</strong> (do inglês, <em>memoization</em>) é uma técnica de otimização que armazena os resultados de funções para reutilizá-los em chamadas futuras, evitando recálculos desnecessários.
+  </div>
+</div>
+</section><section>
+<h1>Aplicação da Memoização no programa do Troco</h1><p>Deve-se verificar se a tabela já contêm a solução para aquela instância do problema.</p>
+<p>Caso tiver, utilize a solução armazenada.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">if</span> soma <span style="color:#0550ae">in</span> tabela<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> tabela<span style="color:#1f2328">[</span>soma<span style="color:#1f2328">]</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Aplicação da Memoização no programa do Troco</h1><p>Caso contrário, calcule a solução. Após identificar a melhor solução para a determinada instância do problema, armazene a solução na tabela.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">resolver</span><span style="color:#1f2328">(</span>soma<span style="color:#1f2328">,</span>moedas<span style="color:#1f2328">,</span>tabela<span style="color:#0550ae">=</span><span style="color:#1f2328">{}):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> soma <span style="color:#0550ae">&lt;</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;inf&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> soma <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> soma <span style="color:#0550ae">in</span> tabela<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> tabela<span style="color:#1f2328">[</span>soma<span style="color:#1f2328">]</span>    
+</span></span><span style="display:flex;"><span>    menor <span style="color:#0550ae">=</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;inf&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> m <span style="color:#0550ae">in</span> moedas<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        r <span style="color:#0550ae">=</span> resolver<span style="color:#1f2328">(</span>soma<span style="color:#0550ae">-</span>m<span style="color:#1f2328">,</span> moedas<span style="color:#1f2328">,</span> tabela<span style="color:#1f2328">)</span> <span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>        menor <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span>menor<span style="color:#1f2328">,</span>r<span style="color:#1f2328">)</span> 
+</span></span><span style="display:flex;"><span>    tabela<span style="color:#1f2328">[</span>soma<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> menor
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> menor</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Implementação iterativa</h1><p>Implementação iterativa pode apresentar algumas vantagens como possuir uma implementação mais simples e uso constante de memória.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">resolver</span><span style="color:#1f2328">(</span>soma<span style="color:#1f2328">,</span>moedas<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    tabela<span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0550ae">0</span><span style="color:#1f2328">:</span><span style="color:#0550ae">0</span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> i <span style="color:#0550ae">in</span> <span style="color:#6639ba">range</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span>soma<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;inf&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> m <span style="color:#0550ae">in</span> moedas<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> i<span style="color:#0550ae">-</span>m <span style="color:#0550ae">&gt;=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>              tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span>tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">],</span>tabela<span style="color:#1f2328">[</span>i<span style="color:#0550ae">-</span>m<span style="color:#1f2328">]</span><span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> tabela<span style="color:#1f2328">[</span>soma<span style="color:#1f2328">]</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Construindo a solução</h1><p>Algumas vezes, um determinado problema solicita qual é sua a solução ótima. No problema do troco, é necessário uma estrutura de dados para armazenar a primeira moeda da solução que resolve o problema.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">resolver</span><span style="color:#1f2328">(</span>soma<span style="color:#1f2328">,</span>moedas<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    tabela<span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0550ae">0</span><span style="color:#1f2328">:</span><span style="color:#0550ae">0</span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    solucao<span style="color:#0550ae">=</span><span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> i <span style="color:#0550ae">in</span> <span style="color:#6639ba">range</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span>soma<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;inf&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> m <span style="color:#0550ae">in</span> moedas<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> i<span style="color:#0550ae">-</span>m <span style="color:#0550ae">&gt;=</span> <span style="color:#0550ae">0</span> <span style="color:#0550ae">and</span> tabela<span style="color:#1f2328">[</span>i<span style="color:#0550ae">-</span>m<span style="color:#1f2328">]</span><span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span> <span style="color:#0550ae">&lt;</span> tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>              tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span>tabela<span style="color:#1f2328">[</span>i<span style="color:#1f2328">],</span>tabela<span style="color:#1f2328">[</span>i<span style="color:#0550ae">-</span>m<span style="color:#1f2328">]</span><span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>              solucao<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> m
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Imprimir no terminal neste ponto</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> tabela<span style="color:#1f2328">[</span>soma<span style="color:#1f2328">]</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Construindo a solução</h1><p>Para apresentar a solução ótima no terminal.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>    s <span style="color:#0550ae">=</span> soma
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">print</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Solução: &#34;</span><span style="color:#1f2328">,</span>end<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span> s <span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">print</span><span style="color:#1f2328">(</span>solucao<span style="color:#1f2328">[</span>s<span style="color:#1f2328">],</span>end<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        s <span style="color:#0550ae">-=</span> solucao<span style="color:#1f2328">[</span>s<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">print</span><span style="color:#1f2328">()</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Exercícios</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Contando as soluções
+  </div>
+  <div class="beamer-block-content">
+    <p>Dado o problema do troco, crie uma solução utilizando a programação dinâmica que retorne a quantidade de soluções válidas.</p>
+<p><strong>Entrada:</strong> moedas = {1 ,3, 4}, soma = 5</p>
+<p><strong>Saída:</strong> 6</p>
+  </div>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1 + 1 + 1 + 1 + 1</td>
+          <td>3 + 1 + 1</td>
+      </tr>
+      <tr>
+          <td>1 + 1 + 3</td>
+          <td>1 + 4</td>
+      </tr>
+      <tr>
+          <td>1 + 3 +1</td>
+          <td>4 + 1</td>
+      </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>Exercícios</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Longest Increasing Subsequence (LIS)
+  </div>
+  <div class="beamer-block-content">
+    <p>Dada uma sequência de números inteiros, encontre o tamanho da maior subsequência estritamente crescente (não necessariamente contínua). Uma subsequência é formada removendo zero ou mais elementos da sequência original, sem alterar a ordem relativa dos elementos restantes. Crie uma solução utilizando programação dinâmica para determinar o comprimento da Longest Increasing Subsequence (LIS).</p>
+<p><strong>Entrada:</strong> sequência = {10, 22, 9, 33, 21, 50, 41, 60}</p>
+<p><strong>Saída:</strong> 5</p>
+  </div>
+</div>
+</section><section>
+<h1>Exercícios</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Longest Increasing Subsequence (LIS)
+  </div>
+  <div class="beamer-block-content">
+    <p><strong>Entrada:</strong> sequência = {10, 22, 9, 33, 21, 50, 41, 60}</p>
+<p><strong>Saída:</strong> 5</p>
+<p><strong>Explicação:</strong> A maior subsequência crescente possui comprimento <strong>5</strong>.</p>
+  </div>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>10 → 22 → 33 → 50 → 60</td>
+      </tr>
+      <tr>
+          <td>10 → 22 → 33 → 41 → 60</td>
+      </tr>
+  </tbody>
+</table>
 </section><section>
 <img src="/images/univille.svg" alt="Univille">
 <br>

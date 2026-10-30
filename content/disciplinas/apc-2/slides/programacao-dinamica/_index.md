@@ -413,7 +413,7 @@ def resolver(soma,moedas):
         return 0
     menor = float('inf')
     for m in moedas:
-        r = resolver(soma-m, moedas)
+        r = resolver(soma-m, moedas) + 1
         menor = min(menor,r)
     return menor
 ```
@@ -427,6 +427,150 @@ print("Resultado:",resultado)
 
 ___
 
+# Memoização
 
+A idéia chave na programação dinâmica é a **memoização**.
+
+
+{{% block titulo="Definição" %}}
+**Memoização** (do inglês, *memoization*) é uma técnica de otimização que armazena os resultados de funções para reutilizá-los em chamadas futuras, evitando recálculos desnecessários.
+{{% /block %}}
+
+___
+
+# Aplicação da Memoização no programa do Troco
+
+Deve-se verificar se a tabela já contêm a solução para aquela instância do problema. 
+
+Caso tiver, utilize a solução armazenada. 
+
+```python
+if soma in tabela:
+    return tabela[soma]
+```
+
+
+---
+
+# Aplicação da Memoização no programa do Troco
+
+Caso contrário, calcule a solução. Após identificar a melhor solução para a determinada instância do problema, armazene a solução na tabela.
+
+
+```python
+def resolver(soma,moedas,tabela={}):
+    if soma < 0:
+        return float('inf')
+    if soma == 0:
+        return 0
+    if soma in tabela:
+        return tabela[soma]    
+    menor = float('inf')
+    for m in moedas:
+        r = resolver(soma-m, moedas, tabela) + 1
+        menor = min(menor,r) 
+    tabela[soma] = menor
+    return menor
+```
+
+___
+
+# Implementação iterativa
+
+Implementação iterativa pode apresentar algumas vantagens como possuir uma implementação mais simples e uso constante de memória.
+
+```python
+def resolver(soma,moedas):
+    tabela={0:0}
+    for i in range(1,soma+1):
+        tabela[i] = float('inf')
+        for m in moedas:
+            if i-m >= 0:
+              tabela[i] = min(tabela[i],tabela[i-m]+1)
+    return tabela[soma]
+```
+
+
+___
+
+# Construindo a solução
+
+Algumas vezes, um determinado problema solicita qual é sua a solução ótima. No problema do troco, é necessário uma estrutura de dados para armazenar a primeira moeda da solução que resolve o problema.
+
+```python
+def resolver(soma,moedas):
+    tabela={0:0}
+    solucao={}
+    for i in range(1,soma+1):
+        tabela[i] = float('inf')
+        for m in moedas:
+            if i-m >= 0 and tabela[i-m]+ 1 < tabela[i]:
+              tabela[i] = min(tabela[i],tabela[i-m]+1)
+              solucao[i] = m
+    # Imprimir no terminal neste ponto
+    return tabela[soma]
+```
+___
+
+# Construindo a solução
+
+Para apresentar a solução ótima no terminal.
+```python
+    s = soma
+    print("Solução: ",end="")
+    while s > 0:
+        print(solucao[s],end="")
+        s -= solucao[s]
+    print()
+```
+
+---
+# Exercícios
+
+
+{{% block titulo="Contando as soluções" %}}
+Dado o problema do troco, crie uma solução utilizando a programação dinâmica que retorne a quantidade de soluções válidas.
+
+**Entrada:** moedas = {1 ,3, 4}, soma = 5
+
+**Saída:** 6
+{{% /block %}}
+
+|  |  |
+|---|---|
+|  1 + 1 + 1 + 1 + 1 | 3 + 1 + 1 |
+|  1 + 1 + 3 | 1 + 4 |
+|  1 + 3 +1 | 4 + 1 |
+___
+
+# Exercícios 
+
+{{% block titulo="Longest Increasing Subsequence (LIS)" %}}
+Dada uma sequência de números inteiros, encontre o tamanho da maior subsequência estritamente crescente (não necessariamente contínua). Uma subsequência é formada removendo zero ou mais elementos da sequência original, sem alterar a ordem relativa dos elementos restantes. Crie uma solução utilizando programação dinâmica para determinar o comprimento da Longest Increasing Subsequence (LIS).
+
+**Entrada:** sequência = {10, 22, 9, 33, 21, 50, 41, 60}
+
+**Saída:** 5
+{{% /block %}}
+
+___
+
+# Exercícios 
+
+{{% block titulo="Longest Increasing Subsequence (LIS)" %}}
+
+**Entrada:** sequência = {10, 22, 9, 33, 21, 50, 41, 60}
+
+**Saída:** 5
+
+
+**Explicação:** A maior subsequência crescente possui comprimento **5**.
+{{% /block %}}
+
+|  |  
+|---|
+| 10 → 22 → 33 → 50 → 60 | 
+| 10 → 22 → 33 → 41 → 60 |
+___ 
 
 {{% slide-contracapa %}}
