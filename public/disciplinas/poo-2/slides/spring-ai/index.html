@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<title>Spring AI</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/reveal-js/dist/reveal.css"><link rel="stylesheet" href="/reveal-js/dist/theme/serif.css" id="theme">
+<link rel="stylesheet" href="/highlight-js/default.min.css"><link rel="stylesheet" href="/css/univille.css" id="custom_css">
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><div class="capa-container">
+  <h1>Spring AI</h1>
+    <p>Programação Orientada a Objetos II</p>
+</div>
+<br>
+<p class="capa-autor">Prof. MSc. Leanderson André</p>
+<p class="capa-email">leandersonandre@univille.br</p>
+<br>
+<p class="capa-universidade">Universidade da Região de Joinville</p>
+</section><section>
+<h2>Spring AI<span class="hx:absolute hx:-mt-20" id="spring-ai"></span>
+    <a href="#spring-ai" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    Framework de aplicações para engenharia de IA. Seu objetivo é aplicar ao domínio da IA os princípios de design do ecossistema Spring, como portabilidade e modularidade, promovendo o uso de POJOs como blocos de construção de aplicações para IA.
+  </div>
+</div>
+</section><section>
+<h2>Spring AI<span class="hx:absolute hx:-mt-20" id="spring-ai-1"></span>
+    <a href="#spring-ai-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><img src="https://images.ctfassets.net/mnrwi97vnhts/4mda205vy509Dx3vGkMwFr/af520e66dc79fb80cd1bc129a11d6d23/spring-ai-integration-diagram-3.svg" height="300">
+<p>Em sua essência, o Spring AI aborda o desafio fundamental da integração de IA: conectar os <strong>Dados</strong> e as <strong>APIs</strong> da sua empresa aos <strong>Modelos de IA</strong>.</p>
+</section><section>
+<h2>Modelos e recursos do Spring AI<span class="hx:absolute hx:-mt-20" id="modelos-e-recursos-do-spring-ai"></span>
+    <a href="#modelos-e-recursos-do-spring-ai" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Spring AI fornece suporte para fornecedores de modelos de AI. Tipos de modelos inclui:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Modelos e tarefas</th>
+      <th>Recursos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><small>Chat Completion</small></td>
+      <td><small>Saídas estruturadas em POJOs</small></td>
+    </tr>
+    <tr>
+      <td><small>Embedding</small></td>
+      <td><small>Tool Calling</small></td>
+    </tr>
+    <tr>
+      <td><small>Text to Image</small></td>
+      <td><small>Moderação de conteúdo</small></td>
+    </tr>
+    <tr>
+      <td><small>Audio Transcription</small></td>
+      <td><small>RAG (Retrieval-Augmented Generation)</small></td>
+    </tr>
+    <tr>
+      <td><small>Text to Speech</small></td>
+      <td><small>Integração com bancos de dados vetoriais</small></td>
+    </tr>
+    <tr>
+      <td><small>Geração de áudio e vídeo</small></td>
+      <td><small>Entre outros recursos</small></td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>Inteligência Artificial Generativa</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    <p>IA Generativa ( do inglês, <em>Generative AI</em>) é um ramo da Inteligência Artificial capaz de criar novos conteúdos, como textos, imagens, áudios, vídeos e códigos, a partir de instruções ou exemplos fornecidos pelo usuário.</p>
+<p>Ela utiliza modelos treinados com grandes volumes de dados para aprender padrões e relações permitindo gerar conteúdos com base nesses aprendizados.</p>
+  </div>
+</div>
+</section><section>
+<h1>Relação entre a grande área da IA e IA Generativa</h1><div style="display:flex; justify-content:center; width:100%;">
+<svg viewBox="0 0 700 570" style="width:100%; max-width:700px; height:auto;">
+  <circle cx="350" cy="285" r="275" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="350" y="60" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e3a8a">Inteligência Artificial (IA)</text>
+  <circle cx="350" cy="305" r="225" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+  <text x="350" y="130" text-anchor="middle" font-size="17" font-weight="bold" fill="#1e40af">Machine Learning (ML)</text>
+  <circle cx="350" cy="325" r="175" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <text x="350" y="190" text-anchor="middle" font-size="16" font-weight="bold" fill="#166534">Deep Learning (DL)</text>
+  <circle cx="350" cy="365" r="125" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="350" y="265" text-anchor="middle" font-size="17" font-weight="bold" fill="#92400e">GenAI</text>
+  <g font-size="14" text-anchor="middle" fill="#92400e">
+    <rect x="285" y="278" width="130" height="29" rx="7" fill="white" stroke="#d97706"/>
+    <text x="350" y="298">LLMs (Texto)</text>
+    <rect x="285" y="313" width="130" height="29" rx="7" fill="white" stroke="#d97706"/>
+    <text x="350" y="333">Imagens</text>
+    <rect x="285" y="348" width="130" height="29" rx="7" fill="white" stroke="#d97706"/>
+    <text x="350" y="368">Áudio</text>
+    <rect x="285" y="383" width="130" height="29" rx="7" fill="white" stroke="#d97706"/>
+    <text x="350" y="403">Vídeo</text>
+    <rect x="285" y="418" width="130" height="29" rx="7" fill="white" stroke="#d97706"/>
+    <text x="350" y="438">Música</text>
+  </g>
+</svg>
+</div>
+</section><section>
+<h1>A magia das Inteligências Artificiais Generativas</h1><p>IA Generativa combina conceitos de geometria, álgebra linear, estatística e probabilidade com redes neurais para aprender padrões em grandes volumes de dados e gerar novos conteúdos.</p>
+<img src="https://i.ytimg.com/vi/JkoSAwJUwAo/hqdefault.jpg" height="300">
+</section><section>
+<h1>2017: Um marco na evolução da IA Generativa</h1><p>A atual revolução da IA Generativa tem um de seus principais marcos em 2017, com a publicação do artigo <a href="https://arxiv.org/abs/1706.03762"target="_blank" rel="noopener"><em>Attention Is All You Need</em></a>, por pesquisadores do Google, que apresentou a arquitetura Transformer.</p>
+</section><section>
+<h1>Arquitetura original do Transformer</h1><img src="https://arxiv.org/html/1706.03762v7/Figures/ModalNet-21.png" height="600">
+</section><section>
+<h1>Por que a IA Generativa ganhou tanta relevância recentemente?</h1><table>
+  <thead>
+    <tr>
+      <th>Fator</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><small>Avanços tecnológicos</small></td>
+      <td><small>Novas arquiteturas, como Transformers, e modelos LLMs.</small></td>
+    </tr>
+    <tr>
+      <td><small>Capacidade computacional</small></td>
+      <td><small>Evolução das GPUs e do processamento paralelo.</small></td>
+    </tr>
+    <tr>
+      <td><small>Disponibilidade de dados</small></td>
+      <td><small>Grandes volumes de dados para treinamento dos modelos.</small></td>
+    </tr>
+    <tr>
+      <td><small>Novas categorias de software</small></td>
+      <td><small>Assistentes inteligentes, geradores de conteúdo e agentes de IA.</small></td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>Spring AI</h1><p>Spring AI facilita o desenvolvimento de aplicações que integram recursos de Inteligência Artificial Generativa.</p>
+</section><section>
+<h1>Criando um projeto</h1><p>Crie um novo projeto spring com as dependências:</p>
+<ul>
+<li>Spring Web</li>
+<li>Spring Boot DevTools</li>
+<li>OpenAI</li>
+</ul>
+</section><section>
+<h1>Criando um projeto</h1><p>Configure o application.properties</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><pre><code>spring.ai.openai.api-key=SUA_CHAVE_DE_API
+spring.ai.openai.base-url=https://openrouter.ai/api/v1
+spring.ai.openai.chat.model=openrouter/free</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Criando uma chave de api</h1><p>O uso de modelos de Inteligência Artificial via API pode ser cobrado de acordo com a quantidade de tokens processados. Alguns provedores também disponibilizam modelos com utilização gratuita e limitações. Por exemplo a <a href="https://openrouter.ai"target="_blank" rel="noopener">OpenRouter</a>.</p>
+<p>Crie uma chave com data de expiração e limitação de créditos.</p>
+<p>Utilize as APIs com cuidado, e jamais, adicione o seu cartão de crédito!</p>
+</section><section>
+<h1>Criando um projeto</h1><img src="https://media.tenor.com/sLgNruA4tsgAAAAM/warning-lights.gif">
+<p>JAMAIS COMPARTILHA A SUA CHAVE API NA INTERNET, CHAT, WHATSAPP, EMAIL, REPOSITÓRIOS GITHUB, ETC.</p>
+<p>Se isso acontecer, revogue IMEDIATAMENTE a chave</p>
+</section><section>
+<h1>Criando um projeto</h1><p>Adicione o seguinte trecho a sua classe <strong>SpringAiDemoApplication:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#0550ae">@Bean</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#fff"> </span>CommandLineRunner<span style="color:#fff"> </span><span style="color:#6639ba">runner</span><span style="color:#1f2328">(</span>ChatClient<span style="color:#1f2328">.</span><span style="color:#1f2328">Builder</span><span style="color:#fff"> </span>builder<span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#cf222e">return</span><span style="color:#fff"> </span>args<span style="color:#fff"> </span><span style="color:#0550ae">-&gt;</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>ChatClient<span style="color:#fff"> </span>chatClient<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>builder<span style="color:#1f2328">.</span><span style="color:#1f2328">build</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>String<span style="color:#fff"> </span>response<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>chatClient<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#1f2328">.</span><span style="color:#1f2328">prompt</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Quantos lados tem um quadrado?&#34;</span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#1f2328">.</span><span style="color:#1f2328">call</span><span style="color:#1f2328">().</span><span style="color:#1f2328">content</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>response<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#1f2328">};</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<img src="/images/univille.svg" alt="Univille">
+<br>
+<p class="capa-autor">Prof. MSc. Leanderson André</p>
+<p class="capa-email">leandersonandre@univille.br</p>
+<br>
+<p class="capa-universidade">Universidade da Região de Joinville</p>
+</section>
+
+  
+
+
+</div>
+      <div id="slide-header"></div>
+
+<script>
+  window.addEventListener("load", function () {
+    const header = document.getElementById("slide-header");
+
+    if (!header || typeof Reveal === "undefined") {
+      console.error("Reveal.js ou slide-header não encontrado.");
+      return;
+    }
+
+    
+    document.body.appendChild(header);
+
+    function atualizarTituloSlide(event) {
+      const slide = event?.currentSlide || Reveal.getCurrentSlide();
+      const header = document.getElementById("slide-header");
+
+      if (!slide || !header) return;
+
+      
+      if (slide.querySelector(".capa-container")) {
+        header.style.display = "none";
+        return;
+      }
+
+      const titulo = slide.querySelector("h1, h2, h3, h4");
+
+      if (titulo) {
+        header.textContent = titulo.textContent.trim();
+        header.style.display = "flex";
+        titulo.classList.add("titulo-no-topo");
+      } else {
+        header.style.display = "none";
+      }
+    }
+
+    Reveal.on("ready", atualizarTituloSlide);
+    Reveal.on("slidechanged", atualizarTituloSlide);
+
+    
+    atualizarTituloSlide({});
+  });
+</script>
+
+    </div>
+<script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
+
+
+<script src="/reveal-js/dist/reveal.js"></script>
+
+
+  <script type="text/javascript" src="/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
+  
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = {"theme":"moon"};
+  var revealHugoPageParams = {"custom_css":"css/univille.css","theme":"serif"};
+
+  var revealHugoPlugins = {
+    
+    plugins: [RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]
+  };
+
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+  <script type="text/javascript" src="/mermaid.min_16862243754454536095.js"></script>
+  <script type="text/javascript">
+    mermaid.initialize({startOnLoad: false});
+    let render = (event) => {
+      let mermaidElems = event.currentSlide.querySelectorAll('.mermaid');
+      if (!mermaidElems.length){
+          return
+      }
+      mermaidElems.forEach(mermaidElem => {
+          let processed = mermaidElem.getAttribute('data-processed');
+          if (!processed){
+              
+              mermaid.init(undefined, mermaidElem);
+          }
+      });
+    };
+    
+    render({currentSlide: Reveal.getCurrentSlide()});
+
+    Reveal.on('slidechanged', render);
+    Reveal.on('ready', render);
+  </script>
+
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+  
+
+<script type="text/javascript" id="MathJax-script" async src="/tex-svg_7522271970123696654.js"></script>
+
+    
+    
+  </body>
+</html>

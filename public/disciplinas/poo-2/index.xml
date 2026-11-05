@@ -294,6 +294,216 @@ Apresente o tabuleiro do jogo da velha em uma página web.
     
     <item>
       <title>Spring AI</title>
+      <link>http://localhost:1313/disciplinas/poo-2/slides/spring-ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/disciplinas/poo-2/slides/spring-ai/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;capa-container&#34;&gt;
+  &lt;h1&gt;Spring AI&lt;/h1&gt;
+    &lt;p&gt;Programação Orientada a Objetos II&lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-autor&#34;&gt;Prof. MSc. Leanderson André&lt;/p&gt;
+&lt;p class=&#34;capa-email&#34;&gt;leandersonandre@univille.br&lt;/p&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-universidade&#34;&gt;Universidade da Região de Joinville&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Spring AI&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;spring-ai&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#spring-ai&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Definição
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    Framework de aplicações para engenharia de IA. Seu objetivo é aplicar ao domínio da IA os princípios de design do ecossistema Spring, como portabilidade e modularidade, promovendo o uso de POJOs como blocos de construção de aplicações para IA.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Spring AI&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;spring-ai-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#spring-ai-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;img src=&#34;https://images.ctfassets.net/mnrwi97vnhts/4mda205vy509Dx3vGkMwFr/af520e66dc79fb80cd1bc129a11d6d23/spring-ai-integration-diagram-3.svg&#34; height=&#34;300&#34;&gt;
+&lt;p&gt;Em sua essência, o Spring AI aborda o desafio fundamental da integração de IA: conectar os &lt;strong&gt;Dados&lt;/strong&gt; e as &lt;strong&gt;APIs&lt;/strong&gt; da sua empresa aos &lt;strong&gt;Modelos de IA&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Modelos e recursos do Spring AI&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;modelos-e-recursos-do-spring-ai&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#modelos-e-recursos-do-spring-ai&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Spring AI fornece suporte para fornecedores de modelos de AI. Tipos de modelos inclui:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Modelos e tarefas&lt;/th&gt;
+      &lt;th&gt;Recursos&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Chat Completion&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Saídas estruturadas em POJOs&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Embedding&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Tool Calling&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Text to Image&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Moderação de conteúdo&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Audio Transcription&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;RAG (Retrieval-Augmented Generation)&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Text to Speech&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Integração com bancos de dados vetoriais&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Geração de áudio e vídeo&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Entre outros recursos&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1&gt;Inteligência Artificial Generativa&lt;/h1&gt;&lt;div class=&#34;beamer-block&#34;&gt;
+  &lt;div class=&#34;beamer-block-title&#34;&gt;
+    Definição
+  &lt;/div&gt;
+  &lt;div class=&#34;beamer-block-content&#34;&gt;
+    &lt;p&gt;IA Generativa ( do inglês, &lt;em&gt;Generative AI&lt;/em&gt;) é um ramo da Inteligência Artificial capaz de criar novos conteúdos, como textos, imagens, áudios, vídeos e códigos, a partir de instruções ou exemplos fornecidos pelo usuário.&lt;/p&gt;
+&lt;p&gt;Ela utiliza modelos treinados com grandes volumes de dados para aprender padrões e relações permitindo gerar conteúdos com base nesses aprendizados.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Relação entre a grande área da IA e IA Generativa&lt;/h1&gt;&lt;div style=&#34;display:flex; justify-content:center; width:100%;&#34;&gt;
+&lt;svg viewBox=&#34;0 0 700 570&#34; style=&#34;width:100%; max-width:700px; height:auto;&#34;&gt;
+  &lt;circle cx=&#34;350&#34; cy=&#34;285&#34; r=&#34;275&#34; fill=&#34;#dbeafe&#34; stroke=&#34;#2563eb&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;text x=&#34;350&#34; y=&#34;60&#34; text-anchor=&#34;middle&#34; font-size=&#34;18&#34; font-weight=&#34;bold&#34; fill=&#34;#1e3a8a&#34;&gt;Inteligência Artificial (IA)&lt;/text&gt;
+  &lt;circle cx=&#34;350&#34; cy=&#34;305&#34; r=&#34;225&#34; fill=&#34;#bfdbfe&#34; stroke=&#34;#2563eb&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;text x=&#34;350&#34; y=&#34;130&#34; text-anchor=&#34;middle&#34; font-size=&#34;17&#34; font-weight=&#34;bold&#34; fill=&#34;#1e40af&#34;&gt;Machine Learning (ML)&lt;/text&gt;
+  &lt;circle cx=&#34;350&#34; cy=&#34;325&#34; r=&#34;175&#34; fill=&#34;#bbf7d0&#34; stroke=&#34;#16a34a&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;text x=&#34;350&#34; y=&#34;190&#34; text-anchor=&#34;middle&#34; font-size=&#34;16&#34; font-weight=&#34;bold&#34; fill=&#34;#166534&#34;&gt;Deep Learning (DL)&lt;/text&gt;
+  &lt;circle cx=&#34;350&#34; cy=&#34;365&#34; r=&#34;125&#34; fill=&#34;#fef3c7&#34; stroke=&#34;#d97706&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;text x=&#34;350&#34; y=&#34;265&#34; text-anchor=&#34;middle&#34; font-size=&#34;17&#34; font-weight=&#34;bold&#34; fill=&#34;#92400e&#34;&gt;GenAI&lt;/text&gt;
+  &lt;g font-size=&#34;14&#34; text-anchor=&#34;middle&#34; fill=&#34;#92400e&#34;&gt;
+    &lt;rect x=&#34;285&#34; y=&#34;278&#34; width=&#34;130&#34; height=&#34;29&#34; rx=&#34;7&#34; fill=&#34;white&#34; stroke=&#34;#d97706&#34;/&gt;
+    &lt;text x=&#34;350&#34; y=&#34;298&#34;&gt;LLMs (Texto)&lt;/text&gt;
+    &lt;rect x=&#34;285&#34; y=&#34;313&#34; width=&#34;130&#34; height=&#34;29&#34; rx=&#34;7&#34; fill=&#34;white&#34; stroke=&#34;#d97706&#34;/&gt;
+    &lt;text x=&#34;350&#34; y=&#34;333&#34;&gt;Imagens&lt;/text&gt;
+    &lt;rect x=&#34;285&#34; y=&#34;348&#34; width=&#34;130&#34; height=&#34;29&#34; rx=&#34;7&#34; fill=&#34;white&#34; stroke=&#34;#d97706&#34;/&gt;
+    &lt;text x=&#34;350&#34; y=&#34;368&#34;&gt;Áudio&lt;/text&gt;
+    &lt;rect x=&#34;285&#34; y=&#34;383&#34; width=&#34;130&#34; height=&#34;29&#34; rx=&#34;7&#34; fill=&#34;white&#34; stroke=&#34;#d97706&#34;/&gt;
+    &lt;text x=&#34;350&#34; y=&#34;403&#34;&gt;Vídeo&lt;/text&gt;
+    &lt;rect x=&#34;285&#34; y=&#34;418&#34; width=&#34;130&#34; height=&#34;29&#34; rx=&#34;7&#34; fill=&#34;white&#34; stroke=&#34;#d97706&#34;/&gt;
+    &lt;text x=&#34;350&#34; y=&#34;438&#34;&gt;Música&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;A magia das Inteligências Artificiais Generativas&lt;/h1&gt;&lt;p&gt;IA Generativa combina conceitos de geometria, álgebra linear, estatística e probabilidade com redes neurais para aprender padrões em grandes volumes de dados e gerar novos conteúdos.&lt;/p&gt;
+&lt;img src=&#34;https://i.ytimg.com/vi/JkoSAwJUwAo/hqdefault.jpg&#34; height=&#34;300&#34;&gt;
+&lt;hr&gt;
+&lt;h1&gt;2017: Um marco na evolução da IA Generativa&lt;/h1&gt;&lt;p&gt;A atual revolução da IA Generativa tem um de seus principais marcos em 2017, com a publicação do artigo &lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Attention Is All You Need&lt;/em&gt;&lt;/a&gt;, por pesquisadores do Google, que apresentou a arquitetura Transformer.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Arquitetura original do Transformer&lt;/h1&gt;&lt;img src=&#34;https://arxiv.org/html/1706.03762v7/Figures/ModalNet-21.png&#34; height=&#34;600&#34;&gt;
+&lt;hr&gt;
+&lt;h1&gt;Por que a IA Generativa ganhou tanta relevância recentemente?&lt;/h1&gt;&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Fator&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Avanços tecnológicos&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Novas arquiteturas, como Transformers, e modelos LLMs.&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Capacidade computacional&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Evolução das GPUs e do processamento paralelo.&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Disponibilidade de dados&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Grandes volumes de dados para treinamento dos modelos.&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;small&gt;Novas categorias de software&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Assistentes inteligentes, geradores de conteúdo e agentes de IA.&lt;/small&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1&gt;Spring AI&lt;/h1&gt;&lt;p&gt;Spring AI facilita o desenvolvimento de aplicações que integram recursos de Inteligência Artificial Generativa.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Criando um projeto&lt;/h1&gt;&lt;p&gt;Crie um novo projeto spring com as dependências:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Web&lt;/li&gt;
+&lt;li&gt;Spring Boot DevTools&lt;/li&gt;
+&lt;li&gt;OpenAI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Criando um projeto&lt;/h1&gt;&lt;p&gt;Configure o application.properties&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;spring.ai.openai.api-key=SUA_CHAVE_DE_API
+spring.ai.openai.base-url=https://openrouter.ai/api/v1
+spring.ai.openai.chat.model=openrouter/free&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1&gt;Criando uma chave de api&lt;/h1&gt;&lt;p&gt;O uso de modelos de Inteligência Artificial via API pode ser cobrado de acordo com a quantidade de tokens processados. Alguns provedores também disponibilizam modelos com utilização gratuita e limitações. Por exemplo a &lt;a href=&#34;https://openrouter.ai&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenRouter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Crie uma chave com data de expiração e limitação de créditos.&lt;/p&gt;
+&lt;p&gt;Utilize as APIs com cuidado, e jamais, adicione o seu cartão de crédito!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Criando um projeto&lt;/h1&gt;&lt;img src=&#34;https://media.tenor.com/sLgNruA4tsgAAAAM/warning-lights.gif&#34;&gt;
+&lt;p&gt;JAMAIS COMPARTILHA A SUA CHAVE API NA INTERNET, CHAT, WHATSAPP, EMAIL, REPOSITÓRIOS GITHUB, ETC.&lt;/p&gt;
+&lt;p&gt;Se isso acontecer, revogue IMEDIATAMENTE a chave&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Criando um projeto&lt;/h1&gt;&lt;p&gt;Adicione o seguinte trecho a sua classe &lt;strong&gt;SpringAiDemoApplication:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;@Bean&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;CommandLineRunner&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#6639ba&#34;&gt;runner&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;ChatClient&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;Builder&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;builder&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;args&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;ChatClient&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;chatClient&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;builder&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;      &lt;/span&gt;String&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;response&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt; &lt;/span&gt;chatClient&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;prompt&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0a3069&#34;&gt;&amp;#34;Quantos lados tem um quadrado?&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;call&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;();&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;    &lt;/span&gt;System&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;(&lt;/span&gt;response&lt;span style=&#34;color:#1f2328&#34;&gt;);&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;};&lt;/span&gt;&lt;span style=&#34;color:#fff&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1f2328&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copiar código&#34;
+    aria-label=&#34;Copiar código&#34;
+    data-copied-label=&#34;Copiado!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;img src=&#34;http://localhost:1313/images/univille.svg&#34; alt=&#34;Univille&#34;&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-autor&#34;&gt;Prof. MSc. Leanderson André&lt;/p&gt;
+&lt;p class=&#34;capa-email&#34;&gt;leandersonandre@univille.br&lt;/p&gt;
+&lt;br&gt;
+&lt;p class=&#34;capa-universidade&#34;&gt;Universidade da Região de Joinville&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Spring AI</title>
       <link>http://localhost:1313/disciplinas/poo-2/spring-ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
