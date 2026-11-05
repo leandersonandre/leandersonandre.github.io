@@ -1,0 +1,1225 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<title>Algoritmos Gulosos</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/reveal-js/dist/reveal.css"><link rel="stylesheet" href="/reveal-js/dist/theme/serif.css" id="theme">
+<link rel="stylesheet" href="/highlight-js/default.min.css"><link rel="stylesheet" href="/css/univille.css" id="custom_css">
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><div class="capa-container">
+  <h1>Algoritmos Gulosos</h1>
+    <p>Algoritmos e Programação de Computadores II</p>
+</div>
+<br>
+<p class="capa-autor">Prof. MSc. Leanderson André</p>
+<p class="capa-email">leandersonandre@univille.br</p>
+<br>
+<p class="capa-universidade">Universidade da Região de Joinville</p>
+</section><section>
+<h2>Algoritmos Gulosos<span class="hx:absolute hx:-mt-20" id="algoritmos-gulosos"></span>
+    <a href="#algoritmos-gulosos" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    Algoritmos Gulosos (do inglês, <em>Greedy Algorithms</em>) são uma <strong>Técnica de Design de Algoritmos</strong> que consiste em construir uma solução passo a passo, escolhendo, em cada etapa, a alternativa que parece ser a melhor naquele momento, sem reconsiderar as escolhas anteriores, com o objetivo de encontrar uma solução ótima para o problema.
+  </div>
+</div>
+</section><section>
+<h2>Algoritmos Gulosos<span class="hx:absolute hx:-mt-20" id="algoritmos-gulosos-1"></span>
+    <a href="#algoritmos-gulosos-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><img src="https://www.clker.com/cliparts/7/c/0/e/15168570801900545645low-hanging-fruit-clipart.hi.png" height="300">
+<p>Algoritmos gulosos utilizam a estratégia de <em>low hanging fruit</em>.</p>
+</section><section>
+<h2>Algoritmos Gulosos<span class="hx:absolute hx:-mt-20" id="algoritmos-gulosos-2"></span>
+    <a href="#algoritmos-gulosos-2" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Importante
+  </div>
+  <div class="beamer-block-content">
+    Não existem garantias que o algoritmo guloso irá encontrar a solução ótima do problema.
+  </div>
+</div>
+</section><section>
+<h2>Problema do Troco<span class="hx:absolute hx:-mt-20" id="problema-do-troco"></span>
+    <a href="#problema-do-troco" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Algoritmo Guloso
+  </div>
+  <div class="beamer-block-content">
+    Escolher sempre a maior moeda sem ultrapassar o valor alvo.
+  </div>
+</div>
+<p><strong>Exemplo:</strong> moedas = {1,2,5}, alvo = 12.</p>
+<p>
+
+<span class='fragment ' >Escolhido a moeda: 5 (restante: 7)<br></span>
+
+
+
+
+<span class='fragment ' >Escolhido a moeda: 5 (restante: 2)<br></span>
+
+
+
+
+<span class='fragment ' >Escolhido a moeda: 2 (restante: 0)<br></span>
+
+
+
+
+<span class='fragment ' ><b>Solução ótima encontrada: 3 moedas.</b></span>
+
+</p>
+</section><section>
+<h2>Problema do Troco<span class="hx:absolute hx:-mt-20" id="problema-do-troco-1"></span>
+    <a href="#problema-do-troco-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Algoritmo Guloso
+  </div>
+  <div class="beamer-block-content">
+    Escolher sempre a maior moeda sem ultrapassar o valor alvo.
+  </div>
+</div>
+<p><strong>Exemplo:</strong> moedas = {1,3,4}, alvo = 6.</p>
+<p>
+
+<span class='fragment ' >Escolhido a moeda: 4 (restante: 2)<br></span>
+
+
+
+
+<span class='fragment ' >Escolhido a moeda: 1 (restante: 1)<br></span>
+
+
+
+
+<span class='fragment ' >Escolhido a moeda: 1 (restante: 20)<br></span>
+
+
+
+
+<span class='fragment ' ><b>Solução encontrada. 3 moedas</b><br></span>
+
+
+
+
+<span class='fragment ' ><b>Solução ótima: 2 moedas ( 3 + 3).</b></span>
+
+</p>
+</section><section>
+<h2>Problema da Seleção de Atividades<span class="hx:absolute hx:-mt-20" id="problema-da-seleção-de-atividades"></span>
+    <a href="#problema-da-sele%c3%a7%c3%a3o-de-atividades" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Dado um conjunto de atividades = {a<sub>1</sub>, a<sub>2</sub>, &hellip;, a<sub>n</sub>}, em que cada atividade possui um horário de início e término, encontre o maior subconjunto de atividades que podem ser realizadas sem que haja sobreposição de horários.</p>
+</section><section>
+<h1>Problema da Seleção de Atividades</h1><p><strong>Exemplo:</strong> considere as seguintes atividades:</p>
+<table style="font-size: 0.7em; margin: auto;">
+  <thead>
+    <tr>
+      <th>Atividade</th>
+      <th>Início</th>
+      <th>Término</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>A</td><td>1</td><td>4</td></tr>
+    <tr><td>B</td><td>3</td><td>5</td></tr>
+    <tr><td>C</td><td>0</td><td>6</td></tr>
+    <tr><td>D</td><td>5</td><td>7</td></tr>
+    <tr><td>E</td><td>8</td><td>9</td></tr>
+    <tr><td>F</td><td>5</td><td>9</td></tr>
+  </tbody>
+</table>
+<p>Qual é o maior número de atividades que podem ser realizadas sem sobreposição de horários?</p>
+</section><section>
+<h1>Problema da Seleção de Atividades</h1><p><strong>3 atividades</strong></p>
+<p>A (1–4) + D (5–7) + E (8–9)</p>
+<table style="font-size: 0.7em; margin: auto;">
+  <thead>
+    <tr>
+      <th>Atividade</th>
+      <th>Início</th>
+      <th>Término</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>A</td><td>1</td><td>4</td></tr>
+    <tr><td>B</td><td>3</td><td>5</td></tr>
+    <tr><td>C</td><td>0</td><td>6</td></tr>
+    <tr><td>D</td><td>5</td><td>7</td></tr>
+    <tr><td>E</td><td>8</td><td>9</td></tr>
+    <tr><td>F</td><td>5</td><td>9</td></tr>
+  </tbody>
+</table>
+</section><section>
+<h2>Problema da Seleção de Atividades<span class="hx:absolute hx:-mt-20" id="problema-da-seleção-de-atividades-3"></span>
+    <a href="#problema-da-sele%c3%a7%c3%a3o-de-atividades-3" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Algoritmo Guloso
+  </div>
+  <div class="beamer-block-content">
+    Escolher sempre a atividade que termina primeiro, desde que não haja sobreposição com as atividades já selecionadas.
+  </div>
+</div>
+</section><section>
+<h2>Problema da Mochila Fracionária<span class="hx:absolute hx:-mt-20" id="problema-da-mochila-fracionária"></span>
+    <a href="#problema-da-mochila-fracion%c3%a1ria" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Dado um conjunto de itens = {i<sub>1</sub>, i<sub>2</sub>, &hellip;, i<sub>n</sub>}, em que cada item possui um peso e um valor associado, e uma mochila com capacidade máxima de peso, determine a quantidade de cada item que deve ser colocada na mochila para maximizar o valor total transportado, permitindo que os itens sejam divididos em frações.</p>
+</section><section>
+<h1>Problema da Mochila Fracionária</h1><p><strong>Exemplo:</strong> considere os seguintes itens e uma mochila com capacidade máxima de 50 kg:</p>
+<table style="font-size: 0.7em; margin: auto;">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Peso (kg)</th>
+      <th>Valor (R$)</th>
+      <th>Valor por kg (R$/kg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>A</td><td>10</td><td>60</td><td>6</td></tr>
+    <tr><td>B</td><td>20</td><td>100</td><td>5</td></tr>
+    <tr><td>C</td><td>30</td><td>120</td><td>4</td></tr>
+  </tbody>
+</table>
+<p>Qual é a melhor combinação de itens, considerando que eles podem ser divididos em frações, para maximizar o valor total transportado sem ultrapassar a capacidade da mochila?</p>
+</section><section>
+<h1>Problema da Mochila Fracionária</h1><p><strong>Valor máximo: R$ 240,00</strong></p>
+<p>A (10 kg) + B (20 kg) + 2/3 de C (20 kg)</p>
+<table style="font-size: 0.7em; margin: auto;">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Peso (kg)</th>
+      <th>Valor (R$)</th>
+      <th>Valor por kg (R$/kg)</th>
+      <th>Quantidade utilizada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>A</td><td>10</td><td>60</td><td>6</td><td>100%</td></tr>
+    <tr><td>B</td><td>20</td><td>100</td><td>5</td><td>100%</td></tr>
+    <tr><td>C</td><td>30</td><td>120</td><td>4</td><td>66,67%</td></tr>
+  </tbody>
+</table>
+<p><strong>Capacidade utilizada:</strong> 50 kg</p>
+<p><strong>Valor total:</strong> R\$60 + R\$100 + R\$80 = <strong>R$ 240,00</strong></p>
+</section><section>
+<h2>Problema da Mochila Fracionária<span class="hx:absolute hx:-mt-20" id="problema-da-mochila-fracionária-3"></span>
+    <a href="#problema-da-mochila-fracion%c3%a1ria-3" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Algoritmo Guloso
+  </div>
+  <div class="beamer-block-content">
+    Escolher sempre o item com maior valor por unidade de peso (R$/kg), adicionando-o à mochila até atingir sua capacidade. Se não houver espaço suficiente para o próximo item, adicionar apenas a fração que couber.
+  </div>
+</div>
+</section><section>
+<h1>Exercícios</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Exercício 1
+  </div>
+  <div class="beamer-block-content">
+    Dado o problema da seleção de atividades, crie a solução utilizando algoritmos gulosos.
+  </div>
+</div>
+<div class="beamer-block">
+  <div class="beamer-block-title">
+    Exercício 2
+  </div>
+  <div class="beamer-block-content">
+    Dado o problema da mochila fracionária, crie a solução  utilizando algoritmos gulosos.
+  </div>
+</div>
+</section><section>
+<img src="/images/univille.svg" alt="Univille">
+<br>
+<p class="capa-autor">Prof. MSc. Leanderson André</p>
+<p class="capa-email">leandersonandre@univille.br</p>
+<br>
+<p class="capa-universidade">Universidade da Região de Joinville</p>
+</section>
+
+  
+
+
+</div>
+      <div id="slide-header"></div>
+
+<script>
+  window.addEventListener("load", function () {
+    const header = document.getElementById("slide-header");
+
+    if (!header || typeof Reveal === "undefined") {
+      console.error("Reveal.js ou slide-header não encontrado.");
+      return;
+    }
+
+    
+    document.body.appendChild(header);
+
+    function atualizarTituloSlide(event) {
+      const slide = event?.currentSlide || Reveal.getCurrentSlide();
+      const header = document.getElementById("slide-header");
+
+      if (!slide || !header) return;
+
+      
+      if (slide.querySelector(".capa-container")) {
+        header.style.display = "none";
+        return;
+      }
+
+      const titulo = slide.querySelector("h1, h2, h3, h4");
+
+      if (titulo) {
+        header.textContent = titulo.textContent.trim();
+        header.style.display = "flex";
+        titulo.classList.add("titulo-no-topo");
+      } else {
+        header.style.display = "none";
+      }
+    }
+
+    Reveal.on("ready", atualizarTituloSlide);
+    Reveal.on("slidechanged", atualizarTituloSlide);
+
+    
+    atualizarTituloSlide({});
+  });
+</script>
+
+    </div>
+<script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
+
+
+<script src="/reveal-js/dist/reveal.js"></script>
+
+
+  <script type="text/javascript" src="/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
+  
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = {"theme":"moon"};
+  var revealHugoPageParams = {"custom_css":"css/univille.css","theme":"serif"};
+
+  var revealHugoPlugins = {
+    
+    plugins: [RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]
+  };
+
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+  <script type="text/javascript" src="/mermaid.min_16862243754454536095.js"></script>
+  <script type="text/javascript">
+    mermaid.initialize({startOnLoad: false});
+    let render = (event) => {
+      let mermaidElems = event.currentSlide.querySelectorAll('.mermaid');
+      if (!mermaidElems.length){
+          return
+      }
+      mermaidElems.forEach(mermaidElem => {
+          let processed = mermaidElem.getAttribute('data-processed');
+          if (!processed){
+              
+              mermaid.init(undefined, mermaidElem);
+          }
+      });
+    };
+    
+    render({currentSlide: Reveal.getCurrentSlide()});
+
+    Reveal.on('slidechanged', render);
+    Reveal.on('ready', render);
+  </script>
+
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+  
+
+<script type="text/javascript" id="MathJax-script" async src="/tex-svg_7522271970123696654.js"></script>
+
+    
+    
+  </body>
+</html>

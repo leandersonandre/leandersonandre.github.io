@@ -91,6 +91,10 @@ toc: false
   {{< card link="/disciplinas/apc-2/slides/programacao-dinamica" title="Programação Dinâmica" >}}
 {{< /cards >}}
 
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-2/slides/algoritmos-gulosos" title="Algoritmos Gulosos" >}}
+{{< /cards >}}
+
 <br>
 
 
