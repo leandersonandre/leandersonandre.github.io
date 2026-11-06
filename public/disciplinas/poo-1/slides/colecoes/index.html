@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<title>Coleções</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/reveal-js/dist/reveal.css"><link rel="stylesheet" href="/reveal-js/dist/theme/serif.css" id="theme">
+<link rel="stylesheet" href="/highlight-js/default.min.css"><link rel="stylesheet" href="/css/univille.css" id="custom_css">
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><div class="capa-container">
+  <h1>Coleções</h1>
+    <p>Programação Orientada a Objetos I</p>
+</div>
+<br>
+<p class="capa-autor">Prof. MSc. Leanderson André</p>
+<p class="capa-email">leandersonandre@univille.br</p>
+<br>
+<p class="capa-universidade">Universidade da Região de Joinville</p>
+</section><section>
+<h1>Coleções</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    Estruturas de dados utilizadas para armazenar e manipular grupos de elementos. O <strong>Java Collections Framework</strong> fornece interfaces e implementações para representar listas, conjuntos, filas e mapas, oferecendo operações como inserção, remoção, busca e iteração.
+  </div>
+</div>
+</section><section>
+<h1>Java Collections Framework</h1><div id="plantuml-1793971336695100000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nscale 0.8\n\ninterface Iterable\ninterface Collection\ninterface List\ninterface Set\ninterface Queue\ninterface Deque\n\nabstract class AbstractCollection\nabstract class AbstractList\nabstract class AbstractSequentialList\nabstract class AbstractSet\nabstract class AbstractQueue\n\nclass ArrayList\nclass LinkedList\nclass Vector\nclass Stack\n\nclass HashSet\nclass LinkedHashSet\nclass TreeSet\nclass EnumSet\n\nclass PriorityQueue\nclass ArrayDeque\n\nIterable \u003c|-- Collection\n\nCollection \u003c|-- List\nCollection \u003c|-- Set\nCollection \u003c|-- Queue\n\nQueue \u003c|-- Deque\n\nCollection \u003c|-- AbstractCollection\n\nAbstractCollection \u003c|-- AbstractList\nAbstractCollection \u003c|-- AbstractSet\nAbstractCollection \u003c|-- AbstractQueue\n\nAbstractList \u003c|-- AbstractSequentialList\n\nList \u003c|.. AbstractList\nSet \u003c|.. AbstractSet\nQueue \u003c|.. AbstractQueue\n\nAbstractList \u003c|-- ArrayList\nAbstractSequentialList \u003c|-- LinkedList\nAbstractList \u003c|-- Vector\nVector \u003c|-- Stack\n\nAbstractSet \u003c|-- HashSet\nHashSet \u003c|-- LinkedHashSet\nAbstractSet \u003c|-- TreeSet\nAbstractSet \u003c|-- EnumSet\n\nAbstractQueue \u003c|-- PriorityQueue\nAbstractQueue \u003c|-- ArrayDeque\nDeque \u003c|.. ArrayDeque\nDeque \u003c|.. LinkedList\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1793971336695100000").innerHTML = output;
+})();
+</script>
+
+</section><section>
+<h1>Java Collections Framework</h1><div id="plantuml-1793971336695125000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Map\nabstract class AbstractMap\n\nclass HashMap\nclass LinkedHashMap\nclass TreeMap\nclass WeakHashMap\nclass IdentityHashMap\nclass EnumMap\nclass Hashtable\n\n\nMap \u003c|.. AbstractMap\n\nAbstractMap \u003c|-- HashMap\nHashMap \u003c|-- LinkedHashMap\nAbstractMap \u003c|-- TreeMap\nAbstractMap \u003c|-- WeakHashMap\nAbstractMap \u003c|-- IdentityHashMap\nAbstractMap \u003c|-- EnumMap\nAbstractMap \u003c|-- Hashtable\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1793971336695125000").innerHTML = output;
+})();
+</script>
+
+</section><section>
+<h1>Listas</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    Estruturas de dados que representam sequências de elementos, nas quais a ordem é preservada, elementos podem se repetir e cada elemento possui uma posição.
+  </div>
+</div>
+</section><section>
+<h1>Listas</h1><p>Listas representam computacionalmente o <strong>conceito matemático de sequência</strong>.
+<br>
+<br></p>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">10</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">25</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">30</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">45</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">60</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">30</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">-5</div>
+  </div>
+  <div style="width: 65px; text-align: center; font-size: 14px; padding-top: 6px;">
+    Índice 0
+  </div>
+</div>
+</div>
+</section><section>
+<h1>Listas</h1><p>A api de listas é definida na interface <code>java.util.List</code>.</p>
+<div id="plantuml-1793971336695145000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nscale 1.2\n\ninterface List\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b add(index: int, element: E): void\n    \u002b get(index: int): E\n    \u002b set(index: int, element: E): E\n    \u002b remove(index: int): E\n    \u002b remove(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b contains(element: Object): boolean\n    \u002b clear(): void\n    \u002b indexOf(element: Object): int\n    \u002b lastIndexOf(element: Object): int\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1793971336695145000").innerHTML = output;
+})();
+</script>
+
+</section><section>
+<h1>Implementações de Listas</h1><table>
+  <thead>
+    <tr>
+      <th>Implementação</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ArrayList</code></td>
+      <td>Armazena os elementos em um arranjo dinâmico, simulando um arranjo de tamanho variável.</td>
+    </tr>
+    <tr>
+      <td><code>LinkedList</code></td>
+      <td>Armazena os elementos em nós duplamente encadeados, facilitando o acesso ao primeiro e ao último elemento.</td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>ArrayList</h1><p>Prefira utilizar a interface <code>List</code> para declarar variáveis, parâmetros e atributos, deixando a implementação (<code>ArrayList</code>) como detalhe da instanciação.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">import</span><span style="color:#fff"> </span><span style="color:#24292e">java.util.List</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span><span style="color:#fff"> </span><span style="color:#24292e">java.util.ArrayList</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Criação de uma lista</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Cria uma lista com capacidade inicial para 200 elementos.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">(</span>200<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Inferência de tipos (variável do tipo ArrayList)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>lista3<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Adicionar elementos na lista</h1><p>O método <code>add(elemento)</code>  adiciona o elemento ao final da lista.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>2<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>3<span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">2</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+</section><section>
+<h1>Adicionar elementos na lista</h1><p>O método <code>add(index,elemento)</code>  adiciona o elemento em uma posição específica da lista, deslocando os elementos seguintes.</p>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">2</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>List<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span>99<span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #FF7F7F; display: flex; align-items: center; justify-content: center;">99</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">2</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+</section><section>
+<h1>Obter um elemento pela posição</h1><p>O método <code>get(index)</code> retorna o elemento na posição <code>index</code>.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>List<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>elemento<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>elemento<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span>2</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Atualizar um elemento pela posição</h1><p>O método <code>set(index,elemento)</code> substitui o elemento na posição <code>index</code>. O método retorna o elemento substituído.</p>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">2</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>List<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>substituido<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">set</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span>99<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>substituido<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#57606a">// 2</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">));</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span>99</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #FF7F7F; display: flex; align-items: center; justify-content: center;">99</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+</section><section>
+<h1>Remover um elemento pela posição</h1><p>O método <code>remove(index)</code> remove o elemento na posição <code>index</code> e retorna o elemento removido. Os elementos seguintes são deslocados uma posição à esquerda.</p>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">2</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>List<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>removido<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">remove</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>removido<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#57606a">// 2</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">));</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span>3</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; gap: 0;">
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">1</div>
+    <div style="width: 65px; height: 55px; border: 1px solid #36834A; background: #F3F8F3; display: flex; align-items: center; justify-content: center;">3</div>
+  </div>
+</div>
+</div>
+</section><section>
+<h1>Remoção por elemento</h1><p>O método <code>remove(elemento)</code> remove a primeira ocorrência do elemento na lista e retorna <code>true</code> se a remoção for realizada. Os elementos seguintes são deslocados uma posição à esquerda.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>List<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">remove</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff">                  </span><span style="color:#57606a">// remove pela posição</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">remove</span><span style="color:#1f2328">(</span>Integer<span style="color:#1f2328">.</span><span style="color:#1f2328">valueOf</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">));</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span>remove<span style="color:#fff"> </span>pelo<span style="color:#fff"> </span>valor</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Métodos úteis</h1><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Verifica se a lista contém o elemento</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Retorna true ou false</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>contem<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">contains</span><span style="color:#1f2328">(</span>99<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Retorna o índice da primeira ocorrência</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Retorna -1 caso não encontre o elemento</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>indice<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">indexOf</span><span style="color:#1f2328">(</span>99<span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Métodos úteis</h1><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#57606a">// Retorna o índice da última ocorrência</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>indice<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">lastIndexOf</span><span style="color:#1f2328">(</span>99<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Retorna a quantidade de elementos</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>tamanho<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">size</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Verifica se a lista está vazia</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">boolean</span><span style="color:#fff"> </span>vazio<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">isEmpty</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Remove todos os elementos da lista</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">clear</span><span style="color:#1f2328">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Percorrer a lista</h1><p>A lista pode ser percorrida utilizando a estrutura de repetição <code>for</code> com índices, permitindo acessar cada elemento pela sua posição.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>i<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>0<span style="color:#1f2328">;</span><span style="color:#fff"> </span>i<span style="color:#fff"> </span><span style="color:#0550ae">&lt;</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">size</span><span style="color:#1f2328">();</span><span style="color:#fff"> </span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>i<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Percorrer a lista</h1><p>A estrutura <code>for-each</code> permite percorrer todos os elementos da lista, do primeiro ao último, sem a necessidade de utilizar índices.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>elemento<span style="color:#fff"> </span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">){</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>elemento<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Acesso a posições inválidas</h1><p>O acesso a uma posição inexistente da lista provoca a exceção <code>IndexOutOfBoundsException</code>.</p>
+<p>Um índice válido deve estar entre <code>0</code> e <code>size() - 1</code>.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>List<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>lista<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>ArrayList<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>List<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>10<span style="color:#1f2328">,</span><span style="color:#fff"> </span>20<span style="color:#1f2328">,</span><span style="color:#fff"> </span>30<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Índice negativo</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span><span style="color:#0550ae">-</span>1<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#57606a">// IndexOutOfBoundsException</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Índice igual ao tamanho da lista</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>3<span style="color:#1f2328">);</span><span style="color:#fff">  </span><span style="color:#57606a">// IndexOutOfBoundsException</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Índice maior que o tamanho da lista</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>10<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span>IndexOutOfBoundsException</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<img src="/images/univille.svg" alt="Univille">
+<br>
+<p class="capa-autor">Prof. MSc. Leanderson André</p>
+<p class="capa-email">leandersonandre@univille.br</p>
+<br>
+<p class="capa-universidade">Universidade da Região de Joinville</p>
+</section>
+
+  
+
+
+</div>
+      <div id="slide-header"></div>
+
+<script>
+  window.addEventListener("load", function () {
+    const header = document.getElementById("slide-header");
+
+    if (!header || typeof Reveal === "undefined") {
+      console.error("Reveal.js ou slide-header não encontrado.");
+      return;
+    }
+
+    
+    document.body.appendChild(header);
+
+    function atualizarTituloSlide(event) {
+      const slide = event?.currentSlide || Reveal.getCurrentSlide();
+      const header = document.getElementById("slide-header");
+
+      if (!slide || !header) return;
+
+      
+      if (slide.querySelector(".capa-container")) {
+        header.style.display = "none";
+        return;
+      }
+
+      const titulo = slide.querySelector("h1, h2, h3, h4");
+
+      if (titulo) {
+        header.textContent = titulo.textContent.trim();
+        header.style.display = "flex";
+        titulo.classList.add("titulo-no-topo");
+      } else {
+        header.style.display = "none";
+      }
+    }
+
+    Reveal.on("ready", atualizarTituloSlide);
+    Reveal.on("slidechanged", atualizarTituloSlide);
+
+    
+    atualizarTituloSlide({});
+  });
+</script>
+
+    </div>
+<script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
+
+
+<script src="/reveal-js/dist/reveal.js"></script>
+
+
+  <script type="text/javascript" src="/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
+  
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = {"theme":"moon"};
+  var revealHugoPageParams = {"custom_css":"css/univille.css","theme":"serif"};
+
+  var revealHugoPlugins = {
+    
+    plugins: [RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]
+  };
+
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+  <script type="text/javascript" src="/mermaid.min_16862243754454536095.js"></script>
+  <script type="text/javascript">
+    mermaid.initialize({startOnLoad: false});
+    let render = (event) => {
+      let mermaidElems = event.currentSlide.querySelectorAll('.mermaid');
+      if (!mermaidElems.length){
+          return
+      }
+      mermaidElems.forEach(mermaidElem => {
+          let processed = mermaidElem.getAttribute('data-processed');
+          if (!processed){
+              
+              mermaid.init(undefined, mermaidElem);
+          }
+      });
+    };
+    
+    render({currentSlide: Reveal.getCurrentSlide()});
+
+    Reveal.on('slidechanged', render);
+    Reveal.on('ready', render);
+  </script>
+
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+  
+
+<script type="text/javascript" id="MathJax-script" async src="/tex-svg_7522271970123696654.js"></script>
+
+    
+    
+  </body>
+</html>

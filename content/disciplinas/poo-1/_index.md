@@ -15,9 +15,21 @@ toc: false
   {{< card link="/disciplinas/poo-1/classes-abstratas-questoes" title="Questões sobre Classes Abstratas" >}}
   {{< card link="/disciplinas/poo-1/classes-anonimas-questoes" title="Questões sobre Classes Anônimas" >}}
   {{< card link="/disciplinas/poo-1/tipos-genericos-questoes" title="Questões sobre Tipos Genéricos" >}}
-  {{< card link="/disciplinas/poo-1/colecoes" title="Coleções" >}}
+  
+{{< /cards >}}
+<br>
+{{< cards cols="2" >}}
+  {{< card link="/disciplinas/poo-1/slides/colecoes" title="Coleções - Slides" >}}
+  {{< card link="/disciplinas/poo-1/colecoes" title="Coleções - Resumo" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
   {{< card link="/disciplinas/poo-1/colecoes-exercicios" title="Exercícios sobre Coleções" >}}
   {{< card link="/disciplinas/poo-1/colecoes-questoes" title="Questões sobre Coleções" >}}
+{{< /cards >}}
+
+<br>
+
+{{< cards cols="1" >}}
   {{< card link="/disciplinas/poo-1/imutabilidade" title="Imutabilidade" >}}
   {{< card link="/disciplinas/poo-1/imutabilidade-exercicios" title="Exercícios sobre Imutabilidade" >}}
   {{< card link="/disciplinas/poo-1/imutabilidade-questoes" title="Questões sobre Imutabilidade" >}}
