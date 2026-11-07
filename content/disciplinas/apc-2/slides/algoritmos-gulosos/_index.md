@@ -65,7 +65,7 @@ Escolher sempre a maior moeda sem ultrapassar o valor alvo.
 
 {{% fragment %}}Escolhido a moeda: 4 (restante: 2)<br>{{% /fragment %}}
 {{% fragment %}}Escolhido a moeda: 1 (restante: 1)<br>{{% /fragment %}}
-{{% fragment %}}Escolhido a moeda: 1 (restante: 20)<br>{{% /fragment %}}
+{{% fragment %}}Escolhido a moeda: 1 (restante: 0)<br>{{% /fragment %}}
 {{% fragment %}}<b>Solução encontrada. 3 moedas</b><br>{{% /fragment %}}
 {{% fragment %}}<b>Solução ótima: 2 moedas ( 3 + 3).</b>{{% /fragment %}}
 
