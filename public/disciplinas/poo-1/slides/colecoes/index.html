@@ -37,7 +37,7 @@
   </div>
 </div>
 </section><section>
-<h1>Java Collections Framework</h1><div id="plantuml-1793971336695100000"></div>
+<h1>Java Collections Framework</h1><div id="plantuml-1794258953601112000"></div>
 
 <script>
 (async function() {
@@ -50,12 +50,12 @@
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793971336695100000").innerHTML = output;
+  document.getElementById("plantuml-1794258953601112000").innerHTML = output;
 })();
 </script>
 
 </section><section>
-<h1>Java Collections Framework</h1><div id="plantuml-1793971336695125000"></div>
+<h1>Java Collections Framework</h1><div id="plantuml-1794258953601146000"></div>
 
 <script>
 (async function() {
@@ -68,7 +68,7 @@
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793971336695125000").innerHTML = output;
+  document.getElementById("plantuml-1794258953601146000").innerHTML = output;
 })();
 </script>
 
@@ -103,7 +103,7 @@
 </div>
 </section><section>
 <h1>Listas</h1><p>A api de listas é definida na interface <code>java.util.List</code>.</p>
-<div id="plantuml-1793971336695145000"></div>
+<div id="plantuml-1794258953601173000"></div>
 
 <script>
 (async function() {
@@ -116,7 +116,7 @@
   });
 
   const output = await res.text();
-  document.getElementById("plantuml-1793971336695145000").innerHTML = output;
+  document.getElementById("plantuml-1794258953601173000").innerHTML = output;
 })();
 </script>
 
@@ -460,6 +460,660 @@
   </button>
 </div>
 </div>
+</section><section>
+<h1>Conjuntos</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    Estruturas de dados que armazenam elementos distintos, sem estabelecer uma ordem entre eles.
+  </div>
+</div>
+</section><section>
+<h1>Conjuntos</h1><p>Conjuntos representam computacionalmente o <strong>conceito matemático de conjunto</strong>.</p>
+<br>
+<div style="display: flex; justify-content: center;">
+  <div style="
+    width: 260px;
+    height: 260px;
+    border: 2px solid #36834A;
+    border-radius: 50%;
+    background: #F3F8F3;
+    position: relative;
+  ">
+    <span style="position:absolute; top:25px; left:75px;">10</span>
+    <span style="position:absolute; top:55px; right:55px;">25</span>
+    <span style="position:absolute; top:115px; left:115px;">30</span>
+    <span style="position:absolute; bottom:55px; left:65px;">45</span>
+    <span style="position:absolute; bottom:35px; right:55px;">60</span>
+    <span style="position:absolute; top:-12px; left:35px; color:#36834A; font-size:20px;"></span>
+  </div>
+</div>
+</section><section>
+<h1>Conjuntos</h1><p>A api de conjuntos é definida na interface <code>java.util.Set</code>.</p>
+<div id="plantuml-1794258953601199000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nscale 1.2\n\ninterface Set\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b remove(element: Object): boolean\n    \u002b contains(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1794258953601199000").innerHTML = output;
+})();
+</script>
+
+</section><section>
+<h1>Implementações de Conjuntos</h1><table>
+  <thead>
+    <tr>
+      <th>Implementação</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>HashSet</code></td>
+      <td>Armazena elementos utilizando uma tabela hash, sem garantir a ordem dos elementos.</td>
+    </tr>
+    <tr>
+      <td><code>LinkedHashSet</code></td>
+      <td>Armazena elementos utilizando uma tabela hash, preservando a ordem de inserção.</td>
+    </tr>
+    <tr>
+      <td><code>TreeSet</code></td>
+      <td>Armazena elementos em uma árvore, mantendo-os ordenados.</td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>HashSet</h1><p>Prefira utilizar a interface <code>Hash</code> para declarar variáveis, parâmetros e atributos, deixando a implementação (<code>HashSet</code>) como detalhe da instanciação.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">import</span><span style="color:#fff"> </span><span style="color:#24292e">java.util.Set</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span><span style="color:#fff"> </span><span style="color:#24292e">java.util.HashSet</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Criação de um conjunto</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>Set<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashSet<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Inferência de tipos (variável do tipo HashSet)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>conjunto2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashSet<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Adicionar elementos no conjunto</h1><p>O método <code>add(elemento)</code>  adiciona o elemento no conjunto.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Set<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashSet<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>2<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>3<span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+  <div style="
+    width: 190px;
+    height: 190px;
+    border: 2px solid #36834A;
+    border-radius: 50%;
+    background: #F3F8F3;
+    position: relative;
+  ">
+    <div style="position: absolute; top: 40px; left: 45px;">1</div>
+    <div style="position: absolute; top: 75px; right: 40px;">2</div>
+    <div style="position: absolute; bottom: 40px; left: 85px;">3</div>
+  </div>
+</div>
+</section><section>
+<h1>Verificar se um elemento existe</h1><p>O método <code>contains(elemento)</code> retorna <code>true</code> se o conjunto contiver o elemento informado e <code>false</code> caso contrário.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Set<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashSet<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>Set<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>resultado1<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">contains</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff">  </span><span style="color:#57606a">// true</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>resultado2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">contains</span><span style="color:#1f2328">(</span>10<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span><span style="color:#cf222e">false</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+  <div style="
+    width: 190px;
+    height: 190px;
+    border: 2px solid #36834A;
+    border-radius: 50%;
+    background: #F3F8F3;
+    position: relative;
+  ">
+    <div style="position: absolute; top: 40px; left: 45px;">1</div>
+    <div style="position: absolute; top: 75px; right: 40px;">2</div>
+    <div style="position: absolute; bottom: 40px; left: 85px;">3</div>
+  </div>
+</div>
+</section><section>
+<h1>Remoção por elemento</h1><p>O método <code>remove(elemento)</code> remove o elemento do conjunto e retorna <code>true</code> se ele existir e for removido, ou <code>false</code> caso contrário.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Set<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashSet<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>Set<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>removido<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>lista<span style="color:#1f2328">.</span><span style="color:#1f2328">remove</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Métodos úteis</h1><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Retorna a quantidade de elementos</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>tamanho<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">size</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Verifica se a conjunto está vazia</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">boolean</span><span style="color:#fff"> </span>vazio<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">isEmpty</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Remove todos os elementos da conjunto</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">clear</span><span style="color:#1f2328">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Percorrer o conjunto</h1><p>A estrutura <code>for-each</code> permite percorrer todos os elementos do conjunto,  sem garantir uma ordem específica.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Set<span style="color:#0550ae">&lt;</span>Integer<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashSet<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span>Set<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span>3<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>elemento<span style="color:#fff"> </span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>conjunto<span style="color:#1f2328">){</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>elemento<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Mapas</h1><div class="beamer-block">
+  <div class="beamer-block-title">
+    Definição
+  </div>
+  <div class="beamer-block-content">
+    Os mapas são estruturas de dados que armazenam pares de elementos (chave, valor). Cada chave é única e utilizada para associar um determinado valor. Os valores podem se repetir.
+  </div>
+</div>
+</section><section>
+<h1>Mapas</h1><p>Conjuntos representam computacionalmente o <strong>conceito matemático de funções</strong>.</p>
+<br>
+<div style="display: flex; justify-content: center; align-items: center; gap: 55px;">
+  <!-- Chaves -->
+  <div style="text-align: center;">
+    <div style="color: #36834A; margin-bottom: 12px;">Chaves</div>
+    <div style="width: 110px; height: 250px; border: 2px solid #36834A; border-radius: 50%; background: #F3F8F3; position: relative;">
+      <span style="position:absolute; top:25px; left:48px;">1</span>
+      <span style="position:absolute; top:95px; left:48px;">2</span>
+      <span style="position:absolute; bottom:25px; left:48px;">3</span>
+    </div>
+  </div>
+  <!-- Associações -->
+  <div style="height: 250px; display: flex; flex-direction: column; justify-content: space-around; color: #36834A; font-size: 25px;">
+    <span>⟶</span>
+    <span>⟶</span>
+    <span>⟶</span>
+  </div>
+  <!-- Valores -->
+  <div style="text-align: center;">
+    <div style="color: #36834A; margin-bottom: 12px;">Valores</div>
+    <div style="width: 170px; height: 250px; border: 2px solid #36834A; border-radius: 50%; background: #F3F8F3; position: relative;">
+      <span style="position:absolute; top:25px; left:35px;">Ana</span>
+      <span style="position:absolute; top:95px; left:35px;">João</span>
+      <span style="position:absolute; bottom:25px; left:35px;">Maria</span>
+    </div>
+  </div>
+</div>
+</section><section>
+<h1>Mapas</h1><p>A api de mapas é definida na interface <code>java.util.Map</code>.</p>
+<div id="plantuml-1794258953601217000"></div>
+
+<script>
+(async function() {
+  const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nscale 1.2\n\ninterface Map\u003cK, V\u003e \u007b\n    \u002b put(key: K, value: V): V\n    \u002b get(key: Object): V\n    \u002b remove(key: Object): V\n    \u002b containsKey(key: Object): boolean\n    \u002b containsValue(value: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b keySet(): Set\u003cK\u003e\n    \u002b values(): Collection\u003cV\u003e\n    \u002b entrySet(): Set\u003cMap.Entry\u003cK,V\u003e\u003e\n\u007d\n\n@enduml\n`;
+
+  const res = await fetch("https://kroki.io/plantuml/svg", {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: diagram
+  });
+
+  const output = await res.text();
+  document.getElementById("plantuml-1794258953601217000").innerHTML = output;
+})();
+</script>
+
+</section><section>
+<h1>Implementações de Mapas</h1><table style="font-size: 0.8em;">
+  <thead>
+    <tr>
+      <th>Implementação</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>HashMap</code></td>
+      <td>Utiliza uma tabela hash, sem garantir a ordem dos elementos.</td>
+    </tr>
+    <tr>
+      <td><code>LinkedHashMap</code></td>
+      <td>Utiliza uma tabela hash, preservando a ordem de inserção.</td>
+    </tr>
+    <tr>
+      <td><code>TreeMap</code></td>
+      <td>Utiliza uma árvore, mantendo as chaves ordenadas.</td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>HashMap</h1><p>Prefira utilizar a interface <code>Map</code> para declarar variáveis, parâmetros e atributos, deixando a implementação (<code>HashMap</code>) como detalhe da instanciação.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#cf222e">import</span><span style="color:#fff"> </span><span style="color:#24292e">java.util.Map</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span><span style="color:#fff"> </span><span style="color:#24292e">java.util.HashMap</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Criação de uma mapa</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Integer representa o tipo de dados da chave</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// String representa o tipo de dados do valor</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Inferência de tipos (variável do tipo HashMap)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>mapa2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span>String<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Adicionar pares no mapa</h1><p>O método <code>add(chave,valor)</code>  adiciona o elemento no conjunto.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>2<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>3<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<table style="margin: auto; font-size: 20px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="color: #36834A;">Chaves</th>
+      <th></th>
+      <th style="color: #36834A;">Valores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; padding: 8px;">
+        <div style="border: 2px solid #36834A; background: #F3F8F3; padding: 8px 18px;">1</div>
+      </td>
+      <td style="color: #36834A; text-align: center; padding: 8px 25px;">⟶</td>
+      <td style="padding: 8px;">Argentina</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 8px;">
+        <div style="border: 2px solid #36834A; background: #F3F8F3; padding: 8px 18px;">2</div>
+      </td>
+      <td style="color: #36834A; text-align: center; padding: 8px 25px;">⟶</td>
+      <td style="padding: 8px;">Brasil</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 8px;">
+        <div style="border: 2px solid #36834A; background: #F3F8F3; padding: 8px 18px;">3</div>
+      </td>
+      <td style="color: #36834A; text-align: center; padding: 8px 25px;">⟶</td>
+      <td style="padding: 8px;">Chile</td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>Adicionar pares no mapa</h1><p>O mapa não permite duplicar a chave. Ao adicionar uma chave existente, seu valor é substituído.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>conjunto<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>conjunto<span style="color:#1f2328">.</span><span style="color:#1f2328">add</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff"> </span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<table style="margin: auto; font-size: 20px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="color: #36834A;">Chaves</th>
+      <th></th>
+      <th style="color: #36834A;">Valores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; padding: 8px;">
+        <div style="border: 2px solid #36834A; background: #F3F8F3; padding: 8px 18px;">1</div>
+      </td>
+      <td style="color: #36834A; text-align: center; padding: 8px 25px;">⟶</td>
+      <td style="padding: 8px;">Chile</td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h1>Obter o valor pela sua chave</h1><p>O método <code>get(chave)</code> retorna o valor associado a chave.  Caso a chave não exista no mapa, o método retorna <code>null</code>.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span><span style="color:#fff"> </span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>Map<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>3<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>2<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#57606a">// Brasil</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">get</span><span style="color:#1f2328">(</span>99<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span><span style="color:#cf222e">null</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Obter o valor pela sua chave</h1><p>O método <code>getOrDefault(chave,default)</code> retorna o valor associado à chave. Caso ela não exista no mapa, retorna o valor padrão informado.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span><span style="color:#fff"> </span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>Map<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>3<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">getOrDefault</span><span style="color:#1f2328">(</span>99<span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;País desconhecido&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// País desconhecido</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>valor<span style="color:#1f2328">);</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Verificar se existe uma chave</h1><p>O método <code>containsKey(chave)</code> verifica se a chave existe no mapa. Retorna <code>true</code> caso existir. Caso contrário retorna <code>false</code>.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span><span style="color:#fff"> </span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>Map<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>3<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor1<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">containsKey</span><span style="color:#1f2328">(</span>1<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#57606a">// true</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">containsKey</span><span style="color:#1f2328">(</span>2<span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span><span style="color:#cf222e">false</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Verificar se existe um valor</h1><p>O método <code>containsValue(valor)</code> verifica se o valor existe no mapa. Retorna <code>true</code> caso existir. Caso contrário retorna <code>false</code>.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span><span style="color:#fff"> </span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>Map<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>3<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor1<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">containsValue</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff">    </span><span style="color:#57606a">// true</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor2<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">containsValue</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Dinamarca&#34;</span><span style="color:#1f2328">);</span><span style="color:#fff"> </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span><span style="color:#cf222e">false</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Remover uma chave</h1><p>O método <code>remove(chave)</code> remove a chave do mapa e retorna o valor associado.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span><span style="color:#fff"> </span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>Map<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>3<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor1<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">remove</span><span style="color:#1f2328">(</span>2<span style="color:#1f2328">);</span><span style="color:#fff">    </span><span style="color:#0550ae">//</span><span style="color:#fff"> </span>Brasil</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Métodos úteis</h1><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Retorna a quantidade de elementos</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>tamanho<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">size</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Verifica se a conjunto está vazia</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">boolean</span><span style="color:#fff"> </span>vazio<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">isEmpty</span><span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Remove todos os elementos do mapa</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">clear</span><span style="color:#1f2328">();</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Percorrer o mapa</h1><p>A estrutura <code>for-each</code> permite percorrer todos os pares(chave,valor) do mapa,  sem garantir uma ordem específica.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span>Map<span style="color:#0550ae">&lt;</span>Integer<span style="color:#1f2328">,</span><span style="color:#fff"> </span>String<span style="color:#0550ae">&gt;</span><span style="color:#fff"> </span>mapa<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#cf222e">new</span><span style="color:#fff"> </span>HashMap<span style="color:#0550ae">&lt;&gt;</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>Map<span style="color:#1f2328">.</span><span style="color:#1f2328">of</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>1<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Argentina&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>2<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Brasil&#34;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>3<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;Chile&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Percorre os pares</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>par<span style="color:#fff"> </span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">entrySet</span><span style="color:#1f2328">()){</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>par<span style="color:#1f2328">.</span><span style="color:#1f2328">getKey</span><span style="color:#1f2328">());</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>par<span style="color:#1f2328">.</span><span style="color:#1f2328">getValue</span><span style="color:#1f2328">());</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Percorrer o mapa</h1><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Percorre as chaves</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>chave<span style="color:#fff"> </span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">keySet</span><span style="color:#1f2328">()){</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>chave<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">// Percorre os valores</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">var</span><span style="color:#fff"> </span>valor<span style="color:#fff"> </span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>mapa<span style="color:#1f2328">.</span><span style="color:#1f2328">values</span><span style="color:#1f2328">()){</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span>System<span style="color:#1f2328">.</span><span style="color:#1f2328">out</span><span style="color:#1f2328">.</span><span style="color:#1f2328">println</span><span style="color:#1f2328">(</span>valor<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copiar código"
+    aria-label="Copiar código"
+    data-copied-label="Copiado!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+</section><section>
+<h1>Comparação entre Lista, Conjunto e Mapa</h1><table style="font-size: 0.7em;">
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>List</th>
+      <th>Set</th>
+      <th>Map</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elementos repetidos</td>
+      <td>Sim</td>
+      <td>Não</td>
+      <td>Chaves não</td>
+    </tr>
+    <tr>
+      <td>Acesso por índice</td>
+      <td>Sim</td>
+      <td>Não</td>
+      <td>Não</td>
+    </tr>
+    <tr>
+      <td>Associação chave-valor</td>
+      <td>Não</td>
+      <td>Não</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>Ordem dos elementos</td>
+      <td>Preservada</td>
+      <td>Depende da implementação</td>
+      <td>Depende da implementação</td>
+    </tr>
+  </tbody>
+</table>
 </section><section>
 <img src="/images/univille.svg" alt="Univille">
 <br>
