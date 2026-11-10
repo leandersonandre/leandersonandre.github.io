@@ -811,14 +811,14 @@ ___
 
 # Adicionar pares no mapa
 
-O método `add(chave,valor)`  adiciona o elemento no conjunto.
+O método `put(chave,valor)`  adiciona o elemento no mapa.
 
 ```java
-Map<Integer,String> conjunto = new HashMap<>();
+Map<Integer,String> mapa = new HashMap<>();
 
-conjunto.add(1,"Argentina");
-conjunto.add(2,"Brasil");
-conjunto.add(3,"Chile");
+mapa.put(1,"Argentina");
+mapa.put(2,"Brasil");
+mapa.put(3,"Chile");
 
 ```
 <table style="margin: auto; font-size: 20px; border-collapse: collapse;">
@@ -861,11 +861,11 @@ ___
 O mapa não permite duplicar a chave. Ao adicionar uma chave existente, seu valor é substituído.
 
 ```java
-Map<Integer,String> conjunto = new HashMap<>();
+Map<Integer,String> mapa = new HashMap<>();
 
-conjunto.add(1,"Argentina");
-conjunto.add(1,"Brasil");
-conjunto.add(1,"Chile"); 
+mapa.put(1,"Argentina");
+mapa.put(1,"Brasil");
+mapa.put(1,"Chile"); 
 
 ```
 <table style="margin: auto; font-size: 20px; border-collapse: collapse;">
