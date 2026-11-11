@@ -14,6 +14,10 @@ toc: false
   {{< card link="/disciplinas/poo-2/spring-ai-exercicios" title="Exercícios sobre Spring AI" >}}
 {{< /cards >}}
 
+{{< cards cols="2" >}}
+  {{< card link="/disciplinas/poo-2/slides/spring-ai-saida-estruturada" title="Spring AI - Saída Estruturada" >}}
+{{< /cards >}}
+
 <br>
 <br>
 <br>
