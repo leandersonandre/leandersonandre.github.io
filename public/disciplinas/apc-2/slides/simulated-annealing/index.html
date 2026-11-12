@@ -34,10 +34,287 @@
     Definição
   </div>
   <div class="beamer-block-content">
-    <strong>Técnica de Design de Algoritmo</strong> que pode ser utilizada pra encontrar soluções ótima para problemas e contar o número de soluções.
+    <strong>Recozimento Simulado (Simulated Annealing):</strong> metaheurística de otimização inspirada no processo de aquecimento e resfriamento controlado de materiais, utilizado na metalurgia.
+  </div>
+</div>
+<p>Proposto por Kirkpatrick, Gelatt e Vecchi (1983).</p>
+</section><section>
+<h2>Simulated Annealing<span class="hx:absolute hx:-mt-20" id="simulated-annealing-1"></span>
+    <a href="#simulated-annealing-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Processo de recozimento de materiais metálicos.</p>
+<img  src="https://rs.jlccnc.com/static/image/blog/Knowledge-Hub/CNC-Machining-Fundamentals/Annealing-steel-slabs-in-the-hot-rolling-mill.jpg" height="400px">
+</section><section>
+<h2>Simulated Annealing<span class="hx:absolute hx:-mt-20" id="simulated-annealing-2"></span>
+    <a href="#simulated-annealing-2" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Aplicações
+  </div>
+  <div class="beamer-block-content">
+    <ul>
+<li><strong>Engenharia:</strong> otimização de circuitos, projetos e estruturas.</li>
+<li><strong>Medicina:</strong> planejamento de radioterapia e processamento de imagens médicas.</li>
+<li><strong>Pesquisa operacional:</strong> problemas de roteamento, escalonamento e alocação de recursos.</li>
+</ul>
   </div>
 </div>
 </section><section>
+<h2>Analogia com o recozimento<span class="hx:absolute hx:-mt-20" id="analogia-com-o-recozimento"></span>
+    <a href="#analogia-com-o-recozimento" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><table>
+  <thead>
+      <tr>
+          <th>Processo físico</th>
+          <th>Algoritmo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Temperatura</td>
+          <td>Temperatura de controle</td>
+      </tr>
+      <tr>
+          <td>Estado do material</td>
+          <td>Solução candidata</td>
+      </tr>
+      <tr>
+          <td>Energia do material</td>
+          <td>Função de custo</td>
+      </tr>
+      <tr>
+          <td>Resfriamento gradual</td>
+          <td>Redução da temperatura</td>
+      </tr>
+      <tr>
+          <td>Equilíbrio térmico</td>
+          <td>Estabilização da busca</td>
+      </tr>
+  </tbody>
+</table>
+</section><section>
+<h2>Analogia com o recozimento<span class="hx:absolute hx:-mt-20" id="analogia-com-o-recozimento-1"></span>
+    <a href="#analogia-com-o-recozimento-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><ul>
+<li><strong>Temperaturas elevadas:</strong> permitem maior mobilidade dos átomos, favorecendo a exploração de diferentes regiões do espaço de busca (diversificação).</li>
+<li><strong>Temperaturas baixas:</strong> reduzem a mobilidade dos átomos, favorecendo a estabilização em regiões promissoras (intensificação).</li>
+</ul>
+</section><section>
+<h2>Simulated Annealing<span class="hx:absolute hx:-mt-20" id="simulated-annealing-3"></span>
+    <a href="#simulated-annealing-3" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+    Características
+  </div>
+  <div class="beamer-block-content">
+    <ul>
+<li><strong>Solução única:</strong> trabalha com uma solução candidata por vez.</li>
+<li><strong>Iterativo:</strong> gera soluções vizinhas e atualiza a solução atual ao longo das iterações.</li>
+<li><strong>Espaço de busca:</strong> pode ser aplicado a problemas de otimização contínua e discreta.</li>
+</ul>
+  </div>
+</div>
+</section><section>
+<h2>Pseudocódigo<span class="hx:absolute hx:-mt-20" id="pseudocódigo"></span>
+    <a href="#pseudoc%c3%b3digo" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><pre>
+<b>x</b> ← solução inicial
+<b>E</b> ← custo(x)
+<b>T</b> ← temperatura inicial
+
+<b>enquanto</b> critério de parada não for atingido <b>faça</b>
+    T ← atualizar temperatura(T)
+
+    x' ← gerar vizinho(x)
+    E' ← custo(x')
+
+    ΔE ← E' - E
+
+    <b>se</b> ΔE < 0 <b>ou</b> aleatório(0,1) < exp(-ΔE/T) <b>então</b>
+        x ← x'
+        E ← E'
+    <b>fim se</b>
+<b>fim enquanto</b>
+
+<b>retornar</b> x
+</pre>
+</section><section>
+<h2>Geração da solução inicial<span class="hx:absolute hx:-mt-20" id="geração-da-solução-inicial"></span>
+    <a href="#gera%c3%a7%c3%a3o-da-solu%c3%a7%c3%a3o-inicial" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+  </div>
+  <div class="beamer-block-content">
+    <ul>
+<li><strong>Solução inicial:</strong> pode ser gerada aleatoriamente ou construída por meio de uma heurística.</li>
+<li><strong>Avaliação:</strong> calcula-se o custo da solução inicial.</li>
+<li><strong>Inicialização:</strong> a solução gerada passa a ser a solução atual e a melhor solução encontrada.</li>
+</ul>
+  </div>
+</div>
+</section><section>
+<h2>Critério de parada<span class="hx:absolute hx:-mt-20" id="critério-de-parada"></span>
+    <a href="#crit%c3%a9rio-de-parada" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+  </div>
+  <div class="beamer-block-content">
+    <p>O algoritmo pode encerrar sua execução quando uma das seguintes condições for atingida:</p>
+<ul>
+<li><strong>Temperatura mínima:</strong> a temperatura atinge um valor limite predefinido.</li>
+<li><strong>Número máximo de iterações:</strong> atinge-se o limite de iterações estabelecido.</li>
+<li><strong>Número de iterações sem melhoria:</strong> não ocorre melhoria na melhor solução encontrada após determinado número de iterações.</li>
+<li><strong>Tempo máximo:</strong> o tempo de execução atinge o limite estabelecido.</li>
+</ul>
+  </div>
+</div>
+</section><section>
+<h2>Atualização da temperatura<span class="hx:absolute hx:-mt-20" id="atualização-da-temperatura"></span>
+    <a href="#atualiza%c3%a7%c3%a3o-da-temperatura" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+  </div>
+  <div class="beamer-block-content">
+    A temperatura é reduzida gradualmente durante a execução do algoritmo, controlando a probabilidade de aceitação de soluções piores.
+  </div>
+</div>
+<p><strong>Resfriamento geométrico:</strong></p>
+<p>$$T_{k+1} = \alpha \cdot T_k$$</p>
+</section><section>
+<h2>Simulated Annealing<span class="hx:absolute hx:-mt-20" id="simulated-annealing-4"></span>
+    <a href="#simulated-annealing-4" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Onde:</p>
+<ul>
+<li>$T_k$: temperatura atual.</li>
+<li>$T_{k+1}$: nova temperatura.</li>
+<li>$\alpha$: taxa de resfriamento, com $0 &lt; \alpha &lt; 1$.</li>
+<li>$\alpha$ próximo de 1: resfriamento mais lento.</li>
+<li>$\alpha$ menor: resfriamento mais rápido.</li>
+</ul>
+</section><section>
+<h2>Geração do vizinho (perturbação)<span class="hx:absolute hx:-mt-20" id="geração-do-vizinho-perturbação"></span>
+    <a href="#gera%c3%a7%c3%a3o-do-vizinho-perturba%c3%a7%c3%a3o" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+  </div>
+  <div class="beamer-block-content">
+    <p>Consiste em modificar a solução atual para gerar uma nova solução candidata.</p>
+<ul>
+<li><strong>Problemas discretos:</strong> troca, inserção, remoção ou inversão de elementos.</li>
+<li><strong>Problemas contínuos:</strong> alteração dos valores das variáveis por meio de pequenas perturbações.</li>
+<li><strong>Vizinhança:</strong> conjunto de soluções que podem ser obtidas a partir da solução atual.</li>
+</ul>
+  </div>
+</div>
+</section><section>
+<h2>Perturbação em domínio contínuo<span class="hx:absolute hx:-mt-20" id="perturbação-em-domínio-contínuo"></span>
+    <a href="#perturba%c3%a7%c3%a3o-em-dom%c3%adnio-cont%c3%adnuo" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><div class="beamer-block">
+  <div class="beamer-block-title">
+  </div>
+  <div class="beamer-block-content">
+    A nova solução é gerada adicionando um ruído aleatório com distribuição normal à solução atual:
+  </div>
+</div>
+<p>$$x' = x + \epsilon$$</p>
+<p>$$\epsilon \sim \mathcal{N}(0,\sigma^2)$$</p>
+<p>Onde:</p>
+<ul>
+<li>$\epsilon$: perturbação aleatória.</li>
+<li>$\sigma$: desvio padrão, que controla a magnitude da perturbação.</li>
+</ul>
+</section><section>
+<h2>Aceitação de soluções<span class="hx:absolute hx:-mt-20" id="aceitação-de-soluções"></span>
+    <a href="#aceita%c3%a7%c3%a3o-de-solu%c3%a7%c3%b5es" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Diferentemente de uma busca local tradicional, o Simulated Annealing pode aceitar soluções que apresentam um custo maior.</p>
+<ul>
+<li><strong>Melhores soluções:</strong> sempre são aceitas.</li>
+<li><strong>Piores soluções:</strong> podem ser aceitas com determinada probabilidade.</li>
+<li><strong>Temperatura elevada:</strong> maior probabilidade de aceitar soluções piores.</li>
+<li><strong>Temperatura baixa:</strong> menor probabilidade de aceitar soluções piores.</li>
+</ul>
+</section><section>
+<h2>Probabilidade de aceitação<span class="hx:absolute hx:-mt-20" id="probabilidade-de-aceitação"></span>
+    <a href="#probabilidade-de-aceita%c3%a7%c3%a3o" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>A probabilidade de aceitar uma solução pior é calculada por:</p>
+<p>$$P(\text{aceitar}) = e^{-\frac{\Delta E}{T}}$$</p>
+</section><section>
+<h2>Probabilidade de aceitação<span class="hx:absolute hx:-mt-20" id="probabilidade-de-aceitação-1"></span>
+    <a href="#probabilidade-de-aceita%c3%a7%c3%a3o-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><p>Onde:</p>
+<ul>
+<li>$\Delta E$: aumento do custo da solução ($\Delta E &gt; 0$).</li>
+<li>$T$: temperatura atual.</li>
+<li>$e$: constante de Euler.</li>
+<li>Quanto maior a temperatura, maior a probabilidade de aceitar soluções piores.</li>
+<li>Quanto maior o aumento do custo, menor a probabilidade de aceitação.</li>
+</ul>
+</section><section>
+<h1>Parâmetros</h1><table style="font-size: 0.5em;">
+  <thead>
+    <tr>
+      <th>Parâmetro</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>T₀</code></td>
+      <td>Temperatura inicial do algoritmo.</td>
+    </tr>
+    <tr>
+      <td><code>Tmin</code></td>
+      <td>Temperatura mínima utilizada como critério de parada.</td>
+    </tr>
+    <tr>
+      <td><code>α</code></td>
+      <td>Taxa de resfriamento, utilizada para reduzir a temperatura.</td>
+    </tr>
+    <tr>
+      <td><code>k</code></td>
+      <td>Iteração atual do algoritmo.</td>
+    </tr>
+    <tr>
+      <td><code>x₀</code></td>
+      <td>Solução inicial do algoritmo.</td>
+    </tr>
+    <tr>
+      <td><code>E(x)</code></td>
+      <td>Função objetivo que avalia o custo de uma solução.</td>
+    </tr>
+    <tr>
+      <td><code>ΔE</code></td>
+      <td>Variação do custo entre a solução candidata e a solução atual.</td>
+    </tr>
+    <tr>
+      <td><code>ε</code></td>
+      <td>Perturbação aleatória utilizada para gerar vizinhos em problemas contínuos.</td>
+    </tr>
+    <tr>
+      <td><code>σ</code></td>
+      <td>Desvio padrão da distribuição normal, controla a intensidade da perturbação.</td>
+    </tr>
+    <tr>
+      <td><code>iterMax</code></td>
+      <td>Número máximo de iterações.</td>
+    </tr>
+    <tr>
+      <td><code>iterSemMelhoria</code></td>
+      <td>Limite de iterações consecutivas sem melhoria na melhor solução.</td>
+    </tr>
+    <tr>
+      <td><code>tempoMax</code></td>
+      <td>Tempo máximo de execução do algoritmo.</td>
+    </tr>
+  </tbody>
+</table>
+</section><section>
+<h2>Pseudocódigo<span class="hx:absolute hx:-mt-20" id="pseudocódigo-1"></span>
+    <a href="#pseudoc%c3%b3digo-1" class="subheading-anchor" aria-label="Link permanente para esta seção"></a></h2><pre>
+<b>x</b> ← solução inicial
+<b>E</b> ← custo(x)
+<b>T</b> ← temperatura inicial
+
+<b>enquanto</b> critério de parada não for atingido <b>faça</b>
+    T ← atualizar temperatura(T)
+
+    x' ← gerar vizinho(x)
+    E' ← custo(x')
+
+    ΔE ← E' - E
+
+    <b>se</b> ΔE < 0 <b>ou</b> aleatório(0,1) < exp(-ΔE/T) <b>então</b>
+        x ← x'
+        E ← E'
+    <b>fim se</b>
+<b>fim enquanto</b>
+
+<b>retornar</b> x
+</pre>
 </section><section>
 <img src="/images/univille.svg" alt="Univille">
 <br>
@@ -898,6 +1175,11 @@
   
 
   
+  
+
+  
+  
+    
   
 
   

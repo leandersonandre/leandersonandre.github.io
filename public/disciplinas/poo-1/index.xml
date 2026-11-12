@@ -47,7 +47,7 @@
 &lt;/div&gt;
 &lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;p&gt;Observe que o nome da classe abstrata está em itálico.
 O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto está em itálico.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1794419397738108000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270135948000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nabstract class Shape  \u007b\n  \u007babstract\u007d \u002barea() : double\n  \u002bgetName(): String\n\u007d\n\n@enduml\n`;
@@ -59,7 +59,7 @@ O método &lt;code&gt;area()&lt;/code&gt;  é um método abstrato, portanto est�
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397738108000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270135948000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -222,7 +222,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
         &lt;h2&gt;Definição&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;definição&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#defini%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Coleções são estruturas de dados utilizadas para armazenar e manipular grupos de objetos. O framework Collections do Java fornece interfaces e implementações prontas para representar listas, conjuntos e mapas, oferecendo operações como inserção, remoção, busca e iteração. As principais coleções da biblioteca padrão estão disponíveis no pacote &lt;code&gt;java.util&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Diagrama da API de coleções da linguagem Java.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1794419397743225000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270141048000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -235,11 +235,11 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397743225000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270141048000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
-&lt;div id=&#34;plantuml-1794419397743249000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270141065000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -252,7 +252,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397743249000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270141065000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -270,7 +270,7 @@ O Java possui a interface &lt;code&gt;List&lt;/code&gt; para definir a estrutura
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-02-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-02-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794419397743267000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794457270141081000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface List\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b add(index: int, element: E): void\n    \u002b get(index: int): E\n    \u002b set(index: int, element: E): E\n    \u002b remove(index: int): E\n    \u002b remove(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b contains(element: Object): boolean\n    \u002b clear(): void\n    \u002b indexOf(element: Object): int\n    \u002b lastIndexOf(element: Object): int\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\nclass ArrayList\u003cE\u003e \u007b\n    - elementData: Object[]\n    - size: int\n\n    \u002b ArrayList()\n    \u002b ArrayList(initialCapacity: int)\n\n    \u002b ensureCapacity(minCapacity: int): void\n    \u002b trimToSize(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n\u007d\n\nList \u003c|.r. ArrayList\n\n@enduml\n`;
@@ -282,7 +282,7 @@ O Java possui a interface &lt;code&gt;List&lt;/code&gt; para definir a estrutura
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397743267000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270141081000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-02-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-02-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -547,7 +547,7 @@ List &amp;lt;|.r. ArrayList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-03-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-03-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-03-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-03-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794419397743435000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794457270141226000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Set\u003cE\u003e \u007b\n    \u002b add(element: E): boolean\n    \u002b remove(element: Object): boolean\n    \u002b contains(element: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b iterator(): Iterator\u003cE\u003e\n    \u002b toArray(): Object[]\n\u007d\n\nclass HashSet\u003cE\u003e \u007b\n    - map: HashMap\u003cE, Object\u003e\n\n    \u002b HashSet()\n\n\u007d\n\nSet \u003c|.r. HashSet\n\n@enduml\n`;
@@ -559,7 +559,7 @@ List &amp;lt;|.r. ArrayList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397743435000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270141226000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-03-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-03-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -733,7 +733,7 @@ O &lt;code&gt;HashMap&lt;/code&gt; é a implementação mais comum, em que os el
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-04-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-04-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-04-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-04-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794419397743574000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794457270141343000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\ninterface Map\u003cK, V\u003e \u007b\n    \u002b put(key: K, value: V): V\n    \u002b get(key: Object): V\n    \u002b remove(key: Object): V\n    \u002b containsKey(key: Object): boolean\n    \u002b containsValue(value: Object): boolean\n    \u002b size(): int\n    \u002b isEmpty(): boolean\n    \u002b clear(): void\n    \u002b keySet(): Set\u003cK\u003e\n    \u002b values(): Collection\u003cV\u003e\n    \u002b entrySet(): Set\u003cMap.Entry\u003cK,V\u003e\u003e\n\u007d\n\nclass HashMap\u003cK, V\u003e \u007b\n    - table: Node\u003cK,V\u003e[]\n    - size: int\n    - loadFactor: float\n\n    \u002b HashMap()\n\n\u007d\n\nMap \u003c|.r. HashMap\n\n@enduml\n`;
@@ -745,7 +745,7 @@ O &lt;code&gt;HashMap&lt;/code&gt; é a implementação mais comum, em que os el
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397743574000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270141343000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-04-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-04-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML&lt;/p&gt;
@@ -1198,7 +1198,7 @@ Map &amp;lt;|.r. HashMap&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794419397780928000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794457270177506000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nenum Prioridade \u003c\u003cenumeration\u003e\u003e \u007b\n  BAIXA\n  MEDIA\n  ALTA\n  URGENTE\n\u007d\n\n@enduml\n`;
@@ -1210,7 +1210,7 @@ Map &amp;lt;|.r. HashMap&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397780928000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270177506000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
@@ -1744,7 +1744,7 @@ Implemente a interface e as classes apresentadas no diagrama abaixo, respeitando
 Considere que construtores, getters e setters não estão representados no diagrama, mas devem ser implementados quando necessário.
 Após a implementação, instancie objetos de cada classe e apresente no terminal os valores de área e perímetro correspondentes.
 
-&lt;div id=&#34;plantuml-1794419397782512000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270179044000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1757,7 +1757,7 @@ Após a implementação, instancie objetos de cada classe e apresente no termina
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397782512000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270179044000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1776,7 +1776,7 @@ Crie uma nova classe responsável por operações com objetos do tipo Shape.
 Nessa classe, implemente um método que receba uma lista de Shape e calcule a soma das áreas de todos os elementos. O método deve utilizar apenas a interface Shape (não usar instanceof).
 O resultado deve ser retornado como um valor do tipo double.
 
-&lt;div id=&#34;plantuml-1794419397782527000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270179064000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1789,7 +1789,7 @@ O resultado deve ser retornado como um valor do tipo double.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397782527000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270179064000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -1819,7 +1819,7 @@ Regras:
   &lt;li&gt;Considere que o fator será sempre positivo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div id=&#34;plantuml-1794419397782556000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270179078000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -1832,7 +1832,7 @@ Regras:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397782556000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270179078000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2224,7 +2224,7 @@ dos objetos.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;div id=&#34;plantuml-1794419397789276000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270186090000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2237,7 +2237,7 @@ dos objetos.&lt;/p&gt;
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397789276000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270186090000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2465,7 +2465,7 @@ dos objetos.&lt;/p&gt;
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794419397806378000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794457270202714000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Person \u007b\n     -name : String \u007breadOnly\u007d\n    \u002b Person(name : String)\n    \u002b name() : String\n\u007d\n\n@enduml\n`;
@@ -2477,7 +2477,7 @@ dos objetos.&lt;/p&gt;
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397806378000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270202714000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
@@ -2643,7 +2643,7 @@ dos objetos.&lt;/p&gt;
 &lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
   &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-01-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-01-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Diagrama&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-01-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-01-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;PlantUML&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794419397806525000&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;div id=&#34;plantuml-1794457270202833000&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
 (async function() {
   const diagram = `\n@startuml\n!theme plain\nskinparam shadowing false\nskinparam monochrome true\nskinparam classAttributeIconSize 0\nskinparam backgroundColor transparent\nhide circle\n\nclass Pessoa \u003c\u003crecord\u003e\u003e \u007b\n    nome : String\n    idade : int\n\u007d\n\n@enduml\n`;
@@ -2655,7 +2655,7 @@ dos objetos.&lt;/p&gt;
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397806525000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270202833000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-01-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-01-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Como criar o diagrama utilizando PlantUML.&lt;/p&gt;
@@ -2725,7 +2725,7 @@ Em vez de alterar objetos existentes, operações produzem novos objetos contend
 &lt;li&gt;Desacoplamento entre as classes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Representação em diagrama de classes da UML.&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;representação-em-diagrama-de-classes-da-uml&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1794419397808655000&#34;&gt;&lt;/div&gt;
+    &lt;a href=&#34;#representa%c3%a7%c3%a3o-em-diagrama-de-classes-da-uml&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div id=&#34;plantuml-1794457270204965000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2738,7 +2738,7 @@ Em vez de alterar objetos existentes, operações produzem novos objetos contend
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397808655000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270204965000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2868,7 +2868,7 @@ No entanto, a partir do Java 8, interfaces também podem possuir métodos defaul
 A conversão do objeto para um tipo que ele não pertença causará o erro de &lt;strong&gt;ClassCastException&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Múltiplas realizações de interface&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;múltiplas-realizações-de-interface&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#m%c3%baltiplas-realiza%c3%a7%c3%b5es-de-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Uma classe pode realizar a implementação de múltiplas interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1794419397808666000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270204976000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2881,7 +2881,7 @@ A conversão do objeto para um tipo que ele não pertença causará o erro de &l
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397808666000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270204976000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -2943,7 +2943,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
 &lt;/div&gt;
 &lt;h3&gt;Herança de interfaces&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herança-de-interfaces&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#heran%c3%a7a-de-interfaces&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Link permanente para esta seção&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As interfaces podem realizar uma ou múltiplas heranças de outras interfaces.&lt;/p&gt;
-&lt;div id=&#34;plantuml-1794419397808675000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270204985000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -2956,7 +2956,7 @@ Quando esses métodos possuem implementação (default), podem ocorrer conflitos
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397808675000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270204985000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4494,7 +4494,7 @@ Classes abstratas podem possuir construtores que serão utilizados pelas subclas
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876523000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271616000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4507,7 +4507,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876523000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271616000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4578,7 +4578,7 @@ A palavra &lt;code&gt;abstract&lt;/code&gt; indica uma classe abstrata.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876561000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271658000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4591,7 +4591,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876561000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271658000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4661,7 +4661,7 @@ O diagrama indica retorno do tipo &lt;code&gt;double&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876599000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271695000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4674,7 +4674,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876599000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271695000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4745,7 +4745,7 @@ A notação &lt;code&gt;{abstract}&lt;/code&gt; indica que o método é abstrato
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876637000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271735000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4758,7 +4758,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876637000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271735000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4829,7 +4829,7 @@ O tipo de retorno aparece após os dois pontos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876673000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271786000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4842,7 +4842,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876673000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271786000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -4913,7 +4913,7 @@ Apenas o método &lt;code&gt;calcularSalario()&lt;/code&gt; está marcado como a
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876715000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271823000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -4926,7 +4926,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876715000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271823000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5032,7 +5032,7 @@ O método é abstrato, público e não possui implementação.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876762000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271876000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5045,7 +5045,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876762000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271876000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5116,7 +5116,7 @@ O método está marcado como abstrato e possui retorno boolean.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876798000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271914000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5129,7 +5129,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876798000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271914000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5200,7 +5200,7 @@ A seta de generalização indica que Circulo herda de Figura.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876835000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271951000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5213,7 +5213,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876835000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271951000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5284,7 +5284,7 @@ O método recebe um parâmetro chamado &lt;code&gt;valor&lt;/code&gt; do tipo &l
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397876871000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270271989000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5297,7 +5297,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876871000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270271989000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5403,7 +5403,7 @@ O método recebe um parâmetro double e retorna boolean.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique a alternativa incorreta.
 
-&lt;div id=&#34;plantuml-1794419397876918000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270272037000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5416,7 +5416,7 @@ Analise o diagrama UML abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876918000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270272037000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -5485,7 +5485,7 @@ Métodos abstratos não possuem implementação.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1794419397876955000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270272075000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -5498,7 +5498,7 @@ Analise o diagrama UML abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397876955000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270272075000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6297,7 +6297,7 @@ O método &lt;code&gt;run()&lt;/code&gt; imprime a mensagem &#34;Executando&#34;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397877370000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270272515000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6310,7 +6310,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397877370000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270272515000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6381,7 +6381,7 @@ A interface define apenas o método &lt;code&gt;run()&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397877422000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270272553000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6394,7 +6394,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397877422000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270272553000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6543,7 +6543,7 @@ A interface Comparator define o método &lt;code&gt;compare()&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397877488000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270272627000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6556,7 +6556,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397877488000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270272627000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -6627,7 +6627,7 @@ O diagrama indica retorno do tipo &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397877522000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270272665000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -6640,7 +6640,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397877522000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270272665000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7378,7 +7378,7 @@ public class Livro{
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1794419397877945000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273082000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7391,7 +7391,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397877945000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273082000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7510,7 +7510,7 @@ O diagrama indica atributos privados e método público sem parâmetros com reto
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1794419397877991000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273133000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7523,7 +7523,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397877991000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273133000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7638,7 +7638,7 @@ O diagrama mostra atributos públicos sem métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1794419397878036000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273183000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7651,7 +7651,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878036000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273183000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7766,7 +7766,7 @@ O método é público, recebe parâmetro e não retorna valor, atualizando o sal
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1794419397878084000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273233000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7779,7 +7779,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878084000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273233000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -7901,7 +7901,7 @@ Construtor com parâmetros e atributos privados.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1794419397878133000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273297000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -7914,7 +7914,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878133000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273297000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -8033,7 +8033,7 @@ Getter e setter com atributo privado.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo e identifique o código Java correspondente.
 
-&lt;div id=&#34;plantuml-1794419397878182000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273365000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -8046,7 +8046,7 @@ Analise o diagrama UML abaixo e identifique o código Java correspondente.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878182000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273365000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9389,7 +9389,7 @@ Neste caso o método &lt;code&gt;b()&lt;/code&gt; é chamado, retornando &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa incorreta. 
 
-&lt;div id=&#34;plantuml-1794419397878802000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270273993000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9402,7 +9402,7 @@ Analise o diagrama abaixo e identifique a alternativa incorreta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878802000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270273993000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9476,7 +9476,7 @@ O diagrama mostra apenas os atributos &lt;code&gt;largura&lt;/code&gt; e &lt;cod
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397878851000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274038000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9489,7 +9489,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878851000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274038000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9563,7 +9563,7 @@ O diagrama mostra um atributo &lt;code&gt;nome&lt;/code&gt; do tipo &lt;code&gt;
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397878915000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274082000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9576,7 +9576,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878915000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274082000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9650,7 +9650,7 @@ O método  possui retorno do tipo &lt;code&gt;String&lt;/code&gt;, como indicado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397878957000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274128000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9663,7 +9663,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397878957000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274128000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9737,7 +9737,7 @@ O diagrama mostra que o método retorna &lt;code&gt;String&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397879000000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274178000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9750,7 +9750,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397879000000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274178000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9824,7 +9824,7 @@ O diagrama mostra que o método retorna &lt;code&gt;int&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397879038000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274224000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9837,7 +9837,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397879038000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274224000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9911,7 +9911,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397879076000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274268000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -9924,7 +9924,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397879076000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274268000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -9998,7 +9998,7 @@ Nenhuma das alternativas anteriores está correta.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397879116000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274317000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10011,7 +10011,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397879116000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274317000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -10085,7 +10085,7 @@ A classe F não possui métodos.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397879158000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274363000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10098,7 +10098,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397879158000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274363000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -10172,7 +10172,7 @@ O atributo &lt;code&gt;b&lt;/code&gt; é do tipo &lt;code&gt;boolean&lt;/code&gt
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a alternativa correta. 
 
-&lt;div id=&#34;plantuml-1794419397879198000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270274408000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -10185,7 +10185,7 @@ Analise o diagrama abaixo e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397879198000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270274408000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12534,7 +12534,7 @@ O objeto é criado com valor padrão 0. Em seguida, o método setA(5) é chamado
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo c. 
 
-&lt;div id=&#34;plantuml-1794419397884073000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279374000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12547,7 +12547,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo c.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884073000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279374000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12620,7 +12620,7 @@ Em diagramas UML, o símbolo &#34;-&#34; indica visibilidade privada. Portanto, 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a visibilidade do atributo a. 
 
-&lt;div id=&#34;plantuml-1794419397884120000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279424000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12633,7 +12633,7 @@ Analise o diagrama abaixo e identifique a visibilidade do atributo a.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884120000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279424000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12706,7 +12706,7 @@ Em UML, o símbolo &#34;+&#34; indica visibilidade pública. Portanto, o atribut
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe H na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1794419397884164000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279470000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12719,7 +12719,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe H na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884164000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279470000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12792,7 +12792,7 @@ O diagrama indica ambos os atributos com símbolo &#34;+&#34;, ou seja, público
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1794419397884207000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279513000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12805,7 +12805,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884207000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279513000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12878,7 +12878,7 @@ O diagrama indica método público com retorno double. Em Java, métodos com ret
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1794419397884247000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279560000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12891,7 +12891,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884247000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279560000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -12964,7 +12964,7 @@ O diagrama indica método público com parâmetro inteiro e sem retorno. Em Java
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1794419397884289000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279604000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -12977,7 +12977,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884289000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279604000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13050,7 +13050,7 @@ O diagrama mostra método privado com parâmetro inteiro e sem retorno (void), p
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo e identifique a definição correta da classe J na linguagem Java. 
 
-&lt;div id=&#34;plantuml-1794419397884337000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270279651000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13063,7 +13063,7 @@ Analise o diagrama abaixo e identifique a definição correta da classe J na lin
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397884337000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270279651000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -13800,7 +13800,7 @@ A variável possui tipo Moeda.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397886749000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270282365000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -13813,7 +13813,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397886749000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270282365000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14666,7 +14666,7 @@ O valor ALTA foi associado ao código 2.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397887129000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270282805000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14679,7 +14679,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397887129000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270282805000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14795,7 +14795,7 @@ O diagrama representa uma enumeração chamada Moeda.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397887176000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270282858000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14808,7 +14808,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397887176000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270282858000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -14882,7 +14882,7 @@ O diagrama mostra explicitamente um método público chamado &lt;code&gt;getCodi
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise a UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397887219000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270282902000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -14895,7 +14895,7 @@ Analise a UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397887219000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270282902000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15383,7 +15383,7 @@ Identifique o símbolo da UML que representa a visibilidade de pacote (package).
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique a alternativa correta.
 
-&lt;div id=&#34;plantuml-1794419397889082000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285006000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15396,7 +15396,7 @@ Analise o diagrama e identifique a alternativa correta.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889082000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285006000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
  
@@ -15469,7 +15469,7 @@ A linha com triângulo aberto (`--|&gt;`) no diagrama UML representa uma relaç�
     &lt;div class=&#34;questao-body&#34;&gt; 
 Analise o diagrama e identifique as classes que estão em um relacionamento de Herança.
 
-&lt;div id=&#34;plantuml-1794419397889125000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285052000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15482,7 +15482,7 @@ Analise o diagrama e identifique as classes que estão em um relacionamento de H
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889125000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285052000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15568,7 +15568,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889171000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285101000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15581,7 +15581,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889171000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285101000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15592,7 +15592,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889184000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285123000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15605,7 +15605,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889184000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285123000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15616,7 +15616,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889197000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285138000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15629,7 +15629,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889197000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285138000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15640,7 +15640,7 @@ class Cachorro extends Animal { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889210000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285166000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15653,7 +15653,7 @@ class Cachorro extends Animal { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889210000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285166000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15729,7 +15729,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889240000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285200000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15742,7 +15742,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889240000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285200000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15753,7 +15753,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889253000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285227000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15766,7 +15766,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889253000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285227000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15777,7 +15777,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889266000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285241000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15790,7 +15790,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889266000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285241000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15801,7 +15801,7 @@ class C extends B { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889279000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285254000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15814,7 +15814,7 @@ class C extends B { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889279000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285254000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15887,7 +15887,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;A.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889309000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285285000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15900,7 +15900,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889309000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285285000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15911,7 +15911,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;B.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889322000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285299000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15924,7 +15924,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889322000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285299000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15935,7 +15935,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;C.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889334000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285313000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15948,7 +15948,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889334000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285313000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -15959,7 +15959,7 @@ class Moto extends Veiculo { }
 &lt;li class=&#34;alternativa&#34;&gt;
     &lt;span class=&#34;alternativa-letra&#34;&gt;D.&lt;/span&gt;
     
-&lt;div id=&#34;plantuml-1794419397889347000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270285326000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -15972,7 +15972,7 @@ class Moto extends Veiculo { }
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397889347000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270285326000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19241,7 +19241,7 @@ O compilador gera automaticamente diversos métodos úteis para records.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397890920000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270286993000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19254,7 +19254,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397890920000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270286993000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19325,7 +19325,7 @@ O diagrama indica explicitamente uma interface.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397890958000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270287033000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19338,7 +19338,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397890958000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270287033000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19409,7 +19409,7 @@ O retorno indicado no diagrama é do tipo &lt;code&gt;double&lt;/code&gt;.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397890994000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270287071000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19422,7 +19422,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397890994000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270287071000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19493,7 +19493,7 @@ A linha tracejada com triângulo indica implementação de interface.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397891029000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270287117000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19506,7 +19506,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397891029000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270287117000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -19577,7 +19577,7 @@ O método possui os parâmetros &lt;code&gt;login&lt;/code&gt; e &lt;code&gt;sen
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397891064000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270287160000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -19590,7 +19590,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397891064000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270287160000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -20975,7 +20975,7 @@ O código cliente pode trabalhar com a interface sem conhecer a implementação 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397891612000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270287773000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -20988,7 +20988,7 @@ Analise o UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397891612000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270287773000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22089,7 +22089,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895825000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292357000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22102,7 +22102,7 @@ Em um sistema acadêmico, deseja-se representar alunos de uma instituição de e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895825000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292357000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22148,7 +22148,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895844000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292378000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22161,7 +22161,7 @@ Em um sistema escolar, um professor pode ministrar várias disciplinas, e cada d
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895844000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292378000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22207,7 +22207,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895861000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292396000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22220,7 +22220,7 @@ Em um sistema de e-commerce, um carrinho de compras contém produtos adicionados
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895861000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292396000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22266,7 +22266,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895878000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292414000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22279,7 +22279,7 @@ Em um sistema bancário, uma conta corrente deve permitir operações de depósi
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895878000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292414000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22325,7 +22325,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895895000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292431000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22338,7 +22338,7 @@ Em um sistema de modelagem residencial, uma casa é composta por cômodos como q
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895895000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292431000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22384,7 +22384,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895911000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292448000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22397,7 +22397,7 @@ Em um sistema de transporte, veículos possuem características comuns como marc
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895911000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292448000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22443,7 +22443,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895927000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292465000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22456,7 +22456,7 @@ Em um sistema de biblioteca, um livro pode ser escrito por um ou mais autores, e
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895927000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292465000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22502,7 +22502,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895943000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292483000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22515,7 +22515,7 @@ Em um sistema de pedidos, a classe Pedido utiliza a classe Pagamento apenas no m
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895943000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292483000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22561,7 +22561,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895960000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292501000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22574,7 +22574,7 @@ Em uma empresa, cada departamento possui vários funcionários vinculados a ele.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895960000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292501000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22620,7 +22620,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895976000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292518000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22633,7 +22633,7 @@ Em um sistema escolar, uma escola possui várias turmas, e cada turma possui vá
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895976000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292518000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22680,7 +22680,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397895991000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292534000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22693,7 +22693,7 @@ Um sistema de transporte precisa representar diferentes tipos de veículos, como
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397895991000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292534000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22739,7 +22739,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397896006000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292551000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22752,7 +22752,7 @@ Em um sistema de funcionários de uma empresa, existem diferentes tipos de colab
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397896006000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292551000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22798,7 +22798,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397896023000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292569000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22811,7 +22811,7 @@ Um sistema de pagamentos precisa lidar com diferentes formas de pagamento, como 
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397896023000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292569000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22857,7 +22857,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397896052000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292586000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22870,7 +22870,7 @@ Em um sistema de gestão universitária, existem diferentes tipos de pessoas: Pr
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397896052000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292586000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22918,7 +22918,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397896068000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292604000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22931,7 +22931,7 @@ Modele esse cenário e justifique sua decisão de modelagem.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397896068000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292604000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -22977,7 +22977,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
             &lt;/div&gt;
 
             
-&lt;div id=&#34;plantuml-1794419397896089000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270292625000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -22990,7 +22990,7 @@ Em um sistema de transporte público, existem diferentes tipos de veículos: Ôn
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397896089000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270292625000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -23152,7 +23152,7 @@ Qual é a definição de associação entre classes?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1794419397899662000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270296466000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -23165,7 +23165,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397899662000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270296466000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -23228,7 +23228,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual tipo de relacionamento é representado?
-&lt;div id=&#34;plantuml-1794419397899707000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270296507000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -23241,7 +23241,7 @@ No diagrama abaixo, qual tipo de relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397899707000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270296507000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -23422,7 +23422,7 @@ Qual é a principal característica da composição?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1794419397899814000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270296610000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -23435,7 +23435,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397899814000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270296610000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -23498,7 +23498,7 @@ No diagrama abaixo, qual relacionamento é representado?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 No diagrama abaixo, qual relacionamento é representado?
-&lt;div id=&#34;plantuml-1794419397899867000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270296650000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -23511,7 +23511,7 @@ No diagrama abaixo, qual relacionamento é representado?
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397899867000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270296650000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -23960,7 +23960,7 @@ Qual relacionamento existe?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1794419397900099000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270296893000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -23973,7 +23973,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397900099000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270296893000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -24037,7 +24037,7 @@ Qual relacionamento?
 
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama abaixo:
-&lt;div id=&#34;plantuml-1794419397900139000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270296932000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -24050,7 +24050,7 @@ Analise o diagrama abaixo:
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397900139000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270296932000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -25772,7 +25772,7 @@ O método retorna um valor do tipo definido pelo parâmetro genérico T.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397903637000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270300675000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -25785,7 +25785,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397903637000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270300675000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -25856,7 +25856,7 @@ O atributo utiliza o parâmetro de tipo genérico T.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397903677000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270300729000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -25869,7 +25869,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397903677000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270300729000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -25940,7 +25940,7 @@ A notação &lt;code&gt;&amp;lt;K,V&amp;gt;&lt;/code&gt; indica dois parâmetros
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397903715000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270300767000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -25953,7 +25953,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397903715000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270300767000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 
@@ -26024,7 +26024,7 @@ O método retorna um valor do tipo genérico T.
     &lt;div class=&#34;questao-body&#34;&gt;
 Analise o diagrama UML abaixo.
 
-&lt;div id=&#34;plantuml-1794419397903754000&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;plantuml-1794457270300807000&#34;&gt;&lt;/div&gt;
 
 &lt;script&gt;
 (async function() {
@@ -26037,7 +26037,7 @@ Analise o diagrama UML abaixo.
   });
 
   const output = await res.text();
-  document.getElementById(&#34;plantuml-1794419397903754000&#34;).innerHTML = output;
+  document.getElementById(&#34;plantuml-1794457270300807000&#34;).innerHTML = output;
 })();
 &lt;/script&gt;
 

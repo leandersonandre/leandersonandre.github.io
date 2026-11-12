@@ -95,6 +95,10 @@ toc: false
   {{< card link="/disciplinas/apc-2/slides/algoritmos-gulosos" title="Algoritmos Gulosos" >}}
 {{< /cards >}}
 
+{{< cards  cols="1">}}
+  {{< card link="/disciplinas/apc-2/slides/simulated-annealing" title="Simulated Anneling" >}}
+{{< /cards >}}
+
 <br>
 
 
